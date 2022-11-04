@@ -32,5 +32,10 @@ format:
   html:
     theme: cosmo
 
+toc-location: left
+cap-location: margin
+link-external-icon: true
+link-external-newwindow: true
+
 execute:
   freeze: auto
