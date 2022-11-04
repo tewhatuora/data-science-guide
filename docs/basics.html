@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.247">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Practical Guide to Health Data Science in Aotearoa New Zealand - 3&nbsp; Understanding the basics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./collaboration.html" rel="next">
+<link href="./starting.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Understanding the basics</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Practical Guide to Health Data Science in Aotearoa New Zealand</a> 
+        <div class="sidebar-tools-main">
+    <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="./Practical-Guide-to-Health-Data-Science-in-Aotearoa-New-Zealand.pdf">
+            <i class="bi bi-bi-file-pdf pe-1"></i>
+          Download PDF
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="./Practical-Guide-to-Health-Data-Science-in-Aotearoa-New-Zealand.epub">
+            <i class="bi bi-bi-journal pe-1"></i>
+          Download ePub
+          </a>
+        </li>
+    </ul>
+    <a href="" title="Share" id="sidebar-tool-dropdown-1" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-1">
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+            <i class="bi bi-bi-twitter pe-1"></i>
+          Twitter
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+            <i class="bi bi-bi-linkedin pe-1"></i>
+          LinkedIn
+          </a>
+        </li>
+    </ul>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./starting.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How do I start?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basics.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Understanding the basics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./collaboration.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">People, capability &amp; collaboration</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data-landscape.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The unique health data landscape</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data-identifiability.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Identifiability</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data-preparation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data preparation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modelling</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./evaluation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evaluation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./deployment-lifecycle.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Deployment &amp; Lifecycle Maintenance</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">Useful references and templates</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#data-projects-have-a-lifecycle" id="toc-data-projects-have-a-lifecycle" class="nav-link active" data-scroll-target="#data-projects-have-a-lifecycle"><span class="toc-section-number">3.1</span>  Data projects have a lifecycle</a></li>
+  <li><a href="#research-vs-audit-vs-bau" id="toc-research-vs-audit-vs-bau" class="nav-link" data-scroll-target="#research-vs-audit-vs-bau"><span class="toc-section-number">3.2</span>  Research vs audit vs BAU</a></li>
+  <li><a href="#clearly-articulate-the-goal" id="toc-clearly-articulate-the-goal" class="nav-link" data-scroll-target="#clearly-articulate-the-goal"><span class="toc-section-number">3.3</span>  Clearly articulate the goal</a></li>
+  <li><a href="#choosing-the-right-question---exploring-feasibility-and-delivering-value" id="toc-choosing-the-right-question---exploring-feasibility-and-delivering-value" class="nav-link" data-scroll-target="#choosing-the-right-question---exploring-feasibility-and-delivering-value"><span class="toc-section-number">3.4</span>  Choosing the right question - exploring feasibility and delivering value</a></li>
+  <li><a href="#funding" id="toc-funding" class="nav-link" data-scroll-target="#funding"><span class="toc-section-number">3.5</span>  Funding</a></li>
+  <li><a href="#legal-ip-and-regulatory-considerations" id="toc-legal-ip-and-regulatory-considerations" class="nav-link" data-scroll-target="#legal-ip-and-regulatory-considerations"><span class="toc-section-number">3.6</span>  Legal, IP, and regulatory considerations</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Understanding the basics</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="data-projects-have-a-lifecycle" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="data-projects-have-a-lifecycle"><span class="header-section-number">3.1</span> Data projects have a lifecycle</h2>
+<p>Data science guides often include the concept of a lifecycle. Examples of these more general guides include the CRoss Industry Standard Process for Data Mining (<a href="https://www.datascience-pm.com/crisp-dm-2/">CRISP-DM</a>) and the Microsoft Team Data Science Process (<a href="https://docs.microsoft.com/en-us/azure/architecture/data-science-process/overview">TDSP</a>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.datascience-pm.com/crisp-dm-2/"><img src="./img/CRISP-DM.png" class="img-fluid figure-img" alt="The CRISP-DM Data Science Lifecycle"></a></p>
+<p></p><figcaption class="figure-caption">The CRISP-DM Data Science Lifecycle</figcaption><p></p>
+</figure>
+</div>
+<p>This guide aligns broadly with the life cycle stages outlined below, but your project may follow a different path - this is fine! The list below will get you started in thinking about the broad steps of your project:</p>
+<ul>
+<li><strong>Business understanding</strong> – What does the health system or business or world need?</li>
+<li><strong>Data acquisition and understanding</strong> – What data do we have? What do we need? Is it ‘clean’ (free of incorrect, incomplete, or duplicate data)?</li>
+<li><strong>Data preparation</strong> – How do we organise the data for analysis, including modelling?</li>
+<li><strong>Modelling</strong> – What modelling techniques should we apply?</li>
+<li><strong>Evaluation</strong> – Which model best meets the health system or business or world’s objectives?</li>
+<li><strong>Deployment</strong> – How do users and stakeholders access the results?</li>
+<li><strong>Maintenance</strong> - How will a model be monitored and refreshed over time?</li>
+</ul>
+</section>
+<section id="research-vs-audit-vs-bau" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="research-vs-audit-vs-bau"><span class="header-section-number">3.2</span> Research vs audit vs BAU</h2>
+<p>People and organisations undertaking health data science may need help clarifying whether what they want to do is “research” or not. There are many definitions of research, but a simple definition is:</p>
+<p><em>Research</em> creates new knowledge, which could include new methods or processes, and could lead to the creation of new guidelines.</p>
+<p><em>Business as usual</em> (BAU) includes activities such as development, sales, and support. If your business includes the creation of new capabilities or features, this portion of your activities can be perceived as research.</p>
+<p><em>Audits</em> are activities that check whether you are following existing processes or guidelines. Testing new processes becomes research, since you are departing from the existing processes.</p>
+<p><em>Quality improvement</em> seeks to improve an existing process that is already of benefit to patients. Machine learning (ML) models incorporated into workflows can cause changes to the standard of care patients receive, including unintended consequences. Translation from a tool to implementation is essentially research to validate and determine the impact of ML on patients.</p>
+<p>Research projects have different goals, such as ‘analysis only’ versus ‘analyse and model for future use’. Some projects may have a commercial focus on delivering an outcome for use in practice. It is important to define what you are doing as clearly as possible at the start of a project (refer to Social licence &amp; consent).</p>
+<p>Any research undertaken in New Zealand using health data requires ethical review. See ‘Ethics and privacy’.</p>
+</section>
+<section id="clearly-articulate-the-goal" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="clearly-articulate-the-goal"><span class="header-section-number">3.3</span> Clearly articulate the goal</h2>
+<p>Good data science doesn’t have to be complicated, but it should be clear. Many projects fail to clearly articulate their goal which may lead to people working to a different agenda.</p>
+<p>Co-design - a design-led process that uses creative and participatory methods involving all stakeholders to ensure the result meets their needs - is essential at this early stage. It’s important to be explicit in these circumstances; you cannot define a problem, determine the appropriate data and methodology, interpret results or run a successful project without the input and partnership of the end-users and other stakeholders.</p>
+<p>Define goals up front and consider, what question is being answered? Do you want to answer a question that is relevant to a specific population (often geographically defined), or to produce a model or other output that can be generalised to other populations? Is it a proof of concept where further work may be required, or does it require implementation to be used in practice?</p>
+<p>Often the real goal is masked by sub-goals. A project that has been forced to fit within a call for proposals or programme, but the actual goals of the researcher, and those that the project is set up to address, are different is one example of this. Carefully consider the problem you are trying to solve and seek external validation to confirm if it is a real-world problem for end users.</p>
+</section>
+<section id="choosing-the-right-question---exploring-feasibility-and-delivering-value" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="choosing-the-right-question---exploring-feasibility-and-delivering-value"><span class="header-section-number">3.4</span> Choosing the right question - exploring feasibility and delivering value</h2>
+<p>Choosing the right question is an essential part of any research effort.</p>
+<p>Before beginning, get really clear on the problem that is being solved and understand if it is clinically meaningful and adds value. Define the need or problem and then find data/technology to answer it, not the other way around. For model development, define what success looks like e.g how accurate should a model be.</p>
+<p>Co-design is essential - seek information from different stakeholders (clinicians, patients/consumers, systems users) and research the existing evidence/base or literature on the topic. Simple frameworks like the ‘5 Whys’ can be helpful to apply. The end-users and those impacted by the use of a tool need to understand and believe in the value being delivered to drive engagement and improve translation into real world applications.</p>
+<p>Mapping the clinical workflow into which a model fits in dynamic contexts is also useful - do clinicians have current workarounds for problems or barriers that remain useful, or is there a genuine gap ? Can the model or algorithm be responsive to real world complexity?</p>
+<p>Consider the wider health sector and if there is willingness and need for uptake. Value can be provided through: improvement in patient outcomes or experience, improving efficiency, reduction of uncertainty, prioritising resources to those most in need, reduction in resource requirements.</p>
+<p>In building a business case, the value of data science projects needs to be expressed from the perspectives of each of the different stakeholders. Consider the unique selling points, unintended consequences, risks vs benefits from social, economic, health outcomes and reputational perspectives. Articulate value based on each stakeholder’s perspective. Consider engaging with a health economist for specialist advice. Do not exaggerate or over-sell the potential real-life impact or underplay potential risks.</p>
+<p>Work through the use-case end-to-end before starting, getting clear on how the algorithm will be accessed and used, and what decisions will be made as a result.</p>
+<p>What level of transparency or interpretability is required in order for the results to be useful? Do we only care about predictions or are we looking to drive process change?</p>
+<p>Consider how the work will be validated or trialled in a clinical setting, e.g.&nbsp;as a clinical trial or passive background comparison with production data.</p>
+<p>Algorithms and models are only one piece of the puzzle in improving health outcomes - what are the interventions in place or available to take action based on ML-driven insights? For example, if someone is identified as being at higher risk of readmission to hospital,what can be offered as a result?</p>
+<p>Is an algorithm necessarily the best solution? Consider this Nature article on Steps to avoid overuse and misuse of machine learning in clinical research</p>
+</section>
+<section id="funding" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="funding"><span class="header-section-number">3.5</span> Funding</h2>
+<p>Finding funding to pursue a data science project can be difficult. In some cases, data science endeavours may be supported by a specific public or private organisation.</p>
+<p>In New Zealand, funding tends to be available for conceptual research, or for commercialisation activities. In our experience, there is substantial translational work required between these two phases. Potential sources for funding translative work include Callaghan Innovation, the MedTech Innovation Quarter (MedTech-iQ), and/or individual organisations.</p>
+<p>It is usually necessary to pitch, propose, or otherwise justify a request for funding data science activities. You might be responding to a third party’s request for proposals (RFP) or open call for a funding round. When considering the project you want to do, think about the points below.</p>
+<p>Who is paying for this work to be completed? What is their interest? Who has an interest in the outcome, including the researchers? Does their influence/interest in the outcome need to be declared or managed in any particular way?</p>
+<p>Recognising and declaring conflicts of interest is essential to understanding the applicability of the data science results, and any biases that may apply.</p>
+<p>If this work is successful, what further investment will be required to ensure that the work leads to its full potential?</p>
+<p>If the ultimate goal is a commercial product, there is often substantial investment required to take a proof of concept to a maintainable, robust product. Think about:</p>
+<p>Who will provide support to the people using this product, even if they are using it only for research purposes or in informal ways? What is the lifecycle of the research output? Who will be able to look after it in 5 years’ time?</p>
+</section>
+<section id="legal-ip-and-regulatory-considerations" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="legal-ip-and-regulatory-considerations"><span class="header-section-number">3.6</span> Legal, IP, and regulatory considerations</h2>
+<p>Legal advice should be sought, and issues related to legal, intellectual property and/or regulatory issues explicitly discussed and documented prior to starting work. Consider who holds the data you want to use, who owns the models and what may be required for lifecycle management.</p>
+<p>Software may be considered a medical device if it is used in the diagnosis, treatment, prevention, cure, or mitigation of diseases or other conditions. Depending on how the intended use is defined, it may be subject to country dependent regulatory requirements. Specialised regulatory advisors should be engaged early as the process takes time and documentation for approval may need to be generated during the development process.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./starting.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How do I start?</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./collaboration.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">People, capability &amp; collaboration</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,36 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Practical Guide to Health Data Science in Aotearoa New Zealand"
+  author: "Precision Driven Health"
+  search: true
+  downloads: [pdf, epub]
+  sharing: [twitter, linkedin]
+  cover-image: /img/cover.jpg
+  date: "December 2022"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - starting.qmd
+    - basics.qmd
+    - collaboration.qmd
+    - data-landscape.qmd
+    - data-identifiability.qmd
+    - data-preparation.qmd
+    - modelling.qmd
+    - evaluation.qmd
+    - deployment-lifecycle.qmd
+    - references.qmd
+  # comments:
+  #   hypothesis: true
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+
+execute:
+  freeze: auto

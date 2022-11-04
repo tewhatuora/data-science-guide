@@ -1,0 +1,60 @@
+# Useful references and templates {.unnumbered}
+
+Note: Move these to the right sections in the document, rather than at the end.
+
+* [Aotearoa NZ Data Sources Review](data.precisiondrivenhealth.com)
+
+* [The NZ Algorithm Scan](https://precisiondrivenhealth.com/new-zealand-health-sector-algorithm-scan/)
+
+* [AI for Health in NZ report (AI Forum)](https://aiforum.org.nz/wp-content/uploads/2019/10/AI-For-Health-in-New-Zealand.pdf)
+
+* [Tensorflow Extended Guide](https://www.tensorflow.org/tfx/guide)
+
+* [Microsoft Team Data Science Process](https://docs.microsoft.com/en-us/azure/architecture/data-science-process/team-data-science-process-for-data-scientists)
+
+* [TRIPOD - checklists and resources](https://www.tripod-statement.org/resources/)
+
+* [Model cards for Model Reporting](https://arxiv.org/pdf/1810.03993.pdf)
+
+* CRISP-DM (Industry)
+
+* DM-BOK (Data Management Body of Knowledge)
+
+* Learning Spark (Book, comprehensive)
+
+* Ministry of Health data inquiries email; [data-enquiries@health.govt.nz](mailto:data-enquiries@health.govt.nz)
+
+* [A guide to good practice for digital and data-driven health technologies - GOV.UK](https://www.gov.uk/government/publications/code-of-conduct-for-data-driven-health-and-care-technology/initial-code-of-conduct-for-data-driven-health-and-care-technology)
+
+* [ALGORITHM ASSESSMENT REPORT](https://www.data.govt.nz/assets/Uploads/Algorithm-Assessment-Report-Oct-2018.pdf)
+
+* [Research and engagement --- Digital Identity Programme](https://www.digital.govt.nz/digital-government/programmes-and-projects/digital-identity-programme/research-and-engagement-digital-identity-programme/)
+
+* [Principles for the safe and effective use of data and analytics](https://www.stats.govt.nz/assets/Uploads/Data-leadership-fact-sheets/Principles-safe-and-effective-data-and-analytics-May-2018.pdf)
+
+* [Algorithm charter for Aotearoa New Zealand - data.govt.nz](https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-charter/)
+
+* [GOVERNMENT USE of ARTIFICIAL INTELLIGENCE in NEW ZEALAND](https://data.govt.nz/assets/data-ethics/algorithm/NZLF-report.pdf)
+
+* [Emerging health technology - advice and guidance](https://www.health.govt.nz/our-work/digital-health/vision-health-technology/emerging-health-technology-advice-and-guidance)
+
+* [Guide for safely developing & using Algorithms in Healthcare](https://www.health.govt.nz/system/files/documents/pages/introductory_guidance_-_algorithms_v0.4_-_web.pdf)
+
+* [The Algorithm Charter \| Ministry of Health NZ](https://www.health.govt.nz/our-work/digital-health/digital-health-sector-architecture-standards-and-governance/algorithm-charter)
+
+* [Trustworthy AI in Aotearoa AI Principles](https://data.govt.nz/assets/data-ethics/algorithm/Trustworthy-AI-in-Aotearoa-March-2020.pdf)
+
+* [A guide to good practice for digital and data-driven health technologies](https://www.gov.uk/government/publications/code-of-conduct-for-data-driven-health-and-care-technology/initial-code-of-conduct-for-data-driven-health-and-care-technology)
+
+* [Data governance activities: an analysis of the literature](https://www.tandfonline.com/doi/full/10.1080/12460125.2016.1187397)
+
+* [The Challenges of Big Data Governance in Healthcare](https://ieeexplore.ieee.org/abstract/document/8456108)
+
+* [Data Ethics and Data Governance from A Māori World View (NZ)](https://www.emerald.com/insight/content/doi/10.1108/S2398-601820200000006005/full/html)
+
+:::{.callout-note}
+These are currently audience-limited references; in this guide we will point only to publicly accessible information.
+:::
+
+::: {#refs}
+:::

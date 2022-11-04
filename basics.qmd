@@ -1,0 +1,97 @@
+# Understanding the basics
+
+## Data projects have a lifecycle
+
+Data science guides often include the concept of a lifecycle. Examples of these more general guides include the CRoss Industry Standard Process for Data Mining ([CRISP-DM](https://www.datascience-pm.com/crisp-dm-2/)) and the Microsoft Team Data Science Process ([TDSP](https://docs.microsoft.com/en-us/azure/architecture/data-science-process/overview)).
+
+[![The CRISP-DM Data Science Lifecycle](/img/CRISP-DM.png){fig-alt="The CRISP-DM Data Science Lifecycle"}](https://www.datascience-pm.com/crisp-dm-2/)
+
+This guide aligns broadly with the life cycle stages outlined below, but your project may follow a different path - this is fine! The list below will get you started in thinking about the broad steps of your project:
+
+* **Business understanding** – What does the health system or business or world need?
+* **Data acquisition and understanding** – What data do we have? What do we need? Is it ‘clean’ (free of incorrect, incomplete, or duplicate data)?
+* **Data preparation** – How do we organise the data for analysis, including modelling?
+* **Modelling** – What modelling techniques should we apply?
+* **Evaluation** – Which model best meets the health system or business or world’s objectives?
+* **Deployment** – How do users and stakeholders access the results?
+* **Maintenance** - How will a model be monitored and refreshed over time?
+
+## Research vs audit vs BAU
+
+People and organisations undertaking health data science may need help clarifying whether what they want to do is “research” or not. There are many definitions of research, but a simple definition is:
+
+_Research_ creates new knowledge, which could include new methods or processes, and could lead to the creation of new guidelines.
+
+_Business as usual_ (BAU) includes activities such as development, sales, and support. If your business includes the creation of new capabilities or features, this portion of your activities can be perceived as research.
+
+_Audits_ are activities that check whether you are following existing processes or guidelines. Testing new processes becomes research, since you are departing from the existing processes.
+
+_Quality improvement_ seeks to improve an existing process that is already of benefit to patients.
+Machine learning (ML) models incorporated into workflows can cause changes to the standard of care patients receive, including unintended consequences. Translation from a tool to implementation is essentially research to validate and determine the impact of ML on patients.
+
+Research projects have different goals, such as ‘analysis only’ versus ‘analyse and model for future use’. Some projects may have a commercial focus on delivering an outcome for use in practice. It is important to define what you are doing as clearly as possible at the start of a project (refer to Social licence & consent).
+
+Any research undertaken in New Zealand using health data requires ethical review. See ‘Ethics and privacy’.
+
+## Clearly articulate the goal 
+
+Good data science doesn't have to be complicated, but it should be clear. Many projects fail to clearly articulate their goal which may lead to people working to a different agenda. 
+
+Co-design - a design-led process that uses creative and participatory methods involving all stakeholders to ensure the result meets their needs - is essential at this early stage. It’s important to be explicit in these circumstances; you cannot define a problem, determine the appropriate data and methodology, interpret results or run a successful project without the input and partnership of the end-users and other stakeholders. 
+
+Define goals up front and consider, what question is being answered? Do you want to answer a question that is relevant to a specific population (often geographically defined), or to produce a model or other output that can be generalised to other populations? Is it a proof of concept where further work may be required, or does it require implementation to be used in practice?
+
+Often the real goal is masked by sub-goals. A project that has been forced to fit within a call for proposals or programme, but the actual goals of the researcher, and those that the project is set up to address, are different is one example of this. Carefully consider the problem you are trying to solve and seek external validation to confirm if it is a real-world problem for end users.
+
+## Choosing the right question - exploring feasibility and delivering value
+
+Choosing the right question is an essential part of any research effort.
+
+Before beginning, get really clear on the problem that is being solved and understand if it is clinically meaningful and adds value. Define the need or problem and then find data/technology to answer it, not the other way around. For model development, define what success looks like e.g how accurate should a model be.
+
+Co-design is essential - seek information from different stakeholders (clinicians, patients/consumers, systems users) and research the existing evidence/base or literature on the topic. Simple frameworks like the ‘5 Whys’ can be helpful to apply. The end-users and those impacted by the use of a tool need to understand and believe in the value being delivered to drive engagement and improve translation into real world applications.
+ 
+Mapping the clinical workflow into which a model fits in dynamic contexts is also useful - do clinicians have current workarounds for problems or barriers that remain useful, or is there a genuine gap ? Can the model or algorithm be responsive to real world complexity?
+
+
+Consider the wider health sector and if there is willingness and need for uptake. Value can be provided through: improvement in patient outcomes or experience, improving efficiency, reduction of uncertainty, prioritising resources to those most in need, reduction in resource requirements.
+
+
+In building a business case, the value of data science projects needs to be expressed from the perspectives of each of the different stakeholders. Consider the unique selling points, unintended consequences, risks vs benefits from social, economic, health outcomes and reputational perspectives. Articulate value based on each stakeholder’s perspective. Consider engaging with a health economist for specialist advice. Do not exaggerate or over-sell the potential real-life impact or underplay potential risks.
+
+Work through the use-case end-to-end before starting, getting clear on how the algorithm will be accessed and used, and what decisions will be made as a result. 
+
+What level of transparency or interpretability is required in order for the results to be useful? Do we only care about predictions or are we looking to drive process change?
+
+Consider how the work will be validated or trialled in a clinical setting, e.g. as a clinical trial or passive background comparison with production data.
+
+Algorithms and models are only one piece of the puzzle in improving health outcomes - what are the interventions in place or available to take action based on ML-driven insights? For example, if someone is identified as being at higher risk of readmission to hospital,what can be offered as a result?
+
+Is an algorithm necessarily the best solution? Consider this Nature article on Steps to avoid overuse and misuse of machine learning in clinical research 
+
+## Funding
+
+Finding funding to pursue a data science project can be difficult. In some cases, data science endeavours may be supported by a specific public or private organisation.
+
+In New Zealand, funding tends to be available for conceptual research, or for commercialisation activities. In our experience, there is substantial translational work required between these two phases. Potential sources for funding translative work include Callaghan Innovation, the MedTech Innovation Quarter (MedTech-iQ), and/or individual organisations.
+
+It is usually necessary to pitch, propose, or otherwise justify a request for funding data science activities. You might be responding to a third party’s request for proposals (RFP) or open call for a funding round. When considering the project you want to do, think about the points below.
+
+Who is paying for this work to be completed? What is their interest?
+Who has an interest in the outcome, including the researchers?
+Does their influence/interest in the outcome need to be declared or managed in any particular way?
+
+Recognising and declaring conflicts of interest is essential to understanding the applicability of the data science results, and any biases that may apply.
+
+If this work is successful, what further investment will be required to ensure that the work leads to its full potential?
+
+If the ultimate goal is a commercial product, there is often substantial investment required to take a proof of concept to a maintainable, robust product. Think about:
+
+Who will provide support to the people using this product, even if they are using it only for research purposes or in informal ways?
+What is the lifecycle of the research output? Who will be able to look after it in 5 years’ time?
+
+## Legal, IP, and regulatory considerations
+
+Legal advice should be sought, and issues related to legal, intellectual property and/or regulatory issues explicitly discussed and documented prior to starting work. Consider who holds the data you want to use, who owns the models and what may be required for lifecycle management. 
+
+Software may be considered a medical device if it is used in the diagnosis, treatment, prevention, cure, or mitigation of diseases or other conditions. Depending on how the intended use is defined, it may be subject to country dependent regulatory requirements. Specialised regulatory advisors should be engaged early as the process takes time and documentation for approval may need to be generated during the development process.

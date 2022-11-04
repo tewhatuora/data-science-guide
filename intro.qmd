@@ -1,0 +1,37 @@
+# Introduction
+
+## About this guide
+
+This guide is a collection of learnings based on the experience of New Zealand health data science researchers and other contributors. It is aimed at practitioners and those that oversee their work, providing practical advice without repeating publicly available resources and references (which are instead linked to). For data scientists, the guide also assumes a basic understanding of data science techniques, addressing the context and principles of how these are applied to lead to a successful outcome.
+
+The guide is not intended to be a detailed technical reference on particular data science tool sets or clinical concepts.
+
+Earlier sections outline the context and setup of a health data science project; later sections introduce the technical aspects of data science including modelling.
+
+## About Precision Driven Health
+
+[Precision Driven Health](https://precisiondrivenhealth.com) (PDH) is an award-winning partnership between Aotearoa New Zealand’s health information technology (IT) sector, health providers and universities, aimed at improving health outcomes through data science.
+ 
+PDH seeks to increase data science capability in New Zealand’s health sector and encourage innovation in the use of health data.
+
+## Contributors and reviewers
+
+We would like to thank the people who contributed to compiling and reviewing this guide:
+
+* Alex Kazemi
+* CK Jin
+* Duncan Croft
+* Edmond Zhang
+* Fleur Armstrong
+* Ivan Rivera
+* Jamal Zolhavarieh
+* Juliet Rumball-Smith
+* Kelly Atkinson
+* Kevin Ross
+* Luke Boyle
+* Ning Hua
+* Pieta Brown
+* Quan Sun
+* Rachel Owens
+* Tom Gutteridge
+* Vipula Dissanayake

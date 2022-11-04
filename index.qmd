@@ -1,0 +1,3 @@
+# Preface {.unnumbered}
+
+This guide collects a set of positive practices for health data science projects in Aotearoa New Zealand, summarising knowledge from the experiences of researchers from the Precision Driven Health partnership and the wider health and data science sectors in this area.
