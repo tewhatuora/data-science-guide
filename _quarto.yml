@@ -33,6 +33,7 @@ format:
     theme: cosmo
 
 toc-location: left
+toc-title: "On this page"
 cap-location: margin
 link-external-icon: true
 link-external-newwindow: true
