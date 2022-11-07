@@ -9,7 +9,8 @@ book:
   downloads: [pdf, epub]
   sharing: [twitter, linkedin]
   cover-image: /img/cover.jpg
-  date: "December 2022"
+  date: 01/12/2022
+  date-format: "MMMM YYYY"
   chapters:
     - index.qmd
     - intro.qmd
@@ -26,16 +27,25 @@ book:
   # comments:
   #   hypothesis: true
 
+# banner style for the title
+title-block-banner: "#008084"
+
+# table of contents settings
 toc-location: right
 toc-title: "On this page"
-cap-location: margin
-link-external-icon: true
-link-external-newwindow: true
 
+# captions and references
+reference-location: section
+cap-location: margin
 bibliography: references.bib
 citations-hover: true
-citation-location: margin
+# citation-location: margin
+citation-location: section
 footnotes-hover: true
+
+# external links
+link-external-icon: true
+link-external-newwindow: true
 
 format:
   html:
