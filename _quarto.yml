@@ -28,7 +28,8 @@ book:
   #   hypothesis: true
 
 # banner style for the title
-title-block-banner: "#008084"
+# title-block-banner: "#008084"
+# it's really large - unsure I like it
 
 # table of contents settings
 toc-location: right
