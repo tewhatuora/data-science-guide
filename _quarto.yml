@@ -26,17 +26,20 @@ book:
   # comments:
   #   hypothesis: true
 
-bibliography: references.bib
-
-format:
-  html:
-    theme: cosmo
-
 toc-location: right
 toc-title: "On this page"
 cap-location: margin
 link-external-icon: true
 link-external-newwindow: true
+
+bibliography: references.bib
+citations-hover: true
+citation-location: margin
+footnotes-hover: true
+
+format:
+  html:
+    theme: cosmo
 
 execute:
   freeze: auto
