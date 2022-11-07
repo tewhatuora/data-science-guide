@@ -32,7 +32,7 @@ For understanding population trends and context, aggregated data sets and web to
 
 Through a review of Aotearoa New Zealand health datasets, PDH has produced an interactive and updateable list of data sources available in New Zealand [@precision_driven_health_aotearoa_2022]. Visit this at [data.precisiondrivenhealth.com](https://data.precisiondrivenhealth.com).
 
-The [Virtual Health Information Network](https://vhin.co.nz/) includes many researchers who are using the Integrated Data Infrastructure supported by Statistics NZ. VHIN's [IDI guides](https://vhin.co.nz/guides/) may be helpful in understanding what centralised data is available. The IDI is accessible through following a specific process.
+The [Virtual Health Information Network](https://vhin.co.nz/) includes many researchers who are using the Integrated Data Infrastructure supported by Statistics NZ. VHIN's [IDI guides](https://vhin.co.nz/guides/) [@virtual_health_information_network_idi_2017] may be helpful in understanding what centralised data is available. The IDI is accessible through following a specific process.
 
 ## Ethics & privacy
 
