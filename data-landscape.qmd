@@ -30,7 +30,7 @@ Data for health data science projects is everywhere! There is no shortage of ava
 
 For understanding population trends and context, aggregated data sets and web tools are publicly available via the Ministry of Health and Statistics New Zealand (Stats NZ). Micro data (at the level of the individual) is available to researchers on application to National Collections or Stats NZ for Confidentialised Unit Record Files (CURFs). Dissemination of micro data is in accordance with the Privacy Act, health legislation and contracts and access is strictly controlled according to use.
 
-Through a review of Aotearoa New Zealand health datasets, PDH has produced an interactive and updateable list of data sources available in New Zealand. Visit this at [data.precisiondrivenhealth.com](https://data.precisiondrivenhealth.com).
+Through a review of Aotearoa New Zealand health datasets, PDH has produced an interactive and updateable list of data sources available in New Zealand [@precision_driven_health_aotearoa_2022]. Visit this at [data.precisiondrivenhealth.com](https://data.precisiondrivenhealth.com).
 
 The [Virtual Health Information Network](https://vhin.co.nz/) includes many researchers who are using the Integrated Data Infrastructure supported by Statistics NZ. VHIN's [IDI guides](https://vhin.co.nz/guides/) may be helpful in understanding what centralised data is available. The IDI is accessible through following a specific process.
 
