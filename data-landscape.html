@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -64,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -223,7 +242,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -252,18 +271,20 @@ ul.task-list li input[type="checkbox"] {
 <li><p>There are also significant considerations related to ethics, privacy, consent and social licence. The sections that follow cover this.</p></li>
 </ul>
 <p>NB HQSC framework</p>
-<section id="finding-data" class="level2" data-number="5.1">
+<section id="finding-data" class="level2 page-columns page-full" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="finding-data"><span class="header-section-number">5.1</span> Finding data</h2>
 <p>Data for health data science projects is everywhere! There is no shortage of available data in New Zealand. However, keep the following concepts in mind when you are considering how to find data, or access data you may already be interested in:</p>
 <ul>
 <li><p>Data can only be used for the purpose for which it was collected; any other use is called “secondary purpose” and requires additional consent (see <strong>Use and re-use of data</strong>)</p></li>
 <li><p>Health data used for research purposes needs thought around how the research will be conducted efficiently, ethically, and with privacy and safety front-of-mind.</p></li>
 </ul>
-<section id="public-health-data" class="level3" data-number="5.1.1">
+<section id="public-health-data" class="level3 page-columns page-full" data-number="5.1.1">
 <h3 data-number="5.1.1" class="anchored" data-anchor-id="public-health-data"><span class="header-section-number">5.1.1</span> Public health data</h3>
 <p>For understanding population trends and context, aggregated data sets and web tools are publicly available via the Ministry of Health and Statistics New Zealand (Stats NZ). Micro data (at the level of the individual) is available to researchers on application to National Collections or Stats NZ for Confidentialised Unit Record Files (CURFs). Dissemination of micro data is in accordance with the Privacy Act, health legislation and contracts and access is strictly controlled according to use.</p>
-<p>Through a review of Aotearoa New Zealand health datasets, PDH has produced an interactive and updateable list of data sources available in New Zealand. Visit this at <a href="https://data.precisiondrivenhealth.com">data.precisiondrivenhealth.com</a>.</p>
-<p>The <a href="https://vhin.co.nz/">Virtual Health Information Network</a> includes many researchers who are using the Integrated Data Infrastructure supported by Statistics NZ. VHIN’s <a href="https://vhin.co.nz/guides/">IDI guides</a> may be helpful in understanding what centralised data is available. The IDI is accessible through following a specific process.</p>
+<p>Through a review of Aotearoa New Zealand health datasets, PDH has produced an interactive and updateable list of data sources available in New Zealand <span class="citation" data-cites="precision_driven_health_aotearoa_2022">(<a href="references.html#ref-precision_driven_health_aotearoa_2022" role="doc-biblioref">Precision Driven Health 2022</a>)</span>. Visit this at <a href="https://data.precisiondrivenhealth.com">data.precisiondrivenhealth.com</a>.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-precision_driven_health_aotearoa_2022" class="csl-entry" role="doc-biblioentry">
+Precision Driven Health. 2022. <span>“Aotearoa <span>NZ</span> Data Sources Review.”</span> <a href="https://data.precisiondrivenhealth.com">https://data.precisiondrivenhealth.com</a>.
+</div></div><p>The <a href="https://vhin.co.nz/">Virtual Health Information Network</a> includes many researchers who are using the Integrated Data Infrastructure supported by Statistics NZ. VHIN’s <a href="https://vhin.co.nz/guides/">IDI guides</a> may be helpful in understanding what centralised data is available. The IDI is accessible through following a specific process.</p>
 </section>
 </section>
 <section id="ethics-privacy" class="level2" data-number="5.2">
@@ -523,6 +544,7 @@ Note
 <p>Managing data for a small organisation or research team could be as simple as having a secure storage solution and a spreadsheet to keep track of important metadata. Larger organisations will likely need formal data governance, data policies in place and data stewards to manage the use, storage and security of data. Tailor your approach based on the data being handled.</p>
 <p>Consider version control for all aspects of the project, including data; depending on the tooling that you use, this may already be an included capability. <a href="https://dvc.org/">DVC</a> is one tool designed specifically for data version control for machine learning. Your development environment or cloud storage solution may also include features of this type. Data files can be named with versions, however this method is not as robust as automated versioning that is managed by a tool.</p>
 <p>Data management tools are responsible for carrying a wide range of data or documents.</p>
+
 
 
 </section>
