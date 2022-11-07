@@ -9,7 +9,7 @@ book:
   downloads: [pdf, epub]
   sharing: [twitter, linkedin]
   cover-image: /img/cover.jpg
-  date: 01/12/2022
+  date: 12/01/2022
   date-format: "MMMM YYYY"
   chapters:
     - index.qmd
