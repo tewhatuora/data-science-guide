@@ -12,17 +12,17 @@ book:
   date: 12/01/2022
   date-format: "MMMM YYYY"
   chapters:
-    - index.qmd
-    - intro.qmd
-    - starting.qmd
-    - basics.qmd
-    - collaboration.qmd
-    - data-landscape.qmd
-    - data-identifiability.qmd
-    - data-preparation.qmd
-    - modelling.qmd
-    - evaluation.qmd
-    - deployment-lifecycle.qmd
+    - 00-preface.qmd
+    - 01-intro.qmd
+    - 02-starting.qmd
+    - 03-basics.qmd
+    - 04-collaboration.qmd
+    - 05-data-landscape.qmd
+    - 06-data-identifiability.qmd
+    - 07-data-preparation.qmd
+    - 08-modelling.qmd
+    - 09-evaluation.qmd
+    - 10-deployment-lifecycle.qmd
     - references.qmd
   # comments:
   #   hypothesis: true
