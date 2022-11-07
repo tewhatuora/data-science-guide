@@ -36,7 +36,7 @@ Due to the history focus of cohort studies, certain groups of the population, su
 
 3. The difference of model performance metrics among the stratified groups - whether the model is treating the groups equally, and what downstream consequence this may cause
 
-Reporting metrics with stratification by sensitive attributes whenever applicable can help maintain an equity lens more easily. Performance of the IBIS/Tyrer-Cuzick model of breast cancer risk by race and ethnicity in the Women\'s Health Initiative [is an example](https://acsjournals.onlinelibrary.wiley.com/doi/abs/10.1002/cncr.33767).
+Reporting metrics with stratification by sensitive attributes whenever applicable can help maintain an equity lens more easily. Performance of the IBIS/Tyrer-Cuzick model of breast cancer risk by race and ethnicity in the Women\'s Health Initiative is an example [@kurian_performance_2021].
 
 There is a trade-off between data informativeness / model performance and fairness. Most bias mitigation methods cannot avoid playing with this balance. It is highly recommended to take into account the use case and follow-up impacts while deciding which bias mitigation method to be used and how to use it.
 
