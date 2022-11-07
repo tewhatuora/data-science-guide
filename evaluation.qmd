@@ -86,7 +86,7 @@ Consider outcome measures that are tangible and meaningful to the end user, and 
 
 Indicate feature importance and how the model inputs are weighted in relation to model outputs and what that means in practice. For example, if a model includes modifiable inputs, a model user will want to know how changes to that input might affect an outcome. From an equity perspective, a model user will also want to know to what extent inputs such as ethnicity, age, gender or deprivation impact the outcome.
 
-These considerations are also relevant to governance of models. GDPR's regulation specifically emphasises a model's transparency, accountability and governance ([Kaminski and Malgieri 2021](https://academic.oup.com/idpl/article/11/2/125/6024963)).
+These considerations are also relevant to governance of models. GDPR's regulation specifically emphasises a model's transparency, accountability and governance (see [@kaminski_algorithmic_2021]).
 
 ### Transparency around the inputs
 
