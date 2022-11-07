@@ -39,8 +39,7 @@ reference-location: section
 cap-location: margin
 bibliography: references.bib
 citations-hover: true
-# citation-location: margin
-citation-location: section
+citation-location: margin
 footnotes-hover: true
 
 # external links
