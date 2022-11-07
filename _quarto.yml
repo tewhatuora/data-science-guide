@@ -23,7 +23,7 @@ book:
     - 08-modelling.qmd
     - 09-evaluation.qmd
     - 10-deployment-lifecycle.qmd
-    - references.qmd
+    - 11-references.qmd
   # comments:
   #   hypothesis: true
 

@@ -56,5 +56,8 @@ Note: Move these to the right sections in the document, rather than at the end.
 These are currently audience-limited references; in this guide we will point only to publicly accessible information.
 :::
 
-::: {#refs}
-:::
+# ::: {#refs}
+# :::
+
+nocite: |
+  @*
