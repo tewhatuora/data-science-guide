@@ -26,7 +26,7 @@ Data is collected in a particular context, which leads to bias. This can come fr
 
 While training machine learning models using historically collected data, or drawing any conclusion from data, we should be typically mindful about the potential bias in the data regarding sensitive attributes such as age, ethnicity and gender. Bias-related harms can be reinforced by machine learning models/systems.
 
-Machine learning fairness itself is a broad topic. For a non-exhaustive summary of machine learning fairness from a technical perspective please refer to [ML fairness](https://woki.orionhealth.global/display/DATASCI/ML+Fairness).
+Machine learning fairness itself is a broad topic. For a non-exhaustive summary of machine learning fairness from a technical perspective please refer to [ML fairness](https://woki.orionhealth.global/display/DATASCI/ML+Fairness). (Note @bellamy_ai_2018)
 
 Due to the history focus of cohort studies, certain groups of the population, such as certain ethnic groups, females, might be under-represented and more vulnerable to bias in such studies while any conclusions were drawn or models were trained. In evaluation work, it is important to measure the goodness of fit, accuracy and other metrics of a model from multiple perspectives rather than the overall metrics only. Basic measurement aspects with respect to sensitive attributes (e.g. gender, ethnicity) to be considered:
 
@@ -36,7 +36,7 @@ Due to the history focus of cohort studies, certain groups of the population, su
 
 3. The difference of model performance metrics among the stratified groups - whether the model is treating the groups equally, and what downstream consequence this may cause
 
-Reporting metrics with stratification by sensitive attributes whenever applicable can help maintain an equity lens more easily. Performance of the IBIS/Tyrer-Cuzick model of breast cancer risk by race and ethnicity in the Women\'s Health Initiative is an example [@kurian_performance_2021].
+Reporting metrics with stratification by sensitive attributes whenever applicable can help maintain an equity lens more easily. Performance of the IBIS/Tyrer-Cuzick model of breast cancer risk by race and ethnicity in the Women\'s Health Initiative is an example [see @kurian_performance_2021].
 
 There is a trade-off between data informativeness / model performance and fairness. Most bias mitigation methods cannot avoid playing with this balance. It is highly recommended to take into account the use case and follow-up impacts while deciding which bias mitigation method to be used and how to use it.
 
