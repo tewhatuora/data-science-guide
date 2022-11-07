@@ -12,7 +12,7 @@ book:
   date: 12/01/2022
   date-format: "MMMM YYYY"
   chapters:
-    - 00-welcome.qmd
+    - index.qmd
     - 01-intro.qmd
     - 02-starting.qmd
     - 03-basics.qmd
