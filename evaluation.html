@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -286,7 +305,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The requirement that models are transparent, interpretable and explainable may guide early modelling decisions such as which algorithm to use and how to treat inputs. Linear models tend to be more interpretable and explainable, so too are models that are built with inputs that have not been subject to significant transformations or weightings. The choice of a ‘simpler’ model may compromise model performance meaning better outcomes are sacrificed for the sake of explainability, however there is little point in deploying a deep learning model that has excellent performance, but is not trusted or used. This trade-off needs to be carefully considered.</p>
 <p>Consider outcome measures that are tangible and meaningful to the end user, and that have some relationship to the project goal, such as hospitalisation, mortality, or rankings.</p>
 <p>Indicate feature importance and how the model inputs are weighted in relation to model outputs and what that means in practice. For example, if a model includes modifiable inputs, a model user will want to know how changes to that input might affect an outcome. From an equity perspective, a model user will also want to know to what extent inputs such as ethnicity, age, gender or deprivation impact the outcome.</p>
-<p>These considerations are also relevant to governance of models. GDPR’s regulation specifically emphasises a model’s transparency, accountability and governance (<a href="https://academic.oup.com/idpl/article/11/2/125/6024963">Kaminski and Malgieri 2021</a>).</p>
+<p>These considerations are also relevant to governance of models. GDPR’s regulation specifically emphasises a model’s transparency, accountability and governance (see <span class="citation" data-cites="kaminski_algorithmic_2021">(<a href="references.html#ref-kaminski_algorithmic_2021" role="doc-biblioref">Kaminski and Malgieri 2021</a>)</span>).</p>
 <section id="transparency-around-the-inputs" class="level3" data-number="9.4.1">
 <h3 data-number="9.4.1" class="anchored" data-anchor-id="transparency-around-the-inputs"><span class="header-section-number">9.4.1</span> Transparency around the inputs</h3>
 <p>Provide good data definitions and reasons for how data has been treated e.g “The model includes age but it has been grouped into 3 categories (18-39, 40-59 and 60+) to simplify the model and handle outliers without compromising performance”, and, “The count of regular medications includes medications that have been prescribed in the two years prior to test positive date for this infection. Regular medications are medications that have been prescribed at least four times over that period. Prescription data rather than dispensing data is used as it has better coverage.”</p>
@@ -328,6 +347,11 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-kaminski_algorithmic_2021" class="csl-entry" role="doc-biblioentry">
+Kaminski, Margot E, and Gianclaudio Malgieri. 2021. <span>“Algorithmic Impact Assessments Under the <span>GDPR</span>: Producing Multi-Layered Explanations.”</span> <em>International Data Privacy Law</em> 11 (2): 125–44. <a href="https://doi.org/10.1093/idpl/ipaa020">https://doi.org/10.1093/idpl/ipaa020</a>.
+</div>
+</div>
 </section>
 </section>
 
