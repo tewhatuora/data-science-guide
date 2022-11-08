@@ -42,8 +42,8 @@ bibliography: references.bib
 citations-hover: true
 citation-location: margin
 footnotes-hover: true
-nocite: |
-  @*
+# nocite: |
+#   @*
 
 # external links
 link-external-icon: true
