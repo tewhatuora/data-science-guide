@@ -340,6 +340,13 @@
     "href": "11-references.html",
     "title": "Useful references and templates",
     "section": "",
-    "text": "Aotearoa NZ Data Sources Review\nThe NZ Algorithm Scan\nAI for Health in NZ report (AI Forum)\nTensorflow Extended Guide\nMicrosoft Team Data Science Process\nTRIPOD - checklists and resources\nModel cards for Model Reporting\nCRISP-DM (Industry)\nDM-BOK (Data Management Body of Knowledge)\nLearning Spark (Book, comprehensive)\nMinistry of Health data inquiries email; data-enquiries@health.govt.nz\nA guide to good practice for digital and data-driven health technologies - GOV.UK\nALGORITHM ASSESSMENT REPORT\nResearch and engagement — Digital Identity Programme\nPrinciples for the safe and effective use of data and analytics\nAlgorithm charter for Aotearoa New Zealand - data.govt.nz\nGOVERNMENT USE of ARTIFICIAL INTELLIGENCE in NEW ZEALAND\nEmerging health technology - advice and guidance\nGuide for safely developing & using Algorithms in Healthcare\nThe Algorithm Charter | Ministry of Health NZ\nTrustworthy AI in Aotearoa AI Principles\nA guide to good practice for digital and data-driven health technologies\nData governance activities: an analysis of the literature\nThe Challenges of Big Data Governance in Healthcare\nData Ethics and Data Governance from A Māori World View (NZ)\n\n\n:::\n\n\n:::"
+    "text": "Note: Move these to the right sections in the document, rather than at the end."
+  },
+  {
+    "objectID": "11-references.html#references-from-citations",
+    "href": "11-references.html#references-from-citations",
+    "title": "Useful references and templates",
+    "section": "References from citations",
+    "text": "References from citations"
   }
 ]
