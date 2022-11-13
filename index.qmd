@@ -1,3 +1,5 @@
 # Welcome {.unnumbered}
 
 This guide collects a set of positive practices for health data science projects in Aotearoa New Zealand, summarising knowledge from the experiences of researchers from the Precision Driven Health partnership and the wider health and data science sectors in this area.
+
+It is a living document, not a finished product. Contributions from all researchers are welcome. You can contribute by editing a page. Pages are Markdown files in a public GitHub repository rendered using Quarto.
