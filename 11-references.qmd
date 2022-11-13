@@ -52,5 +52,7 @@ Note: Move these to the right sections in the document, rather than at the end.
 
 * [Data Ethics and Data Governance from A Māori World View (NZ)](https://www.emerald.com/insight/content/doi/10.1108/S2398-601820200000006005/full/html)
 
-# ::: {#refs}
-# :::
+## References from citations
+
+::: {#refs}
+:::
