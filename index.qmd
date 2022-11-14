@@ -4,4 +4,4 @@ This guide collects a set of positive practices for health data science projects
 
 It is a living document, not a finished product. Contributions from all researchers are welcome. You can contribute by editing a page. Pages are Markdown files in a public GitHub repository rendered using Quarto.
 
-Here is a reference to the Aotearoa Data Sources Review [@precision_driven_health_aotearoa_2022] and the VHIN [@noauthor_virtual_nodate]. A test citation [@bellamy_ai_2018]
+Here is a reference to the Aotearoa Data Sources Review ([@precision_driven_health_aotearoa_2022]) and the VHIN ([@noauthor_virtual_nodate]). A test citation to [@bellamy_ai_2018] too.
