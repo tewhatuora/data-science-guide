@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.251">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -220,6 +220,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -229,38 +230,74 @@ ul.task-list li input[type="checkbox"] {
 <section id="team-capability" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="team-capability"><span class="header-section-number">4.1</span> Team capability</h2>
 <p>Typical health data science projects require a multidisciplinary team. The involvement of different roles will likely fluctuate through the different stages of a project lifecycle.</p>
-<p>Commonly needed skills include the areas below. Some individuals will have multiple skills, but few will have everything they need.</p>
+<p>Some individuals will have multiple skills, but few will have everything they need. Commonly needed skills in the team, or accessible through other organisations, include:</p>
 <ul>
 <li>subject matter expertise in data</li>
 <li>machine learning</li>
-<li>design</li>
+<li>system design</li>
+<li>user interface design</li>
 <li>clinical</li>
 <li>governance</li>
 <li>consumer/patient and specifically impacted communities</li>
 <li>legal and privacy</li>
 <li>ethics</li>
-<li>implementation and change management</li>
+<li>implementation and change management.</li>
 </ul>
-<p>Often you may be involved in multiple projects, and you may find it useful to share expertise across projects.</p>
-<p>It is particularly important to ensure plenty of time for clinical input to data understanding and preparation for data science. Defining input features in clinically relevant ways is really important for health data science. For example, ‘cancer’ might be an important input at an individual level - does this mean currently active cancer? Within the last five years? Any exclusions? Time needs to be allocated to work through and validate these definitions with clinicians.</p>
-<ul>
-<li><p>Refer to <strong>End-user engagement</strong> below (<a href="#sec-end-user-engagement"><span>4.2</span></a>).</p></li>
-<li><p>Advisory groups are a good way to elicit feedback. Early in any project try to meet with a group of experts and discuss your research plan. Experts will always understand aspects of the research which need to be considered beyond what is in the data.</p></li>
-</ul>
+<p>You’ll often be involved in multiple projects, so it’s useful to share expertise across projects.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It’s particularly important to allow plenty of time for clinical input to data understanding and preparation for data science.</p>
+</div>
+</div>
+<p>Defining input features in clinically relevant ways is particularly important for health data science. For example, ‘cancer’ might be an important input at an individual level; does this mean currently active cancer? Within the last five years? Any exclusions? Time needs to be allocated to work through and validate these definitions with clinicians.</p>
+<p>Advisory groups are a good way to elicit feedback. Early in any project try to meet with a group of experts and discuss your research plan. Experts will always have different perspectives on the research and the context in which it will be used (see <strong>End-user engagement</strong> (<a href="#sec-end-user-engagement"><span>4.2</span></a>), which also covers Māori engagement and co-design).</p>
 </section>
 <section id="sec-end-user-engagement" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="sec-end-user-engagement"><span class="header-section-number">4.2</span> End-user engagement</h2>
-<p>End users (usually consumers and clinicians) should be engaged early for co-design, and to understand how outputs can be tangible for those who will use them or be impacted by them. Refer <a href="09-evaluation.html#clinician-in-the-loop">Transparency, interpretability, and explanation</a>. Understand workflows and where tools/models may be used. End-user engagement will also help to drive IT implementation if the benefits are clearly articulated to the appropriate stakeholders so work can be prioritised.</p>
+<p>You should engage end users (usually consumers and clinicians) early in co-design, to understand how outputs can be tangible for those who will use them or be impacted by them (see <strong>Transparency, interpretability, and explanation</strong> (<a href="09-evaluation.html#sec-transparency"><span>9.4</span></a>)). It’s important to understand workflows and where tools and/or models may be used. End-user engagement will also help to drive IT implementation if the benefits are clearly articulated to the appropriate stakeholders so work can be prioritised.</p>
 <section id="impacted-customerspatientsgroups" class="level3" data-number="4.2.1">
 <h3 data-number="4.2.1" class="anchored" data-anchor-id="impacted-customerspatientsgroups"><span class="header-section-number">4.2.1</span> Impacted customers/patients/groups</h3>
-<p>Any recommendations for changes or improvements should be interpreted through the lens of the groups they are likely to affect, acknowledging the principle of “nothing about us without us”.</p>
 <p>Data scientists are unlikely to have the correct context or cultural awareness to fully grasp what the data is telling them. This includes Māori and other ethnicity groups, consumers, and perspectives that cover age and ability ranges.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Any recommendations for changes or improvements should be interpreted through the lens of the groups they are likely to affect, acknowledging the principle of “nothing about us without us”.</p>
+</div>
+</div>
+<p><a href="https://www.hqsc.govt.nz/resources/resource-library/code-of-expectations-for-health-entities-engagement-with-consumers-and-whanau/">HQSC’s Code of expectations for health entities’ engagement with consumers and whānau</a> is a useful framework to bear in mind.</p>
 </section>
 <section id="clinicians" class="level3" data-number="4.2.2">
 <h3 data-number="4.2.2" class="anchored" data-anchor-id="clinicians"><span class="header-section-number">4.2.2</span> Clinicians</h3>
-<p>Clinical engagement will often make or break a project's success - both to ensure efficacy and to evangelise the results. In general, clinicians will adopt tools and models that fit into their workflow patterns, saving time or reducing errors.</p>
-<p>Co-designing from the start and having a clinical champion/sponsor to ensure that developments can be incorporated in existing workflows so they can be used will set you up for success see <a href="10-deployment-lifecycle.html#operational-deployment">Operational deployment</a>.</p>
-<p>Interpretability <strong>(understanding the reasoning behind predictions and decisions made by the model)</strong> is also key. Important stakeholders are unlikely to have lots of time to learn about your work, so displaying it in an easy to understand manner is essential. It shouldn't be assumed that everyone will interpret the outputs in the same way, and understand what action is then required. Keep in mind that prospective customers may not be technologically or mathematically savvy.</p>
+<p>Co-designing from the start and having a clinical champion/sponsor to ensure that developments can be incorporated in existing workflows so they can be used will set you up for success (see <strong>Operational deployment</strong> (<a href="10-deployment-lifecycle.html#sec-deployment"><span>10.1</span></a>)).</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Clinical engagement often makes or breaks a project - both to ensure efficacy and to advocate and promote use of the model in practice. In general, clinicians will adopt tools and models that solve a genuine problem, fit into their workflow patterns, and save them time or enhance safety.</p>
+</div>
+</div>
+<p>Interpretability (which is defined as understanding the reasoning behind predictions and decisions made by the model) is also key. Important stakeholders are unlikely to have lots of time to learn about your work, so displaying it in an easy-to-understand way is essential. You shouldn’t assume that everyone will interpret outputs in the same way, and understand what action is then required. Keep in mind that prospective customers may not be technologically or mathematically savvy, too.</p>
 </section>
 </section>
 <section id="collaboration" class="level2" data-number="4.3">
@@ -269,7 +306,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Agree collaboration will be be supported across different organisations (who may all be using different software and systems and have limitations around what can be used).</p></li>
 <li><p>Role definition, responsibilities</p></li>
 <li><p>Regular check-ins/stand-ups are helpful</p></li>
-<li><p>Be mindful of individuals’ schedules and availability, particularly clinicians</p></li>
+<li><p>Be mindful of individuals’ schedules and availability, particularly clinicians.</p></li>
 </ul>
 </section>
 <section id="measuring-success" class="level2" data-number="4.4">
@@ -277,69 +314,77 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><p>Be clear what success looks like. This will be different for research vs.&nbsp;implementation.</p>
 <ul>
-<li><p>Are you looking to learn/measure something specific?</p></li>
-<li><p>Are you expecting secondary or downstream benefits</p></li>
+<li>Are you looking to learn/measure something specific?</li>
+<li>Are you expecting secondary or downstream benefits</li>
 </ul></li>
 <li><p>Making sure the bigger picture is kept in mind - not getting lost in the detail in a way that doesn’t add value</p></li>
-<li><p>Have we reached the point of diminishing returns for investing further in model development?</p></li>
-<li><p>If you have measurable benefits as an objective, you should develop a benefits realisation plan</p></li>
+<li><p>Have you reached the point of diminishing returns for investing further in model development?</p></li>
+<li><p>If you have measurable benefits as an objective, you should develop a benefits realisation plan.</p></li>
 </ul>
 </section>
 <section id="project-management" class="level2" data-number="4.5">
 <h2 data-number="4.5" class="anchored" data-anchor-id="project-management"><span class="header-section-number">4.5</span> Project management</h2>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Data science is an iterative process of development. You’ll progressively learn more about the data, relationships in the data and how effective modelling is.</p>
+</div>
+</div>
+<p>Good project management or product development practices should be applied to data science projects, while accepting that these projects are often experimental or exploratory in nature. Some important project management considerations include:</p>
 <ul>
-<li><p>Data science is an iterative process of development as we progressively learn more about the data, relationships in the data and how effective modelling is.</p></li>
-<li><p>Good project management or product development practices should be applied to data science projects, while accepting that these projects are often experimental or exploratory in nature.</p></li>
-<li><p>Data issues flow ‘downstream’ and can impact every other part of a project. Ensure that sufficient time is allocated upfront to review and correct data quality (this also often happens in cycles - the analysis reveals quirks in the data that can be explored further and corrected).</p></li>
+<li><p>Data issues flow ‘downstream’ and can impact every other part of a project. Ensure that sufficient time is allocated upfront to review and correct data quality (this also often happens in cycles - the analysis reveals quirks in the data that can be explored further and corrected)</p></li>
 <li><p>Project management should strive for continuous visibility, demonstrable progress. How are we tracking against timelines, budget, and the desired outcome?</p></li>
-<li><p>Create open feedback channels where possible</p>
-<ul>
-<li>Think about how to develop mockups/prototypes as early as possible for feedback - can you start with a very simple model, Excel dashboard or static design to help ensure that what you are developing will deliver value?</li>
-</ul></li>
+<li><p>Create open feedback channels where possible. Think about how to develop mockups or prototypes as early as possible for feedback - can you start with a very simple model, Excel dashboard or static design to help ensure that what you are developing will deliver value?</p></li>
 <li><p>Healthcare data science projects will often span multiple organisations</p></li>
 <li><p>Documenting failures and lessons learnt helps prevent repeating mistakes.</p></li>
-<li><p>Technology for progress tracking: Consider</p>
+<li><p>Use technology for progress tracking. Some options include:</p>
 <ul>
-<li><p>Jira,</p></li>
-<li><p>a spreadsheet-based activity tracker,</p></li>
-<li><p>Trello board,</p></li>
-<li><p>emailed summaries of actions and next steps</p></li>
+<li>Jira,</li>
+<li>a spreadsheet-based activity tracker,</li>
+<li>Trello board,</li>
+<li>emailed summaries of actions and next steps</li>
 </ul></li>
 </ul>
 </section>
 <section id="governance" class="level2" data-number="4.6">
 <h2 data-number="4.6" class="anchored" data-anchor-id="governance"><span class="header-section-number">4.6</span> Governance</h2>
-<p>Good governance is fundamentally concerned with the value and risk of a project, and needs to be established to ensure accountability and oversight. Developing policies and procedures are a way of managing risk and clearly articulating principles of accountability, transparency, ethical use, privacy, and consent.</p>
+<p>Good governance is fundamentally concerned with the value and risk of a project, and must be established to ensure accountability and oversight. Developing policies and procedures can help you manage risk and clearly articulate principles of accountability, transparency, ethical use, privacy, and consent.</p>
 <p>You should define and tailor a governance approach based on the needs of your own organisation.</p>
 <p>Usually a data science project is undertaken within a wider programme of work, which has its own governance structure and processes. Occasionally, more substantial initiatives will require their own standalone governance.</p>
-<p>Governance may be applied at different levels, such as governance of data (inputs) or governance of models (product/output). Those involved in model governance should come from diverse demographic and technical backgrounds, including perspectives of consumers and/or those who are impacted by the outputs of your work. Those involved in data governance need to have an understanding of data flows - how data is captured, stored and used.</p>
+<p>Governance may be applied at different levels, such as governance of data (inputs) or governance of models (product/output). People involved in model governance should come from diverse demographic and technical backgrounds, including perspectives of consumers and/or those who are impacted by the outputs of your work. People involved in data governance need to have an understanding of data flows - how data is captured, stored and used.</p>
 <p>Questions to ask:</p>
 <ul>
-<li><p>Are ethics applications required?</p></li>
-<li><p>What existing governance groups and/or processes would need to be involved?</p></li>
-<li><p>Which policies need to be followed?</p></li>
-<li><p>What level of documentation is required throughout?</p></li>
-<li><p>Will this be shared publicly? If so, how?</p></li>
-<li><p>Who is responsible for signing off?</p></li>
-<li><p>Is a new governance structure or process required here?</p></li>
-<li><p>What maintenance and/or ongoing review may be required? <a href="https://www.nice.org.uk/about/what-we-do/our-programmes/evidence-standards-framework-for-digital-health-technologies">NICE Evidence Standards Framework for Digital Health Technologies</a> has a helpful list of points to consider</p></li>
+<li>Are ethics applications required?</li>
+<li>What existing governance groups and/or processes would need to be involved?</li>
+<li>Which policies need to be followed?</li>
+<li>What level of documentation is required throughout?</li>
+<li>Will this be shared publicly? If so, how?</li>
+<li>Who is responsible for signing off?</li>
+<li>Is a new governance structure or process required here?</li>
+<li>What maintenance and/or ongoing review may be required? The <a href="https://www.nice.org.uk/about/what-we-do/our-programmes/evidence-standards-framework-for-digital-health-technologies">NICE Evidence Standards Framework for Digital Health Technologies</a> has a helpful list of points to consider.</li>
 </ul>
 <p>There are many resources for governance groups and executive teams who are looking to write data policies and procedures. These include:</p>
 <ul>
-<li><p><a href="https://www.digital.govt.nz/standards-and-guidance/data/">New Zealand Data and Information Management Principles (open data NZ)</a></p></li>
-<li><p>The government’s open data policies and best-practice guidance for agencies managing how data is stored, published and used.</p></li>
-<li><p><a href="https://neac.health.govt.nz/national-ethical-standards/">National Ethical Standards for Health and Disability Research</a> (NEAC). These standards set out the ethical requirements for researchers, health service providers and disability service providers and apply whether or not research or quality improvement activities require review by an ethics committee.</p></li>
-<li><p><a href="https://www.legislation.govt.nz/act/public/1993/0028/latest/DLM296639.html">Data protection and Privacy Act 1993</a></p></li>
-<li><p><a href="https://privacy.org.nz/assets/Files/Codes-of-Practice-materials/HIPC-1994-incl.-amendments-revised-commentary-edit.pdf">Health Information Privacy Code 1994</a></p></li>
-<li><p><a href="https://www.health.govt.nz/publication/hiso-100642017-health-information-governance-guidelines">HISO 10064:2017 Health Information Governance Guidelines - Manatu Hauora</a> Guidance to the health and disability sector on the safe sharing of health information</p></li>
-<li><p><a href="https://www.data.govt.nz/toolkit/policies/nzgoal/">New Zealand Government Open Access and Licensing framework (NZGOAL)</a> - For those who work for a government agency and want to enable appropriate re-use of your agency’s material by licensing its copyright works or releasing non-copyright material for re-use.</p></li>
-<li><p>What New Zealand people expect from guidelines for data use and sharing, Findings from public engagement February/March 2017 - Data Future Partnership, <em><a href="https://toi-aria.s3.amazonaws.com/documents/Summary-Guidelines.pdf">A Path to Social Licence: Guidelines for Trusted Data Use</a> (original is gone; refer to https://www.toiaria.org/our-projects/our-data-our-way/)</em></p></li>
-<li><p><a href="https://dash.harvard.edu/handle/1/34390353">Layered model for AI governance</a> a conceptual framework for thinking about governance for AI.</p></li>
-<li><p><a href="https://www.tandfonline.com/doi/full/10.1080/03036758.2022.2121290">Lessons learned from developing a COVID-19 algorithm governance framework in Aotearoa New Zealand</a> Practical considerations from a governance group</p></li>
-<li><p><a href="https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-charter/">Algorithm Charter</a></p></li>
-<li><p><a href="https://ethics.health.govt.nz/">Health and Disability Ethics Committees</a></p></li>
-<li><p><a href="https://www.temanararaunga.maori.nz/">Te Mana Rauranga</a></p></li>
-<li><p><a href="https://www.health.govt.nz/our-work/digital-health/vision-health-technology/emerging-health-technology-advice-and-guidance">Ministry of Health - Emerging Health Technology Advice &amp; Guidance</a></p></li>
+<li><p><a href="https://www.digital.govt.nz/standards-and-guidance/data/">New Zealand Data and Information Management Principles</a> (Digital.govt.nz): The government’s open data policies and best-practice guidance for agencies managing how data is stored, published and used</p></li>
+<li><p><a href="https://neac.health.govt.nz/national-ethical-standards/">National Ethical Standards for Health and Disability Research</a> (NEAC): These standards set out the ethical requirements for researchers, health service providers and disability service providers and apply whether or not research or quality improvement activities require review by an ethics committee</p></li>
+<li><p><a href="https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html">Privacy Act 2020</a>: the legal basis for NZ organisations to work with data safely - also see <strong>Ethics &amp; privacy</strong> (<a href="05-data-landscape.html#sec-ethics"><span>5.2</span></a>)</p></li>
+<li><p><a href="https://privacy.org.nz/privacy-act-2020/codes-of-practice/hipc2020/">Health Information Privacy Code 2020</a> - also see <strong>Ethics &amp; privacy</strong> (<a href="05-data-landscape.html#sec-ethics"><span>5.2</span></a>)</p></li>
+<li><p><a href="https://www.health.govt.nz/publication/hiso-100642017-health-information-governance-guidelines">HISO 10064:2017 Health Information Governance Guidelines</a> (Manatū Hauora Ministry of Health): Guidance to the health and disability sector on the safe sharing of health information</p></li>
+<li><p><a href="https://www.data.govt.nz/toolkit/policies/nzgoal/">New Zealand Government Open Access and Licensing framework (NZGOAL)</a> (Data.govt.nz): For those who work for a government agency and want to enable appropriate re-use of your agency’s material by licensing its copyright works or releasing non-copyright material (such as open data) for re-use</p></li>
+<li><p><a href="https://toi-aria.s3.amazonaws.com/documents/Summary-Guidelines.pdf">A Path to Social License: Guidelines for Trusted Data Use</a> (Data Futures Partnership): August 2017 summary with continuing relevance around what New Zealand people expect from guidelines for data use and sharing</p></li>
+<li><p><a href="https://dash.harvard.edu/handle/1/34390353">Layered model for AI governance</a>(Harvard University): A conceptual framework for thinking about governance for AI.</p></li>
+<li><p><a href="https://www.tandfonline.com/doi/full/10.1080/03036758.2022.2121290">Lessons learned from developing a COVID-19 algorithm governance framework in Aotearoa New Zealand</a>: Practical considerations from a governance group</p></li>
+<li><p><a href="https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-charter/">Algorithm Charter</a> (Data.govt.nz): A set of principles which have been signed off by most NZ government organisations</p></li>
+<li><p><a href="https://ethics.health.govt.nz/">Health and Disability Ethics Committees</a>: the health organisation responsible for reviewing and approving research using health data and/or health system users - also see <strong>Ethics &amp; privacy</strong> (<a href="05-data-landscape.html#sec-ethics"><span>5.2</span></a>)</p></li>
+<li><p><a href="https://www.temanararaunga.maori.nz/">Te Mana Rauranga</a>: a network of experts who have collected principles for Māori data sovereignty - also see <strong>Data sovereignty</strong> (<a href="05-data-landscape.html#sec-sovereignty"><span>5.5</span></a>)</p></li>
+<li><p><a href="https://www.health.govt.nz/our-work/digital-health/vision-health-technology/emerging-health-technology-advice-and-guidance">Manatū Hauora Ministry of Health - Emerging Health Technology Advice &amp; Guidance</a></p></li>
 </ul>
 
 
@@ -387,7 +432,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -423,24 +485,42 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -448,7 +528,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
