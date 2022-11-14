@@ -20,7 +20,7 @@ Often you may be involved in multiple projects, and you may find it useful to sh
 
 It is particularly important to ensure plenty of time for clinical input to data understanding and preparation for data science. Defining input features in clinically relevant ways is really important for health data science. For example, 'cancer' might be an important input at an individual level - does this mean currently active cancer? Within the last five years? Any exclusions? Time needs to be allocated to work through and validate these definitions with clinicians.
 
-* Refer to **End-user engagement** below (-@sec-end-user-engagement).
+* Refer to **End-user engagement** below ([-@sec-end-user-engagement]).
 
 * Advisory groups are a good way to elicit feedback. Early in any project try to meet with a group of experts and discuss your research plan. Experts will always understand aspects of the research which need to be considered beyond what is in the data.
 
