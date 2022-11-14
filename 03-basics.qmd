@@ -79,7 +79,7 @@ Consider how the work will be validated or trialled (REF evaluation section) in 
 
 Algorithms and models are only one piece of the puzzle in improving health outcomes. What are the interventions in place or available to take action based on machine learning-driven insights? For example, if someone is identified as being at higher risk of readmission to hospital,what can be offered as a result?
 
-Is an algorithm necessarily the best solution? Consider guidance to avoid overuse and misuse of machine learning in clinical research [@volovici_steps_2022]).
+Is an algorithm necessarily the best solution? Consider guidance to avoid overuse and misuse of machine learning in clinical research ([@volovici_steps_2022]).
 
 ## Funding
 
