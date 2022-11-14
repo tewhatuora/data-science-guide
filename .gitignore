@@ -2,3 +2,4 @@
 /.quarto/
 /_site/
 *.html
+.vscode
