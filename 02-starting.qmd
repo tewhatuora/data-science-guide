@@ -6,6 +6,6 @@ Much like other aspects of business or research, you’ll probably need to convi
 
 If you are coming from a clinical background, you might appreciate some of the context around understanding the data, and its preparation for modelling.
 
-If you are approaching this from a data science background, the unique health data landscape will be important to appreciate.
+If you are approaching this from a data science background, the unique health data landscape [@sec-landscape] will be important to appreciate.
 
 If you are looking for a more general introduction to health data science in general, keep reading from here!
