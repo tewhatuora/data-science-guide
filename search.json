@@ -32,7 +32,7 @@
     "href": "02-starting.html",
     "title": "2  How do I start?",
     "section": "",
-    "text": "Much like other aspects of business or research, you’ll probably need to convince at least one other person that your idea is important and worthy of the time or resources you need to pursue it. After navigating these hurdles and producing a model or other analysis, your carefully crafted tool will need care and periodic review to stay functional and relevant.\nIf you are coming from a clinical background, you might appreciate some of the context around understanding the data, and its preparation for modelling.\nIf you are approaching this from a data science background, the unique health data landscape will be important to appreciate.\nIf you are looking for a more general introduction to health data science in general, keep reading from here!"
+    "text": "Much like other aspects of business or research, you’ll probably need to convince at least one other person that your idea is important and worthy of the time or resources you need to pursue it. After navigating these hurdles and producing a model or other analysis, your carefully crafted tool will need care and periodic review to stay functional and relevant.\nIf you are coming from a clinical background, you might appreciate some of the context around understanding the data, and its preparation for modelling.\nIf you are approaching this from a data science background, the unique health data landscape Chapter 5 will be important to appreciate.\nIf you are looking for a more general introduction to health data science in general, keep reading from here!"
   },
   {
     "objectID": "03-basics.html",
