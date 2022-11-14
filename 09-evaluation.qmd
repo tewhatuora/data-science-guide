@@ -76,7 +76,7 @@ Further resources:
 
 expand
 
-## Transparency, interpretability, and explanation
+## Transparency, interpretability, and explanation {#sec-transparency}
 
 In the context of health it is especially important to communicate findings in a way that builds trust in the model development process and outputs. If this is not done well, people may not adopt a model in practice that would otherwise have positive health impacts.
 

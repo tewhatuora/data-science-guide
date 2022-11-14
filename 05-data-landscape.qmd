@@ -34,7 +34,7 @@ Through a review of Aotearoa New Zealand health datasets, PDH has produced an in
 
 The [Virtual Health Information Network](https://vhin.co.nz/) includes many researchers who are using the Integrated Data Infrastructure supported by Statistics NZ. VHIN's [IDI guides](https://vhin.co.nz/guides/) [@virtual_health_information_network_idi_2017] may be helpful in understanding what centralised data is available. The IDI is accessible through following a specific process.
 
-## Ethics & privacy
+## Ethics & privacy {#sec-ethics}
 
 When dealing with health data, we need to be careful when assessing if a research project requires ethical approval. Ethical approval is typically required for any evidence-generating studies, or studies which propose changes to current standard of care (before any model is evaluated/validated) and should always be sought prior to accessing patient data. Approval is given through a written application process and gives permission for the research to be conducted by named investigators during a specific time period.
 
@@ -218,7 +218,7 @@ If you will be receiving data regularly, it's also better to minimise the number
 
 Finally, please ensure you confirm successful receipt of the data.
 
-## Data sovereignty
+## Data sovereignty {#sec-sovereignty}
 
 Data sovereignty refers to the understanding that data is subject to the laws of the nation within which it is collected and stored. In New Zealand, there is also a focus on where the data is stored and processed. Data agreements should take care to address these points so they are clear to all parties.
 

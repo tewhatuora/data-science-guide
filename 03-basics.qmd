@@ -36,8 +36,9 @@ _Quality improvement_ seeks to improve an existing process that is already of be
 
 Research projects can have varying goals, such as ‘analysis only’ versus ‘analyse and model for future use’. Some projects may have a commercial focus on delivering an outcome for use in practice. It is important to define what you are doing as clearly as possible at the start of a project (see Social licence & consent).
 
-Callout:
+::: {.callout-note}
 All research undertaken in New Zealand using health data requires ethical review (see Ethics and privacy).
+:::
 
 ## Clearly articulate the goal
 
@@ -61,8 +62,9 @@ Choosing the right question is an essential part of any research effort.
 
 Before beginning, get really clear on the problem that is being solved and understand if it is clinically meaningful and adds value. Define the need or problem and then find data/technology to answer it, not the other way around. For model development, define what success looks like e.g how accurate should a model be.
 
-Callout:
+::: {.callout-note}
 Co-design is essential - seek information from different stakeholders (clinicians, patients/consumers, systems users) and research the existing evidence/base or literature on the topic. Simple frameworks like the [Five Whys](https://www.mindtools.com/pages/article/newTMC_5W.htm) can be helpful to apply. The end-users and those impacted by the use of a tool need to understand and believe in the value being delivered to drive engagement and improve translation into real world applications.
+:::
 
 Mapping the clinical workflow into which a model fits in dynamic contexts is also useful - do clinicians have current workarounds for problems or barriers that remain useful, or is there a genuine gap ? Can the model or algorithm be responsive to real world complexity?
 
@@ -70,8 +72,9 @@ Consider the wider health sector and if there is willingness and need for uptake
 
 In building a business case, the value of data science projects needs to be expressed from the perspectives of each of the different stakeholders. Consider the unique selling points, unintended consequences, risks vs benefits from social, economic, health outcomes and reputational perspectives. Articulate value based on each stakeholder’s perspective. Consider engaging with a health economist for specialist advice. Do not exaggerate or over-sell the potential real-life impact or underplay potential risks. (These are discussed more in the Governance section.)
 
-Callout:
+::: {.callout-note}
 Work through the use-case end-to-end before starting, getting clear on how the algorithm will be accessed and used, and what decisions will be made as a result.
+:::
 
 What level of transparency or interpretability (REF transparency section) is required in order for the results to be useful? Do we only care about predictions or are we looking to drive process change?
 
@@ -98,6 +101,6 @@ It is usually necessary to pitch, propose, or otherwise justify a request for fu
 
 ## Legal, IP, and regulatory considerations
 
-Legal advice should be sought, and issues related to legal, intellectual property and/or regulatory issues explicitly discussed and documented prior to starting work. Consider who holds the data you want to use, who owns the models and what may be required for lifecycle management.
+Legal advice should be sought, and issues related to legal, intellectual property and/or regulatory issues explicitly discussed and documented prior to you starting work. Consider who holds the data you want to use, who owns the models and what may be required for lifecycle management.
 
-Software may be considered a medical device if it is used in the diagnosis, treatment, prevention, cure, or mitigation of diseases or other conditions. Depending on how the intended use is defined, it may be subject to country dependent regulatory requirements. Specialised regulatory advisors should be engaged early as the process takes time and documentation for approval may need to be generated during the development process.
+Software may be considered a medical device if it is used in the diagnosis, treatment, prevention, cure, or mitigation of diseases or other conditions. Depending on how the intended use is defined, the software may be subject to country dependent regulatory requirements. Specialised regulatory advisors should be engaged early as the process takes time and documentation for approval may need to be generated during the development process.
