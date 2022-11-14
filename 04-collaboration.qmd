@@ -24,7 +24,7 @@ It is particularly important to ensure plenty of time for clinical input to data
 
 * Advisory groups are a good way to elicit feedback. Early in any project try to meet with a group of experts and discuss your research plan. Experts will always understand aspects of the research which need to be considered beyond what is in the data.
 
-## End-user Engagement {#sec-end-user-engagement}
+## End-user engagement {#sec-end-user-engagement}
 
 End users (usually consumers and clinicians) should be engaged early for co-design, and to understand how outputs can be tangible for those who will use them or be impacted by them. Refer [Transparency, interpretability, and explanation](#clinician-in-the-loop). Understand workflows and where tools/models may be used. End-user engagement will also help to drive IT implementation if the benefits are clearly articulated to the appropriate stakeholders so work can be prioritised.
 
