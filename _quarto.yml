@@ -24,6 +24,7 @@ book:
     - 09-evaluation.qmd
     - 10-deployment-lifecycle.qmd
     - 11-references.qmd
+    - 12-glossary.qmd
   # comments:
   #   hypothesis: true
 
