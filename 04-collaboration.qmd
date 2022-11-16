@@ -6,16 +6,16 @@ Typical health data science projects require a multidisciplinary team. The invol
 
 Some individuals will have multiple skills, but few will have everything they need. Commonly needed skills in the team, or accessible through other organisations, include:
 
-* subject matter expertise in data
-* machine learning
-* system design
-* user interface design
-* clinical
-* governance
-* consumer/patient and specifically impacted communities
-* legal and privacy
-* ethics
-* implementation and change management.
+- subject matter expertise in data
+- machine learning
+- system design
+- user interface design
+- clinical
+- governance
+- consumer/patient and specifically impacted communities
+- legal and privacy
+- ethics
+- implementation and change management.
 
 You’ll often be involved in multiple projects, so it's useful to share expertise across projects.
 
@@ -53,26 +53,26 @@ Interpretability (which is defined as understanding the reasoning behind predict
 
 ## Collaboration
 
-* Agree collaboration will be be supported across different organisations (who may all be using different software and systems and have limitations around what can be used).
+- Agree collaboration will be be supported across different organisations (who may all be using different software and systems and have limitations around what can be used).
 
-* Role definition, responsibilities
+- Role definition, responsibilities
 
-* Regular check-ins/stand-ups are helpful
+- Regular check-ins/stand-ups are helpful
 
-* Be mindful of individuals' schedules and availability, particularly clinicians.
+- Be mindful of individuals' schedules and availability, particularly clinicians.
 
 ## Measuring success
 
-* Be clear what success looks like. This will be different for research vs. implementation.
+- Be clear what success looks like. This will be different for research vs. implementation.
 
-  * Are you looking to learn/measure something specific?
-  * Are you expecting secondary or downstream benefits
+  - Are you looking to learn/measure something specific?
+  - Are you expecting secondary or downstream benefits
 
-* Making sure the bigger picture is kept in mind - not getting lost in the detail in a way that doesn't add value
+- Making sure the bigger picture is kept in mind - not getting lost in the detail in a way that doesn't add value
 
-* Have you reached the point of diminishing returns for investing further in model development?
+- Have you reached the point of diminishing returns for investing further in model development?
 
-* If you have measurable benefits as an objective, you should develop a benefits realisation plan.
+- If you have measurable benefits as an objective, you should develop a benefits realisation plan.
 
 ## Project management
 
@@ -82,17 +82,17 @@ Data science is an iterative process of development. You’ll progressively lear
 
 Good project management or product development practices should be applied to data science projects, while accepting that these projects are often experimental or exploratory in nature. Some important project management considerations include:
 
-* Data issues flow ‘downstream’ and can impact every other part of a project. Ensure that sufficient time is allocated upfront to review and correct data quality (this also often happens in cycles - the analysis reveals quirks in the data that can be explored further and corrected)
+- Data issues flow ‘downstream’ and can impact every other part of a project. Ensure that sufficient time is allocated upfront to review and correct data quality (this also often happens in cycles - the analysis reveals quirks in the data that can be explored further and corrected)
 
-* Project management should strive for continuous visibility, demonstrable progress. How are we tracking against timelines, budget, and the desired outcome?
-* Create open feedback channels where possible. Think about how to develop mockups or prototypes as early as possible for feedback - can you start with a very simple model, Excel dashboard or static design to help ensure that what you are developing will deliver value?
-* Healthcare data science projects will often span multiple organisations
-* Documenting failures and lessons learnt helps prevent repeating mistakes.
-* Use technology for progress tracking. Some options include:
-  * Jira,
-  * a spreadsheet-based activity tracker,
-  * Trello board,
-  * emailed summaries of actions and next steps
+- Project management should strive for continuous visibility, demonstrable progress. How are we tracking against timelines, budget, and the desired outcome?
+- Create open feedback channels where possible. Think about how to develop mockups or prototypes as early as possible for feedback - can you start with a very simple model, Excel dashboard or static design to help ensure that what you are developing will deliver value?
+- Healthcare data science projects will often span multiple organisations
+- Documenting failures and lessons learnt helps prevent repeating mistakes.
+- Use technology for progress tracking. Some options include:
+  - Jira,
+  - a spreadsheet-based activity tracker,
+  - Trello board,
+  - emailed summaries of actions and next steps
 
 ## Governance
 
@@ -100,45 +100,45 @@ Good governance is fundamentally concerned with the value and risk of a project,
 
 You should define and tailor a governance approach based on the needs of your own organisation.
 
-Usually a data science project is undertaken within a wider programme of work, which has its own governance structure and processes. Occasionally, more substantial initiatives will require their own standalone governance. 
+Usually a data science project is undertaken within a wider programme of work, which has its own governance structure and processes. Occasionally, more substantial initiatives will require their own standalone governance.
 
 Governance may be applied at different levels, such as governance of data (inputs) or governance of models (product/output). People involved in model governance should come from diverse demographic and technical backgrounds, including perspectives of consumers and/or those who are impacted by the outputs of your work. People involved in data governance need to have an understanding of data flows - how data is captured, stored and used.
 
 Questions to ask:
 
-* Are ethics applications required? 
-* What existing governance groups and/or processes would need to be involved?
-* Which policies need to be followed?
-* What level of documentation is required throughout?
-* Will this be shared publicly? If so, how?
-* Who is responsible for signing off?
-* Is a new governance structure or process required here?
-* What maintenance and/or ongoing review may be required? The [NICE Evidence Standards Framework for Digital Health Technologies](https://www.nice.org.uk/about/what-we-do/our-programmes/evidence-standards-framework-for-digital-health-technologies) has a helpful list of points to consider.
+- Are ethics applications required?
+- What existing governance groups and/or processes would need to be involved?
+- Which policies need to be followed?
+- What level of documentation is required throughout?
+- Will this be shared publicly? If so, how?
+- Who is responsible for signing off?
+- Is a new governance structure or process required here?
+- What maintenance and/or ongoing review may be required? The [NICE Evidence Standards Framework for Digital Health Technologies](https://www.nice.org.uk/about/what-we-do/our-programmes/evidence-standards-framework-for-digital-health-technologies) has a helpful list of points to consider.
 
 There are many resources for governance groups and executive teams who are looking to write data policies and procedures. These include:
 
-* [New Zealand Data and Information Management Principles](https://www.digital.govt.nz/standards-and-guidance/data/) (Digital.govt.nz): The government’s open data policies and best-practice guidance for agencies managing how data is stored, published and used
+- [New Zealand Data and Information Management Principles](https://www.digital.govt.nz/standards-and-guidance/data/) (Digital.govt.nz): The government’s open data policies and best-practice guidance for agencies managing how data is stored, published and used
 
-* [National Ethical Standards for Health and Disability Research](https://neac.health.govt.nz/national-ethical-standards/) (NEAC): These standards set out the ethical requirements for researchers, health service providers and disability service providers and apply whether or not research or quality improvement activities require review by an ethics committee
+- [National Ethical Standards for Health and Disability Research](https://neac.health.govt.nz/national-ethical-standards/) (NEAC): These standards set out the ethical requirements for researchers, health service providers and disability service providers and apply whether or not research or quality improvement activities require review by an ethics committee
 
-* [Privacy Act 2020](https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html): the legal basis for NZ organisations to work with data safely - also see _Ethics & privacy_ ([-@sec-ethics])
+- [Privacy Act 2020](https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html): the legal basis for NZ organisations to work with data safely - also see _Ethics & privacy_ ([-@sec-ethics])
 
-* [Health Information Privacy Code 2020](https://privacy.org.nz/privacy-act-2020/codes-of-practice/hipc2020/) - also see _Ethics & privacy_ ([-@sec-ethics])
+- [Health Information Privacy Code 2020](https://privacy.org.nz/privacy-act-2020/codes-of-practice/hipc2020/) - also see _Ethics & privacy_ ([-@sec-ethics])
 
-* [HISO 10064:2017 Health Information Governance Guidelines](https://www.health.govt.nz/publication/hiso-100642017-health-information-governance-guidelines) (Manatū Hauora Ministry of Health): Guidance to the health and disability sector on the safe sharing of health information
+- [HISO 10064:2017 Health Information Governance Guidelines](https://www.health.govt.nz/publication/hiso-100642017-health-information-governance-guidelines) (Manatū Hauora Ministry of Health): Guidance to the health and disability sector on the safe sharing of health information
 
-* [New Zealand Government Open Access and Licensing framework (NZGOAL)](https://www.data.govt.nz/toolkit/policies/nzgoal/) (Data.govt.nz): For those who work for a government agency and want to enable appropriate re-use of your agency’s material by licensing its copyright works or releasing non-copyright material (such as open data) for re-use
+- [New Zealand Government Open Access and Licensing framework (NZGOAL)](https://www.data.govt.nz/toolkit/policies/nzgoal/) (Data.govt.nz): For those who work for a government agency and want to enable appropriate re-use of your agency’s material by licensing its copyright works or releasing non-copyright material (such as open data) for re-use
 
-* [A Path to Social License: Guidelines for Trusted Data Use](https://toi-aria.s3.amazonaws.com/documents/Summary-Guidelines.pdf) (Data Futures Partnership): August 2017 summary with continuing relevance around what New Zealand people expect from guidelines for data use and sharing
+- [A Path to Social License: Guidelines for Trusted Data Use](https://toi-aria.s3.amazonaws.com/documents/Summary-Guidelines.pdf) (Data Futures Partnership): August 2017 summary with continuing relevance around what New Zealand people expect from guidelines for data use and sharing
 
-* [Layered model for AI governance](https://dash.harvard.edu/handle/1/34390353)(Harvard University): A conceptual framework for thinking about governance for AI.
+- [Layered model for AI governance](https://dash.harvard.edu/handle/1/34390353)(Harvard University): A conceptual framework for thinking about governance for AI.
 
-* [Lessons learned from developing a COVID-19 algorithm governance framework in Aotearoa New Zealand](https://www.tandfonline.com/doi/full/10.1080/03036758.2022.2121290): Practical considerations from a governance group
+- [Lessons learned from developing a COVID-19 algorithm governance framework in Aotearoa New Zealand](https://www.tandfonline.com/doi/full/10.1080/03036758.2022.2121290): Practical considerations from a governance group
 
-* [Algorithm Charter](https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-charter/) (Data.govt.nz): A set of principles which have been signed off by most NZ government organisations
+- [Algorithm Charter](https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-charter/) (Data.govt.nz): A set of principles which have been signed off by most NZ government organisations
 
-* [Health and Disability Ethics Committees](https://ethics.health.govt.nz/): the health organisation responsible for reviewing and approving research using health data and/or health system users - also see **Ethics & privacy** ([-@sec-ethics])
+- [Health and Disability Ethics Committees](https://ethics.health.govt.nz/): the health organisation responsible for reviewing and approving research using health data and/or health system users - also see **Ethics & privacy** ([-@sec-ethics])
 
-* [Te Mana Rauranga](https://www.temanararaunga.maori.nz/): a network of experts who have collected principles for Māori data sovereignty - also see **Data sovereignty** ([-@sec-sovereignty])
+- [Te Mana Rauranga](https://www.temanararaunga.maori.nz/): a network of experts who have collected principles for Māori data sovereignty - also see **Data sovereignty** ([-@sec-sovereignty])
 
-* [Manatū Hauora Ministry of Health - Emerging Health Technology Advice & Guidance](https://www.health.govt.nz/our-work/digital-health/vision-health-technology/emerging-health-technology-advice-and-guidance)
+- [Manatū Hauora Ministry of Health - Emerging Health Technology Advice & Guidance](https://www.health.govt.nz/our-work/digital-health/vision-health-technology/emerging-health-technology-advice-and-guidance)

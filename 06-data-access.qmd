@@ -1,8 +1,8 @@
 # Accessing and managing data
 
-Data access can be one of the more tricky and time consuming aspects of a data science project. Access should be addressed at a very early stage. ​​It can take a lot of time to understand what data is available, agree on access, create a data sharing agreement, and to receive the data.
+Data access can be one of the more tricky and time-consuming aspects of your data science project. Access should be addressed at a very early stage. ​​It can take a lot of time to understand what data is available, agree on access, create a data sharing agreement, and then receive the data.
 
-Any project that involves access to individual-level healthcare data from an organisation will need upfront discussion with the organisation around existing data governance, privacy impacts and ethics applications. This discussion will include data sovereignty and consideration of equity. Once these points have been clearly delineated, the process of how the data is to be handled should be much clearer.
+Any project that involves access to individual-level healthcare data from an organisation requires upfront discussion with that organisation around existing data governance, privacy impacts and ethics applications. This discussion will include data sovereignty and consideration of equity. Once these points have been clearly delineated, the process of how the data is to be handled should be much clearer.
 
 ## Planning data access
 
@@ -12,7 +12,7 @@ Know what you are asking for. Your data request should be well specified and con
 
 Many providers will have strict data transfer and storage protocols, however these may not always be followed by individuals. How the data will be transferred and stored, and at what frequency should be discussed and agreed, before a .csv file suddenly lands in your inbox.
 
-Data that contains **Protected Health Information (PHI) or Personal Identifiable Information (PII)** cannot be freely shared, however after de-identification (**see section Data Identifiability**) it may be possible to share such data, under certain terms.
+Data that contains **Protected Health Information (PHI) or Personal Identifiable Information (PII)*- cannot be freely shared, however after de-identification (see section **Data Identifiability**) it may be possible to share such data, under certain terms.
 
 ## Data sharing agreements
 
@@ -22,21 +22,21 @@ Data sharing agreements should be written and agreed early, ideally guided by le
 
 Data sharing agreements between a data provider and data recipient typically cover:
 
-* What data will be shared and for how long
+- What data will be shared and for how long
 
-* What is the consented use of the data
+- What is the consented use of the data
 
-* How the data will be shared and stored
+- How the data will be shared and stored
 
-* How the data will be used and its destruction after project completion
+- How and when the data will be destroyed after project completion
 
-* Privacy and confidentiality
+- Privacy and confidentiality
 
-* How security will be ensured
+- How security will be ensured
 
-* How compliance with and breaches of the agreement will be handled
+- How compliance with and breaches of the agreement will be handled
 
-* Anything else relevant, such as de-identification of data
+- Which parties are responsible for each activity, such as de-identification of data.
 
 These agreements cannot escape data protection and privacy laws, and agreements that already exist between a data provider and a patient. This should be taken into consideration before any data is transferred.
 
@@ -46,19 +46,19 @@ Analysis and discussion regarding the data request are also vital at an early st
 
 Some questions to consider are:
 
-* What data sources are available and accessible?
+- What data sources are available and accessible?
 
-* What fields are needed?
+- What fields are needed?
 
-* Can the data be operationalised?
+- Can the data be operationalised?
 
-* What time period is to be covered?
+- What time period is to be covered?
 
-* How do privacy, ethics and equity considerations affect my data request?
+- How do privacy, ethics and equity considerations affect my data request?
 
-* What is the minimum data set that I will need for this project?
+- What is the minimum data set that I will need for this project?
 
-* Who has the ability to provide the data?
+- Who has the ability to provide the data?
 
 ## Waiting....and more waiting
 
@@ -86,12 +86,12 @@ Data governance and data management are distinct concepts with some areas of ove
 | Governance group or executive team or board; a diverse group of stakeholders to cover multiple perspectives | Individual data stewards |
 
 :::{.callout-note}
-This is written from the perspective of a consulting practice, research organisation or any organisation that uses data which it does not directly collect.
+This section is written from the perspective of a consulting practice, research organisation or any organisation that uses data which it does not directly collect.
 :::
 
 ### Data Governance
 
-For more information about Governance see the **Governance** section.
+For more information about Governance see the **Governance*- section.
 
 ### Data Management
 
@@ -105,21 +105,21 @@ On-premises data storage should be on a secure server, and not stored or replica
 
 #### Data register or log
 
-What starts out as a data trickle can quickly become a data flood. It is worthwhile maintaining a register of data from the first file received.
+What starts out as a data trickle can quickly become a data flood. It is worthwhile to maintain a register of data from the first file received.
 
 A data register or log can help you or your organisation track:
 
-* what data you have received
+- what data you have received
 
-* when you received it
+- when you received it
 
-* where you are storing it
+- where you are storing it
 
-* who can/should have access to it
+- who can/should have access to it
 
-* when it should be destroyed
+- when it should be destroyed
 
-* what processed data sets exist and where, particularly if they contain PHI
+- what processed data sets exist and where, particularly if they contain PHI
 
 The format can be tailored to suit your organisation (for example, using a spreadsheet).
 
