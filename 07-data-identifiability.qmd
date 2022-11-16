@@ -2,7 +2,7 @@
 
 It is essential that the sensitive nature of health data is considered throughout the life cycle of the project from the initial stages of idea generation through to data transfer, receipt, preparation, and modelling. For this reason, we've highlighted here the important processes to think about.
 
-## What is sensitive information (PII and PHI)?
+## Sensitive information (PII and PHI)
 
 The [Health Insurance Portability and Accountability Act of 1996 (HIPAA)](https://aspe.hhs.gov/report/health-insurance-portability-and-accountability-act-1996) is a US federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient's consent or knowledge. The definitions provided by HIPAA are important to consider even when you are not working in the United States or with data from the USA.
 
