@@ -15,6 +15,7 @@ The HIPAA defines PII and PHI as:
 | Any piece of information that can be traced to an individual's identity, not necessarily health related (e.g. address). | ​​Any piece of information in an individual's medical record that was created, used, or disclosed during the course of diagnosis or treatment that can be used to personally identify them. [HIPAA has a detailed definition of PII.](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html) |
 
 :::{.callout-note appearance="simple"}
+## Look out for these fields, which HIPAA considers as identifiers:
 * ​​Name
 * Address (including subdivisions smaller than state such as street address, city, county, or zip code)
 * Any dates (except years) that are directly related to an individual, including birthday, date of admission or discharge, date of death, or the exact age of individuals older than 89
