@@ -1,108 +1,52 @@
 # The unique health data landscape {#sec-landscape}
 
-Access to healthcare data requires a lot more up-front consideration than data from other industries.
+Access to health data requires a lot of initial consideration, possibly more than accessing data from other industries. Some key points to consider include:
 
-* Knowing the data you're able to access is critical to understanding what is possible, in addition to understanding the question or problem you are trying to solve.
+- Knowing the data you're able to access is critical to understanding what is possible, in addition to understanding the question or problem you are trying to solve
 
-* Data access can be one of the more tricky and time consuming aspects of a data science project. Access should be addressed at a very early stage. ​​It can take a lot of time to understand what data is available, agree on access, create a data sharing agreement, and to receive the data. See Accessing data
+- Data access can be one of the more tricky and time consuming aspects of a data science project. Access should be addressed at a very early stage. ​​It can take a lot of time to understand what data is available, agree on access, create a data sharing agreement, and to receive the data (**refer to Accessing data section**)
 
-* Health data is extremely sensitive and has more restrictions and controls. Those who have access to it are in a privileged position and should treat the data with utmost care.
+- Health data is extremely sensitive and has restrictions and controls due to the close linkage with individual lives. Those who have access to data are in a privileged position and should treat this taonga (treasure) with utmost care.
 
-* Timeliness of health data is different and this can also significantly impact model evaluation. There can be significant lags between data being collected, processed and refreshed. For example, there is a specific chain of events that lead to updates to national health data collections, and this can take a significant amount of time - often many months. This can also affect planning for evaluations, as a model that goes live today may not be able to be effectively evaluated until several months later.
+- New Zealand's health system provides a unique individual identifier - the [National Health Index (NHI) number](https://www.health.govt.nz/our-work/health-identity/national-health-index) - which lets data from different health sources be linked together, in contrast to systems used in other countries which make this linkage more difficult.
 
-* Healthcare data is often complex and 'dirty' (inaccurate, incomplete or inconsistent). When possible, liaise with analysts who work within the organisation to gain a local understanding of the data. Clinical expertise is required to put the information in context
+- Timeliness of health data can be different and this can also significantly impact model evaluation. There can be significant lags between data being collected, processed and refreshed. For example, there is a specific chain of events that lead to updates to national health data collections, and this can take a significant amount of time - often many months. This can also affect planning for evaluations, as a model that goes live today may not be able to be effectively evaluated until several months later.
 
-* All of us have obligations as Te Tiriti partners to improve equity for Māori, including health equity. Depending on your bckground, this concept may be less familiar, but it is imperative to understand when working with health data and/or answering health questions.
+- Healthcare data is often complex and 'dirty' (inaccurate, incomplete or inconsistent). When possible, liaise with analysts who work within the organisation to gain a local understanding of the data. Clinical expertise is required to put the information in context
 
-* There are also significant considerations related to ethics, privacy, consent and social licence. The sections that follow cover this.
+- All of us have obligations as Te Tiriti partners to improve equity for Māori, including health equity. Depending on your background, this concept may be less familiar, but it is imperative to understand when working with health data and/or answering health questions.
 
-NB HQSC framework
+- There are also significant considerations related to ethics, privacy, consent and social licence. The sections that follow cover these areas.
 
 ## Finding data
 
-Data for health data science projects is everywhere! There is no shortage of available data in New Zealand. However, keep the following concepts in mind when you are considering how to find data, or access data you may already be interested in:
+Data for health data science projects is everywhere! There's no shortage of available data in New Zealand. However, keep the following concepts in mind when you are considering how to find data, or access data you may already be interested in:
 
-* Data can only be used for the purpose for which it was collected; any other use is called "secondary purpose" and requires additional consent (see **Use and re-use of data**)
+- Data can only be used for the purpose for which it was collected; any other use is called "secondary purpose" and requires additional consent (**see Use and re-use of data section**)
 
-* Health data used for research purposes needs thought around how the research will be conducted efficiently, ethically, and with privacy and safety front-of-mind.
+- Health data used for research purposes needs thought around how the research will be conducted efficiently, ethically, and with privacy and safety front-of-mind.
 
-### Public health data
-
-For understanding population trends and context, aggregated data sets and web tools are publicly available via the Ministry of Health and Statistics New Zealand (Stats NZ). Micro data (at the level of the individual) is available to researchers on application to National Collections or Stats NZ for Confidentialised Unit Record Files (CURFs). Dissemination of micro data is in accordance with the Privacy Act, health legislation and contracts and access is strictly controlled according to use.
-
-Through a review of Aotearoa New Zealand health datasets, PDH has produced an interactive and updateable list of data sources available in New Zealand [@precision_driven_health_aotearoa_2022]. Visit this at [data.precisiondrivenhealth.com](https://data.precisiondrivenhealth.com).
-
-The [Virtual Health Information Network](https://vhin.co.nz/) includes many researchers who are using the Integrated Data Infrastructure supported by Statistics NZ. VHIN's [IDI guides](https://vhin.co.nz/guides/) [@virtual_health_information_network_idi_2017] may be helpful in understanding what centralised data is available. The IDI is accessible through following a specific process.
-
-## Ethics & privacy {#sec-ethics}
-
-When dealing with health data, we need to be careful when assessing if a research project requires ethical approval. Ethical approval is typically required for any evidence-generating studies, or studies which propose changes to current standard of care (before any model is evaluated/validated) and should always be sought prior to accessing patient data. Approval is given through a written application process and gives permission for the research to be conducted by named investigators during a specific time period.
-
-Many of the questions asked in an ethics application are important in evaluating the risks and benefits and can indicate if there is social licence for the intended research. The application process forces researchers and organisations to consider whether their work has a net benefit for society (see Social license - use of health data).
-
-Ethics approvals in New Zealand can be provided at a national level ([Health and Disability Ethics Committees \[HDEC\]](https://ethics.health.govt.nz/)) or local level (e.g. [Auckland Health Research Ethics Committee](https://www.auckland.ac.nz/en/research/about-our-research/human-ethics/ahrec.html)). On top of this, hospitals may have their own research offices which may require separate notification (e.g. [Research Office, Hauora a Toi Bay of Plenty, Te Whatu Ora)](https://www.bopdhb.health.nz/learning-and-research/clinical-campus/research-office/)
-
-:::{.callout-important}
-Seek appropriate ethics approvals prior to accessing patient data.
-
-The implications of assuming that ethics is not required can have significant downstream effects on a project (e.g. reputation, delays). HDEC can provide 'Scope of Review' services to advise if the research you are doing is considered exempt from requiring an ethics application. Consider seeking written evidence of this as an assurance for stakeholders. See HDEC website for the current process: find out if your study requires HDEC review [on the HDEC website](https://ethics.health.govt.nz/hdec-reviews-and-approvals/find-out-if-your-study-requires-hdec-review/)
-:::
-
-:::{.callout-important}
-Some ethics applications can take months before an approval is granted, so allow adequate time for this process, factoring when review meetings are held. There is also the potential that further questions may be asked at this review stage.
-:::
-
-Consider if existing patient consent is sufficient to cover use of the data.
-
-Generally all use of administrative health data for research purposes will need to go through the HDEC process. Consent for use of administrative data is mainly around its use for improving the care of that individual within the health service or quality improvement processes (defined as audits or other activities). Unless the work is specifically with business intelligence within a healthcare organisation, any projects should be checked to see if ethical approval from HDEC is required.
-
-Privacy Impact Assessments should also be conducted at an early stage to identify potential data protection risks on the data of the individuals included. Measures should be adopted to eliminate or mitigate risks. Independent ethical reviews could be commissioned if needed.
-
-Helpful references:
-
-* [http://ethicstoolkit.ai/](http://ethicstoolkit.ai/) - A useful checklist to address ethical and governance questions
-
-* [National Ethical Standards for Health and Disability Research](https://neac.health.govt.nz/national-ethical-standards/) (NEAC) - These standards set out the ethical requirements for researchers, health service providers and disability service providers, and apply whether or not research or quality improvement activities require review by an ethics committee.
-
-* [A Research Ethics Framework for the Clinical Translation of Healthcare Machine Learning](https://www.tandfonline.com/doi/full/10.1080/15265161.2021.2013977)
-
-### Consent
-
-Before using data - particularly data that contains sensitive information - you need consent to use it. In the General Data Protection Regulation (GDPR), a regulation in EU law on data protection and privacy, consent is defined as follows:
-
-:::{.callout-note appearance="simple"}
-"any freely given, specific, informed and unambiguous indication of the data subject's wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her."
-:::
-
-Some health providers allow patients the opportunity to opt in for their data to be used for research and operational purposes, or to improve their care. Opting in may or may not explicitly allow for the processing of their de-identified data by third parties. More commonly, the patient has not provided explicit consent. Whether it is appropriate to use this data will depend on context (for example public good vs commercial gain), the degree to which the data is anonymised, whether data is provided in aggregated form, and the purpose the data is being used for.
-
-### Use and re-use of data
-
-'Use' of data relates to using data for the purpose for which it was consented and collected. Re-use of data (or secondary use) is when we use data collected for another purpose.
-
-When we re-use data, we should be mindful of its purpose, coverage, bias, timeliness, and applicability to the secondary use. For instance, the National Minimum Data Set is gathered for policy formation, performance monitoring, research and review. It may be useful for understanding hospitalisations, but does not provide a complete picture of an individual\'s health journey.
-
-### Social license - use of health data
-
-Social licence is the implied permission to make decisions about the management and use of the public data in a way that ensures trust and confidence in the way that data is managed. Organisations who store health data are stewards. Any use of data, outside of that explicitly consented, is subject to social licence.
-
-Conceptually, the level of engagement required to gain social license is higher for decisions that are more likely to affect an individual and are fully automated, compared to those that are manual and affect an entire population. Social licence isn't 'gained' or 'approved'; organisations need to gauge people's thoughts, feelings, perceptions on the use of their data. These attitudes are dynamic and constantly evolving.
-
-Assurance to stakeholders should be provided through transparency and governance to limit reputational harm, particularly when using patient data in a commercial context. Consider what data you are handling, how identifiable it is and if patient consent is specifically required. This is particularly important for data that may be re-used for secondary purposes - the original consent should be carefully reviewed. Data should be used for public good in a way that is equitable, with consideration for any unintended consequences, such as increased clinician workload (due to workflow disruption), potential for misuse of the model, and perpetuating biases that exist in the data.
-
-Data needs to be treated with care and a suitable data management plan can help.
-
-In our experience, privacy, confidentiality, security, transparency, communication and the purpose for which data is used, are often raised as concerns by clinicians, administrators, legal experts, and other stakeholders.
+To understand population trends and context, aggregated data sets and web tools are publicly available via the Ministry of Health and Statistics New Zealand (Stats NZ). Micro data (at the level of the individual) is available to researchers on application to National Collections or Stats NZ for Confidentialised Unit Record Files (CURFs). Dissemination of micro data is in accordance with the Privacy Act, health legislation and contracts and access is strictly controlled according to use.
 
 Useful resources:
 
-* [A Path to Social Licence Guidelines for Trusted Data Use - Data Futures Partnership 2017](https://toi-aria.s3.amazonaws.com/documents/Summary-Guidelines.pdf)
+- Through a review of Aotearoa New Zealand health datasets, PDH has produced \[an interactive and updateable list of data\](https://data.precisiondrivenhealth.com) available in New Zealand. This includes data from \[Figure.nz\](https://figure.nz/) and many other sources.
 
-* [Research on social licence for health data re-use](https://www.health.govt.nz/publication/research-social-licence-health-data-re-use) Manatu Hauora research providing context about the re-use of health data and social licence.
+- [Where can I find health information?](https://www.health.govt.nz/nz-health-statistics/where-can-i-find-health-information) (Manatū Hauora): Data sources commonly used when analysing the health of New Zealand populations
+
+- [Health statistics and data sets](https://www.health.govt.nz/nz-health-statistics/health-statistics-and-data-sets) (Manatū Hauora)
+
+### The Integrated Data Infrastructure
+
+Supported by Statistics NZ, the [Integrated Data Infrastructure (IDI)](https://www.stats.govt.nz/integrated-data/integrated-data-infrastructure/) is a repository of individual-level data from multiple government sources, able to be linked together, anonymised, and used for research. It's a massive resource which is accessible through a prescribed process with very high safety and privacy requirements. It may not be possible to derive individual-level insights from IDI data.
+
+The Virtual Health Information Network](https://vhin.co.nz/) includes many researchers who are using the IDI. VHIN's IDI guides](https://vhin.co.nz/guides/) can help you understand what centralised data is available and how it could be used in your project.
+
+If you're interested in what you could do with the IDI, it's best to make contact with a researcher who already has experience in using this platform. Refer to the [list of research using Stats NZ microdata](https://cdm20045.contentdm.oclc.org/digital/collection/p20045coll17/search/searchterm/integrated%20data%20infrastructure%20(idi)/field/projeb/mode/exact/conn/and/order/dmcreated/ad/desc).
 
 ## Understand the data
 
-Knowing the data you're able to access is critical to understanding what is possible, in addition to understanding the question or problem you are trying to solve.
+Knowing all the data you're able to access is critical to understanding what is possible, in addition to understanding the question or problem you are trying to solve.
 
 :::{.callout-tip}
 Healthcare data is often complex and 'dirty' (inaccurate, incomplete or inconsistent). When possible, liaise with analysts who work within the organisation to gain a local understanding of the data.
@@ -112,175 +56,116 @@ Health data is often only available after a significant lag time, and with a slo
 
 At an early stage, it is valuable to consider:
 
-* Data landscape - What data is collected? How is access managed? Does it help address the problem you are trying to solve?
+- **Data landscape** - What data is collected? How is access managed? Does it help address the problem you are trying to solve?
 
-* Characteristics - what is the format, type & size? When was the data collected? How often will you receive it?
+- **Characteristics** - What is the format, type and size of data? When was the data collected? How often will you receive it?
 
-* How much historical data is available, and what is the quality? Use the minimum necessary!
+- **Availability and quality** - How much historical data is available, and what is the quality? Use the minimum necessary!
 
-* What purpose was it collected for, and does that influence your interpretation?
+- **Purpose** - What purpose was the data collected for, and does that influence your interpretation?
 
-* Consent - Is the use of data in this covered by existing patient consent?
+- **Consent** - Is the use of data covered by existing patient consent?
 
-* Data collection, maintenance, publication - Distinguish between data already collected and new data created by the study. How do you plan to maintain/publish this data?
+- **Data collection, maintenance, publication** - Distinguish between data already collected and new data created by the study. How do you plan to maintain and/or publish this data?
 
-* Personally identifiable information - Is de-identification required? Who will do this? Refer to **Handling personal health information**
+- **Personally identifiable information** - Is de-identification required? Who will do this? (See **Handling personal health information**)
 
-* Data availability - how long will it take to source and are there any reporting or system lags?
+- **Data availability** - How long will it take to source and are there any reporting or system lags?
 
-* Labelling/annotation - does the project need Human In the Loop (HITL) Mechanism for annotating and validating the input and output data?
+- **Labelling/annotation** - Does the project need Human In the Loop (HITL) mechanism for annotating and validating the input and output data?
 
-In some cases, publicly accessible datasets may be a useful starting point. Be sure to read the access requirements linked to using these.
+## Ethics & privacy {#sec-ethics}
 
-Data sources, including New Zealand and publicly available:
+Concepts around the legal, privacy, and ethical dimensions of health data projects are often interlinked. Legal perspectives consider the fit of the project with the laws of the data source jurisdiction as well as any legal requirements of the analysis location, if these aren't the same place. Privacy perspectives are around what data is collected, how it's collected safely, where it is stored, and its lifecycle. Ethical conduct of a project includes ensuring the risks to participants of data use are outweighed by the benefits of the project.
 
-* [PDH's references to data sources used in health](https://data.precisiondrivenhealth.com/).
+All research in New Zealand which uses data from humans needs to be undertaken in an ethical manner. In some cases, approval from a registered ethics committee is required before the project can be started. In many cases, the organisation undertaking the research (such as your employer) may also have specific research or ethical approval processes as well.
 
-* [Where can I find health information? | Ministry of Health NZ](https://www.health.govt.nz/nz-health-statistics/where-can-i-find-health-information) Data sources commonly used when analysing the health of New Zealand populations.
+When dealing with health data, be careful when assessing if a data science project requires ethical approval. Ethical approval is typically required for any evidence-generating studies, or studies which propose changes to current standard of care (before any model is evaluated/validated) and should always be sought prior to accessing patient data. Ethical approval is given through a written application process and gives permission for the research to be conducted by named investigators during a specific time period.
 
-* [Manatu Hauora - Health statistics and data sets](https://www.health.govt.nz/nz-health-statistics/health-statistics-and-data-sets)
+Ethics approvals in New Zealand are provided through committees which have had centralised approval to follow appropriate standards. The ethical standards are set by the [National Ethical Standards for Health and Disability Research](https://neac.health.govt.nz/national-ethical-standards/) (NEAC) and apply to researchers, health service providers and disability service providers, regardless of whether or not an additional approval process is required. Think of these like a set of best practices for undertaking work with health data or human participants - follow them regardless of whether anyone is requiring you to do so!
 
-## Accessing data
+Most formal approvals for health data research are provided at a national level by the [Health and Disability Ethics Committees (HDEC)](https://ethics.health.govt.nz/); in some cases a more localised approval is required instead or in addition (for example, the [Auckland Health Research Ethics Committee](https://www.auckland.ac.nz/en/research/about-our-research/human-ethics/ahrec.html)).
 
-Data access can be one of the more tricky and time consuming aspects of a data science project. Access should be addressed at a very early stage. ​​It can take a lot of time to understand what data is available, agree on access, create a data sharing agreement, and to receive the data.
+On top of this, hospitals or clinical organisations usually have their own research offices which require separate notification (such as [Research Office, Hauora a Toi Bay of Plenty, Te Whatu Ora](https://www.bopdhb.health.nz/learning-and-research/clinical-campus/research-office/)).
 
-Any project that involves access to individual-level healthcare data from an organisation will need upfront discussion with the organisation around existing data governance, privacy impacts and ethics applications. This discussion will include data sovereignty and consideration of equity. Once these points have been clearly delineated, the process of how the data is to be handled should be much clearer.
+Find out if your study requires HDEC review [on the HDEC website](https://ethics.health.govt.nz/hdec-reviews-and-approvals/find-out-if-your-study-requires-hdec-review/).
 
-### Planning data access
+Many of the questions asked in an ethics application and approval process are important in evaluating the risks and benefits and can indicate if there is social licence for the intended research. This process forces researchers and organisations to consider whether their work has a net benefit for society. The concept of "social license" or societal acceptance for use of health data is a related idea (see **Social license - use of health data**).
 
-To understand data access requirements we must consider the sensitive nature of health data, consent, security and technical needs.
+:::{.callout-important}
+Seek appropriate ethics approvals prior to accessing patient data.
 
-Know what you are asking for. Your data request should be well specified and considered and it will take some time, discussion with the health data provider and analysis to formulate.
-
-Many providers will have strict data transfer and storage protocols, however these may not always be followed by individuals. How the data will be transferred and stored, and at what frequency should be discussed and agreed, before a .csv file suddenly lands in your inbox.
-
-Data that contains Protected Health Information (PHI) or Personal Identifiable Information (PII) cannot be freely shared, however after de-identification (see section [Data Identifiability](#data-identifiability)) it may be possible to share such data, under certain terms.
-
-### Data sharing agreements
-
-:::{.callout-tip}
-Data sharing agreements should be written and agreed early, ideally guided by legal advice.
+The implications of assuming that ethics is not required can have significant downstream effects on a project, such as reputation issues or delays. HDEC can provide 'Scope of Review' services to advise if the research you are doing is considered exempt from requiring an ethics application. Consider seeking written evidence of this as an assurance for stakeholders. See [the HDEC website](https://ethics.health.govt.nz/hdec-reviews-and-approvals/find-out-if-your-study-requires-hdec-review/) for the current process.
 :::
 
-Data sharing agreements between a data provider and data recipient typically cover:
+:::{.callout-important}
+Some ethics applications can take months before an approval is granted, so allow adequate time for this process, factoring in when review meetings are held. It's also likely that further questions may be asked at this review stage.
+:::
 
-* What data will be shared and for how long
+:::{.callout-important}
+Consider if existing patient consent is sufficient to cover use of the data. See _Consent_ below (**reference**).
+:::
 
-* What is the consented use of the data
+Generally all use of administrative health data for research purposes will need to go through the HDEC process. Consent for use of administrative data is mainly around its use for improving the care of that individual within the health service or quality improvement processes (defined as audits or other activities). Unless the work is specifically with business intelligence within a healthcare organisation, you should ask for assurance to confirm if ethical approval from HDEC is required, or not.
 
-* How the data will be shared and stored
+Privacy Impact Assessments (PIAs) should also be conducted at an early stage to identify potential data protection risks on the data of the individuals included. Measures should be adopted to eliminate or mitigate risks. The Office of the Privacy Commissioner [offers some guidance on PIAs](https://privacy.org.nz/publications/guidance-resources/privacy-impact-assessment/).
 
-* How the data will be used and its destruction after project completion
+Useful resources:
 
-* Privacy and confidentiality
+- [A useful checklist to address ethical and governance questions](http://ethicstoolkit.ai/)
 
-* How security will be ensured
+- [A Research Ethics Framework for the Clinical Translation of Healthcare Machine Learning](https://www.tandfonline.com/doi/full/10.1080/15265161.2021.2013977)
 
-* How compliance with and breaches of the agreement will be handled
+### Consent
 
-* Anything else relevant, such as de-identification of data
+You need consent before you can use data - particularly data that contains sensitive information. In the General Data Protection Regulation (GDPR), a regulation in EU law on data protection and privacy, consent is defined as:
 
-These agreements cannot escape data protection and privacy laws, and agreements that already exist between a data provider and a patient. This should be taken into consideration before any data is transferred.
+> *"any freely given, specific, informed and unambiguous indication of the data subject's wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her."*
 
-### The data request
+:::{.callout-note appearance="simple"}
+Or use this format?
+:::
 
-Analysis and discussion regarding the data request are also vital at an early stage. Health data is sensitive and describes people in their most personal and vulnerable moments. It is a privilege to be working with it, so be specific with your request and don't seek more than is really needed.
+Some health providers give patients the opportunity to opt in for their data to be used for research and operational purposes, or to improve their care. Opting in may or may not explicitly allow for the processing of their de-identified data by third parties. More commonly, the patient hasn't provided explicit consent.
 
-Some questions to consider are:
+Whether it's appropriate to use this data will depend on context (for example public good vs. commercial gain), the degree to which the data is anonymised, whether data is provided in aggregated form, and the purpose the data is being used for.
 
-* What data sources are available and accessible?
+### Use and re-use of data
 
-* What fields are needed?
+'Use' of data relates to using data for the purpose for which it was consented and collected. Re-use of data (or secondary use) is when you use data collected for another purpose.
 
-* Can the data be operationalised?
+When you re-use data, you should be mindful of its purpose, coverage, bias, timeliness, and applicability to the secondary use. For instance, the National Minimum Data Set is gathered for policy formation, performance monitoring, research and review. It may be useful for understanding hospitalisations, but does not provide a complete picture of an individual's health journey.
 
-* What time period is to be covered?
+### Social license - use of health data
 
-* How do privacy, ethics and equity considerations affect my data request?
+Social licence is the implied permission to make decisions about the management and use of the public data in a way that ensures trust and confidence in the way that data is managed. Organisations who store health data are stewards. 
 
-* What is the minimum data set that I will need for this project?
+:::{.callout-important}
+Any use of data, outside of that which has been explicitly consented, is subject to ethics and requires consideration of social licence.
+:::
 
-* Who has the ability to provide the data?
+Conceptually, the level of engagement required to gain social license is higher for decisions that are more likely to affect an individual and are fully automated, compared to those that are manual and affect an entire population. Social licence isn’t ‘gained’ or ‘approved’; organisations need to gauge people’s thoughts, feelings, perceptions on the use of their data. These attitudes are dynamic and constantly evolving.
 
-### Waiting....and more waiting
+Assurance to stakeholders should be provided through transparency and governance to limit reputational harm, particularly when using patient data in a commercial context. Consider what data you’re handling, how identifiable it is and if patient consent is specifically required. This is particularly important for data that may be re-used for secondary purposes - the original consent should be carefully reviewed.
 
-Once you have your plan in place, smooth sailing isn't guaranteed. De-identification, data sharing agreements and data requests can take time. But even when an agreement is signed and plans are ready, you might find a lot more time passes while waiting for data.
+Data should be used for public good in a way that is equitable, with consideration for any unintended consequences, such as increased clinician workload (due to workflow disruption), potential for misuse of the model, and perpetuating biases that exist in the data. Data needs to be treated with care and a suitable data management plan can help.
 
-Health data providers usually have to undertake a lot of work before sending data in the form agreed. Data may be located in different systems, extraction may require booking in technical resources and the data may need pre-processing and annotation. Also, while you may be eagerly awaiting the data, it may not be afforded the same priority by a busy health provider. Patience is a virtue, but the occasional gentle nudge may be necessary. You also need to manage your own workload, and you don't want all of your data buses arriving at once.
+In our experience, privacy, confidentiality, security, transparency, communication and the purpose for which data is used, are often raised as concerns by clinicians, administrators, legal experts, and other stakeholders.
 
-### Transferring data
+Useful resources:
 
-Some providers may require that you use their systems, whether on premises or in the cloud, so that the data never 'leaves' their organisation. Others may be happy to upload their data to a secure cloud-based server provided by you, and some may have their own file transfer systems.
+* [A Path to Social Licence Guidelines for Trusted Data Use - Data Futures Partnership 2017](https://toi-aria.s3.amazonaws.com/documents/Summary-Guidelines.pdf) (PDF)
 
-Try to avoid email for data transfer, even if a file is password protected. Emailed data can be difficult to track and audit. This may result in multiple copies being saved using up storage capacity. Files are also frequently too large to be attached. Security is a particular concern, especially where either sender or recipient uses a third-party email service -- you do not know how many servers are handling that message.
-
-If you will be receiving data regularly, it's also better to minimise the number of transfers by having data sent in batches. Any data you receive should also be different from what you have already received. Have this conversation with the health data provider at the planning stage.
-
-Finally, please ensure you confirm successful receipt of the data.
+* Manatū Hauora [research on social licence for health data re-use](https://www.health.govt.nz/publication/research-social-licence-health-data-re-use)
 
 ## Data sovereignty {#sec-sovereignty}
 
-Data sovereignty refers to the understanding that data is subject to the laws of the nation within which it is collected and stored. In New Zealand, there is also a focus on where the data is stored and processed. Data agreements should take care to address these points so they are clear to all parties.
+Data sovereignty refers to the understanding that data is subject to the laws of the nation within which it is collected and stored. In New Zealand, there is also a focus on where the data is stored and processed. Data agreements should take care to address these points so they are clear to all parties. Data handling and ethical dimensions of the project also need to ensure data sovereignty is at front of mind.
 
 Māori data sovereignty recognises that Māori data should be subject to Māori governance. Māori data sovereignty supports tribal sovereignty and the realisation of Māori and iwi aspirations. Māori must be included in any work about Māori data. An equity lens is required and ideally should include Māori in the research team as well as in external review/advisor roles.
 
-Useful resources on data sovereignty include:
+Useful resources:
 
 * [Te Mana Raraunga](https://www.temanararaunga.maori.nz/) (Māori Data Sovereignty Network) has helpful resources and guidance.
 
-* HRC also has [Guidelines for Researchers on Health Research Involving Māori](https://www.hrc.govt.nz/resources/guidelines-researchers-health-research-involving-maori).
-
-## Data governance and Data management
-
-Data governance and data management are distinct concepts with some areas of overlap and linkage. Both areas concern how we access, store, log, secure, maintain, use, share and destroy data in an efficient and standardised way, guided by principles such as accountability, transparency, ethical use, privacy, consent and data availability, integrity and quality.
-
-| Data governance | Data management |
-|-----------------|-----------------|
-| Maintains oversight, provides accountability, shapes and communicates policies and procedures | Enacts policies and procedures for day-to-day handling of data |
-| Governance group or executive team or board; a diverse group of stakeholders to cover multiple perspectives | Individual data stewards |
-
-:::{.callout-note}
-This is written from the perspective of a consulting practice, research organisation or any organisation that uses data which it does not directly collect.
-:::
-
-### Data Governance
-
-For more information about Governance see the **Governance** section.
-
-### Data Management
-
-#### Storage and security
-
-With a data access plan in place, and an understanding of what is available, appropriate storage and security requirements need to be in place.
-
-When storing data on premises or on your secure cloud-based service, there should be a clear process for access control. Larger, regular batches of data are preferable, but where there is irregularity in timing and peaks in volume, cloud based auto-scaled storage may help keep costs down.
-
-On-premises data storage should be on a secure server, and not stored or replicated on personal computers.
-
-#### Data register or log
-
-What starts out as a data trickle can quickly become a data flood. It is worthwhile maintaining a register of data from the first file received.
-
-A data register or log can help you or your organisation track:
-
-* what data you have received
-
-* when you received it
-
-* where you are storing it
-
-* who can/should have access to it
-
-* when it should be destroyed
-
-* what processed data sets exist and where, particularly if they contain PHI
-
-The format can be tailored to suit your organisation (for example, using a spreadsheet).
-
-#### Tools for data management
-
-Managing data for a small organisation or research team could be as simple as having a secure storage solution and a spreadsheet to keep track of important metadata. Larger organisations will likely need formal data governance, data policies in place and data stewards to manage the use, storage and security of data. Tailor your approach based on the data being handled.
-
-Consider version control for all aspects of the project, including data; depending on the tooling that you use, this may already be an included capability. [DVC](https://dvc.org/) is one tool designed specifically for data version control for machine learning. Your development environment or cloud storage solution may also include features of this type. Data files can be named with versions, however this method is not as robust as automated versioning that is managed by a tool.
-
-Data management tools are responsible for carrying a wide range of data or documents.
+* The Health Research Council of NZ (HRC) also produces [Guidelines for Researchers on Health Research Involving Māori](https://www.hrc.govt.nz/resources/guidelines-researchers-health-research-involving-maori).

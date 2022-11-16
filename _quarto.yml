@@ -18,13 +18,14 @@ book:
     - 03-basics.qmd
     - 04-collaboration.qmd
     - 05-data-landscape.qmd
-    - 06-data-identifiability.qmd
-    - 07-data-preparation.qmd
-    - 08-modelling.qmd
-    - 09-evaluation.qmd
-    - 10-deployment-lifecycle.qmd
-    - 11-references.qmd
-    - 12-glossary.qmd
+    - 06-data-access.qmd
+    - 07-data-identifiability.qmd
+    - 08-data-preparation.qmd
+    - 09-modelling.qmd
+    - 10-evaluation.qmd
+    - 11-deployment-lifecycle.qmd
+    - 12-references.qmd
+    - 13-glossary.qmd
   # comments:
   #   hypothesis: true
 

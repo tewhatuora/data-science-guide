@@ -1,0 +1,132 @@
+# Accessing and managing data
+
+Data access can be one of the more tricky and time consuming aspects of a data science project. Access should be addressed at a very early stage. ​​It can take a lot of time to understand what data is available, agree on access, create a data sharing agreement, and to receive the data.
+
+Any project that involves access to individual-level healthcare data from an organisation will need upfront discussion with the organisation around existing data governance, privacy impacts and ethics applications. This discussion will include data sovereignty and consideration of equity. Once these points have been clearly delineated, the process of how the data is to be handled should be much clearer.
+
+## Planning data access
+
+To understand data access requirements we must consider the sensitive nature of health data, consent, security and technical needs.
+
+Know what you are asking for. Your data request should be well specified and considered and it will take some time, discussion with the health data provider and analysis to formulate.
+
+Many providers will have strict data transfer and storage protocols, however these may not always be followed by individuals. How the data will be transferred and stored, and at what frequency should be discussed and agreed, before a .csv file suddenly lands in your inbox.
+
+Data that contains **Protected Health Information (PHI) or Personal Identifiable Information (PII)** cannot be freely shared, however after de-identification (**see section Data Identifiability**) it may be possible to share such data, under certain terms.
+
+## Data sharing agreements
+
+:::{.callout-tip}
+Data sharing agreements should be written and agreed early, ideally guided by legal advice.
+:::
+
+Data sharing agreements between a data provider and data recipient typically cover:
+
+* What data will be shared and for how long
+
+* What is the consented use of the data
+
+* How the data will be shared and stored
+
+* How the data will be used and its destruction after project completion
+
+* Privacy and confidentiality
+
+* How security will be ensured
+
+* How compliance with and breaches of the agreement will be handled
+
+* Anything else relevant, such as de-identification of data
+
+These agreements cannot escape data protection and privacy laws, and agreements that already exist between a data provider and a patient. This should be taken into consideration before any data is transferred.
+
+## The data request
+
+Analysis and discussion regarding the data request are also vital at an early stage. Health data is sensitive and describes people in their most personal and vulnerable moments. It is a privilege to be working with it, so be specific with your request and don't seek more than is really needed.
+
+Some questions to consider are:
+
+* What data sources are available and accessible?
+
+* What fields are needed?
+
+* Can the data be operationalised?
+
+* What time period is to be covered?
+
+* How do privacy, ethics and equity considerations affect my data request?
+
+* What is the minimum data set that I will need for this project?
+
+* Who has the ability to provide the data?
+
+## Waiting....and more waiting
+
+Once you have your plan in place, smooth sailing isn't guaranteed. De-identification, data sharing agreements and data requests can take time. But even when an agreement is signed and plans are ready, you might find a lot more time passes while waiting for data.
+
+Health data providers usually have to undertake a lot of work before sending data in the form agreed. Data may be located in different systems, extraction may require booking in technical resources and the data may need pre-processing and annotation. Also, while you may be eagerly awaiting the data, it may not be afforded the same priority by a busy health provider. Patience is a virtue, but the occasional gentle nudge may be necessary. You also need to manage your own workload, and you don't want all of your data buses arriving at once.
+
+## Transferring data
+
+Some providers may require that you use their systems, whether on premises or in the cloud, so that the data never 'leaves' their organisation. Others may be happy to upload their data to a secure cloud-based server provided by you, and some may have their own file transfer systems.
+
+Try to avoid email for data transfer, even if a file is password protected. Emailed data can be difficult to track and audit. This may result in multiple copies being saved using up storage capacity. Files are also frequently too large to be attached. Security is a particular concern, especially where either sender or recipient uses a third-party email service -- you do not know how many servers are handling that message.
+
+If you will be receiving data regularly, it's also better to minimise the number of transfers by having data sent in batches. Any data you receive should also be different from what you have already received. Have this conversation with the health data provider at the planning stage.
+
+Finally, please ensure you confirm successful receipt of the data.
+
+## Data governance and Data management
+
+Data governance and data management are distinct concepts with some areas of overlap and linkage. Both areas concern how we access, store, log, secure, maintain, use, share and destroy data in an efficient and standardised way, guided by principles such as accountability, transparency, ethical use, privacy, consent and data availability, integrity and quality.
+
+| Data governance | Data management |
+|-----------------|-----------------|
+| Maintains oversight, provides accountability, shapes and communicates policies and procedures | Enacts policies and procedures for day-to-day handling of data |
+| Governance group or executive team or board; a diverse group of stakeholders to cover multiple perspectives | Individual data stewards |
+
+:::{.callout-note}
+This is written from the perspective of a consulting practice, research organisation or any organisation that uses data which it does not directly collect.
+:::
+
+### Data Governance
+
+For more information about Governance see the **Governance** section.
+
+### Data Management
+
+#### Storage and security
+
+With a data access plan in place, and an understanding of what is available, appropriate storage and security requirements need to be in place.
+
+When storing data on premises or on your secure cloud-based service, there should be a clear process for access control. Larger, regular batches of data are preferable, but where there is irregularity in timing and peaks in volume, cloud based auto-scaled storage may help keep costs down.
+
+On-premises data storage should be on a secure server, and not stored or replicated on personal computers.
+
+#### Data register or log
+
+What starts out as a data trickle can quickly become a data flood. It is worthwhile maintaining a register of data from the first file received.
+
+A data register or log can help you or your organisation track:
+
+* what data you have received
+
+* when you received it
+
+* where you are storing it
+
+* who can/should have access to it
+
+* when it should be destroyed
+
+* what processed data sets exist and where, particularly if they contain PHI
+
+The format can be tailored to suit your organisation (for example, using a spreadsheet).
+
+#### Tools for data management
+
+Managing data for a small organisation or research team could be as simple as having a secure storage solution and a spreadsheet to keep track of important metadata. Larger organisations will likely need formal data governance, data policies in place and data stewards to manage the use, storage and security of data. Tailor your approach based on the data being handled.
+
+Consider version control for all aspects of the project, including data; depending on the tooling that you use, this may already be an included capability. [DVC](https://dvc.org/) is one tool designed specifically for data version control for machine learning. Your development environment or cloud storage solution may also include features of this type. Data files can be named with versions, however this method is not as robust as automated versioning that is managed by a tool.
+
+Data management tools are responsible for carrying a wide range of data or documents.
