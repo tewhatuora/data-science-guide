@@ -56,23 +56,23 @@ Health data is often only available after a significant lag time, and with a slo
 
 At an early stage, it is valuable to consider:
 
-- **Data landscape*- - What data is collected? How is access managed? Does it help address the problem you are trying to solve?
+- **Data landscape** - What data is collected? How is access managed? Does it help address the problem you are trying to solve?
 
-- **Characteristics*- - What is the format, type and size of data? When was the data collected? How often will you receive it?
+- **Characteristics** - What is the format, type and size of data? When was the data collected? How often will you receive it?
 
-- **Availability and quality*- - How much historical data is available, and what is the quality? Use the minimum necessary!
+- **Availability and quality** - How much historical data is available, and what is the quality? Use the minimum necessary!
 
-- **Purpose*- - What purpose was the data collected for, and does that influence your interpretation?
+- **Purpose** - What purpose was the data collected for, and does that influence your interpretation?
 
-- **Consent*- - Is the use of data covered by existing patient consent?
+- **Consent** - Is the use of data covered by existing patient consent?
 
-- **Data collection, maintenance, publication*- - Distinguish between data already collected and new data created by the study. How do you plan to maintain and/or publish this data?
+- **Data collection, maintenance, publication** - Distinguish between data already collected and new data created by the study. How do you plan to maintain and/or publish this data?
 
-- **Personally identifiable information*- - Is de-identification required? Who will do this? (See **Handling personal health information**)
+- **Personally identifiable information** - Is de-identification required? Who will do this? (See **Handling personal health information**)
 
-- **Data availability*- - How long will it take to source and are there any reporting or system lags?
+- **Data availability** - How long will it take to source and are there any reporting or system lags?
 
-- **Labelling/annotation*- - Does the project need Human In the Loop (HITL) mechanism for annotating and validating the input and output data?
+- **Labelling/annotation** - Does the project need Human In the Loop (HITL) mechanism for annotating and validating the input and output data?
 
 ## Ethics & privacy {#sec-ethics}
 

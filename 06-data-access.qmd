@@ -91,7 +91,7 @@ This section is written from the perspective of a consulting practice, research 
 
 ### Data Governance
 
-For more information about Governance see the **Governance*- section.
+For more information about Governance see the **Governance** section.
 
 ### Data Management
 
