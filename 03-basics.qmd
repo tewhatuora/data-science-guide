@@ -1,4 +1,6 @@
-# Understanding the basics
+---
+title: "Understanding the basics"
+---
 
 ## Data projects have a lifecycle
 

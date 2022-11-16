@@ -1,4 +1,6 @@
-# Evaluation
+---
+title: "Evaluation"
+---
 
 After a model has been created and validated, it should be evaluated to determine whether it can address the question you set out to answer. In some cases this can take the form of a formal prospective data study, where an independent dataset is collected, and the performance of the model on this dataset is assessed. Models that affect patient standard of care will be subject to ethical processes which should be considered upfront - see section on Ethics.
 

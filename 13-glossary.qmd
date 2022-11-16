@@ -1,3 +1,5 @@
-# Glossary {.unnumbered}
+---
+title: "Glossary" {.unnumbered}
+---
 
 **ML**: {#glossary-ml} machine learning

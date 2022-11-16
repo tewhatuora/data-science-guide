@@ -1,8 +1,6 @@
-# Useful references and templates {.unnumbered}
-
-Note: Move these to the right sections in the document, rather than at the end.
-
-* [Aotearoa NZ Data Sources Review](data.precisiondrivenhealth.com)
+---
+title: "Useful references and templates" {.unnumbered}
+---
 
 * [The NZ Algorithm Scan](https://precisiondrivenhealth.com/new-zealand-health-sector-algorithm-scan/)
 
@@ -10,19 +8,11 @@ Note: Move these to the right sections in the document, rather than at the end.
 
 * [Tensorflow Extended Guide](https://www.tensorflow.org/tfx/guide)
 
-* [Microsoft Team Data Science Process](https://docs.microsoft.com/en-us/azure/architecture/data-science-process/team-data-science-process-for-data-scientists)
-
-* [TRIPOD - checklists and resources](https://www.tripod-statement.org/resources/)
-
 * [Model cards for Model Reporting](https://arxiv.org/pdf/1810.03993.pdf)
-
-* CRISP-DM (Industry)
 
 * DM-BOK (Data Management Body of Knowledge)
 
 * Learning Spark (Book, comprehensive)
-
-* Ministry of Health data inquiries email; [data-enquiries@health.govt.nz](mailto:data-enquiries@health.govt.nz)
 
 * [A guide to good practice for digital and data-driven health technologies - GOV.UK](https://www.gov.uk/government/publications/code-of-conduct-for-data-driven-health-and-care-technology/initial-code-of-conduct-for-data-driven-health-and-care-technology)
 

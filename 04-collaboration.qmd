@@ -1,4 +1,6 @@
-# People, capability & collaboration
+---
+title: "People, capability & collaboration"
+---
 
 ## Team capability
 

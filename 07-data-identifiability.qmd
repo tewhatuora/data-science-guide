@@ -1,4 +1,6 @@
-# Data identifiability {#sec-identifiability}
+---
+title: "Data identifiability" {#sec-identifiability}
+---
 
 It is essential that the sensitive nature of health data is considered throughout the life cycle of the project from the initial stages of idea generation through to data transfer, receipt, preparation, and modelling. For this reason, we've highlighted here the important processes to think about.
 

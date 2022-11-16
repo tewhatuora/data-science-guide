@@ -1,4 +1,6 @@
-# Data preparation
+---
+title: "Data preparation"
+---
 
 ## Data manipulation/wrangling
 

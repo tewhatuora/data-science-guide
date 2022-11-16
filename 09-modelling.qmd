@@ -1,4 +1,6 @@
-# Modelling
+---
+title: "Modelling"
+---
 
 We use the word "modelling" broadly, to capture the process of analysis involved in data science. In this guide, a model is a simplified quantitative representation of a real world situation, often to answer a specific question. Modelling can be used as a tool to help derive insights or drive decision making. In other industries, life experience is often enough to guide you. However, in a health context domain expertise is extremely important e.g. what defines a hospitalisation?
 

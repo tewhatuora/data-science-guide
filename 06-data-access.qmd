@@ -1,4 +1,6 @@
-# Accessing and managing data
+---
+title: "Accessing and managing data"
+---
 
 Data access can be one of the more tricky and time-consuming aspects of your data science project. Access should be addressed at a very early stage. ​​It can take a lot of time to understand what data is available, agree on access, create a data sharing agreement, and then receive the data.
 

@@ -1,4 +1,6 @@
-# Deployment & Lifecycle Maintenance
+---
+title: "Deployment & lifecycle maintenance"
+---
 
 ## Operational deployment {#sec-deployment}
 
