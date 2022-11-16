@@ -12,7 +12,7 @@ Know what you are asking for. Your data request should be well specified and con
 
 Many providers will have strict data transfer and storage protocols, however these may not always be followed by individuals. How the data will be transferred and stored, and at what frequency should be discussed and agreed, before a .csv file suddenly lands in your inbox.
 
-Data that contains **Protected Health Information (PHI) or Personal Identifiable Information (PII)*- cannot be freely shared, however after de-identification (see section **Data Identifiability**) it may be possible to share such data, under certain terms.
+Data that contains **Protected Health Information (PHI) or Personal Identifiable Information (PII)** cannot be freely shared, however after de-identification (see section **Data Identifiability**) it may be possible to share such data, under certain terms.
 
 ## Data sharing agreements
 
