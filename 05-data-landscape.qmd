@@ -1,5 +1,5 @@
 ---
-title: "The unique health data landscape" {#sec-landscape}
+title: "The unique health data landscape"
 ---
 
 Access to health data requires a lot of initial consideration, possibly more than accessing data from other industries. Some key points to consider include:

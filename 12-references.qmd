@@ -1,6 +1,4 @@
----
-title: "Useful references and templates" {.unnumbered}
----
+# References {.unnumbered}
 
 * [The NZ Algorithm Scan](https://precisiondrivenhealth.com/new-zealand-health-sector-algorithm-scan/)
 

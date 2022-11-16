@@ -21,25 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
 </style>
 
 
@@ -83,7 +64,7 @@ div.csl-indent {
 
 </head>
 
-<body class="nav-sidebar floating slimcontent">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -176,32 +157,42 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06-data-identifiability.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Identifiability</span></a>
+  <a href="./06-data-access.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Accessing and managing data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07-data-preparation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data preparation</span></a>
+  <a href="./07-data-identifiability.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data identifiability</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modelling</span></a>
+  <a href="./08-data-preparation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data preparation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./09-evaluation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evaluation</span></a>
+  <a href="./09-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Modelling</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./10-deployment-lifecycle.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Deployment &amp; Lifecycle Maintenance</span></a>
+  <a href="./10-evaluation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Evaluation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./11-references.html" class="sidebar-item-text sidebar-link">Useful references and templates</a>
+  <a href="./11-deployment-lifecycle.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Deployment &amp; lifecycle maintenance</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-glossary.html" class="sidebar-item-text sidebar-link">Glossary</a>
   </div>
 </li>
     </ul>
@@ -218,7 +209,7 @@ div.csl-indent {
 </nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -250,20 +241,12 @@ div.csl-indent {
 </header>
 
 
-<section id="welcome" class="level1 unnumbered page-columns page-full">
+<section id="welcome" class="level1 unnumbered">
 <p><img src="./img/cover.jpg" title="Practical Guide to Health Data Science in Aotearoa New Zealand" class="quarto-cover-image img-fluid"></p><h1 class="unnumbered">Welcome</h1>
 <p>This guide collects a set of positive practices for health data science projects in Aotearoa New Zealand, summarising knowledge from the experiences of researchers from the Precision Driven Health partnership and the wider health and data science sectors in this area.</p>
-<p>It is a living document, not a finished product. Contributions from all researchers are welcome. You can contribute by editing a page. Pages are Markdown files in a public GitHub repository rendered using Quarto.</p>
-<p>Here is a reference to the Aotearoa Data Sources Review (<span class="citation" data-cites="precision_driven_health_aotearoa_2022"><a href="#ref-precision_driven_health_aotearoa_2022" role="doc-biblioref">Aotearoa <span>NZ</span> data sources review</a></span>) and the VHIN (<span class="citation" data-cites="noauthor_virtual_nodate"><a href="#ref-noauthor_virtual_nodate" role="doc-biblioref">The virtual health information network (<span>VHIN</span>)</a></span>). A test citation to <span class="citation" data-cites="bellamy_ai_2018"><a href="#ref-bellamy_ai_2018" role="doc-biblioref">Bellamy et al. 2018</a></span> too.</p>
+<p>It is a living document, not a finished product. Contributions from all researchers are welcome. You can contribute by editing a page. Pages are Markdown files in a public GitHub repository rendered using <a href="https://quarto.org/">Quarto</a>.</p>
 
 
-<div class="no-row-height column-margin column-container"><div id="ref-precision_driven_health_aotearoa_2022" class="csl-entry" role="doc-biblioentry">
-Aotearoa <span>NZ</span> data sources review. <a href="https://data.precisiondrivenhealth.com">https://data.precisiondrivenhealth.com</a>.
-</div><div id="ref-noauthor_virtual_nodate" class="csl-entry" role="doc-biblioentry">
-The virtual health information network (<span>VHIN</span>). <a href="https://vhin.co.nz/">https://vhin.co.nz/</a>.
-</div><div id="ref-bellamy_ai_2018" class="csl-entry" role="doc-biblioentry">
-Bellamy, R K E, Dey, K, Hind, M, Hoffman, S C, Houde, S, Kannan, K, Lohia, P, Martino, J, Mehta, S, Mojsilovic, A, Nagar, S, Ramamurthy, K N, Richards, J, Saha, D, Sattigeri, P, Singh, M, Varshney, K R, and Zhang, Y. 2018. <span>“<span>AI</span> fairness 360: An extensible toolkit for detecting, understanding, and mitigating unwanted algorithmic bias”</span>. <a href="http://arxiv.org/abs/1810.01943">http://arxiv.org/abs/1810.01943</a>.
-</div></div>
 </section>
 
 </main> <!-- /main -->
