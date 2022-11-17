@@ -3,13 +3,12 @@ project:
   output-dir: docs
 
 book:
-  title: "Practical Guide to Health Data Science in Aotearoa New Zealand"
+  title: "Health Data Science in Aotearoa New Zealand: A Practical Guide"
   author: "Precision Driven Health"
   search: true
-  downloads: [pdf, epub]
   sharing: [twitter, linkedin]
   cover-image: /img/cover.jpg
-  date: 12/01/2022
+  date: 17 November 2022
   date-format: "MMMM YYYY"
   chapters:
     - index.qmd
