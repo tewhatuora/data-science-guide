@@ -84,7 +84,7 @@ All research in New Zealand which uses data from humans needs to be undertaken i
 
 When dealing with health data, be careful when assessing if a data science project requires ethical approval. Ethical approval is typically required for any evidence-generating studies, or studies which propose changes to current standard of care (before any model is evaluated/validated) and should always be sought prior to accessing patient data. Ethical approval is given through a written application process and gives permission for the research to be conducted by named investigators during a specific time period.
 
-Ethics approvals in New Zealand are provided through committees which have had centralised approval to follow appropriate standards. The ethical standards are set by the [National Ethical Standards for Health and Disability Research](https://neac.health.govt.nz/national-ethical-standards/) (NEAC) and apply to researchers, health service providers and disability service providers, regardless of whether or not an additional approval process is required. Think of these like a set of best practices for undertaking work with health data or human participants - follow them regardless of whether anyone is requiring you to do so!
+Ethics approvals in New Zealand are provided through committees which have had centralised approval to follow appropriate standards. The ethical standards are set by the [National Ethical Standards for Health and Disability Research and Quality Improvement](https://neac.health.govt.nz/national-ethical-standards/) and apply to researchers, health service providers and disability service providers, regardless of whether or not an additional approval process is required. Think of these like a set of best practices for undertaking work with health data or human participants - follow them regardless of whether anyone is requiring you to do so!
 
 Most formal approvals for health data research are provided at a national level by the [Health and Disability Ethics Committees (HDEC)](https://ethics.health.govt.nz/); in some cases a more localised approval is required instead or in addition (for example, the [Auckland Health Research Ethics Committee](https://www.auckland.ac.nz/en/research/about-our-research/human-ethics/ahrec.html)).
 
@@ -110,11 +110,27 @@ Consider if existing patient consent is sufficient to cover use of the data. See
 
 Generally all use of administrative health data for research purposes will need to go through the HDEC process. Consent for use of administrative data is mainly around its use for improving the care of that individual within the health service or quality improvement processes (defined as audits or other activities). Unless the work is specifically with business intelligence within a healthcare organisation, you should ask for assurance to confirm if ethical approval from HDEC is required, or not.
 
+In New Zealand, health information follows the [Health Information Privacy Code 2020](https://www.privacy.org.nz/privacy-act-2020/codes-of-practice/hipc2020/). The rules of this code can be summarised for health agencies as below. These principles are also highly relevant to the use of health data for research purposes.
+
+1. Only collect health information if you really need it.
+2. Get it straight from the people concerned where possible.
+3. Tell them what you’re going to do with it.
+4. Be considerate when you’re getting it.
+5. Take care of it once you’ve got it.
+6. People can see their health information if they want to.
+7. They can correct it if it’s wrong.
+8. Make sure health information is correct before you use it.
+9. Get rid of it when you’re done with it.
+10. Use it for the purpose you got it.
+11. Only disclose it if you have a good reason.
+12. Make sure that health information sent overseas is adequately protected.
+13. Only assign unique identifiers where permitted.
+
 Privacy Impact Assessments (PIAs) should also be conducted at an early stage to identify potential data protection risks on the data of the individuals included. Measures should be adopted to eliminate or mitigate risks. The Office of the Privacy Commissioner [offers some guidance on PIAs](https://privacy.org.nz/publications/guidance-resources/privacy-impact-assessment/).
 
 Useful resources:
 
-- [A useful checklist to address ethical and governance questions](http://ethicstoolkit.ai/)
+- [A checklist to address ethical and governance questions](http://ethicstoolkit.ai/)
 
 - [A Research Ethics Framework for the Clinical Translation of Healthcare Machine Learning](https://www.tandfonline.com/doi/full/10.1080/15265161.2021.2013977)
 
@@ -122,10 +138,10 @@ Useful resources:
 
 You need consent before you can use data - particularly data that contains sensitive information. In the General Data Protection Regulation (GDPR), a regulation in EU law on data protection and privacy, consent is defined as:
 
-> *"any freely given, specific, informed and unambiguous indication of the data subject's wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her."*
+> "any freely given, specific, informed and unambiguous indication of the data subject's wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her."
 
 :::{.callout-note appearance="simple"}
-Or use this format?
+Or use this format for a blockquote?
 :::
 
 Some health providers give patients the opportunity to opt in for their data to be used for research and operational purposes, or to improve their care. Opting in may or may not explicitly allow for the processing of their de-identified data by third parties. More commonly, the patient hasn't provided explicit consent.

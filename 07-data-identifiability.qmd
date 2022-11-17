@@ -4,9 +4,11 @@ title: "Data identifiability"
 
 It is essential that the sensitive nature of health data is considered throughout the life cycle of the project from the initial stages of idea generation through to data transfer, receipt, preparation, and modelling. For this reason, we've highlighted here the important processes to think about.
 
+In use of health data, the guidance provided in the National Ethical Standards ([part 12 - Health data](https://neac.health.govt.nz/national-ethical-standards/part-two/12-health-data/)) is excellent, and describes the levels of data identifiability that relate to research in this area.
+
 ## What information is sensitive? (PII and PHI)
 
-The [Health Insurance Portability and Accountability Act of 1996 (HIPAA)](https://aspe.hhs.gov/report/health-insurance-portability-and-accountability-act-1996) is a US federal law that required the creation of national standards to protect sensitive patient health information from being disclosed without the patient's consent or knowledge. The definitions provided by HIPAA are important to consider even when you are not working in the United States or with data from the USA.
+Different jurisdictions define sensitive data differently. The US federal law [Health Insurance Portability and Accountability Act of 1996 (HIPAA)](https://aspe.hhs.gov/report/health-insurance-portability-and-accountability-act-1996) required the creation of national standards to protect sensitive patient health information from being disclosed without the patient's consent or knowledge. The definitions provided by HIPAA are important to consider even when you are not working in the United States or with data from the USA.
 
 The HIPAA defines PII and PHI as:
 
@@ -15,7 +17,9 @@ The HIPAA defines PII and PHI as:
 | Any piece of information that can be traced to an individual's identity, not necessarily health related (e.g. address). | ​​Any piece of information in an individual's medical record that was created, used, or disclosed during the course of diagnosis or treatment that can be used to personally identify them. [HIPAA has a detailed definition of PII.](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html) |
 
 :::{.callout-note appearance="simple"}
-## Look out for these fields, which HIPAA considers as identifiers:
+
+## Look out for these fields, which HIPAA considers as identifiers
+
 * ​​Name
 * Address (including subdivisions smaller than state such as street address, city, county, or zip code)
 * Any dates (except years) that are directly related to an individual, including birthday, date of admission or discharge, date of death, or the exact age of individuals older than 89
@@ -36,18 +40,32 @@ The HIPAA defines PII and PHI as:
 * Any other unique identifying numbers, characteristics, or codes
 :::
 
+New Zealand's National Ethical Standards provide a shorter list of direct and indirect identifiers:
+
+| Direct identifiers | Indirect identifiers |
+|--------------------|----------------------|
+| NHI | Date of birth
+| Name | Identification of relatives |
+| Street address | Identification of employers |
+| Phone number | Clinical notes |
+| Online identity (e.g., email, Twitter name) | Any other direct or indirect identifiers that carry significant risk of re-identification |
+| Identification numbers (e.g., community services card, driver's licence) | |
+
+: Identifier types from the [HISO 10064:2017 Health Information Governance Guidelines](https://www.health.govt.nz/publication/hiso-100642017-health-information-governance-guidelines) via the [National Ethical Standards](https://neac.health.govt.nz/national-ethical-standards/part-two/12-health-data/)
+
 Your organisation may have a different name or definition for this information. However it is named or defined, it's important to note that health data contains sensitive information that patients would not want disclosed. This data is a privilege to use and should be treated with utmost care.
 
 ## How do I deal with sensitive data?
 
 From the regulatory standpoint: the HIPAA has a "[Privacy Rule](https://www.hhs.gov/hipaa/for-professionals/privacy/index.html)" which requires safeguards when working with protected health information (PHI). Two methods of handling sensitive information [which satisfy the HIPAA Privacy Rule](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html) are Expert Determination and Safe Harbor.
 
-- Expert Determination
-- Safe Harbor
-
 When a data provider transfers data to you, first check whether you should be in receipt of that data. This requires you to have processes to check the data for PII and PHI. You should also have procedures in place for what to do should you find any PII or PHI, including the destruction of the data, and reporting of the incident.
 
-If a health data provider has provided you access to PHI or PII containing data in contravention of a data sharing agreement, continued access to or retention of that data is not defensible by reasoning that the mistake was theirs. A guiding principle is that appropriate storage, transfer and use of data is the responsibility of all parties involved.
+:::{.callout-important}
+If a health data provider has provided you access to PHI or PII containing data in contravention of a data sharing agreement, continued access to or retention of that data is not defensible by reasoning that the mistake was theirs. **A guiding principle is that appropriate storage, transfer and use of data is the responsibility of all parties involved.**
+:::
+
+Creating synthetic data is another method for research (see **Use of Synthetic Data**).
 
 ## Checking your data for the presence of identifiable information
 
@@ -55,9 +73,31 @@ In general, you are most likely to be working with de-identified data. The data 
 
 It is imperative to check that any dataset you receive meets the de-identification standard you are expecting; e.g. you have not been sent a dataset that contains identifiers when it should not.
 
+:::{.callout-tip}
 As a minimum, do a common sense check of metadata and manually scan the first 1000 rows of a dataset for any PHI e.g. unique identifiers, address, and name.
+:::
 
-Tools which can be of help with this process include:
+## De-identifying structured data
+
+De-identification can be achieved through the suppression or transformation of certain identifying attributes. For example, a health data provider can be asked to exclude name fields, provide age range rather than date of birth, transform addresses to a statistical area unit, and/or encrypt unique identifiers prior to data transfer.
+
+Even with suppression or transformation of individual identifiers, individuals can still be identified in structured data where information about an individual is already known. For example, you know someone who is 57, has had breast cancer and lives in a certain postcode. If only one person in a dataset has these attributes, this information could be used to identify that person in the de-identified data. Particularly when linked to other data sources, more personal information could then be gleaned for that person.
+
+k-anonymisation or ε-differential privacy techniques can be applied to ensure that individuals can’t be identified via combinations of attributes. Both techniques involve a trade-off of privacy and data utility.
+
+* k-anonymisation is where at least ‘k’ individuals share an identifying set of attributes for any individual. It can be achieved through suppression of attributes or the generalisation of values (for instance, using age ranges).
+
+* ε-differential privacy involves adding noise to the original distribution in a way that ensures that the probability that a statistical query will produce a given result is nearly the same on a dataset that has had one person’s information removed. The higher the level of de-identification, the more noise is added to the distribution.
+
+## De-identifying unstructured data
+
+Unstructured data (which is data that doesn’t have a predefined format) poses a particular challenge for anonymisation.  It’s estimated that approximately 80% of health data is stored as unstructured text, which is a form of unstructured data.
+
+Basic pattern matching using regular expressions may go some way to locating identifying text and can be useful for finding attributes with known formats (for example NHI or date of birth). However, free text, even in very short phrases, can contain a sometimes surprising amount of identifying information. Natural language processing techniques and machine learning can be applied for more sophisticated textual de-identification, with the support of de-identification tools.
+
+## Tools
+
+Software tools which can be of help with the processes of identifying sensitive data and removing it include:
 
 * De-identifier (Orion Health): can identify and remove PHI and PII from datasets and databases to a customisable level of de-identifiability/reidentification risk
 
@@ -66,19 +106,3 @@ Tools which can be of help with this process include:
 * [Comprehend Medical](https://aws.amazon.com/comprehend/medical/) (Amazon): provides a PHI detection API
 
 * [DLP](https://cloud.google.com/dlp) (Google): able to check data stored in Google Cloud
-
-## De-identifying structured data
-
-De-identification can be achieved through the suppression or transformation of certain identifying attributes. For example, a health data provider can be asked to exclude name fields, provide age range rather than date of birth, transform address to a statistical area unit, and encrypt unique identifiers prior to data transfer.
-
-Even with suppression or transformation of individual identifiers, individuals can still be identified in structured data where information about an individual is already known. For instance, if you know someone who is 57, has had breast cancer and lives in a certain postcode, if only one person in a dataset has these attributes, this information could be used to identify that person in the de-identified data. Particularly when linked to other data sources, more personal information could then be gleaned for that person.
-
-k-anonymisation or ε-differential privacy techniques can be applied to ensure that individuals cannot be identified via combinations of attributes. Both techniques involve a tradeoff of privacy and data utility.
-
-* k-anonymisation is where at least k individuals share an identifying set of attributes for any individual. It can be achieved through suppression of attributes or the generalisation of values (for instance using age ranges).
-
-* ε-differential privacy involves adding noise to the original distribution in a way that ensures that the probability that a statistical query will produce a given result is nearly the same on a dataset that has had one person's information removed. The higher the level of de-identification, the more noise is added to the distribution.
-
-## De-identifying unstructured data
-
-It is estimated that approximately 80% of health data is stored as unstructured text. Unstructured data poses a particular challenge for anonymisation. Basic pattern matching using regular expressions may go some way to locating identifying text and can be useful for finding attributes with known formats (for example NHI or date of birth). However, free text, even in very short phrases, can contain a sometimes surprising amount of other identifying information. Natural language processing techniques and machine learning can be applied for more sophisticated textual de-identification, with the support of de-identification tools.

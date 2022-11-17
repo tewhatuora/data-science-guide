@@ -2,25 +2,47 @@
 title: "Data preparation"
 ---
 
-## Data manipulation/wrangling
+## Data wrangling
 
-Good data manipulation/wrangling practice is based on comprehensive knowledge of the data. We recommend the following:
+Data wrangling is the process of cleaning and unifying complex datasets for easy access and analysis. Good data wrangling practice is based on comprehensive knowledge of the data. We recommend the following:
 
-* For a given data source, learn as much as you can about its collection, storage, how it is updated and maintained, the definition and dependency of each data item, and the limitations. There are more upfront ethical considerations when dealing with health data.
+* For a given data source, learn as much as you can about its collection, storage, how it’s updated and maintained, the definition and dependency of each data item, and the limitations. There are more upfront ethical considerations when dealing with health data including consent, ethics approval and understanding the equity and clinical context.
 
-* For local data collection, consider how to store it (in files, in a database, locally or on cloud etc.) to make information retrieval easier, or/and data sharing easier. See the Data Management section.
+* For local data collection, consider how to store it (in files, in a database, locally or on cloud etc.) to make information retrieval easier, or/and data sharing easier (see **Data Management**).
 
-* Consider the size of the data - should it be processed all at once, batch processing or stream processing? Your computing location (on your computer, on a local server, or on a cloud provider) may affect your decision here.
+* Consider the size of the data - should it be processed all at once, batch processed or stream processed? Stream processing is the processing of records as a stream of data, for example record by record.  Your computing location (on your computer, on a local server, or on a cloud provider) may affect your decision here.
 
-* Consider if the data needs de-identification. See [Data identifiability](#data-identifiability).
+* Consider if the data needs de-identification (see **Data identifiability**).
 
-* Maintain an equity lens for any type of data science work, including building and evaluating models. See [Bias in data](#bias-in-data).
+* Maintain an equity lens for any type of data science work, including building and evaluating models (see **Bias in data**).
 
-* Involve clinical leads when data wrangling. Within healthcare, the risk associated with some data (e.g. laboratory data or vitals) is often distributed at the extreme ends. It is difficult for data scientists to know if the risk is distributed linearly without the clinical context.
+* Involve clinical leads when data wrangling. Within healthcare, the risk associated with some data (for example, laboratory data or vitals) is often distributed at the extreme ends. It’s difficult for data scientists to know if the risk is distributed linearly without the clinical context.
+
+### Data labelling
+
+Data labelling can have a significant impact on the success of a data science project.  A label is a category you might tag a record with for a model to learn.  For instance, you might label an ED admission according to whether that patient is high priority for triaging, or you might label a medical alert as containing an adverse drug reaction. When learning, a model finds patterns in the data attributes that map to the labels. In the triage example, attributes that are mapped to the label “is high priority” might include body temperature, blood pressure, heart rate and oximeter reading.
+
+Aim for labels that are clearly and appropriately defined, involving multiple qualified labellers.
+
+#### Defining labels
+
+Be precise, and aim to align the definitions with potential use cases. For example, radiology reports might already be labelled according to the nature of the report findings, such as there was a “finding”, or there was a “finding that is not of concern” or there was “no finding” etc. However, if our goal is to know whether a report requires follow-up and we would like to use machine learning techniques over those reports and labels to achieve this, the initial labels may not be useful: some reports that have a “finding that is not of concern” may need follow-up and some may not.  The labels  “follow-up required”, or “no follow-up required” are more directly aligned to the use case here.
+
+Be clear. A clear label definition will help both human labellers and model performance. If the boundary between labels is fuzzy, a person will either struggle to choose a label for a data record, or will apply labels inconsistently. If labels are inconsistent in the training set, then we might reasonably expect that the model will also struggle to find the boundary between labels. In the radiology report example, imagine that the use case aligns with categorising reports according to findings. Consider one report showing that a person has a pre-existing mass considered benign, who then has a follow up scan that reveals the mass has not changed. Different human labellers would need clear definitions to be able to consistently label this report.  Without a clear definition, one human labeller may decide that there is a “finding that is not of concern” based on the presence of a mass of no concern, while another may decide that there is “no finding” given nothing has changed since the last scan.
+
+When there is a period of time between labelling iterations, the same human labeller may make inconsistent labelling choices. Clear label definitions will also help with label consistency over time.
+
+#### Many labellers make models work
+
+Even with clear definitions, it is normal to find that different human labellers may vary in how they apply a labelling strategy with no one person being the “source of truth”. Inter-labeller variation should be expected. To reduce the effects of this variation, involve many labellers so that each record has labels assigned by two or more people. Labellers will disagree, so when training a model, you could either decide to use records with labels that human labellers unanimously agree on, or those that the majority of labellers agree on, excluding the records with label disagreement from the training set.
+
+The reality is that data labelling in a health context often requires highly skilled and experienced practitioners working under time constraints. If you only have one person who can provide the time required (for what can be a tedious task), then investment in clearly defining labels upfront is especially important.
+
+For ongoing labelling efforts, including labelling in a clinical workflow may be an efficient strategy.
 
 ### Data quality
 
-Do a data quality review as an early step and produce statistical summaries for sanity checks. Consider additional rounds of quality reviews and involve the data owners/managers if the data is complex.
+It’s important to conduct a data quality review as an early step and produce statistical summaries for checking purposes. This process usually includes profiling the fields within a data set, visualising distributions, checking relationships between fields and exploring data completeness (including completeness over time). Involve the data owners and subject matter experts in this process and  consider additional rounds of quality reviews if the data is complex.
 
 Data profiling (for example, with [Pandas-profiling](https://github.com/ydataai/pandas-profiling)) is recommended for both data quality checking and data understanding. Data profiling involves providing descriptive summaries and visualisations of the data for review with clinicians and subject matter experts.
 
@@ -30,7 +52,7 @@ Basic aspects for data quality check include:
 
 * Data distribution change across time
 
-* Outliers, do we need cap variables with extreme values?
+* Outliers: Do we need to cap variables with extreme values?
 
 * Data completeness/missingness
 
@@ -56,25 +78,33 @@ Basic aspects for data quality check include:
 
 ## Data linkage
 
-Many projects that involve health data will require linking datasets on keys. One example is where individual health data is linked to census data based on location. Another example is linking data across government departments or agencies, for instance linking hospitalisation data to vaccination data, matching on NHI.
+Many projects that involve health data will require linking datasets on certain attributes (keys).  For example we might link datasets by matching records that share the same NHI, by matching records that share a combination of personal details, or by matching locations.  
 
-Records with a single identifier, and those with multiple identifiers, can have equity considerations in health and indicate interaction with the health system; e.g., duplicative data where a person has been issued multiple NHI identifiers.
+One example is linking data across government departments or agencies, for instance linking hospitalisation data to vaccination data, matching on NHI. Another example is where individual health data is linked to census data based on census meshblock.
 
-The best practice is to link datasets prior to de-identification, so that the linkage can be as robust as possible and de-identification can minimise the risk of re-identification.
+Data linkage refers to this joining of datasets. It allows us to get a more detailed picture of a person or entity.  For instance, when linking medical records to census records, this might reveal that a patient resides in an area of high deprivation.
+
+### Unique identifiers
+
+NHI is a unique health identifier that is commonly used to link datasets in health.  As a unique identifier, each NHI should identify a single person and each person should have a single NHI. However, in certain cases multiple NHIs get recorded for a single person.  We note that records with a single unique identifier, and those with multiple “unique” identifiers, can have equity considerations in health and indicate the nature of interaction with the health system.
 
 ### How to link
 
-Where datasets need to be deidentified prior to linking at the level of the individual or patient, you will need to consider how to maintain the integrity of the linkage. Unique identifiers, such as NHI, may need to be encrypted, rather than suppressed, in the process of de-identification. Where data comes from different sources, unique identifiers will need to be encrypted in the same way in order to link datasets. If the processed data is to be delivered back to the health provider at the level of the individual, then there needs to be the possibility of decryption of the identifiers. Orion Health's De-identifier product will create a secure mapping for this purpose.
+Ideally datasets would be linked prior to de-identification, so that the linkage can be as robust as possible.  Further, de-identification after linking can help minimise the risk of re-identification via linked data (see **De-identifying structured data**).
+
+Where datasets need to be de-identified prior to linking at the level of the individual or patient, you will need to consider how to maintain the integrity of the linkage. Unique identifiers, such as NHI, may need to be encrypted, rather than suppressed, in the process of de-identification.
+
+Where data comes from different sources, unique identifiers will need to be encrypted in the same way in order to link datasets. If the processed data is to be delivered back to the health provider at the level of the individual, then there needs to be the possibility of decryption of the identifiers or another way of linking the processed data back.
 
 ### Risk of re-identification
 
-Two datasets that separately will not identify an individual may identify an individual once linked. As such prior to linking datasets, the risk of re-identification of an individual should be considered. Ideally, datasets are linked together and de-identified prior to delivery from the health provider, however this is often not possible.
+Two datasets that separately will not identify an individual may identify an individual once linked. As a result,  the risk of re-identification of an individual should be considered prior to linking datasets. Ideally, datasets are linked together and de-identified prior to delivery from the health provider, however this is often not possible.
 
 ### Approaches
 
-Where data cannot be linked on a unique identifier, there are approaches that can be used to match records. The deterministic approach is to match on a combination of attributes that will uniquely identify a person. An issue with this approach is that in a dataset that is de-identified well, it should be difficult to uniquely identify individuals based on a combination of unique attributes.
+Where data cannot be linked on a unique identifier, there are approaches that can be used to match records. The ‘deterministic’ approach is to match on a combination of attributes that will uniquely identify a person. An issue with this approach is that in a dataset that is de-identified well, it should be difficult to uniquely identify individuals based on a combination of unique attributes.
 
-An alternative probabilistic approach is to calculate conditional probabilities to determine the likelihood that a given pair of records match.
+The alternative ‘probabilistic’ approach involves calculating conditional probabilities to determine the likelihood that a given pair of records match.
 
 ## Missing data
 
@@ -96,9 +126,9 @@ If removing the data, you'll need to decide whether to remove variables or obser
 
 Try proxy variables or alter data collection processes to avoid missing data as much as possible.
 
-Most data is unlikely to be MCAR. Often, data is more likely to be missing for particular reasons (missing not at random; MNAR). Consider if there is a reason for the missingness, as this can itself be informative. For example, data may be missing from smaller subgroups within the dataset. This is particularly important when considering stratification for ethnicity. It's important to consider the potential bias introduced into a model by removing missing data or the impact on equity if data is removed. Before continuing with imputation or removal, check for patterns in the data of individuals who have partial missing data to assess the equity and bias implications of removing or imputing it. Look for evidence of non-random missingness by comparing the complete and missing data groups through stratification for important demographic variables such as age and ethnicity.
+Most data is unlikely to be missing completely at random (MCAR). Often, data is more likely to be missing for particular reasons (missing not at random; MNAR). Consider if there is a reason for the missingness, as this can itself be informative. For example, data may be missing from smaller subgroups within the dataset. This is particularly important when considering stratification for ethnicity. It's important to consider the potential bias introduced into a model by removing missing data or the impact on equity if data is removed. Before continuing with imputation or removal, check for patterns in the data of individuals who have partial missing data to assess the equity and bias implications of removing or imputing it. Look for evidence of non-random missingness by comparing the complete and missing data groups through stratification for important demographic variables such as age and ethnicity.
 
-Imputation can be a useful technique for overcoming missing data problems, but can be computational intensive. Review Prof Thomas Lumely's guide on imputation for more information about the application of imputation techniques. Your strategy for handling missing values will have implications for how you handle future unseen data too.
+Imputation can be a useful technique for overcoming missing data problems, but can be computational intensive. *Review Prof Thomas Lumley's guide* on imputation for more information about the application of imputation techniques. Your strategy for handling missing values will have implications for how you handle future unseen data too.
 
 ## Use of synthetic data
 
