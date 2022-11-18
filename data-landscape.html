@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.247">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Practical Guide to Health Data Science in Aotearoa New Zealand - 5&nbsp; The unique health data landscape</title>
+<title>Health Data Science in Aotearoa New Zealand: A Practical Guide - 4&nbsp; The unique health data landscape</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,13 +24,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./data-identifiability.html" rel="next">
+<link href="./data-access.html" rel="next">
 <link href="./collaboration.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -42,11 +41,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -64,13 +63,26 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./img/logo-pdh.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Health Data Science in Aotearoa New Zealand: A Practical Guide</span>
+    </a>
+  </div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The unique health data landscape</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The unique health data landscape</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -78,45 +90,13 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">Practical Guide to Health Data Science in Aotearoa New Zealand</a> 
-        <div class="sidebar-tools-main">
-    <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="./Practical-Guide-to-Health-Data-Science-in-Aotearoa-New-Zealand.pdf">
-            <i class="bi bi-bi-file-pdf pe-1"></i>
-          Download PDF
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="./Practical-Guide-to-Health-Data-Science-in-Aotearoa-New-Zealand.epub">
-            <i class="bi bi-bi-journal pe-1"></i>
-          Download ePub
-          </a>
-        </li>
-    </ul>
-    <a href="" title="Share" id="sidebar-tool-dropdown-1" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-1">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-            <i class="bi bi-bi-twitter pe-1"></i>
-          Twitter
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-            <i class="bi bi-bi-linkedin pe-1"></i>
-          LinkedIn
-          </a>
-        </li>
-    </ul>
-</div>
-    </div>
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./img/noun-mandatory-1951351.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
       </div>
       <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -127,37 +107,37 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./starting.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How do I start?</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./starting.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How do I start?</span></a>
+  <a href="./basics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding the basics</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Understanding the basics</span></a>
+  <a href="./collaboration.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">People, capability &amp; collaboration</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./collaboration.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">People, capability &amp; collaboration</span></a>
+  <a href="./data-landscape.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The unique health data landscape</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data-landscape.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The unique health data landscape</span></a>
+  <a href="./data-access.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Accessing and managing data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data-identifiability.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Identifiability</span></a>
+  <a href="./data-identifiability.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data identifiability</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -177,12 +157,17 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./deployment-lifecycle.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Deployment &amp; Lifecycle Maintenance</span></a>
+  <a href="./deployment-lifecycle.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Deployment &amp; lifecycle maintenance</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">Useful references and templates</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">Glossary</a>
   </div>
 </li>
     </ul>
@@ -191,43 +176,30 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#finding-data" id="toc-finding-data" class="nav-link active" data-scroll-target="#finding-data"><span class="toc-section-number">5.1</span>  Finding data</a>
+  <li><a href="#finding-data" id="toc-finding-data" class="nav-link active" data-scroll-target="#finding-data"><span class="toc-section-number">4.1</span>  Finding data</a>
   <ul class="collapse">
-  <li><a href="#public-health-data" id="toc-public-health-data" class="nav-link" data-scroll-target="#public-health-data"><span class="toc-section-number">5.1.1</span>  Public health data</a></li>
+  <li><a href="#the-integrated-data-infrastructure" id="toc-the-integrated-data-infrastructure" class="nav-link" data-scroll-target="#the-integrated-data-infrastructure"><span class="toc-section-number">4.1.1</span>  The Integrated Data Infrastructure</a></li>
   </ul></li>
-  <li><a href="#ethics-privacy" id="toc-ethics-privacy" class="nav-link" data-scroll-target="#ethics-privacy"><span class="toc-section-number">5.2</span>  Ethics &amp; privacy</a>
+  <li><a href="#understand-the-data" id="toc-understand-the-data" class="nav-link" data-scroll-target="#understand-the-data"><span class="toc-section-number">4.2</span>  Understand the data</a></li>
+  <li><a href="#sec-ethics" id="toc-sec-ethics" class="nav-link" data-scroll-target="#sec-ethics"><span class="toc-section-number">4.3</span>  Ethics &amp; privacy</a>
   <ul class="collapse">
-  <li><a href="#consent" id="toc-consent" class="nav-link" data-scroll-target="#consent"><span class="toc-section-number">5.2.1</span>  Consent</a></li>
-  <li><a href="#use-and-re-use-of-data" id="toc-use-and-re-use-of-data" class="nav-link" data-scroll-target="#use-and-re-use-of-data"><span class="toc-section-number">5.2.2</span>  Use and re-use of data</a></li>
-  <li><a href="#social-license---use-of-health-data" id="toc-social-license---use-of-health-data" class="nav-link" data-scroll-target="#social-license---use-of-health-data"><span class="toc-section-number">5.2.3</span>  Social license - use of health data</a></li>
+  <li><a href="#consent" id="toc-consent" class="nav-link" data-scroll-target="#consent"><span class="toc-section-number">4.3.1</span>  Consent</a></li>
+  <li><a href="#use-and-re-use-of-data" id="toc-use-and-re-use-of-data" class="nav-link" data-scroll-target="#use-and-re-use-of-data"><span class="toc-section-number">4.3.2</span>  Use and re-use of data</a></li>
+  <li><a href="#social-license---use-of-health-data" id="toc-social-license---use-of-health-data" class="nav-link" data-scroll-target="#social-license---use-of-health-data"><span class="toc-section-number">4.3.3</span>  Social license - use of health data</a></li>
   </ul></li>
-  <li><a href="#understand-the-data" id="toc-understand-the-data" class="nav-link" data-scroll-target="#understand-the-data"><span class="toc-section-number">5.3</span>  Understand the data</a></li>
-  <li><a href="#accessing-data" id="toc-accessing-data" class="nav-link" data-scroll-target="#accessing-data"><span class="toc-section-number">5.4</span>  Accessing data</a>
-  <ul class="collapse">
-  <li><a href="#planning-data-access" id="toc-planning-data-access" class="nav-link" data-scroll-target="#planning-data-access"><span class="toc-section-number">5.4.1</span>  Planning data access</a></li>
-  <li><a href="#data-sharing-agreements" id="toc-data-sharing-agreements" class="nav-link" data-scroll-target="#data-sharing-agreements"><span class="toc-section-number">5.4.2</span>  Data sharing agreements</a></li>
-  <li><a href="#the-data-request" id="toc-the-data-request" class="nav-link" data-scroll-target="#the-data-request"><span class="toc-section-number">5.4.3</span>  The data request</a></li>
-  <li><a href="#waiting.and-more-waiting" id="toc-waiting.and-more-waiting" class="nav-link" data-scroll-target="#waiting.and-more-waiting"><span class="toc-section-number">5.4.4</span>  Waiting….and more waiting</a></li>
-  <li><a href="#transferring-data" id="toc-transferring-data" class="nav-link" data-scroll-target="#transferring-data"><span class="toc-section-number">5.4.5</span>  Transferring data</a></li>
-  </ul></li>
-  <li><a href="#data-sovereignty" id="toc-data-sovereignty" class="nav-link" data-scroll-target="#data-sovereignty"><span class="toc-section-number">5.5</span>  Data sovereignty</a></li>
-  <li><a href="#data-governance-and-data-management" id="toc-data-governance-and-data-management" class="nav-link" data-scroll-target="#data-governance-and-data-management"><span class="toc-section-number">5.6</span>  Data governance and Data management</a>
-  <ul class="collapse">
-  <li><a href="#data-governance" id="toc-data-governance" class="nav-link" data-scroll-target="#data-governance"><span class="toc-section-number">5.6.1</span>  Data Governance</a></li>
-  <li><a href="#data-management" id="toc-data-management" class="nav-link" data-scroll-target="#data-management"><span class="toc-section-number">5.6.2</span>  Data Management</a></li>
-  </ul></li>
+  <li><a href="#sec-sovereignty" id="toc-sec-sovereignty" class="nav-link" data-scroll-target="#sec-sovereignty"><span class="toc-section-number">4.4</span>  Data sovereignty</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/precisiondrivenhealth/guide.git/edit/main/data-landscape.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The unique health data landscape</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The unique health data landscape</span></h1>
 </div>
 
 
@@ -242,109 +214,41 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Access to healthcare data requires a lot more up-front consideration than data from other industries.</p>
+<p>Access to health data requires a lot of initial consideration, possibly more than accessing data from other industries. Some key points to consider include:</p>
 <ul>
-<li><p>Knowing the data you’re able to access is critical to understanding what is possible, in addition to understanding the question or problem you are trying to solve.</p></li>
-<li><p>Data access can be one of the more tricky and time consuming aspects of a data science project. Access should be addressed at a very early stage. ​​It can take a lot of time to understand what data is available, agree on access, create a data sharing agreement, and to receive the data. See Accessing data</p></li>
-<li><p>Health data is extremely sensitive and has more restrictions and controls. Those who have access to it are in a privileged position and should treat the data with utmost care.</p></li>
-<li><p>Timeliness of health data is different and this can also significantly impact model evaluation. There can be significant lags between data being collected, processed and refreshed. For example, there is a specific chain of events that lead to updates to national health data collections, and this can take a significant amount of time - often many months. This can also affect planning for evaluations, as a model that goes live today may not be able to be effectively evaluated until several months later.</p></li>
+<li><p>Knowing the data you’re able to access is critical to understanding what is possible, in addition to understanding the question or problem you are trying to solve</p></li>
+<li><p>Data access can be one of the more tricky and time consuming aspects of a data science project. Access should be addressed at a very early stage. ​​It can take a lot of time to understand what data is available, agree on access, create a data sharing agreement, and to receive the data (<strong>refer to Accessing data section</strong>)</p></li>
+<li><p>Health data is extremely sensitive and has restrictions and controls due to the close linkage with individual lives. Those who have access to data are in a privileged position and should treat this taonga (treasure) with utmost care.</p></li>
+<li><p>New Zealand’s health system provides a unique individual identifier - the <a href="https://www.health.govt.nz/our-work/health-identity/national-health-index">National Health Index (NHI) number</a> - which lets data from different health sources be linked together, in contrast to systems used in other countries which make this linkage more difficult.</p></li>
+<li><p>Timeliness of health data can be different and this can also significantly impact model evaluation. There can be significant lags between data being collected, processed and refreshed. For example, there is a specific chain of events that lead to updates to national health data collections, and this can take a significant amount of time - often many months. This can also affect planning for evaluations, as a model that goes live today may not be able to be effectively evaluated until several months later.</p></li>
 <li><p>Healthcare data is often complex and ‘dirty’ (inaccurate, incomplete or inconsistent). When possible, liaise with analysts who work within the organisation to gain a local understanding of the data. Clinical expertise is required to put the information in context</p></li>
-<li><p>All of us have obligations as Te Tiriti partners to improve equity for Māori, including health equity. Depending on your bckground, this concept may be less familiar, but it is imperative to understand when working with health data and/or answering health questions.</p></li>
-<li><p>There are also significant considerations related to ethics, privacy, consent and social licence. The sections that follow cover this.</p></li>
+<li><p>All of us have obligations as Te Tiriti partners to improve equity for Māori, including health equity. Depending on your background, this concept may be less familiar, but it is imperative to understand when working with health data and/or answering health questions.</p></li>
+<li><p>There are also significant considerations related to ethics, privacy, consent and social licence. The sections that follow cover these areas.</p></li>
 </ul>
-<p>NB HQSC framework</p>
-<section id="finding-data" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="finding-data"><span class="header-section-number">5.1</span> Finding data</h2>
-<p>Data for health data science projects is everywhere! There is no shortage of available data in New Zealand. However, keep the following concepts in mind when you are considering how to find data, or access data you may already be interested in:</p>
+<section id="finding-data" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="finding-data"><span class="header-section-number">4.1</span> Finding data</h2>
+<p>Data for health data science projects is everywhere! There’s no shortage of available data in New Zealand. However, keep the following concepts in mind when you are considering how to find data, or access data you may already be interested in:</p>
 <ul>
-<li><p>Data can only be used for the purpose for which it was collected; any other use is called “secondary purpose” and requires additional consent (see <strong>Use and re-use of data</strong>)</p></li>
+<li><p>Data can only be used for the purpose for which it was collected; any other use is called “secondary purpose” and requires additional consent (<strong>see Use and re-use of data section</strong>)</p></li>
 <li><p>Health data used for research purposes needs thought around how the research will be conducted efficiently, ethically, and with privacy and safety front-of-mind.</p></li>
 </ul>
-<section id="public-health-data" class="level3" data-number="5.1.1">
-<h3 data-number="5.1.1" class="anchored" data-anchor-id="public-health-data"><span class="header-section-number">5.1.1</span> Public health data</h3>
-<p>For understanding population trends and context, aggregated data sets and web tools are publicly available via the Ministry of Health and Statistics New Zealand (Stats NZ). Micro data (at the level of the individual) is available to researchers on application to National Collections or Stats NZ for Confidentialised Unit Record Files (CURFs). Dissemination of micro data is in accordance with the Privacy Act, health legislation and contracts and access is strictly controlled according to use.</p>
-<p>Through a review of Aotearoa New Zealand health datasets, PDH has produced an interactive and updateable list of data sources available in New Zealand. Visit this at <a href="https://data.precisiondrivenhealth.com">data.precisiondrivenhealth.com</a>.</p>
-<p>The <a href="https://vhin.co.nz/">Virtual Health Information Network</a> includes many researchers who are using the Integrated Data Infrastructure supported by Statistics NZ. VHIN’s <a href="https://vhin.co.nz/guides/">IDI guides</a> may be helpful in understanding what centralised data is available. The IDI is accessible through following a specific process.</p>
-</section>
-</section>
-<section id="ethics-privacy" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="ethics-privacy"><span class="header-section-number">5.2</span> Ethics &amp; privacy</h2>
-<p>When dealing with health data, we need to be careful when assessing if a research project requires ethical approval. Ethical approval is typically required for any evidence-generating studies, or studies which propose changes to current standard of care (before any model is evaluated/validated) and should always be sought prior to accessing patient data. Approval is given through a written application process and gives permission for the research to be conducted by named investigators during a specific time period.</p>
-<p>Many of the questions asked in an ethics application are important in evaluating the risks and benefits and can indicate if there is social licence for the intended research. The application process forces researchers and organisations to consider whether their work has a net benefit for society (see Social license - use of health data).</p>
-<p>Ethics approvals in New Zealand can be provided at a national level (<a href="https://ethics.health.govt.nz/">Health and Disability Ethics Committees [HDEC]</a>) or local level (e.g.&nbsp;<a href="https://www.auckland.ac.nz/en/research/about-our-research/human-ethics/ahrec.html">Auckland Health Research Ethics Committee</a>). On top of this, hospitals may have their own research offices which may require separate notification (e.g.&nbsp;<a href="https://www.bopdhb.health.nz/learning-and-research/clinical-campus/research-office/">Research Office, Hauora a Toi Bay of Plenty, Te Whatu Ora)</a></p>
-<div class="callout-important callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Seek appropriate ethics approvals prior to accessing patient data.</p>
-<p>The implications of assuming that ethics is not required can have significant downstream effects on a project (e.g.&nbsp;reputation, delays). HDEC can provide ‘Scope of Review’ services to advise if the research you are doing is considered exempt from requiring an ethics application. Consider seeking written evidence of this as an assurance for stakeholders. See HDEC website for the current process: find out if your study requires HDEC review <a href="https://ethics.health.govt.nz/hdec-reviews-and-approvals/find-out-if-your-study-requires-hdec-review/">on the HDEC website</a></p>
-</div>
-</div>
-<div class="callout-important callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Some ethics applications can take months before an approval is granted, so allow adequate time for this process, factoring when review meetings are held. There is also the potential that further questions may be asked at this review stage.</p>
-</div>
-</div>
-<p>Consider if existing patient consent is sufficient to cover use of the data.</p>
-<p>Generally all use of administrative health data for research purposes will need to go through the HDEC process. Consent for use of administrative data is mainly around its use for improving the care of that individual within the health service or quality improvement processes (defined as audits or other activities). Unless the work is specifically with business intelligence within a healthcare organisation, any projects should be checked to see if ethical approval from HDEC is required.</p>
-<p>Privacy Impact Assessments should also be conducted at an early stage to identify potential data protection risks on the data of the individuals included. Measures should be adopted to eliminate or mitigate risks. Independent ethical reviews could be commissioned if needed.</p>
-<p>Helpful references:</p>
-<ul>
-<li><p><a href="http://ethicstoolkit.ai/">http://ethicstoolkit.ai/</a> - A useful checklist to address ethical and governance questions</p></li>
-<li><p><a href="https://neac.health.govt.nz/national-ethical-standards/">National Ethical Standards for Health and Disability Research</a> (NEAC) - These standards set out the ethical requirements for researchers, health service providers and disability service providers, and apply whether or not research or quality improvement activities require review by an ethics committee.</p></li>
-<li><p><a href="https://www.tandfonline.com/doi/full/10.1080/15265161.2021.2013977">A Research Ethics Framework for the Clinical Translation of Healthcare Machine Learning</a></p></li>
-</ul>
-<section id="consent" class="level3" data-number="5.2.1">
-<h3 data-number="5.2.1" class="anchored" data-anchor-id="consent"><span class="header-section-number">5.2.1</span> Consent</h3>
-<p>Before using data - particularly data that contains sensitive information - you need consent to use it. In the General Data Protection Regulation (GDPR), a regulation in EU law on data protection and privacy, consent is defined as follows:</p>
-<div class="callout-note callout callout-style-simple">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>“any freely given, specific, informed and unambiguous indication of the data subject’s wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her.”</p>
-</div>
-</div>
-</div>
-<p>Some health providers allow patients the opportunity to opt in for their data to be used for research and operational purposes, or to improve their care. Opting in may or may not explicitly allow for the processing of their de-identified data by third parties. More commonly, the patient has not provided explicit consent. Whether it is appropriate to use this data will depend on context (for example public good vs commercial gain), the degree to which the data is anonymised, whether data is provided in aggregated form, and the purpose the data is being used for.</p>
-</section>
-<section id="use-and-re-use-of-data" class="level3" data-number="5.2.2">
-<h3 data-number="5.2.2" class="anchored" data-anchor-id="use-and-re-use-of-data"><span class="header-section-number">5.2.2</span> Use and re-use of data</h3>
-<p>‘Use’ of data relates to using data for the purpose for which it was consented and collected. Re-use of data (or secondary use) is when we use data collected for another purpose.</p>
-<p>When we re-use data, we should be mindful of its purpose, coverage, bias, timeliness, and applicability to the secondary use. For instance, the National Minimum Data Set is gathered for policy formation, performance monitoring, research and review. It may be useful for understanding hospitalisations, but does not provide a complete picture of an individual's health journey.</p>
-</section>
-<section id="social-license---use-of-health-data" class="level3" data-number="5.2.3">
-<h3 data-number="5.2.3" class="anchored" data-anchor-id="social-license---use-of-health-data"><span class="header-section-number">5.2.3</span> Social license - use of health data</h3>
-<p>Social licence is the implied permission to make decisions about the management and use of the public data in a way that ensures trust and confidence in the way that data is managed. Organisations who store health data are stewards. Any use of data, outside of that explicitly consented, is subject to social licence.</p>
-<p>Conceptually, the level of engagement required to gain social license is higher for decisions that are more likely to affect an individual and are fully automated, compared to those that are manual and affect an entire population. Social licence isn’t ‘gained’ or ‘approved’; organisations need to gauge people’s thoughts, feelings, perceptions on the use of their data. These attitudes are dynamic and constantly evolving.</p>
-<p>Assurance to stakeholders should be provided through transparency and governance to limit reputational harm, particularly when using patient data in a commercial context. Consider what data you are handling, how identifiable it is and if patient consent is specifically required. This is particularly important for data that may be re-used for secondary purposes - the original consent should be carefully reviewed. Data should be used for public good in a way that is equitable, with consideration for any unintended consequences, such as increased clinician workload (due to workflow disruption), potential for misuse of the model, and perpetuating biases that exist in the data.</p>
-<p>Data needs to be treated with care and a suitable data management plan can help.</p>
-<p>In our experience, privacy, confidentiality, security, transparency, communication and the purpose for which data is used, are often raised as concerns by clinicians, administrators, legal experts, and other stakeholders.</p>
+<p>To understand population trends and context, aggregated data sets and web tools are publicly available via the Ministry of Health and Statistics New Zealand (Stats NZ). Micro data (at the level of the individual) is available to researchers on application to National Collections or Stats NZ for Confidentialised Unit Record Files (CURFs). Dissemination of micro data is in accordance with the Privacy Act, health legislation and contracts and access is strictly controlled according to use.</p>
 <p>Useful resources:</p>
 <ul>
-<li><p><a href="https://toi-aria.s3.amazonaws.com/documents/Summary-Guidelines.pdf">A Path to Social Licence Guidelines for Trusted Data Use - Data Futures Partnership 2017</a></p></li>
-<li><p><a href="https://www.health.govt.nz/publication/research-social-licence-health-data-re-use">Research on social licence for health data re-use</a> Manatu Hauora research providing context about the re-use of health data and social licence.</p></li>
+<li><p>Through a review of Aotearoa New Zealand health datasets, PDH has produced <a href="https://data.precisiondrivenhealth.com">an interactive and updatable list of data</a> available in New Zealand. This includes data from <a href="https://figure.nz/">Figure.nz</a> and many other sources.</p></li>
+<li><p><a href="https://www.health.govt.nz/nz-health-statistics/where-can-i-find-health-information">Where can I find health information?</a> (Manatū Hauora): Data sources commonly used when analysing the health of New Zealand populations</p></li>
+<li><p><a href="https://www.health.govt.nz/nz-health-statistics/health-statistics-and-data-sets">Health statistics and data sets</a> (Manatū Hauora)</p></li>
 </ul>
+<section id="the-integrated-data-infrastructure" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="the-integrated-data-infrastructure"><span class="header-section-number">4.1.1</span> The Integrated Data Infrastructure</h3>
+<p>Supported by Statistics NZ, the <a href="https://www.stats.govt.nz/integrated-data/integrated-data-infrastructure/">Integrated Data Infrastructure (IDI)</a> is a repository of individual-level data from multiple government sources, able to be linked together, anonymised, and used for research. It’s a massive resource which is accessible through a prescribed process with very high safety and privacy requirements. It may not be possible to derive individual-level insights from IDI data.</p>
+<p>The <a href="https://vhin.co.nz/">Virtual Health Information Network</a> includes many researchers who are using the IDI. VHIN’s <a href="https://vhin.co.nz/guides/">IDI guides</a> can help you understand what centralised data is available and how it could be used in your project.</p>
+<p>If you’re interested in what you could do with the IDI, it’s best to make contact with a researcher who already has experience in using this platform. Refer to the <a href="https://cdm20045.contentdm.oclc.org/digital/collection/p20045coll17/search/searchterm/integrated%20data%20infrastructure%20(idi)/field/projeb/mode/exact/conn/and/order/dmcreated/ad/desc">list of research using Stats NZ microdata</a>.</p>
 </section>
 </section>
-<section id="understand-the-data" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="understand-the-data"><span class="header-section-number">5.3</span> Understand the data</h2>
-<p>Knowing the data you’re able to access is critical to understanding what is possible, in addition to understanding the question or problem you are trying to solve.</p>
+<section id="understand-the-data" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="understand-the-data"><span class="header-section-number">4.2</span> Understand the data</h2>
+<p>Knowing all the data you’re able to access is critical to understanding what is possible, in addition to understanding the question or problem you are trying to solve.</p>
 <div class="callout-tip callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -361,173 +265,152 @@ Tip
 <p>Health data is often only available after a significant lag time, and with a slow refresh rate. For example, there is a specific chain of events that lead to updates to national health data collections, and this can take a significant amount of time - often many months.</p>
 <p>At an early stage, it is valuable to consider:</p>
 <ul>
-<li><p>Data landscape - What data is collected? How is access managed? Does it help address the problem you are trying to solve?</p></li>
-<li><p>Characteristics - what is the format, type &amp; size? When was the data collected? How often will you receive it?</p></li>
-<li><p>How much historical data is available, and what is the quality? Use the minimum necessary!</p></li>
-<li><p>What purpose was it collected for, and does that influence your interpretation?</p></li>
-<li><p>Consent - Is the use of data in this covered by existing patient consent?</p></li>
-<li><p>Data collection, maintenance, publication - Distinguish between data already collected and new data created by the study. How do you plan to maintain/publish this data?</p></li>
-<li><p>Personally identifiable information - Is de-identification required? Who will do this? Refer to <strong>Handling personal health information</strong></p></li>
-<li><p>Data availability - how long will it take to source and are there any reporting or system lags?</p></li>
-<li><p>Labelling/annotation - does the project need Human In the Loop (HITL) Mechanism for annotating and validating the input and output data?</p></li>
-</ul>
-<p>In some cases, publicly accessible datasets may be a useful starting point. Be sure to read the access requirements linked to using these.</p>
-<p>Data sources, including New Zealand and publicly available:</p>
-<ul>
-<li><p><a href="https://data.precisiondrivenhealth.com/">PDH’s references to data sources used in health</a>.</p></li>
-<li><p><a href="https://www.health.govt.nz/nz-health-statistics/where-can-i-find-health-information">Where can I find health information? | Ministry of Health NZ</a> Data sources commonly used when analysing the health of New Zealand populations.</p></li>
-<li><p><a href="https://www.health.govt.nz/nz-health-statistics/health-statistics-and-data-sets">Manatu Hauora - Health statistics and data sets</a></p></li>
+<li><p><strong>Data landscape</strong> - What data is collected? How is access managed? Does it help address the problem you are trying to solve?</p></li>
+<li><p><strong>Characteristics</strong> - What is the format, type and size of data? When was the data collected? How often will you receive it?</p></li>
+<li><p><strong>Availability and quality</strong> - How much historical data is available, and what is the quality? Use the minimum necessary!</p></li>
+<li><p><strong>Purpose</strong> - What purpose was the data collected for, and does that influence your interpretation?</p></li>
+<li><p><strong>Consent</strong> - Is the use of data covered by existing patient consent?</p></li>
+<li><p><strong>Data collection, maintenance, publication</strong> - Distinguish between data already collected and new data created by the study. How do you plan to maintain and/or publish this data?</p></li>
+<li><p><strong>Personally identifiable information</strong> - Is de-identification required? Who will do this? (See <strong>Handling personal health information</strong>)</p></li>
+<li><p><strong>Data availability</strong> - How long will it take to source and are there any reporting or system lags?</p></li>
+<li><p><strong>Labelling/annotation</strong> - Does the project need Human In the Loop (HITL) mechanism for annotating and validating the input and output data?</p></li>
 </ul>
 </section>
-<section id="accessing-data" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="accessing-data"><span class="header-section-number">5.4</span> Accessing data</h2>
-<p>Data access can be one of the more tricky and time consuming aspects of a data science project. Access should be addressed at a very early stage. ​​It can take a lot of time to understand what data is available, agree on access, create a data sharing agreement, and to receive the data.</p>
-<p>Any project that involves access to individual-level healthcare data from an organisation will need upfront discussion with the organisation around existing data governance, privacy impacts and ethics applications. This discussion will include data sovereignty and consideration of equity. Once these points have been clearly delineated, the process of how the data is to be handled should be much clearer.</p>
-<section id="planning-data-access" class="level3" data-number="5.4.1">
-<h3 data-number="5.4.1" class="anchored" data-anchor-id="planning-data-access"><span class="header-section-number">5.4.1</span> Planning data access</h3>
-<p>To understand data access requirements we must consider the sensitive nature of health data, consent, security and technical needs.</p>
-<p>Know what you are asking for. Your data request should be well specified and considered and it will take some time, discussion with the health data provider and analysis to formulate.</p>
-<p>Many providers will have strict data transfer and storage protocols, however these may not always be followed by individuals. How the data will be transferred and stored, and at what frequency should be discussed and agreed, before a .csv file suddenly lands in your inbox.</p>
-<p>Data that contains Protected Health Information (PHI) or Personal Identifiable Information (PII) cannot be freely shared, however after de-identification (see section <a href="#data-identifiability">Data Identifiability</a>) it may be possible to share such data, under certain terms.</p>
-</section>
-<section id="data-sharing-agreements" class="level3" data-number="5.4.2">
-<h3 data-number="5.4.2" class="anchored" data-anchor-id="data-sharing-agreements"><span class="header-section-number">5.4.2</span> Data sharing agreements</h3>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<section id="sec-ethics" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="sec-ethics"><span class="header-section-number">4.3</span> Ethics &amp; privacy</h2>
+<p>Concepts around the legal, privacy, and ethical dimensions of health data projects are often interlinked. Legal perspectives consider the fit of the project with the laws of the data source jurisdiction as well as any legal requirements of the analysis location, if these aren’t the same place. Privacy perspectives are around what data is collected, how it’s collected safely, where it is stored, and its lifecycle. Ethical conduct of a project includes ensuring the risks to participants of data use are outweighed by the benefits of the project.</p>
+<p>All research in New Zealand which uses data from humans needs to be undertaken in an ethical manner. In some cases, approval from a registered ethics committee is required before the project can be started. In many cases, the organisation undertaking the research (such as your employer) may also have specific research or ethical approval processes as well.</p>
+<p>When dealing with health data, be careful when assessing if a data science project requires ethical approval. Ethical approval is typically required for any evidence-generating studies, or studies which propose changes to current standard of care (before any model is evaluated/validated) and should always be sought prior to accessing patient data. Ethical approval is given through a written application process and gives permission for the research to be conducted by named investigators during a specific time period.</p>
+<p>Ethics approvals in New Zealand are provided through committees which have had centralised approval to follow appropriate standards. The ethical standards are set by the <a href="https://neac.health.govt.nz/national-ethical-standards/">National Ethical Standards for Health and Disability Research and Quality Improvement</a> and apply to researchers, health service providers and disability service providers, regardless of whether or not an additional approval process is required. Think of these like a set of best practices for undertaking work with health data or human participants - follow them regardless of whether anyone is requiring you to do so!</p>
+<p>Most formal approvals for health data research are provided at a national level by the <a href="https://ethics.health.govt.nz/">Health and Disability Ethics Committees (HDEC)</a>; in some cases a more localised approval is required instead or in addition (for example, the <a href="https://www.auckland.ac.nz/en/research/about-our-research/human-ethics/ahrec.html">Auckland Health Research Ethics Committee</a>).</p>
+<p>On top of this, hospitals or clinical organisations usually have their own research offices which require separate notification (such as <a href="https://www.bopdhb.health.nz/learning-and-research/clinical-campus/research-office/">Research Office, Hauora a Toi Bay of Plenty, Te Whatu Ora</a>).</p>
+<p>Find out if your study requires HDEC review <a href="https://ethics.health.govt.nz/hdec-reviews-and-approvals/find-out-if-your-study-requires-hdec-review/">on the HDEC website</a>.</p>
+<p>Many of the questions asked in an ethics application and approval process are important in evaluating the risks and benefits and can indicate if there is social licence for the intended research. This process forces researchers and organisations to consider whether their work has a net benefit for society. The concept of “social license” or societal acceptance for use of health data is a related idea (see <strong>Social license - use of health data</strong>).</p>
+<div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Tip
+Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Data sharing agreements should be written and agreed early, ideally guided by legal advice.</p>
+<p>Seek appropriate ethics approvals prior to accessing patient data.</p>
+<p>The implications of assuming that ethics is not required can have significant downstream effects on a project, such as reputation issues or delays. HDEC can provide ‘Scope of Review’ services to advise if the research you are doing is considered exempt from requiring an ethics application. Consider seeking written evidence of this as an assurance for stakeholders. See <a href="https://ethics.health.govt.nz/hdec-reviews-and-approvals/find-out-if-your-study-requires-hdec-review/">the HDEC website</a> for the current process.</p>
 </div>
 </div>
-<p>Data sharing agreements between a data provider and data recipient typically cover:</p>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Some ethics applications can take months before an approval is granted, so allow adequate time for this process, factoring in when review meetings are held. It’s also likely that further questions may be asked at this review stage.</p>
+</div>
+</div>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Consider if existing patient consent is sufficient to cover use of the data. See <em>Consent</em> below (<strong>reference</strong>).</p>
+</div>
+</div>
+<p>Generally all use of administrative health data for research purposes will need to go through the HDEC process. Consent for use of administrative data is mainly around its use for improving the care of that individual within the health service or quality improvement processes (defined as audits or other activities). Unless the work is specifically with business intelligence within a healthcare organisation, you should ask for assurance to confirm if ethical approval from HDEC is required, or not.</p>
+<p>In New Zealand, health information follows the <a href="https://www.privacy.org.nz/privacy-act-2020/codes-of-practice/hipc2020/">Health Information Privacy Code 2020</a>. The rules of this code can be summarised for health agencies as below. These principles are also highly relevant to the use of health data for research purposes.</p>
+<ol type="1">
+<li>Only collect health information if you really need it.</li>
+<li>Get it straight from the people concerned where possible.</li>
+<li>Tell them what you’re going to do with it.</li>
+<li>Be considerate when you’re getting it.</li>
+<li>Take care of it once you’ve got it.</li>
+<li>People can see their health information if they want to.</li>
+<li>They can correct it if it’s wrong.</li>
+<li>Make sure health information is correct before you use it.</li>
+<li>Get rid of it when you’re done with it.</li>
+<li>Use it for the purpose you got it.</li>
+<li>Only disclose it if you have a good reason.</li>
+<li>Make sure that health information sent overseas is adequately protected.</li>
+<li>Only assign unique identifiers where permitted.</li>
+</ol>
+<p>Privacy Impact Assessments (PIAs) should also be conducted at an early stage to identify potential data protection risks on the data of the individuals included. Measures should be adopted to eliminate or mitigate risks. The Office of the Privacy Commissioner <a href="https://privacy.org.nz/publications/guidance-resources/privacy-impact-assessment/">offers some guidance on PIAs</a>.</p>
+<p>Useful resources:</p>
 <ul>
-<li><p>What data will be shared and for how long</p></li>
-<li><p>What is the consented use of the data</p></li>
-<li><p>How the data will be shared and stored</p></li>
-<li><p>How the data will be used and its destruction after project completion</p></li>
-<li><p>Privacy and confidentiality</p></li>
-<li><p>How security will be ensured</p></li>
-<li><p>How compliance with and breaches of the agreement will be handled</p></li>
-<li><p>Anything else relevant, such as de-identification of data</p></li>
+<li><p><a href="http://ethicstoolkit.ai/">A checklist to address ethical and governance questions</a></p></li>
+<li><p><a href="https://www.tandfonline.com/doi/full/10.1080/15265161.2021.2013977">A Research Ethics Framework for the Clinical Translation of Healthcare Machine Learning</a></p></li>
 </ul>
-<p>These agreements cannot escape data protection and privacy laws, and agreements that already exist between a data provider and a patient. This should be taken into consideration before any data is transferred.</p>
+<section id="consent" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="consent"><span class="header-section-number">4.3.1</span> Consent</h3>
+<p>You need consent before you can use data - particularly data that contains sensitive information. In the General Data Protection Regulation (GDPR), a regulation in EU law on data protection and privacy, consent is defined as:</p>
+<blockquote class="blockquote">
+<p>“any freely given, specific, informed and unambiguous indication of the data subject’s wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her.”</p>
+</blockquote>
+<div class="callout-note callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Or use this format for a blockquote?</p>
+</div>
+</div>
+</div>
+<p>Some health providers give patients the opportunity to opt in for their data to be used for research and operational purposes, or to improve their care. Opting in may or may not explicitly allow for the processing of their de-identified data by third parties. More commonly, the patient hasn’t provided explicit consent.</p>
+<p>Whether it’s appropriate to use this data will depend on context (for example public good vs.&nbsp;commercial gain), the degree to which the data is anonymised, whether data is provided in aggregated form, and the purpose the data is being used for.</p>
 </section>
-<section id="the-data-request" class="level3" data-number="5.4.3">
-<h3 data-number="5.4.3" class="anchored" data-anchor-id="the-data-request"><span class="header-section-number">5.4.3</span> The data request</h3>
-<p>Analysis and discussion regarding the data request are also vital at an early stage. Health data is sensitive and describes people in their most personal and vulnerable moments. It is a privilege to be working with it, so be specific with your request and don’t seek more than is really needed.</p>
-<p>Some questions to consider are:</p>
+<section id="use-and-re-use-of-data" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="use-and-re-use-of-data"><span class="header-section-number">4.3.2</span> Use and re-use of data</h3>
+<p>‘Use’ of data relates to using data for the purpose for which it was consented and collected. Re-use of data (or secondary use) is when you use data collected for another purpose.</p>
+<p>When you re-use data, you should be mindful of its purpose, coverage, bias, timeliness, and applicability to the secondary use. For instance, the National Minimum Data Set is gathered for policy formation, performance monitoring, research and review. It may be useful for understanding hospitalisations, but does not provide a complete picture of an individual’s health journey.</p>
+</section>
+<section id="social-license---use-of-health-data" class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="social-license---use-of-health-data"><span class="header-section-number">4.3.3</span> Social license - use of health data</h3>
+<p>Social licence is the implied permission to make decisions about the management and use of the public data in a way that ensures trust and confidence in the way that data is managed. Organisations who store health data are stewards.</p>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Any use of data, outside of that which has been explicitly consented, is subject to ethics and requires consideration of social licence.</p>
+</div>
+</div>
+<p>Conceptually, the level of engagement required to gain social license is higher for decisions that are more likely to affect an individual and are fully automated, compared to those that are manual and affect an entire population. Social licence isn’t ‘gained’ or ‘approved’; organisations need to gauge people’s thoughts, feelings, perceptions on the use of their data. These attitudes are dynamic and constantly evolving.</p>
+<p>Assurance to stakeholders should be provided through transparency and governance to limit reputational harm, particularly when using patient data in a commercial context. Consider what data you’re handling, how identifiable it is and if patient consent is specifically required. This is particularly important for data that may be re-used for secondary purposes - the original consent should be carefully reviewed.</p>
+<p>Data should be used for public good in a way that is equitable, with consideration for any unintended consequences, such as increased clinician workload (due to workflow disruption), potential for misuse of the model, and perpetuating biases that exist in the data. Data needs to be treated with care and a suitable data management plan can help.</p>
+<p>In our experience, privacy, confidentiality, security, transparency, communication and the purpose for which data is used, are often raised as concerns by clinicians, administrators, legal experts, and other stakeholders.</p>
+<p>Useful resources:</p>
 <ul>
-<li><p>What data sources are available and accessible?</p></li>
-<li><p>What fields are needed?</p></li>
-<li><p>Can the data be operationalised?</p></li>
-<li><p>What time period is to be covered?</p></li>
-<li><p>How do privacy, ethics and equity considerations affect my data request?</p></li>
-<li><p>What is the minimum data set that I will need for this project?</p></li>
-<li><p>Who has the ability to provide the data?</p></li>
+<li><p><a href="https://toi-aria.s3.amazonaws.com/documents/Summary-Guidelines.pdf">A Path to Social Licence Guidelines for Trusted Data Use - Data Futures Partnership 2017</a> (PDF)</p></li>
+<li><p>Manatū Hauora <a href="https://www.health.govt.nz/publication/research-social-licence-health-data-re-use">research on social licence for health data re-use</a></p></li>
 </ul>
 </section>
-<section id="waiting.and-more-waiting" class="level3" data-number="5.4.4">
-<h3 data-number="5.4.4" class="anchored" data-anchor-id="waiting.and-more-waiting"><span class="header-section-number">5.4.4</span> Waiting….and more waiting</h3>
-<p>Once you have your plan in place, smooth sailing isn’t guaranteed. De-identification, data sharing agreements and data requests can take time. But even when an agreement is signed and plans are ready, you might find a lot more time passes while waiting for data.</p>
-<p>Health data providers usually have to undertake a lot of work before sending data in the form agreed. Data may be located in different systems, extraction may require booking in technical resources and the data may need pre-processing and annotation. Also, while you may be eagerly awaiting the data, it may not be afforded the same priority by a busy health provider. Patience is a virtue, but the occasional gentle nudge may be necessary. You also need to manage your own workload, and you don’t want all of your data buses arriving at once.</p>
 </section>
-<section id="transferring-data" class="level3" data-number="5.4.5">
-<h3 data-number="5.4.5" class="anchored" data-anchor-id="transferring-data"><span class="header-section-number">5.4.5</span> Transferring data</h3>
-<p>Some providers may require that you use their systems, whether on premises or in the cloud, so that the data never ‘leaves’ their organisation. Others may be happy to upload their data to a secure cloud-based server provided by you, and some may have their own file transfer systems.</p>
-<p>Try to avoid email for data transfer, even if a file is password protected. Emailed data can be difficult to track and audit. This may result in multiple copies being saved using up storage capacity. Files are also frequently too large to be attached. Security is a particular concern, especially where either sender or recipient uses a third-party email service – you do not know how many servers are handling that message.</p>
-<p>If you will be receiving data regularly, it’s also better to minimise the number of transfers by having data sent in batches. Any data you receive should also be different from what you have already received. Have this conversation with the health data provider at the planning stage.</p>
-<p>Finally, please ensure you confirm successful receipt of the data.</p>
-</section>
-</section>
-<section id="data-sovereignty" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="data-sovereignty"><span class="header-section-number">5.5</span> Data sovereignty</h2>
-<p>Data sovereignty refers to the understanding that data is subject to the laws of the nation within which it is collected and stored. In New Zealand, there is also a focus on where the data is stored and processed. Data agreements should take care to address these points so they are clear to all parties.</p>
+<section id="sec-sovereignty" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="sec-sovereignty"><span class="header-section-number">4.4</span> Data sovereignty</h2>
+<p>Data sovereignty refers to the understanding that data is subject to the laws of the nation within which it is collected and stored. In New Zealand, there is also a focus on where the data is stored and processed. Data agreements should take care to address these points so they are clear to all parties. Data handling and ethical dimensions of the project also need to ensure data sovereignty is at front of mind.</p>
 <p>Māori data sovereignty recognises that Māori data should be subject to Māori governance. Māori data sovereignty supports tribal sovereignty and the realisation of Māori and iwi aspirations. Māori must be included in any work about Māori data. An equity lens is required and ideally should include Māori in the research team as well as in external review/advisor roles.</p>
-<p>Useful resources on data sovereignty include:</p>
+<p>Useful resources:</p>
 <ul>
 <li><p><a href="https://www.temanararaunga.maori.nz/">Te Mana Raraunga</a> (Māori Data Sovereignty Network) has helpful resources and guidance.</p></li>
-<li><p>HRC also has <a href="https://www.hrc.govt.nz/resources/guidelines-researchers-health-research-involving-maori">Guidelines for Researchers on Health Research Involving Māori</a>.</p></li>
+<li><p>The Health Research Council of NZ (HRC) also produces <a href="https://www.hrc.govt.nz/resources/guidelines-researchers-health-research-involving-maori">Guidelines for Researchers on Health Research Involving Māori</a>.</p></li>
 </ul>
-</section>
-<section id="data-governance-and-data-management" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="data-governance-and-data-management"><span class="header-section-number">5.6</span> Data governance and Data management</h2>
-<p>Data governance and data management are distinct concepts with some areas of overlap and linkage. Both areas concern how we access, store, log, secure, maintain, use, share and destroy data in an efficient and standardised way, guided by principles such as accountability, transparency, ethical use, privacy, consent and data availability, integrity and quality.</p>
-<table class="table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Data governance</th>
-<th>Data management</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Maintains oversight, provides accountability, shapes and communicates policies and procedures</td>
-<td>Enacts policies and procedures for day-to-day handling of data</td>
-</tr>
-<tr class="even">
-<td>Governance group or executive team or board; a diverse group of stakeholders to cover multiple perspectives</td>
-<td>Individual data stewards</td>
-</tr>
-</tbody>
-</table>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This is written from the perspective of a consulting practice, research organisation or any organisation that uses data which it does not directly collect.</p>
-</div>
-</div>
-<section id="data-governance" class="level3" data-number="5.6.1">
-<h3 data-number="5.6.1" class="anchored" data-anchor-id="data-governance"><span class="header-section-number">5.6.1</span> Data Governance</h3>
-<p>For more information about Governance see the <strong>Governance</strong> section.</p>
-</section>
-<section id="data-management" class="level3" data-number="5.6.2">
-<h3 data-number="5.6.2" class="anchored" data-anchor-id="data-management"><span class="header-section-number">5.6.2</span> Data Management</h3>
-<section id="storage-and-security" class="level4" data-number="5.6.2.1">
-<h4 data-number="5.6.2.1" class="anchored" data-anchor-id="storage-and-security"><span class="header-section-number">5.6.2.1</span> Storage and security</h4>
-<p>With a data access plan in place, and an understanding of what is available, appropriate storage and security requirements need to be in place.</p>
-<p>When storing data on premises or on your secure cloud-based service, there should be a clear process for access control. Larger, regular batches of data are preferable, but where there is irregularity in timing and peaks in volume, cloud based auto-scaled storage may help keep costs down.</p>
-<p>On-premises data storage should be on a secure server, and not stored or replicated on personal computers.</p>
-</section>
-<section id="data-register-or-log" class="level4" data-number="5.6.2.2">
-<h4 data-number="5.6.2.2" class="anchored" data-anchor-id="data-register-or-log"><span class="header-section-number">5.6.2.2</span> Data register or log</h4>
-<p>What starts out as a data trickle can quickly become a data flood. It is worthwhile maintaining a register of data from the first file received.</p>
-<p>A data register or log can help you or your organisation track:</p>
-<ul>
-<li><p>what data you have received</p></li>
-<li><p>when you received it</p></li>
-<li><p>where you are storing it</p></li>
-<li><p>who can/should have access to it</p></li>
-<li><p>when it should be destroyed</p></li>
-<li><p>what processed data sets exist and where, particularly if they contain PHI</p></li>
-</ul>
-<p>The format can be tailored to suit your organisation (for example, using a spreadsheet).</p>
-</section>
-<section id="tools-for-data-management" class="level4" data-number="5.6.2.3">
-<h4 data-number="5.6.2.3" class="anchored" data-anchor-id="tools-for-data-management"><span class="header-section-number">5.6.2.3</span> Tools for data management</h4>
-<p>Managing data for a small organisation or research team could be as simple as having a secure storage solution and a spreadsheet to keep track of important metadata. Larger organisations will likely need formal data governance, data policies in place and data stewards to manage the use, storage and security of data. Tailor your approach based on the data being handled.</p>
-<p>Consider version control for all aspects of the project, including data; depending on the tooling that you use, this may already be an included capability. <a href="https://dvc.org/">DVC</a> is one tool designed specifically for data version control for machine learning. Your development environment or cloud storage solution may also include features of this type. Data files can be named with versions, however this method is not as robust as automated versioning that is managed by a tool.</p>
-<p>Data management tools are responsible for carrying a wide range of data or documents.</p>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -662,17 +545,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./collaboration.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">People, capability &amp; collaboration</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">People, capability &amp; collaboration</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./data-identifiability.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Identifiability</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./data-access.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Accessing and managing data</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

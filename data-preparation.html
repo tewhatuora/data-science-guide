@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.247">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Practical Guide to Health Data Science in Aotearoa New Zealand - 7&nbsp; Data preparation</title>
+<title>Health Data Science in Aotearoa New Zealand: A Practical Guide - 7&nbsp; Data preparation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,11 +20,29 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -42,11 +60,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -64,10 +82,23 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./img/logo-pdh.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Health Data Science in Aotearoa New Zealand: A Practical Guide</span>
+    </a>
+  </div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
       <h1 class="quarto-secondary-nav-title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data preparation</span></h1>
@@ -78,45 +109,13 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">Practical Guide to Health Data Science in Aotearoa New Zealand</a> 
-        <div class="sidebar-tools-main">
-    <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="./Practical-Guide-to-Health-Data-Science-in-Aotearoa-New-Zealand.pdf">
-            <i class="bi bi-bi-file-pdf pe-1"></i>
-          Download PDF
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="./Practical-Guide-to-Health-Data-Science-in-Aotearoa-New-Zealand.epub">
-            <i class="bi bi-bi-journal pe-1"></i>
-          Download ePub
-          </a>
-        </li>
-    </ul>
-    <a href="" title="Share" id="sidebar-tool-dropdown-1" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-1">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-            <i class="bi bi-bi-twitter pe-1"></i>
-          Twitter
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-            <i class="bi bi-bi-linkedin pe-1"></i>
-          LinkedIn
-          </a>
-        </li>
-    </ul>
-</div>
-    </div>
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./img/noun-mandatory-1951351.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
       </div>
       <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -127,37 +126,37 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./starting.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How do I start?</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./starting.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How do I start?</span></a>
+  <a href="./basics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding the basics</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Understanding the basics</span></a>
+  <a href="./collaboration.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">People, capability &amp; collaboration</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./collaboration.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">People, capability &amp; collaboration</span></a>
+  <a href="./data-landscape.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The unique health data landscape</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data-landscape.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The unique health data landscape</span></a>
+  <a href="./data-access.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Accessing and managing data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data-identifiability.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Identifiability</span></a>
+  <a href="./data-identifiability.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data identifiability</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -177,12 +176,17 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./deployment-lifecycle.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Deployment &amp; Lifecycle Maintenance</span></a>
+  <a href="./deployment-lifecycle.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Deployment &amp; lifecycle maintenance</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">Useful references and templates</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">Glossary</a>
   </div>
 </li>
     </ul>
@@ -191,26 +195,28 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-manipulationwrangling" id="toc-data-manipulationwrangling" class="nav-link active" data-scroll-target="#data-manipulationwrangling"><span class="toc-section-number">7.1</span>  Data manipulation/wrangling</a>
+  <li><a href="#data-wrangling" id="toc-data-wrangling" class="nav-link active" data-scroll-target="#data-wrangling"><span class="toc-section-number">7.1</span>  Data wrangling</a>
   <ul class="collapse">
-  <li><a href="#data-quality" id="toc-data-quality" class="nav-link" data-scroll-target="#data-quality"><span class="toc-section-number">7.1.1</span>  Data quality</a></li>
+  <li><a href="#data-labelling" id="toc-data-labelling" class="nav-link" data-scroll-target="#data-labelling"><span class="toc-section-number">7.1.1</span>  Data labelling</a></li>
+  <li><a href="#data-quality" id="toc-data-quality" class="nav-link" data-scroll-target="#data-quality"><span class="toc-section-number">7.1.2</span>  Data quality</a></li>
   </ul></li>
   <li><a href="#data-linkage" id="toc-data-linkage" class="nav-link" data-scroll-target="#data-linkage"><span class="toc-section-number">7.2</span>  Data linkage</a>
   <ul class="collapse">
-  <li><a href="#how-to-link" id="toc-how-to-link" class="nav-link" data-scroll-target="#how-to-link"><span class="toc-section-number">7.2.1</span>  How to link</a></li>
-  <li><a href="#risk-of-re-identification" id="toc-risk-of-re-identification" class="nav-link" data-scroll-target="#risk-of-re-identification"><span class="toc-section-number">7.2.2</span>  Risk of re-identification</a></li>
-  <li><a href="#approaches" id="toc-approaches" class="nav-link" data-scroll-target="#approaches"><span class="toc-section-number">7.2.3</span>  Approaches</a></li>
+  <li><a href="#unique-identifiers" id="toc-unique-identifiers" class="nav-link" data-scroll-target="#unique-identifiers"><span class="toc-section-number">7.2.1</span>  Unique identifiers</a></li>
+  <li><a href="#how-to-link" id="toc-how-to-link" class="nav-link" data-scroll-target="#how-to-link"><span class="toc-section-number">7.2.2</span>  How to link</a></li>
+  <li><a href="#risk-of-re-identification" id="toc-risk-of-re-identification" class="nav-link" data-scroll-target="#risk-of-re-identification"><span class="toc-section-number">7.2.3</span>  Risk of re-identification</a></li>
+  <li><a href="#approaches" id="toc-approaches" class="nav-link" data-scroll-target="#approaches"><span class="toc-section-number">7.2.4</span>  Approaches</a></li>
   </ul></li>
   <li><a href="#missing-data" id="toc-missing-data" class="nav-link" data-scroll-target="#missing-data"><span class="toc-section-number">7.3</span>  Missing data</a></li>
   <li><a href="#use-of-synthetic-data" id="toc-use-of-synthetic-data" class="nav-link" data-scroll-target="#use-of-synthetic-data"><span class="toc-section-number">7.4</span>  Use of synthetic data</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/precisiondrivenhealth/guide.git/edit/main/data-preparation.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -229,26 +235,43 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="data-manipulationwrangling" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="data-manipulationwrangling"><span class="header-section-number">7.1</span> Data manipulation/wrangling</h2>
-<p>Good data manipulation/wrangling practice is based on comprehensive knowledge of the data. We recommend the following:</p>
+<section id="data-wrangling" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="data-wrangling"><span class="header-section-number">7.1</span> Data wrangling</h2>
+<p>Data wrangling is the process of cleaning and unifying complex datasets for easy access and analysis. Good data wrangling practice is based on comprehensive knowledge of the data. We recommend the following:</p>
 <ul>
-<li><p>For a given data source, learn as much as you can about its collection, storage, how it is updated and maintained, the definition and dependency of each data item, and the limitations. There are more upfront ethical considerations when dealing with health data.</p></li>
-<li><p>For local data collection, consider how to store it (in files, in a database, locally or on cloud etc.) to make information retrieval easier, or/and data sharing easier. See the Data Management section.</p></li>
-<li><p>Consider the size of the data - should it be processed all at once, batch processing or stream processing? Your computing location (on your computer, on a local server, or on a cloud provider) may affect your decision here.</p></li>
-<li><p>Consider if the data needs de-identification. See <a href="#data-identifiability">Data identifiability</a>.</p></li>
-<li><p>Maintain an equity lens for any type of data science work, including building and evaluating models. See <a href="evaluation.html#bias-in-data">Bias in data</a>.</p></li>
-<li><p>Involve clinical leads when data wrangling. Within healthcare, the risk associated with some data (e.g.&nbsp;laboratory data or vitals) is often distributed at the extreme ends. It is difficult for data scientists to know if the risk is distributed linearly without the clinical context.</p></li>
+<li><p>For a given data source, learn as much as you can about its collection, storage, how it’s updated and maintained, the definition and dependency of each data item, and the limitations. There are more upfront ethical considerations when dealing with health data including consent, ethics approval and understanding the equity and clinical context.</p></li>
+<li><p>For local data collection, consider how to store it (in files, in a database, locally or on cloud etc.) to make information retrieval easier, or/and data sharing easier (see <strong>Data Management</strong>).</p></li>
+<li><p>Consider the size of the data - should it be processed all at once, batch processed or stream processed? Stream processing is the processing of records as a stream of data, for example record by record. Your computing location (on your computer, on a local server, or on a cloud provider) may affect your decision here.</p></li>
+<li><p>Consider if the data needs de-identification (see <strong>Data identifiability</strong>).</p></li>
+<li><p>Maintain an equity lens for any type of data science work, including building and evaluating models (see <strong>Bias in data</strong>).</p></li>
+<li><p>Involve clinical leads when data wrangling. Within healthcare, the risk associated with some data (for example, laboratory data or vitals) is often distributed at the extreme ends. It’s difficult for data scientists to know if the risk is distributed linearly without the clinical context.</p></li>
 </ul>
-<section id="data-quality" class="level3" data-number="7.1.1">
-<h3 data-number="7.1.1" class="anchored" data-anchor-id="data-quality"><span class="header-section-number">7.1.1</span> Data quality</h3>
-<p>Do a data quality review as an early step and produce statistical summaries for sanity checks. Consider additional rounds of quality reviews and involve the data owners/managers if the data is complex.</p>
+<section id="data-labelling" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="data-labelling"><span class="header-section-number">7.1.1</span> Data labelling</h3>
+<p>Data labelling can have a significant impact on the success of a data science project. A label is a category you might tag a record with for a model to learn. For instance, you might label an ED admission according to whether that patient is high priority for triaging, or you might label a medical alert as containing an adverse drug reaction. When learning, a model finds patterns in the data attributes that map to the labels. In the triage example, attributes that are mapped to the label “is high priority” might include body temperature, blood pressure, heart rate and oximeter reading.</p>
+<p>Aim for labels that are clearly and appropriately defined, involving multiple qualified labellers.</p>
+<section id="defining-labels" class="level4" data-number="7.1.1.1">
+<h4 data-number="7.1.1.1" class="anchored" data-anchor-id="defining-labels"><span class="header-section-number">7.1.1.1</span> Defining labels</h4>
+<p>Be precise, and aim to align the definitions with potential use cases. For example, radiology reports might already be labelled according to the nature of the report findings, such as there was a “finding”, or there was a “finding that is not of concern” or there was “no finding” etc. However, if our goal is to know whether a report requires follow-up and we would like to use machine learning techniques over those reports and labels to achieve this, the initial labels may not be useful: some reports that have a “finding that is not of concern” may need follow-up and some may not. The labels “follow-up required”, or “no follow-up required” are more directly aligned to the use case here.</p>
+<p>Be clear. A clear label definition will help both human labellers and model performance. If the boundary between labels is fuzzy, a person will either struggle to choose a label for a data record, or will apply labels inconsistently. If labels are inconsistent in the training set, then we might reasonably expect that the model will also struggle to find the boundary between labels. In the radiology report example, imagine that the use case aligns with categorising reports according to findings. Consider one report showing that a person has a pre-existing mass considered benign, who then has a follow up scan that reveals the mass has not changed. Different human labellers would need clear definitions to be able to consistently label this report. Without a clear definition, one human labeller may decide that there is a “finding that is not of concern” based on the presence of a mass of no concern, while another may decide that there is “no finding” given nothing has changed since the last scan.</p>
+<p>When there is a period of time between labelling iterations, the same human labeller may make inconsistent labelling choices. Clear label definitions will also help with label consistency over time.</p>
+</section>
+<section id="many-labellers-make-models-work" class="level4" data-number="7.1.1.2">
+<h4 data-number="7.1.1.2" class="anchored" data-anchor-id="many-labellers-make-models-work"><span class="header-section-number">7.1.1.2</span> Many labellers make models work</h4>
+<p>Even with clear definitions, it is normal to find that different human labellers may vary in how they apply a labelling strategy with no one person being the “source of truth”. Inter-labeller variation should be expected. To reduce the effects of this variation, involve many labellers so that each record has labels assigned by two or more people. Labellers will disagree, so when training a model, you could either decide to use records with labels that human labellers unanimously agree on, or those that the majority of labellers agree on, excluding the records with label disagreement from the training set.</p>
+<p>The reality is that data labelling in a health context often requires highly skilled and experienced practitioners working under time constraints. If you only have one person who can provide the time required (for what can be a tedious task), then investment in clearly defining labels upfront is especially important.</p>
+<p>For ongoing labelling efforts, including labelling in a clinical workflow may be an efficient strategy.</p>
+</section>
+</section>
+<section id="data-quality" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="data-quality"><span class="header-section-number">7.1.2</span> Data quality</h3>
+<p>It’s important to conduct a data quality review as an early step and produce statistical summaries for checking purposes. This process usually includes profiling the fields within a data set, visualising distributions, checking relationships between fields and exploring data completeness (including completeness over time). Involve the data owners and subject matter experts in this process and consider additional rounds of quality reviews if the data is complex.</p>
 <p>Data profiling (for example, with <a href="https://github.com/ydataai/pandas-profiling">Pandas-profiling</a>) is recommended for both data quality checking and data understanding. Data profiling involves providing descriptive summaries and visualisations of the data for review with clinicians and subject matter experts.</p>
 <p>Basic aspects for data quality check include:</p>
 <ul>
 <li><p>Data availability across time</p></li>
 <li><p>Data distribution change across time</p></li>
-<li><p>Outliers, do we need cap variables with extreme values?</p></li>
+<li><p>Outliers: Do we need to cap variables with extreme values?</p></li>
 <li><p>Data completeness/missingness</p></li>
 <li><p>Duplication in the data</p></li>
 <li><p>Target label distribution (data imbalance)</p></li>
@@ -265,46 +288,56 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="data-linkage" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="data-linkage"><span class="header-section-number">7.2</span> Data linkage</h2>
-<p>Many projects that involve health data will require linking datasets on keys. One example is where individual health data is linked to census data based on location. Another example is linking data across government departments or agencies, for instance linking hospitalisation data to vaccination data, matching on NHI.</p>
-<p>Records with a single identifier, and those with multiple identifiers, can have equity considerations in health and indicate interaction with the health system; e.g., duplicative data where a person has been issued multiple NHI identifiers.</p>
-<p>The best practice is to link datasets prior to de-identification, so that the linkage can be as robust as possible and de-identification can minimise the risk of re-identification.</p>
-<section id="how-to-link" class="level3" data-number="7.2.1">
-<h3 data-number="7.2.1" class="anchored" data-anchor-id="how-to-link"><span class="header-section-number">7.2.1</span> How to link</h3>
-<p>Where datasets need to be deidentified prior to linking at the level of the individual or patient, you will need to consider how to maintain the integrity of the linkage. Unique identifiers, such as NHI, may need to be encrypted, rather than suppressed, in the process of de-identification. Where data comes from different sources, unique identifiers will need to be encrypted in the same way in order to link datasets. If the processed data is to be delivered back to the health provider at the level of the individual, then there needs to be the possibility of decryption of the identifiers. Orion Health’s De-identifier product will create a secure mapping for this purpose.</p>
+<p>Many projects that involve health data will require linking datasets on certain attributes (keys). For example we might link datasets by matching records that share the same NHI, by matching records that share a combination of personal details, or by matching locations.</p>
+<p>One example is linking data across government departments or agencies, for instance linking hospitalisation data to vaccination data, matching on NHI. Another example is where individual health data is linked to census data based on census meshblock.</p>
+<p>Data linkage refers to this joining of datasets. It allows us to get a more detailed picture of a person or entity. For instance, when linking medical records to census records, this might reveal that a patient resides in an area of high deprivation.</p>
+<section id="unique-identifiers" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="unique-identifiers"><span class="header-section-number">7.2.1</span> Unique identifiers</h3>
+<p>NHI is a unique health identifier that is commonly used to link datasets in health. As a unique identifier, each NHI should identify a single person and each person should have a single NHI. However, in certain cases multiple NHIs get recorded for a single person. We note that records with a single unique identifier, and those with multiple “unique” identifiers, can have equity considerations in health and indicate the nature of interaction with the health system.</p>
 </section>
-<section id="risk-of-re-identification" class="level3" data-number="7.2.2">
-<h3 data-number="7.2.2" class="anchored" data-anchor-id="risk-of-re-identification"><span class="header-section-number">7.2.2</span> Risk of re-identification</h3>
-<p>Two datasets that separately will not identify an individual may identify an individual once linked. As such prior to linking datasets, the risk of re-identification of an individual should be considered. Ideally, datasets are linked together and de-identified prior to delivery from the health provider, however this is often not possible.</p>
+<section id="how-to-link" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="how-to-link"><span class="header-section-number">7.2.2</span> How to link</h3>
+<p>Ideally datasets would be linked prior to de-identification, so that the linkage can be as robust as possible. Further, de-identification after linking can help minimise the risk of re-identification via linked data (see <strong>De-identifying structured data</strong>).</p>
+<p>Where datasets need to be de-identified prior to linking at the level of the individual or patient, you will need to consider how to maintain the integrity of the linkage. Unique identifiers, such as NHI, may need to be encrypted, rather than suppressed, in the process of de-identification.</p>
+<p>Where data comes from different sources, unique identifiers will need to be encrypted in the same way in order to link datasets. If the processed data is to be delivered back to the health provider at the level of the individual, then there needs to be the possibility of decryption of the identifiers or another way of linking the processed data back.</p>
 </section>
-<section id="approaches" class="level3" data-number="7.2.3">
-<h3 data-number="7.2.3" class="anchored" data-anchor-id="approaches"><span class="header-section-number">7.2.3</span> Approaches</h3>
-<p>Where data cannot be linked on a unique identifier, there are approaches that can be used to match records. The deterministic approach is to match on a combination of attributes that will uniquely identify a person. An issue with this approach is that in a dataset that is de-identified well, it should be difficult to uniquely identify individuals based on a combination of unique attributes.</p>
-<p>An alternative probabilistic approach is to calculate conditional probabilities to determine the likelihood that a given pair of records match.</p>
+<section id="risk-of-re-identification" class="level3" data-number="7.2.3">
+<h3 data-number="7.2.3" class="anchored" data-anchor-id="risk-of-re-identification"><span class="header-section-number">7.2.3</span> Risk of re-identification</h3>
+<p>Two datasets that separately will not identify an individual may identify an individual once linked. As a result, the risk of re-identification of an individual should be considered prior to linking datasets. Ideally, datasets are linked together and de-identified prior to delivery from the health provider; however, this is often not possible.</p>
+</section>
+<section id="approaches" class="level3" data-number="7.2.4">
+<h3 data-number="7.2.4" class="anchored" data-anchor-id="approaches"><span class="header-section-number">7.2.4</span> Approaches</h3>
+<p>Where data cannot be linked on a unique identifier, there are approaches that can be used to match records. The ‘deterministic’ approach is to match on a combination of attributes that will uniquely identify a person. An issue with this approach is that in a dataset that is de-identified well, it should be difficult to uniquely identify individuals based on a combination of unique attributes.</p>
+<p>The alternative ‘probabilistic’ approach involves calculating conditional probabilities to determine the likelihood that a given pair of records match.</p>
 </section>
 </section>
 <section id="missing-data" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="missing-data"><span class="header-section-number">7.3</span> Missing data</h2>
-<p>The missing data may provide context in the absence and presence of records. For example missing hospitalisation records might indicate access to care - either you may not have access or you are healthy and haven’t needed to see your GP. Take care in interpreting this as it can be hard to be sure in health. This is why having clinical engagement in a project is so important, as is stepping back to see the wider picture</p>
-<p>Missing data is a common problem with most health data sets. When you encounter missing data, you can choose how to manage it, such as:</p>
+<p>Missing data without context should be interpreted carefully. For example, missing hospitalisation records might indicate different access to care or it could mean the data was not recorded; you may not have access, or you’re healthy and haven’t needed to see your GP. Care must be taken in interpreting missing data, as it can be hard to be sure of the context around the missing data. This illustrates why clinical engagement, and stepping back to see the wider picture, is vital in health data science projects.</p>
+<p>Missing data is a common problem with most health data sets. When you encounter missing data, you can choose how to manage it, by either:</p>
 <ul>
-<li><p>Remove it</p></li>
-<li><p>Interpret it as “not applicable”</p></li>
-<li><p>Impute it (fill it in with other values)</p></li>
+<li>Removing it</li>
+<li>Interpreting it as “not applicable”</li>
+<li>Imputing it (fill it in with other values).</li>
 </ul>
-<p>Often a combination of removing excessively missing (according to some threshold) observations/variables and then imputing the remaining missing values is effective.</p>
-<p>Your decision should be based on whether your method is tolerant of missing values, whether the data appears to be missing completely at random (MCAR) in which case it could be ignored, or whether there are some patterns in its missingness.</p>
-<p>If removing the data, you’ll need to decide whether to remove variables or observations (e.g.&nbsp;rows or columns).</p>
-<p>Try proxy variables or alter data collection processes to avoid missing data as much as possible.</p>
-<p>Most data is unlikely to be MCAR. Often, data is more likely to be missing for particular reasons (missing not at random; MNAR). Consider if there is a reason for the missingness, as this can itself be informative. For example, data may be missing from smaller subgroups within the dataset. This is particularly important when considering stratification for ethnicity. It’s important to consider the potential bias introduced into a model by removing missing data or the impact on equity if data is removed. Before continuing with imputation or removal, check for patterns in the data of individuals who have partial missing data to assess the equity and bias implications of removing or imputing it. Look for evidence of non-random missingness by comparing the complete and missing data groups through stratification for important demographic variables such as age and ethnicity.</p>
-<p>Imputation can be a useful technique for overcoming missing data problems, but can be computational intensive. Review Prof Thomas Lumely’s guide on imputation for more information about the application of imputation techniques. Your strategy for handling missing values will have implications for how you handle future unseen data too.</p>
+<p>Often a combination of removing excessively missing (according to a pre-determined threshold) observations and variables, and then imputing the remaining missing values, is effective.</p>
+<p>Which option you choose should be based on whether your method is tolerant of missing values; whether the data appears to be ‘missing completely at random’ (MCAR) in which case it could be ignored; or whether there are some patterns in its missingness.</p>
+<p>If you choose to remove the data, you’ll need to decide whether to remove variables or observations (for example, rows or columns).</p>
+<p>Try adding ‘proxy’ variables or altering data collection processes to avoid missing data as much as possible.</p>
+<p>Most data is unlikely to be MCAR. Often, data is more likely to be missing for particular reasons (defined as ‘missing not at random’ (MNAR)). Consider if there’s a reason for the missingness, as this can itself be informative. For example, data may be missing from smaller subgroups within the dataset. This is particularly important when considering stratification for ethnicity.</p>
+<p>It’s important to consider the potential bias introduced into a model by removing missing data, or the impact on equity if data is removed. Before continuing with imputation or removal, check for patterns in the data of individuals who have partial missing data to assess the equity and bias implications of removing or imputing it. Look for evidence of non-random missingness by comparing the complete and missing data groups through stratification for important demographic variables such as age and ethnicity.</p>
+<p>Imputation can be a useful technique for overcoming missing data problems, but can be computationally intensive. Through a PDH research project, <strong>a guide on multiple imputation was published</strong> with information about the application of imputation techniques. Your strategy for handling missing values will have implications for how you handle future unseen data too.</p>
 </section>
-<section id="use-of-synthetic-data" class="level2" data-number="7.4">
+<section id="use-of-synthetic-data" class="level2 page-columns page-full" data-number="7.4">
 <h2 data-number="7.4" class="anchored" data-anchor-id="use-of-synthetic-data"><span class="header-section-number">7.4</span> Use of synthetic data</h2>
-<p>Synthetic data can be an option if there is difficulty in accessing real-world datasets, whether this be due to timing, privacy concerns, access problems, lack of participation in healthcare by certain groups, or rarity of a disease. Synthetic data may also satisfy a use case (e.g.&nbsp;for data augmentation purposes).</p>
-<p>Synthetic data can be used for prototyping or building analytics dashboards that are ready to plug in to real-world datasets.</p>
-<p>Synthetic data can also be used for machine learning purposes in the sensitive health domain, including to integrate data relating to under-represented conditions and groups of people, and to protect privacy. However, off-the-shelf models that generate synthetic data (such as <a href="https://synthetichealth.github.io/synthea/">Synthea</a>) are not mature and should be carefully assessed for local use. It is highly recommended that the user is aware of how the data is generated and what are the limitations.</p>
-<p>In lieu of building or enhancing models with synthetic data, off-the-shelf calculators could be considered, with the caveat that calculators are ideally subject to local validation. Orion Health has developed the Algorithm Hub which provides a shared knowledge-base of pre-trained models, algorithms and risk calculators which were reviewed by a multidisciplinary governance group.</p>
-<p>Reference: <a href="https://www.nature.com/articles/s41551-021-00751-8">https://www.nature.com/articles/s41551-021-00751-8</a></p>
+<p>Accessing real-world data can sometimes be difficult, whether due to timing, privacy concerns, access problems, lack of participation in healthcare by certain groups, or rarity of a disease.</p>
+<p>Synthetic data (information that’s artificially generated rather than produced by real-world events) can be used if you’re having difficulty accessing real-world datasets. Synthetic data may also satisfy a use case (for example, for data augmentation purposes).</p>
+<p>Synthetic data can be used for prototyping or building analytics dashboards that are ready to plug into real-world datasets. It can also be used for machine learning purposes, including to integrate data relating to under-represented conditions and groups of people, and to protect privacy. Recent publications have overviewed the use of synthetic data (see <span class="citation" data-cites="chen_synthetic_2021"><a href="#ref-chen_synthetic_2021" role="doc-biblioref">Chen et al. 2021</a></span>).</p>
+<div class="no-row-height column-margin column-container"><div id="ref-chen_synthetic_2021" class="csl-entry" role="doc-biblioentry">
+Chen, R J, Lu, M Y, Chen, T Y, Williamson, D F K, and Mahmood, F. 2021. <span>“Synthetic data in machine learning for medicine and healthcare”</span>. <em>Nature Biomedical Engineering</em> 5.6, 493–497. <a href="https://www.nature.com/articles/s41551-021-00751-8">https://www.nature.com/articles/s41551-021-00751-8</a>.
+</div></div><p>However, off-the-shelf models that generate synthetic data (such as <a href="https://synthetichealth.github.io/synthea/">Synthea</a>) are not mature and should be carefully assessed for local use. We highly recommend that you’re aware of how the synthetic data is generated and what the limitations are before using it.</p>
+<p>Off-the-shelf calculators can also be considered in lieu of building or enhancing models with synthetic data, with a caveat that these calculators are ideally subject to local validation. There are tools available such as <a href="https://algorithmhub.co.nz">Te Pokapū Hātepe o Aotearoa New Zealand Algorithm Hub</a> which provide a shared knowledge-base of pre-trained models, algorithms and risk calculators, reviewed by a multidisciplinary governance group.</p>
+
 
 
 </section>
@@ -441,12 +474,28 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./data-identifiability.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Identifiability</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data identifiability</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
