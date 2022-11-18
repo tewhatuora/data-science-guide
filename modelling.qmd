@@ -2,7 +2,17 @@
 title: "Modelling"
 ---
 
-We use the word "modelling" broadly, to capture the process of analysis involved in data science. In this guide, a model is a simplified quantitative representation of a real world situation, often to answer a specific question. Modelling can be used as a tool to help derive insights or drive decision making. In other industries, life experience is often enough to guide you. However, in a health context domain expertise is extremely important e.g. what defines a hospitalisation?
+The word “modelling” is used broadly to describe the process of analysis involved in data science. In this guide, a ‘model’ is a simplified quantitative representation of a real world situation, which often answers a specific question. Modelling can be used to help derive insights or drive decision making.
+
+## Keep in mind
+
+* Apply an equity lens all the way through the model lifecycle: consider who is benefiting from a model, who is vulnerable, and who is excluded. This lens should inform the data chosen, how the data is processed, algorithm choice, how the model is evaluated, and how the model is used
+* Closely engage with the stakeholders and data providers (see [End-user engagement](collaboration.qmd#end-user-engagement))
+* Maintain clinician engagement throughout 
+* Have good quality documentation to share the work with others (see [Documentation and management](data-access.qmd#data-management))
+* Version control the code base so that work is reproducible (see [Documentation and management](data-access.qmd#data-management))
+* Check data quality and availability including operational concerns, sanity checking and bias (see [Data quality](data-preparation.qmd#data-quality))
+* Consider your audience when presenting data (see Transparency, interpretability and explanation).
 
 This guidance should be applicable to any analytical technique.
 
