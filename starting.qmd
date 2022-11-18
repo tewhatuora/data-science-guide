@@ -6,8 +6,8 @@ No matter how simple your idea, it will involve more than just a spreadsheet or 
 
 Much like other aspects of business or research, you’ll probably need to convince at least one other person that your idea is important and worthy of the time or resources you need to pursue it. After navigating these hurdles and producing a model or other analysis, your carefully crafted tool will need care and periodic review to stay functional and relevant.
 
-If you are coming from a clinical background, you might appreciate some of the context around understanding data identifiability ([@sec-identifiability]), and its preparation for modelling.
+If you are coming from a clinical background, you might appreciate some of the context around understanding [data identifiability](data-identifiability.qmd), and its preparation for modelling.
 
-If you are approaching this from a data science background, the unique health data landscape [@sec-landscape] will be important to appreciate.
+If you are approaching this from a data science background, [the unique health data landscape](data-landscape.qmd) will be important to appreciate.
 
 If you are looking for a more general introduction to health data science in general, keep reading from here!

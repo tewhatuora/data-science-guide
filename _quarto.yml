@@ -4,35 +4,43 @@ project:
 
 book:
   title: "Health Data Science in Aotearoa New Zealand: A Practical Guide"
-  author: "Precision Driven Health"
-  search: true
+#  author: "Precision Driven Health"
   sharing: [twitter, linkedin]
   repo-url: https://github.com/precisiondrivenhealth/guide.git
   repo-actions: edit
   cover-image: /img/cover.jpg
-  date: 18 November 2022
+#  date: 18 November 2022
   date-format: "MMMM YYYY"
+  navbar:
+    search: true
+    logo: /img/logo-pdh.png
+    background: "#005556"
+    pinned: true
+  sidebar:
+#    search: true
+    logo: /img/noun-mandatory-1951351.png
+    style: floating
+    border: true
   chapters:
     - index.qmd
-#    - 01-intro.qmd
-    - 02-starting.qmd
-    - 03-basics.qmd
-    - 04-collaboration.qmd
-    - 05-data-landscape.qmd
-    - 06-data-access.qmd
-    - 07-data-identifiability.qmd
-    - 08-data-preparation.qmd
-    - 09-modelling.qmd
-    - 10-evaluation.qmd
-    - 11-deployment-lifecycle.qmd
-    - 12-references.qmd
-    - 13-glossary.qmd
-  comments:
-    hypothesis: true
+#    - intro.qmd
+    - starting.qmd
+    - basics.qmd
+    - collaboration.qmd
+    - data-landscape.qmd
+    - data-access.qmd
+    - data-identifiability.qmd
+    - data-preparation.qmd
+    - modelling.qmd
+    - evaluation.qmd
+    - deployment-lifecycle.qmd
+    - references.qmd
+    - glossary.qmd
+#  comments:
+#    hypothesis: true
 
 # banner style for the title
 # title-block-banner: "#008084"
-# it's really large - unsure I like it
 
 # table of contents settings
 toc-location: right
