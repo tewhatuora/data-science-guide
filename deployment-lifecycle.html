@@ -97,6 +97,10 @@ ul.task-list li input[type="checkbox"] {
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./img/noun-mandatory-1951351.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
+      <div class="sidebar-tools-main">
+    <a href="https://precisiondrivenhealth.com" title="Precision Driven Health" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/precisiondrivenhealth/guide" title="GitHub repository" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+</div>
       </div>
       <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -186,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#model-monitoring" id="toc-model-monitoring" class="nav-link" data-scroll-target="#model-monitoring"><span class="toc-section-number">10.2.2</span>  Model monitoring</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/precisiondrivenhealth/guide.git/edit/main/deployment-lifecycle.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/precisiondrivenhealth/guide/edit/main/deployment-lifecycle.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
@@ -217,7 +221,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Who are the users, and what knowledge/capability/training will they need?</p></li>
 <li><p>Is all the relevant data available at the point it is intended to be used, and is it current?</p></li>
 <li><p>Is it feasible to get operational data supply ongoing to support this?</p></li>
-<li><p>How will models/decisions/insights be presented to the user? Can users understand how the model came to a conclusion and what action is required? See section on <strong>Transparency and Interpretability</strong></p></li>
+<li><p>How will models/decisions/insights be presented to the user? Can users understand how the model came to a conclusion and what action is required? See <a href="./evaluation.html#transparency-interpretability-and-explanation">Transparency and interpretability</a></p></li>
 <li><p>What monitoring, IT security and safeguards are likely to be necessary?</p></li>
 <li><p>What systems will be utilised, and who is responsible for them?</p></li>
 <li><p>Who will provide governance oversight of the model?</p></li>
@@ -236,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Identifiable health data is regulated around the world and you need to ensure that you follow the right security practices for your clients to be able to use your services. This also has downstream implications on debugging, logging, performance tracking, etc</p></li>
 <li><p>Much of the publicly available health data that can be used to train models that you may wish to deploy in production have licences that forbid commercial usage – make sure you check these constraints before committing to a project</p></li>
 <li><p>If you are offering ML models to external clients and your models leverage open source data, then you will find that you don’t need to regularly retrain these models since you’ll most likely be using a static snapshot for a one-off training exercise. This simplifies model management</p></li>
-<li><p>For IT implementation at partner/clinical sites, typically design, governance, and security sign-off will be required before people can be allocated to the work. This requires clear articulation of the benefits of the work in order to be prioritised. Ensure there is strong clinical engagement from the partner site to drive this see <strong>End-user Engagement and collaboration</strong></p></li>
+<li><p>For IT implementation at partner/clinical sites, typically design, governance, and security sign-off will be required before people can be allocated to the work. This requires clear articulation of the benefits of the work in order to be prioritised. Ensure there is strong clinical engagement from the partner site to drive this see <a href="**Kelly**">End-user Engagement and collaboration</a></p></li>
 <li><p>Also refer to the <a href="https://www.health.govt.nz/our-work/digital-health/vision-health-technology/emerging-health-technology-advice-and-guidance">Ministry of Health - Emerging Health Technology Advice &amp; Guidance</a> on operationalising algorithms</p></li>
 </ul>
 </section>

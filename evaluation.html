@@ -116,6 +116,10 @@ div.csl-indent {
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./img/noun-mandatory-1951351.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
+      <div class="sidebar-tools-main">
+    <a href="https://precisiondrivenhealth.com" title="Precision Driven Health" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/precisiondrivenhealth/guide" title="GitHub repository" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+</div>
       </div>
       <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -198,10 +202,10 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#model-safety-false-negatives-false-positives" id="toc-model-safety-false-negatives-false-positives" class="nav-link active" data-scroll-target="#model-safety-false-negatives-false-positives"><span class="toc-section-number">9.1</span>  Model safety (false negatives, false positives)</a></li>
+  <li><a href="#model-safety" id="toc-model-safety" class="nav-link active" data-scroll-target="#model-safety"><span class="toc-section-number">9.1</span>  Model safety</a></li>
   <li><a href="#bias-in-data" id="toc-bias-in-data" class="nav-link" data-scroll-target="#bias-in-data"><span class="toc-section-number">9.2</span>  Bias in data</a></li>
   <li><a href="#clinician-in-the-loop" id="toc-clinician-in-the-loop" class="nav-link" data-scroll-target="#clinician-in-the-loop"><span class="toc-section-number">9.3</span>  Clinician in the loop</a></li>
-  <li><a href="#sec-transparency" id="toc-sec-transparency" class="nav-link" data-scroll-target="#sec-transparency"><span class="toc-section-number">9.4</span>  Transparency, interpretability, and explanation</a>
+  <li><a href="#transparency-interpretability-and-explanation" id="toc-transparency-interpretability-and-explanation" class="nav-link" data-scroll-target="#transparency-interpretability-and-explanation"><span class="toc-section-number">9.4</span>  Transparency, interpretability, and explanation</a>
   <ul class="collapse">
   <li><a href="#transparency-around-the-inputs" id="toc-transparency-around-the-inputs" class="nav-link" data-scroll-target="#transparency-around-the-inputs"><span class="toc-section-number">9.4.1</span>  Transparency around the inputs</a></li>
   <li><a href="#interpretation-of-the-output" id="toc-interpretation-of-the-output" class="nav-link" data-scroll-target="#interpretation-of-the-output"><span class="toc-section-number">9.4.2</span>  Interpretation of the output</a></li>
@@ -211,7 +215,7 @@ div.csl-indent {
   <li><a href="#principles-to-follow" id="toc-principles-to-follow" class="nav-link" data-scroll-target="#principles-to-follow"><span class="toc-section-number">9.4.6</span>  Principles to follow</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/precisiondrivenhealth/guide.git/edit/main/evaluation.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/precisiondrivenhealth/guide/edit/main/evaluation.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
@@ -237,8 +241,8 @@ div.csl-indent {
 <p>Existing models, such as from other countries or jurisdictions, can also be evaluated against a local dataset, which is a good way to tell how useful someone else’s model may be on your own data.</p>
 <p>Lags in data availability can also affect evaluation - a model that goes live today may not be able to be effectively evaluated until several months later.</p>
 <p>Possible social and business impacts of model deployment should have been considered in the governance process. Once a model has been deployed, actual impacts can be assessed through data collection, which can also include interviews with interested parties.</p>
-<section id="model-safety-false-negatives-false-positives" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="model-safety-false-negatives-false-positives"><span class="header-section-number">9.1</span> Model safety (false negatives, false positives)</h2>
+<section id="model-safety" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="model-safety"><span class="header-section-number">9.1</span> Model safety</h2>
 <p>From a clinical perspective the main concern/clinical risk often concerns false negative/low-risk individuals with a positive outcome. Include clinical experts in the discussions on appropriate model thresholds.</p>
 <p>When models are implemented, people with high risk will often have additional things done for them to reduce the risk (less of a concern as we are actively doing something to reduce the risk). For the low-risk individuals, there are two possible explanations:</p>
 <ol type="1">
@@ -289,8 +293,8 @@ Kurian, A W, Hughes, E, Simmons, T, Bernhisel, R, Probst, B, Meek, S, Caswell‐
 <h2 data-number="9.3" class="anchored" data-anchor-id="clinician-in-the-loop"><span class="header-section-number">9.3</span> Clinician in the loop</h2>
 <p>expand</p>
 </section>
-<section id="sec-transparency" class="level2 page-columns page-full" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="sec-transparency"><span class="header-section-number">9.4</span> Transparency, interpretability, and explanation</h2>
+<section id="transparency-interpretability-and-explanation" class="level2 page-columns page-full" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="transparency-interpretability-and-explanation"><span class="header-section-number">9.4</span> Transparency, interpretability, and explanation</h2>
 <p>In the context of health it is especially important to communicate findings in a way that builds trust in the model development process and outputs. If this is not done well, people may not adopt a model in practice that would otherwise have positive health impacts.</p>
 <p>The requirement that models are transparent, interpretable and explainable may guide early modelling decisions such as which algorithm to use and how to treat inputs. Linear models tend to be more interpretable and explainable, so too are models that are built with inputs that have not been subject to significant transformations or weightings. The choice of a ‘simpler’ model may compromise model performance meaning better outcomes are sacrificed for the sake of explainability, however there is little point in deploying a deep learning model that has excellent performance, but is not trusted or used. This trade-off needs to be carefully considered.</p>
 <p>Consider outcome measures that are tangible and meaningful to the end user, and that have some relationship to the project goal, such as hospitalisation, mortality, or rankings.</p>
@@ -331,7 +335,7 @@ Christoph Molnar. 2022. <span>“Interpretable machine learning”</span>. <a hr
 <section id="principles-to-follow" class="level3" data-number="9.4.6">
 <h3 data-number="9.4.6" class="anchored" data-anchor-id="principles-to-follow"><span class="header-section-number">9.4.6</span> Principles to follow</h3>
 <ul>
-<li><p>Closely engage with the stakeholders and data providers (covered in <a href="#end-user-engagement">End-user engagement</a>)</p></li>
+<li><p>Closely engage with the stakeholders and data providers (covered in <a href="collaboration.html#end-user-engagement">End-user engagement</a>)</p></li>
 <li><p>Keep clinicians in the loop (<a href="#clinician-in-the-loop">Clinician in the loop</a> section heading added)</p></li>
 <li><p>Have good quality documentation to share the work with others. <a href="https://pubmed.ncbi.nlm.nih.gov/25560730/">Transparent Reporting of a multivariable prediction model for Individual Prognosis or Diagnosis (TRIPOD)</a> provides a well established and practical template for healthcare model reporting. For simpler reporting, consider <a href="https://www.nature.com/articles/s41591-020-1041-y">Minimum information about clinical artificial intelligence modeling: the MI-CLAIM checklist</a> as an alternative. For key information from governance perspective, refer to the governance process and Algorithm Information Request template for the New Zealand Algorithm Hub (<a href="https://algorithmhub.co.nz/about">https://algorithmhub.co.nz/about</a>).</p></li>
 <li><p>Version control the code base so that work is reproducible</p></li>

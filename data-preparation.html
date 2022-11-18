@@ -116,6 +116,10 @@ div.csl-indent {
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./img/noun-mandatory-1951351.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
+      <div class="sidebar-tools-main">
+    <a href="https://precisiondrivenhealth.com" title="Precision Driven Health" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/precisiondrivenhealth/guide" title="GitHub repository" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+</div>
       </div>
       <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -213,7 +217,7 @@ div.csl-indent {
   <li><a href="#missing-data" id="toc-missing-data" class="nav-link" data-scroll-target="#missing-data"><span class="toc-section-number">7.3</span>  Missing data</a></li>
   <li><a href="#use-of-synthetic-data" id="toc-use-of-synthetic-data" class="nav-link" data-scroll-target="#use-of-synthetic-data"><span class="toc-section-number">7.4</span>  Use of synthetic data</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/precisiondrivenhealth/guide.git/edit/main/data-preparation.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/precisiondrivenhealth/guide/edit/main/data-preparation.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
@@ -297,7 +301,7 @@ div.csl-indent {
 </section>
 <section id="how-to-link" class="level3" data-number="7.2.2">
 <h3 data-number="7.2.2" class="anchored" data-anchor-id="how-to-link"><span class="header-section-number">7.2.2</span> How to link</h3>
-<p>Ideally datasets would be linked prior to de-identification, so that the linkage can be as robust as possible. Further, de-identification after linking can help minimise the risk of re-identification via linked data (see <strong>De-identifying structured data</strong>).</p>
+<p>Ideally datasets would be linked prior to de-identification, so that the linkage can be as robust as possible. Further, de-identification after linking can help minimise the risk of re-identification via linked data (see <a href="./data-identifiability.html#de-identifying-structured-data">De-identifying structured data</a>).</p>
 <p>Where datasets need to be de-identified prior to linking at the level of the individual or patient, you will need to consider how to maintain the integrity of the linkage. Unique identifiers, such as NHI, may need to be encrypted, rather than suppressed, in the process of de-identification.</p>
 <p>Where data comes from different sources, unique identifiers will need to be encrypted in the same way in order to link datasets. If the processed data is to be delivered back to the health provider at the level of the individual, then there needs to be the possibility of decryption of the identifiers or another way of linking the processed data back.</p>
 </section>
