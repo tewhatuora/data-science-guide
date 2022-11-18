@@ -7,12 +7,14 @@ book:
   author: "Precision Driven Health"
   search: true
   sharing: [twitter, linkedin]
+  repo-url: https://github.com/precisiondrivenhealth/guide.git
+  repo-actions: edit
   cover-image: /img/cover.jpg
-  date: 17 November 2022
+  date: 18 November 2022
   date-format: "MMMM YYYY"
   chapters:
     - index.qmd
-    - 01-intro.qmd
+#    - 01-intro.qmd
     - 02-starting.qmd
     - 03-basics.qmd
     - 04-collaboration.qmd
@@ -25,8 +27,8 @@ book:
     - 11-deployment-lifecycle.qmd
     - 12-references.qmd
     - 13-glossary.qmd
-  # comments:
-  #   hypothesis: true
+  comments:
+    hypothesis: true
 
 # banner style for the title
 # title-block-banner: "#008084"
