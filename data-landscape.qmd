@@ -6,7 +6,7 @@ Access to health data requires a lot of initial consideration, possibly more tha
 
 - Knowing the data you're able to access is critical to understanding what is possible, in addition to understanding the question or problem you are trying to solve
 
-- Data access can be one of the more tricky and time consuming aspects of a data science project. Access should be addressed at a very early stage. ​​It can take a lot of time to understand what data is available, agree on access, create a data sharing agreement, and to receive the data (**refer to Accessing data section**)
+- Data access can be one of the more tricky and time consuming aspects of a data science project. Access should be addressed at a very early stage. ​​It can take a lot of time to understand what data is available, agree on access, create a data sharing agreement, and to receive the data (see [Accessing data](data-access.qmd)).
 
 - Health data is extremely sensitive and has restrictions and controls due to the close linkage with individual lives. Those who have access to data are in a privileged position and should treat this taonga (treasure) with utmost care.
 
@@ -24,7 +24,7 @@ Access to health data requires a lot of initial consideration, possibly more tha
 
 Data for health data science projects is everywhere! There's no shortage of available data in New Zealand. However, keep the following concepts in mind when you are considering how to find data, or access data you may already be interested in:
 
-- Data can only be used for the purpose for which it was collected; any other use is called "secondary purpose" and requires additional consent (**see Use and re-use of data section**)
+- Data can only be used for the purpose for which it was collected; any other use is called "secondary purpose" and requires additional consent (see [Use and re-use of data](data-landscape.qmd#use-and-re-use-of-data) section)
 
 - Health data used for research purposes needs thought around how the research will be conducted efficiently, ethically, and with privacy and safety front-of-mind.
 
@@ -70,13 +70,13 @@ At an early stage, it is valuable to consider:
 
 - **Data collection, maintenance, publication** - Distinguish between data already collected and new data created by the study. How do you plan to maintain and/or publish this data?
 
-- **Personally identifiable information** - Is de-identification required? Who will do this? (See **Handling personal health information**)
+- **Personally identifiable information** - Is de-identification required? Who will do this? (See [Data identifability](data-identifiability.qmd))
 
 - **Data availability** - How long will it take to source and are there any reporting or system lags?
 
 - **Labelling/annotation** - Does the project need Human In the Loop (HITL) mechanism for annotating and validating the input and output data?
 
-## Ethics & privacy {#sec-ethics}
+## Ethics & privacy
 
 Concepts around the legal, privacy, and ethical dimensions of health data projects are often interlinked. Legal perspectives consider the fit of the project with the laws of the data source jurisdiction as well as any legal requirements of the analysis location, if these aren't the same place. Privacy perspectives are around what data is collected, how it's collected safely, where it is stored, and its lifecycle. Ethical conduct of a project includes ensuring the risks to participants of data use are outweighed by the benefits of the project.
 
@@ -92,7 +92,7 @@ On top of this, hospitals or clinical organisations usually have their own resea
 
 Find out if your study requires HDEC review [on the HDEC website](https://ethics.health.govt.nz/hdec-reviews-and-approvals/find-out-if-your-study-requires-hdec-review/).
 
-Many of the questions asked in an ethics application and approval process are important in evaluating the risks and benefits and can indicate if there is social licence for the intended research. This process forces researchers and organisations to consider whether their work has a net benefit for society. The concept of "social license" or societal acceptance for use of health data is a related idea (see **Social license - use of health data**).
+Many of the questions asked in an ethics application and approval process are important in evaluating the risks and benefits and can indicate if there is social licence for the intended research. This process forces researchers and organisations to consider whether their work has a net benefit for society. The concept of "social license" or societal acceptance for use of health data is a related idea (see [Social license - use of health data](data-landscape.qmd#use-and-re-use-of-data)).
 
 :::{.callout-important}
 Seek appropriate ethics approvals prior to accessing patient data.
@@ -105,7 +105,7 @@ Some ethics applications can take months before an approval is granted, so allow
 :::
 
 :::{.callout-important}
-Consider if existing patient consent is sufficient to cover use of the data. See *Consent* below (**reference**).
+Consider if existing patient consent is sufficient to cover use of the data. See [Consent](#consent) below.
 :::
 
 Generally all use of administrative health data for research purposes will need to go through the HDEC process. Consent for use of administrative data is mainly around its use for improving the care of that individual within the health service or quality improvement processes (defined as audits or other activities). Unless the work is specifically with business intelligence within a healthcare organisation, you should ask for assurance to confirm if ethical approval from HDEC is required, or not.
@@ -176,7 +176,7 @@ Useful resources:
 
 - Manatū Hauora [research on social licence for health data re-use](https://www.health.govt.nz/publication/research-social-licence-health-data-re-use)
 
-## Data sovereignty {#sec-sovereignty}
+## Data sovereignty {#sovereignty}
 
 Data sovereignty refers to the understanding that data is subject to the laws of the nation within which it is collected and stored. In New Zealand, there is also a focus on where the data is stored and processed. Data agreements should take care to address these points so they are clear to all parties. Data handling and ethical dimensions of the project also need to ensure data sovereignty is at front of mind.
 

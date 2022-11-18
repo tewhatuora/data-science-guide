@@ -3,4 +3,5 @@
 /_site/
 *.html
 .vscode
-search-json*
+search-json*\
+docs/*

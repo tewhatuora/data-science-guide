@@ -27,11 +27,11 @@ It’s particularly important to allow plenty of time for clinical input to data
 
 Defining input features in clinically relevant ways is particularly important for health data science. For example, ‘cancer’ might be an important input at an individual level; does this mean currently active cancer? Within the last five years? Any exclusions? Time needs to be allocated to work through and validate these definitions with clinicians.
 
-Advisory groups are a good way to elicit feedback. Early in any project try to meet with a group of experts and discuss your research plan. Experts will always have different perspectives on the research and the context in which it will be used (see _End-user engagement_ ([-@sec-end-user-engagement]), which also covers Māori engagement and co-design).
+Advisory groups are a good way to elicit feedback. Early in any project try to meet with a group of experts and discuss your research plan. Experts will always have different perspectives on the research and the context in which it will be used (see [End-user engagement](#end-user-engagement) below, which also covers Māori engagement and co-design).
 
-## End-user engagement {#sec-end-user-engagement}
+## End-user engagement
 
-You should engage end users (usually consumers and clinicians) early in co-design, to understand how outputs can be tangible for those who will use them or be impacted by them (see _Transparency, interpretability, and explanation_ ([-@sec-transparency])). It’s important to understand workflows and where tools and/or models may be used. End-user engagement will also help to drive IT implementation if the benefits are clearly articulated to the appropriate stakeholders so work can be prioritised.
+You should engage end users (usually consumers and clinicians) early in co-design, to understand how outputs can be tangible for those who will use them or be impacted by them (see [Transparency, interpretability, and explanation](evaluation.qmd#transparency-interpretability-and-explanation)). It’s important to understand workflows and where tools and/or models may be used. End-user engagement will also help to drive IT implementation if the benefits are clearly articulated to the appropriate stakeholders so work can be prioritised.
 
 ### Impacted customers/patients/groups
 
@@ -45,7 +45,7 @@ Any recommendations for changes or improvements should be interpreted through th
 
 ### Clinicians
 
-Co-designing from the start and having a clinical champion/sponsor to ensure that developments can be incorporated in existing workflows so they can be used will set you up for success (see _Operational deployment_ ([-@sec-deployment])).
+Co-designing from the start and having a clinical champion/sponsor to ensure that developments can be incorporated in existing workflows so they can be used will set you up for success (see [Operational deployment](deployment-lifecycle.qmd)).
 
 ::: {.callout-tip}
 Clinical engagement often makes or breaks a project - both to ensure efficacy and to advocate and promote use of the model in practice. In general, clinicians will adopt tools and models that solve a genuine problem, fit into their workflow patterns, and save them time or enhance safety.
@@ -123,9 +123,9 @@ There are many resources for governance groups and executive teams who are looki
 
 - [National Ethical Standards for Health and Disability Research](https://neac.health.govt.nz/national-ethical-standards/) (NEAC): These standards set out the ethical requirements for researchers, health service providers and disability service providers and apply whether or not research or quality improvement activities require review by an ethics committee
 
-- [Privacy Act 2020](https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html): the legal basis for NZ organisations to work with data safely - also see _Ethics & privacy_ ([-@sec-ethics])
+- [Privacy Act 2020](https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html): the legal basis for NZ organisations to work with data safely - also see [Ethics & privacy](data-landscape.qmd#ethics--privacy)
 
-- [Health Information Privacy Code 2020](https://privacy.org.nz/privacy-act-2020/codes-of-practice/hipc2020/) - also see _Ethics & privacy_ ([-@sec-ethics])
+- [Health Information Privacy Code 2020](https://privacy.org.nz/privacy-act-2020/codes-of-practice/hipc2020/) - also see [Ethics & privacy](data-landscape.qmd#ethics--privacy)
 
 - [HISO 10064:2017 Health Information Governance Guidelines](https://www.health.govt.nz/publication/hiso-100642017-health-information-governance-guidelines) (Manatū Hauora Ministry of Health): Guidance to the health and disability sector on the safe sharing of health information
 
@@ -139,8 +139,8 @@ There are many resources for governance groups and executive teams who are looki
 
 - [Algorithm Charter](https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-charter/) (Data.govt.nz): A set of principles which have been signed off by most NZ government organisations
 
-- [Health and Disability Ethics Committees](https://ethics.health.govt.nz/): the health organisation responsible for reviewing and approving research using health data and/or health system users - also see **Ethics & privacy** ([-@sec-ethics])
+- [Health and Disability Ethics Committees](https://ethics.health.govt.nz/): the health organisation responsible for reviewing and approving research using health data and/or health system users - also see [Ethics & privacy](data-landscape.qmd#ethics--privacy)
 
-- [Te Mana Rauranga](https://www.temanararaunga.maori.nz/): a network of experts who have collected principles for Māori data sovereignty - also see **Data sovereignty** ([-@sec-sovereignty])
+- [Te Mana Rauranga](https://www.temanararaunga.maori.nz/): a network of experts who have collected principles for Māori data sovereignty - also see [Data sovereignty](data-landscape.qmd#data-sovereignty-sovereignty)
 
 - [Manatū Hauora Ministry of Health - Emerging Health Technology Advice & Guidance](https://www.health.govt.nz/our-work/digital-health/vision-health-technology/emerging-health-technology-advice-and-guidance)

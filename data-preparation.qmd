@@ -90,7 +90,7 @@ NHI is a unique health identifier that is commonly used to link datasets in heal
 
 ### How to link
 
-Ideally datasets would be linked prior to de-identification, so that the linkage can be as robust as possible.  Further, de-identification after linking can help minimise the risk of re-identification via linked data (see **De-identifying structured data**).
+Ideally datasets would be linked prior to de-identification, so that the linkage can be as robust as possible.  Further, de-identification after linking can help minimise the risk of re-identification via linked data (see [De-identifying structured data](data-identifiability.qmd#de-identifying-structured-data)).
 
 Where datasets need to be de-identified prior to linking at the level of the individual or patient, you will need to consider how to maintain the integrity of the linkage. Unique identifiers, such as NHI, may need to be encrypted, rather than suppressed, in the process of de-identification.
 

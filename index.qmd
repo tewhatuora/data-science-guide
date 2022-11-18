@@ -1,12 +1,16 @@
 # Welcome {.unnumbered}
 
+This guide is an online resource of learnings based on the experience of Aotearoa New Zealand health data science researchers and other contributors. It is aimed at practitioners and those that oversee their work. The guide is intended to provide practical advice and clarifications without repeating the content of publicly available resources and references; instead, these are linked. In describing data sceince techniques, the guide assumes a basic technical understanding, addressing the context and principles of how these are applied to lead to a successful outcome.
+
+We hope this will be a helpful resource for people and organisations who are starting out in data science, as well as experienced professionals who can share their lessons learned with the wider community in a helpful format.
+
 ## About this guide
 
-This guide is a collection of learnings based on the experience of Aotearoa New Zealand health data science researchers and other contributors. Aimed at practitioners and those that oversee their work, the guide is intended to provide practical advice without repeating the content of publicly available resources and references; instead, links to these are provided. For data scientists, the guide also assumes a basic understanding of data science techniques, addressing the context and principles of how these are applied to lead to a successful outcome.
+The guide is structured roughly along a data science [project life cycle](basics.qmd#data-projects-have-a-lifecycle): earlier sections outline the context and setup of a health data science project; later sections introduce the technical aspects of data science including modelling.
 
-Earlier sections outline the context and setup of a health data science project; later sections introduce the technical aspects of data science including modelling.
+This guide, its website form, and its contents are free to use, licensed under the CC [BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) License.
 
-Please contribute to this guide to share your knowledge and questions with the wider health data science research community. It is a living document and contributions from all viewpoints are most welcome. You can contribute directly by editing a page using the "Edit this page" link in the right sidebar, or by working with the page source directly. Pages are Markdown-formatted text files in a [public GitHub repository](https://precisiondrivenhealth.github.io/guide/) rendered using [Quarto](https://quarto.org/). Alternatively, you can send suggestions through email to info at precisiondrivenhealth.com.
+Please contribute your text and ideas to this guide to share your knowledge and questions with the wider health data science community. It is a living document and contributions from all viewpoints are most welcome. You can contribute directly by editing a page using the "Edit this page" link in the right sidebar, or by working with the page source directly. Pages are Markdown-formatted text files in a [public GitHub repository](https://precisiondrivenhealth.github.io/guide/) published using [Quarto](https://quarto.org/). Alternatively, you can send suggestions through email to info at precisiondrivenhealth.com.
 
 ## About Precision Driven Health
 

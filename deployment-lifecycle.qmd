@@ -16,7 +16,7 @@ Some questions worth considering include:
 
 * Is it feasible to get operational data supply ongoing to support this?
 
-* How will models/decisions/insights be presented to the user? Can users understand how the model came to a conclusion and what action is required? See section on **Transparency and Interpretability**
+* How will models/decisions/insights be presented to the user? Can users understand how the model came to a conclusion and what action is required? See [Transparency and interpretability](evaluation.qmd#transparency-interpretability-and-explanation)
 
 * What monitoring, IT security and safeguards are likely to be necessary?
 
@@ -50,7 +50,7 @@ The below list outlines ideas and recommendations concerning operational deploym
 
 * If you are offering ML models to external clients and your models leverage open source data, then you will find that you don't need to regularly retrain these models since you'll most likely be using a static snapshot for a one-off training exercise. This simplifies model management
 
-* For IT implementation at partner/clinical sites, typically design, governance, and security sign-off will be required before people can be allocated to the work. This requires clear articulation of the benefits of the work in order to be prioritised. Ensure there is strong clinical engagement from the partner site to drive this see **End-user Engagement and collaboration**
+* For IT implementation at partner/clinical sites, typically design, governance, and security sign-off will be required before people can be allocated to the work. This requires clear articulation of the benefits of the work in order to be prioritised. Ensure there is strong clinical engagement from the partner site to drive this see [End-user Engagement and collaboration](**Kelly**)
 
 * Also refer to the [Ministry of Health - Emerging Health Technology Advice & Guidance](https://www.health.govt.nz/our-work/digital-health/vision-health-technology/emerging-health-technology-advice-and-guidance) on operationalising algorithms
 

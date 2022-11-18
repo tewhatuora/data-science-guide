@@ -10,7 +10,7 @@ Lags in data availability can also affect evaluation - a model that goes live to
 
 Possible social and business impacts of model deployment should have been considered in the governance process. Once a model has been deployed, actual impacts can be assessed through data collection, which can also include interviews with interested parties.
 
-## Model safety (false negatives, false positives)
+## Model safety
 
 From a clinical perspective the main concern/clinical risk often concerns false negative/low-risk individuals with a positive outcome. Include clinical experts in the discussions on appropriate model thresholds.
 
@@ -78,7 +78,7 @@ Further resources:
 
 expand
 
-## Transparency, interpretability, and explanation {#sec-transparency}
+## Transparency, interpretability, and explanation
 
 In the context of health it is especially important to communicate findings in a way that builds trust in the model development process and outputs. If this is not done well, people may not adopt a model in practice that would otherwise have positive health impacts.
 

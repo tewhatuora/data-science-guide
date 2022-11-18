@@ -36,10 +36,10 @@ _Audits_ are activities that check whether you are following existing processes 
 
 _Quality improvement_ seeks to improve an existing process that is already of benefit to patients. Machine learning (ML) models incorporated into workflows can cause changes to the standard of care patients receive, including unintended consequences. Translation from a tool to implementation is essentially research to validate and determine the impact of ML on patients.
 
-Research projects can have varying goals, such as ‘analysis only’ versus ‘analyse and model for future use’. Some projects may have a commercial focus on delivering an outcome for use in practice. It is important to define what you are doing as clearly as possible at the start of a project (see Social licence & consent).
+Research projects can have varying goals, such as ‘analysis only’ versus ‘analyse and model for future use’. Some projects may have a commercial focus on delivering an outcome for use in practice. It is important to define what you are doing as clearly as possible at the start of a project (see [Social licence](data-landscape.qmd#social-license---use-of-health-data) and [Consent](data-landscape.qmd#consent)).
 
 ::: {.callout-note}
-All research undertaken in New Zealand using health data requires ethical review (see Ethics and privacy).
+All research undertaken in New Zealand using health data requires ethical review (see [Ethics & privacy](data-landscape.qmd#ethics-privacy)).
 :::
 
 ## Clearly articulate the goal
