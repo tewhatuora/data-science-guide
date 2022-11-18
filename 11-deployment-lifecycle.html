@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Health Data Science in Aotearoa New Zealand: A Practical Guide - 11&nbsp; Deployment &amp; lifecycle maintenance</title>
+<title>Health Data Science in Aotearoa New Zealand: A Practical Guide - 10&nbsp; Deployment &amp; lifecycle maintenance</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -60,6 +60,7 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
 
 
 </head>
@@ -70,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Deployment &amp; lifecycle maintenance</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Deployment &amp; lifecycle maintenance</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -85,6 +86,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Health Data Science in Aotearoa New Zealand: A Practical Guide</a> 
         <div class="sidebar-tools-main">
+    <a href="https://github.com/precisiondrivenhealth/guide.git" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
     <a href="" title="Share" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
     <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
         <li>
@@ -117,57 +119,52 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./02-starting.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How do I start?</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-starting.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How do I start?</span></a>
+  <a href="./03-basics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding the basics</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-basics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Understanding the basics</span></a>
+  <a href="./04-collaboration.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">People, capability &amp; collaboration</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-collaboration.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">People, capability &amp; collaboration</span></a>
+  <a href="./05-data-landscape.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The unique health data landscape</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05-data-landscape.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The unique health data landscape</span></a>
+  <a href="./06-data-access.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Accessing and managing data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06-data-access.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Accessing and managing data</span></a>
+  <a href="./07-data-identifiability.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data identifiability</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07-data-identifiability.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data identifiability</span></a>
+  <a href="./08-data-preparation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data preparation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08-data-preparation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Data preparation</span></a>
+  <a href="./09-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modelling</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./09-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Modelling</span></a>
+  <a href="./10-evaluation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evaluation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./10-evaluation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Evaluation</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./11-deployment-lifecycle.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Deployment &amp; lifecycle maintenance</span></a>
+  <a href="./11-deployment-lifecycle.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Deployment &amp; lifecycle maintenance</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -189,21 +186,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sec-deployment" id="toc-sec-deployment" class="nav-link active" data-scroll-target="#sec-deployment"><span class="toc-section-number">11.1</span>  Operational deployment</a></li>
-  <li><a href="#lifecycle-model-maintenance" id="toc-lifecycle-model-maintenance" class="nav-link" data-scroll-target="#lifecycle-model-maintenance"><span class="toc-section-number">11.2</span>  Lifecycle model maintenance</a>
+  <li><a href="#sec-deployment" id="toc-sec-deployment" class="nav-link active" data-scroll-target="#sec-deployment"><span class="toc-section-number">10.1</span>  Operational deployment</a></li>
+  <li><a href="#lifecycle-model-maintenance" id="toc-lifecycle-model-maintenance" class="nav-link" data-scroll-target="#lifecycle-model-maintenance"><span class="toc-section-number">10.2</span>  Lifecycle model maintenance</a>
   <ul class="collapse">
-  <li><a href="#model-refreshment" id="toc-model-refreshment" class="nav-link" data-scroll-target="#model-refreshment"><span class="toc-section-number">11.2.1</span>  Model refreshment</a></li>
-  <li><a href="#model-monitoring" id="toc-model-monitoring" class="nav-link" data-scroll-target="#model-monitoring"><span class="toc-section-number">11.2.2</span>  Model monitoring</a></li>
+  <li><a href="#model-refreshment" id="toc-model-refreshment" class="nav-link" data-scroll-target="#model-refreshment"><span class="toc-section-number">10.2.1</span>  Model refreshment</a></li>
+  <li><a href="#model-monitoring" id="toc-model-monitoring" class="nav-link" data-scroll-target="#model-monitoring"><span class="toc-section-number">10.2.2</span>  Model monitoring</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/precisiondrivenhealth/guide.git/edit/main/11-deployment-lifecycle.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Deployment &amp; lifecycle maintenance</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Deployment &amp; lifecycle maintenance</span></h1>
 </div>
 
 
@@ -218,8 +215,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="sec-deployment" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="sec-deployment"><span class="header-section-number">11.1</span> Operational deployment</h2>
+<section id="sec-deployment" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="sec-deployment"><span class="header-section-number">10.1</span> Operational deployment</h2>
 <p>Health data science projects often aim to produce tools that are intended to be used in decision support - through presenting insights or suggestions. Thinking through the implications of the intended use in practice is critical to success.</p>
 <p>We recommend planning for this from the start if operational deployment is an explicit goal as there is a big difference between research and operationalising something. Engage early with SMEs to gain the right mix of expertise for a successful implementation.</p>
 <p>Some questions worth considering include:</p>
@@ -250,8 +247,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Also refer to the <a href="https://www.health.govt.nz/our-work/digital-health/vision-health-technology/emerging-health-technology-advice-and-guidance">Ministry of Health - Emerging Health Technology Advice &amp; Guidance</a> on operationalising algorithms</p></li>
 </ul>
 </section>
-<section id="lifecycle-model-maintenance" class="level2 page-columns page-full" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="lifecycle-model-maintenance"><span class="header-section-number">11.2</span> Lifecycle model maintenance</h2>
+<section id="lifecycle-model-maintenance" class="level2 page-columns page-full" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="lifecycle-model-maintenance"><span class="header-section-number">10.2</span> Lifecycle model maintenance</h2>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><a href="https://www.datascience-pm.com/crisp-dm-2/"><img src="./img/CRISP-DM.png" class="img-fluid figure-img" alt="The CRISP-DM Data Science Lifecycle"></a></p>
@@ -269,8 +266,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>In the case of “model drift” (non-negligible performance decrease is detected, or any condition for the model to properly work is no longer satisfied), the model and model application need to be reviewed, and in necessary cases the partial or whole modelling process should be reapplied to create a refreshed model.</p>
 <p>Refer also to ’explaining the outputs, transparency &amp; interpretability</p>
-<section id="model-refreshment" class="level3" data-number="11.2.1">
-<h3 data-number="11.2.1" class="anchored" data-anchor-id="model-refreshment"><span class="header-section-number">11.2.1</span> Model refreshment</h3>
+<section id="model-refreshment" class="level3" data-number="10.2.1">
+<h3 data-number="10.2.1" class="anchored" data-anchor-id="model-refreshment"><span class="header-section-number">10.2.1</span> Model refreshment</h3>
 <p>There are two main approaches for triggering model refreshment:</p>
 <ol type="1">
 <li><p><strong>Time based refreshment.</strong> Retrain the model (regardless of the performance) at a regular interval. Better quality data, more current data, data with better population coverage or new data sources may become available over time meaning that a model trained on updated data would likely have significant performance improvements over the existing model. A good understanding of how frequently the data changes is needed for this approach.</p></li>
@@ -282,8 +279,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Potential for increased scrutiny of the model.</strong> You don’t want your model to be viewed negatively publicly and should consider how use of the model would look on the front page of the newspaper, particularly if there have been shifts in the inputs, in the outcomes, in the environment (e.g.&nbsp;new disease variants) or in attitudes that affect social licence.</p></li>
 </ul>
 </section>
-<section id="model-monitoring" class="level3" data-number="11.2.2">
-<h3 data-number="11.2.2" class="anchored" data-anchor-id="model-monitoring"><span class="header-section-number">11.2.2</span> Model monitoring</h3>
+<section id="model-monitoring" class="level3" data-number="10.2.2">
+<h3 data-number="10.2.2" class="anchored" data-anchor-id="model-monitoring"><span class="header-section-number">10.2.2</span> Model monitoring</h3>
 <p>Key areas to be monitored during model use include:</p>
 <ol type="1">
 <li><p><strong>The data feed.</strong> Are there any changes in the statistical properties of the data that are fed into the model, and the actual data labels or patient outcomes (there will be a lag to collect these) that the model predicts? Are they still similar to the data that the model was trained on? Has a “concept drift” detector been set up in the monitoring process? How is the bias in the data changing?</p></li>
@@ -451,7 +448,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./10-evaluation.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Evaluation</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evaluation</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
