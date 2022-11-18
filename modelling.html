@@ -183,17 +183,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#modelling-process" id="toc-modelling-process" class="nav-link active" data-scroll-target="#modelling-process"><span class="toc-section-number">8.1</span>  Modelling process</a></li>
-  <li><a href="#modelling-approaches" id="toc-modelling-approaches" class="nav-link" data-scroll-target="#modelling-approaches"><span class="toc-section-number">8.2</span>  Modelling approaches</a></li>
-  <li><a href="#documentation-and-management" id="toc-documentation-and-management" class="nav-link" data-scroll-target="#documentation-and-management"><span class="toc-section-number">8.3</span>  Documentation and management</a></li>
-  <li><a href="#modelling-tools" id="toc-modelling-tools" class="nav-link" data-scroll-target="#modelling-tools"><span class="toc-section-number">8.4</span>  Modelling tools</a></li>
-  <li><a href="#experiment-tracking-tools" id="toc-experiment-tracking-tools" class="nav-link" data-scroll-target="#experiment-tracking-tools"><span class="toc-section-number">8.5</span>  Experiment tracking tools</a></li>
-  <li><a href="#model-validation" id="toc-model-validation" class="nav-link" data-scroll-target="#model-validation"><span class="toc-section-number">8.6</span>  Model validation</a>
+  <li><a href="#keep-in-mind" id="toc-keep-in-mind" class="nav-link active" data-scroll-target="#keep-in-mind"><span class="toc-section-number">8.1</span>  Keep in mind</a></li>
+  <li><a href="#modelling-process" id="toc-modelling-process" class="nav-link" data-scroll-target="#modelling-process"><span class="toc-section-number">8.2</span>  Modelling process</a></li>
+  <li><a href="#modelling-approaches" id="toc-modelling-approaches" class="nav-link" data-scroll-target="#modelling-approaches"><span class="toc-section-number">8.3</span>  Modelling approaches</a></li>
+  <li><a href="#documentation-and-management" id="toc-documentation-and-management" class="nav-link" data-scroll-target="#documentation-and-management"><span class="toc-section-number">8.4</span>  Documentation and management</a></li>
+  <li><a href="#modelling-tools" id="toc-modelling-tools" class="nav-link" data-scroll-target="#modelling-tools"><span class="toc-section-number">8.5</span>  Modelling tools</a></li>
+  <li><a href="#experiment-tracking-tools" id="toc-experiment-tracking-tools" class="nav-link" data-scroll-target="#experiment-tracking-tools"><span class="toc-section-number">8.6</span>  Experiment tracking tools</a></li>
+  <li><a href="#model-validation" id="toc-model-validation" class="nav-link" data-scroll-target="#model-validation"><span class="toc-section-number">8.7</span>  Model validation</a>
   <ul class="collapse">
-  <li><a href="#data-partitioning" id="toc-data-partitioning" class="nav-link" data-scroll-target="#data-partitioning"><span class="toc-section-number">8.6.1</span>  Data partitioning</a></li>
-  <li><a href="#performance-metrics" id="toc-performance-metrics" class="nav-link" data-scroll-target="#performance-metrics"><span class="toc-section-number">8.6.2</span>  Performance metrics</a></li>
+  <li><a href="#data-partitioning" id="toc-data-partitioning" class="nav-link" data-scroll-target="#data-partitioning"><span class="toc-section-number">8.7.1</span>  Data partitioning</a></li>
+  <li><a href="#performance-metrics" id="toc-performance-metrics" class="nav-link" data-scroll-target="#performance-metrics"><span class="toc-section-number">8.7.2</span>  Performance metrics</a></li>
   </ul></li>
-  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources"><span class="toc-section-number">8.7</span>  Further resources</a></li>
+  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources"><span class="toc-section-number">8.8</span>  Further resources</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/precisiondrivenhealth/guide/edit/main/modelling.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
@@ -217,16 +218,28 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>We use the word “modelling” broadly, to capture the process of analysis involved in data science. In this guide, a model is a simplified quantitative representation of a real world situation, often to answer a specific question. Modelling can be used as a tool to help derive insights or drive decision making. In other industries, life experience is often enough to guide you. However, in a health context domain expertise is extremely important e.g.&nbsp;what defines a hospitalisation?</p>
+<p>The word “modelling” is used broadly to describe the process of analysis involved in data science. In this guide, a ‘model’ is a simplified quantitative representation of a real world situation, which often answers a specific question. Modelling can be used to help derive insights or drive decision making.</p>
+<section id="keep-in-mind" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="keep-in-mind"><span class="header-section-number">8.1</span> Keep in mind</h2>
+<ul>
+<li>Apply an equity lens all the way through the model lifecycle: consider who is benefiting from a model, who is vulnerable, and who is excluded. This lens should inform the data chosen, how the data is processed, algorithm choice, how the model is evaluated, and how the model is used</li>
+<li>Closely engage with the stakeholders and data providers (see <a href="./collaboration.html#end-user-engagement">End-user engagement</a>)</li>
+<li>Maintain clinician engagement throughout</li>
+<li>Have good quality documentation to share the work with others (see <a href="./data-access.html#data-management">Documentation and management</a>)</li>
+<li>Version control the code base so that work is reproducible (see <a href="./data-access.html#data-management">Documentation and management</a>)</li>
+<li>Check data quality and availability including operational concerns, sanity checking and bias (see <a href="./data-preparation.html#data-quality">Data quality</a>)</li>
+<li>Consider your audience when presenting data (see Transparency, interpretability and explanation).</li>
+</ul>
 <p>This guidance should be applicable to any analytical technique.</p>
-<section id="modelling-process" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="modelling-process"><span class="header-section-number">8.1</span> Modelling process</h2>
+</section>
+<section id="modelling-process" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="modelling-process"><span class="header-section-number">8.2</span> Modelling process</h2>
 <p>Although the details can be different case by case, there are several general steps and a few principles that may help to achieve good results.</p>
 <p><a href="img/modelling-diagram.png" data-fig-alt="A flowchart of the modelling process">Modelling process overview</a> Adapted from W. Hare, A. R. Rutherford, K. Vasarhelyi and The Complex Systems Modelling Group: Modelling in Healthcare, American Mathematical Society (2010)</p>
 <p>Scoping should clearly define what problem a model is intended to solve. This affects almost all the later steps. In general, a more specific scope is more likely to lead to success, which should also be defined at the outset. Documenting the scope usually involves sign-off from oversight groups, and can reduce wasted effort or misunderstanding.</p>
 </section>
-<section id="modelling-approaches" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="modelling-approaches"><span class="header-section-number">8.2</span> Modelling approaches</h2>
+<section id="modelling-approaches" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="modelling-approaches"><span class="header-section-number">8.3</span> Modelling approaches</h2>
 <p>One general principle of modelling design is to select models that are as simple as possible while capable of providing solutions to the defined problem.</p>
 <p>There are often multiple modelling approaches suitable for solving one problem, and each has advantages and disadvantages. If capacity and feasibility allow, it is often beneficial to utilise more than one technique - similar insights provided via different approaches add to the credibility of modelling.</p>
 <p>The choice of technique is influenced by your ability to be able to explain how it works to end users and operationalise the inputs to the model. Consider this prior to choosing which model is used.</p>
@@ -279,15 +292,15 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>For more models in healthcare, please refer to W. Hare, A. R. Rutherford, K. Vasarhelyi and The Complex Systems Modelling Group: Modelling in Healthcare, American Mathematical Society (2010).</p>
 </section>
-<section id="documentation-and-management" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="documentation-and-management"><span class="header-section-number">8.3</span> Documentation and management</h2>
+<section id="documentation-and-management" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="documentation-and-management"><span class="header-section-number">8.4</span> Documentation and management</h2>
 <p>Documenting all the steps and experiments is highly recommended. Specific information about the software used in model development and the modelling environment itself should be comprehensively documented, including the language or software used, dependencies, and version numbers, to enable the model to be able to be reproduced. Frequently a package is updated and causes a change that affects the production, performance, or other aspects of a model.</p>
 <p>For machine learning model management, there are open-source tools such as <a href="https://mlflow.org/">MLflow</a> to efficiently manage the ML lifecycle, including experimentation, reproducibility, deployment, and a central model registry. Tools including <strong>pipenv/renv</strong> assist portability and reproducibility, and help generate this documentation.</p>
 <p>Providing an explicit statement of model assumptions to analysts or end users e.g.&nbsp;input parameter values chosen, uncertainty in those values, deterministic vs stochastic modelling, sensitivity analyses.</p>
 <p>Use of a version control system such as <strong>git</strong> is very important for coordinating collaboration, avoiding rework, auditing, and generally maintaining your own sanity.</p>
 </section>
-<section id="modelling-tools" class="level2" data-number="8.4">
-<h2 data-number="8.4" class="anchored" data-anchor-id="modelling-tools"><span class="header-section-number">8.4</span> Modelling tools</h2>
+<section id="modelling-tools" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="modelling-tools"><span class="header-section-number">8.5</span> Modelling tools</h2>
 <p>Commonly used tools for statistical analysis and modelling that require minimum programming:</p>
 <ul>
 <li><p>Statistical Package for the Social Sciences (SPSS). Suitable for descriptive statistics, parametric and non-parametric analyses, and visualisation of analysis results.</p></li>
@@ -321,15 +334,15 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Open source tools such as R and python provide transparency, collaboration and a low barrier to entry. Commercial tools tend to have a more sophisticated user experience, but a limited ecosystem, and provide some assurances (e.g.&nbsp;extension/library support) that aren’t available through commercial partners.</p>
 </section>
-<section id="experiment-tracking-tools" class="level2" data-number="8.5">
-<h2 data-number="8.5" class="anchored" data-anchor-id="experiment-tracking-tools"><span class="header-section-number">8.5</span> Experiment tracking tools</h2>
+<section id="experiment-tracking-tools" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="experiment-tracking-tools"><span class="header-section-number">8.6</span> Experiment tracking tools</h2>
 <p>The process of developing a model is iterative, potentially involving trial and error for experiment configuration tuning, training and evaluation of the model. When the complexity of a model grows, monitoring experiment configurations and model performance could become a hassle. Using automatic experiment tracking tools such as Tensorboard, weights &amp; biases are helpful to overcome those issues. In general, experiment tracking tools provide features such as visualisation, logging, integration with multiple ML frameworks and model profiling. Also, such tools provide integration facilities for CI/CD pipelines, ML lifecycle management tools which helps to streamline the model training and deployment pipeline while keeping traces in the experiment lifecycle.</p>
 <p>There are lists online which suggest experiment tracking tools for machine learning <a href="https://neptune.ai/blog/best-ml-experiment-tracking-tools">note an example list</a>.</p>
 </section>
-<section id="model-validation" class="level2 page-columns page-full" data-number="8.6">
-<h2 data-number="8.6" class="anchored" data-anchor-id="model-validation"><span class="header-section-number">8.6</span> Model validation</h2>
-<section id="data-partitioning" class="level3 page-columns page-full" data-number="8.6.1">
-<h3 data-number="8.6.1" class="anchored" data-anchor-id="data-partitioning"><span class="header-section-number">8.6.1</span> Data partitioning</h3>
+<section id="model-validation" class="level2 page-columns page-full" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="model-validation"><span class="header-section-number">8.7</span> Model validation</h2>
+<section id="data-partitioning" class="level3 page-columns page-full" data-number="8.7.1">
+<h3 data-number="8.7.1" class="anchored" data-anchor-id="data-partitioning"><span class="header-section-number">8.7.1</span> Data partitioning</h3>
 <p>Models are usually tuned to the dataset that they are trained with. Using independent datasets for validating the performance of a model is preferred. However, in the healthcare domain, data sharing can make this difficult.</p>
 <p>Where independent datasets are not available, the model needs to be validated using the development dataset. There are two main approaches for train-test data splitting and model validation.[^1]</p>
 <ol type="1">
@@ -353,8 +366,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Some models have complex hyperparameter space and require an additional split of data for early stop in training or additional hyperparameter optimisation. In classification models that rely on a cut-off threshold in application (e.g.&nbsp;a high risk patient identification model based on numeric risk scores), the cut-off threshold can also be seen as part of the model hyperparameters, and its determination should be considered as part of the model development. Hence the performance validation process should be using a partition of data that is not used in either model training, additional hyperparameter optimisation, or the threshold optimisation in particular.</p>
 <p>In all cases, care should be taken to ensure that the sampling unit is complete. For instance, we may be modelling a flow of events, in which case the sampling unit is likely to be a patient. If the modelled data consists of multiple records per patient, it will be important to ensure that complete patient records are sampled.</p>
 </section>
-<section id="performance-metrics" class="level3" data-number="8.6.2">
-<h3 data-number="8.6.2" class="anchored" data-anchor-id="performance-metrics"><span class="header-section-number">8.6.2</span> Performance metrics</h3>
+<section id="performance-metrics" class="level3" data-number="8.7.2">
+<h3 data-number="8.7.2" class="anchored" data-anchor-id="performance-metrics"><span class="header-section-number">8.7.2</span> Performance metrics</h3>
 <p>The type of performance metric used will depend on the model being evaluated and the context of the project. For models that predict a value, such as a linear regression model, R-squared and root mean square error (RMSE) are common.</p>
 <p>In health, metrics calculated from a confusion matrix for models that output a class (e.g.&nbsp;a decision tree) or probability (e.g.&nbsp;logistic regression) are commonly used. To produce a confusion matrix for a model that outputs a probability, a probability threshold is applied (values above the threshold are positive and values below are negative). The probability threshold can be set to optimise a particular metric, can be set by other optimisation techniques, or otherwise set according to the use case. Seek clinical input on the appropriate thresholds as they can impact patient care.</p>
 <p>Common performance metrics used can include the following. Note that not all are appropriate for each model or data type or question being answered.</p>
@@ -375,8 +388,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="further-resources" class="level2" data-number="8.7">
-<h2 data-number="8.7" class="anchored" data-anchor-id="further-resources"><span class="header-section-number">8.7</span> Further resources</h2>
+<section id="further-resources" class="level2" data-number="8.8">
+<h2 data-number="8.8" class="anchored" data-anchor-id="further-resources"><span class="header-section-number">8.8</span> Further resources</h2>
 <p><a href="https://developers.google.com/machine-learning/guides/rules-of-ml#overview">Rules of Machine Learning: Best Practices for ML Engineering</a> (Google Machine Learning Guides)</p>
 <p>Erdemir, A., Mulugeta, L., Ku, J.P. <em>et al.</em> <a href="https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-020-02540-4">Credible practice of modeling and simulation in healthcare: ten rules from a multidisciplinary perspective.</a> <em>J Transl Med</em> 18, 369 (2020). <a href="https://doi.org/10.1186/s12967-020-02540-4">https://doi.org/10.1186/s12967-020-02540-4</a></p>
 <p>W. Hare, A. R. Rutherford, K. Vasarhelyi and The Complex Systems Modelling Group: Modelling in Healthcare, American Mathematical Society (2010)</p>
