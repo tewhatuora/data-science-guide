@@ -1,10 +1,24 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "index.html#about-this-guide",
+    "href": "index.html#about-this-guide",
     "title": "Health Data Science in Aotearoa New Zealand: A Practical Guide",
-    "section": "",
-    "text": "Welcome\nThis guide collects a set of positive practices for health data science projects in Aotearoa New Zealand, summarising knowledge from the experiences of researchers from the Precision Driven Health partnership and the wider health and data science sectors in this area.\nIt is a living document, certainly not a finished product. Contributions from all viewpoints are most welcome. You can contribute directly by editing a page. Pages are Markdown files in a public GitHub repository rendered using Quarto. Alternatively, you can send suggestions to info at precisiondrivenhealth.com."
+    "section": "About this guide",
+    "text": "About this guide\nThis guide is a collection of learnings based on the experience of Aotearoa New Zealand health data science researchers and other contributors. Aimed at practitioners and those that oversee their work, the guide is intended to provide practical advice without repeating the content of publicly available resources and references; instead, links to these are provided. For data scientists, the guide also assumes a basic understanding of data science techniques, addressing the context and principles of how these are applied to lead to a successful outcome.\nEarlier sections outline the context and setup of a health data science project; later sections introduce the technical aspects of data science including modelling.\nPlease contribute to this guide to share your knowledge and questions with the wider health data science research community. It is a living document and contributions from all viewpoints are most welcome. You can contribute directly by editing a page using the “Edit this page” link in the right sidebar, or by working with the page source directly. Pages are Markdown-formatted text files in a public GitHub repository rendered using Quarto. Alternatively, you can send suggestions through email to info at precisiondrivenhealth.com."
+  },
+  {
+    "objectID": "index.html#about-precision-driven-health",
+    "href": "index.html#about-precision-driven-health",
+    "title": "Health Data Science in Aotearoa New Zealand: A Practical Guide",
+    "section": "About Precision Driven Health",
+    "text": "About Precision Driven Health\nPrecision Driven Health (PDH) is partnership between Aotearoa New Zealand’s health information technology (IT) sector, health providers and universities, aimed at improving health outcomes through data science.\nPDH seeks to increase data science capability in New Zealand’s health sector and encourage innovation in the use of health data."
+  },
+  {
+    "objectID": "index.html#contributors-and-reviewers",
+    "href": "index.html#contributors-and-reviewers",
+    "title": "Health Data Science in Aotearoa New Zealand: A Practical Guide",
+    "section": "Contributors and reviewers",
+    "text": "Contributors and reviewers\nWe would like to thank the people who have contributed to compiling and reviewing this guide.\n\nAlex Kazemi\nCK Jin\nDuncan Croft\nEdmond Zhang\nFleur Armstrong\nIvan Rivera\nJamal Zolhavarieh\nJuliet Rumball-Smith\nKelly Atkinson\nKevin Ross\nLuke Boyle\nNing Hua\nPieta Brown\nQuan Sun\nRachel Owens\nTom Gutteridge\nVipula Dissanayake"
   },
   {
     "objectID": "02-starting.html",
