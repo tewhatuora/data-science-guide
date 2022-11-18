@@ -4,4 +4,4 @@ This is a live resource initially produced by [Precision Driven Health](https://
 
 This is published as an online 'book' using [Quarto](https://quarto.org).
 
-View the guide at https://precisiondrivenhealth.github.io/practical-guide/
+View the guide at https://precisiondrivenhealth.github.io/guide/
