@@ -41,8 +41,6 @@ book:
     - modelling.qmd
     - evaluation.qmd
     - deployment-lifecycle.qmd
-    - references.qmd
-    - glossary.qmd
 #  comments:
 #    hypothesis: true
 
