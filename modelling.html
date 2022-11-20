@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -194,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#data-partitioning" id="toc-data-partitioning" class="nav-link" data-scroll-target="#data-partitioning"><span class="toc-section-number">8.7.1</span>  Data partitioning</a></li>
   <li><a href="#performance-metrics" id="toc-performance-metrics" class="nav-link" data-scroll-target="#performance-metrics"><span class="toc-section-number">8.7.2</span>  Performance metrics</a></li>
   </ul></li>
-  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources"><span class="toc-section-number">8.8</span>  Further resources</a></li>
+  <li><a href="#useful-resources" id="toc-useful-resources" class="nav-link" data-scroll-target="#useful-resources"><span class="toc-section-number">8.8</span>  Useful resources</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/precisiondrivenhealth/guide/edit/main/modelling.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
@@ -230,20 +249,37 @@ ul.task-list li input[type="checkbox"] {
 <li>Check data quality and availability including operational concerns, sanity checking and bias (see <a href="./data-preparation.html#data-quality">Data quality</a>)</li>
 <li>Consider your audience when presenting data (see Transparency, interpretability and explanation).</li>
 </ul>
-<p>This guidance should be applicable to any analytical technique.</p>
+<p>This guidance is applicable to any analytical technique.</p>
 </section>
-<section id="modelling-process" class="level2" data-number="8.2">
+<section id="modelling-process" class="level2 page-columns page-full" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="modelling-process"><span class="header-section-number">8.2</span> Modelling process</h2>
-<p>Although the details can be different case by case, there are several general steps and a few principles that may help to achieve good results.</p>
-<p><a href="img/modelling-diagram.png" data-fig-alt="A flowchart of the modelling process">Modelling process overview</a> Adapted from W. Hare, A. R. Rutherford, K. Vasarhelyi and The Complex Systems Modelling Group: Modelling in Healthcare, American Mathematical Society (2010)</p>
-<p>Scoping should clearly define what problem a model is intended to solve. This affects almost all the later steps. In general, a more specific scope is more likely to lead to success, which should also be defined at the outset. Documenting the scope usually involves sign-off from oversight groups, and can reduce wasted effort or misunderstanding.</p>
+<p>Although details can differ from case to case, there are several general modelling process steps and principles that can help achieve good results.</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="img/modelling-diagram.png" class="img-fluid figure-img" alt="A flowchart of the modelling process"></p>
+<p></p><figcaption class="figure-caption margin-caption">Modelling process overview, adapted from <span class="citation" data-cites="complex_systems_modelling_group_modelling_2010"><a href="#ref-complex_systems_modelling_group_modelling_2010" role="doc-biblioref">Complex Systems Modelling Group 2010</a></span></figcaption><p></p>
+</figure>
+</div>
+<p>Scoping should clearly define what problem a model is trying to solve. This affects almost all the later steps outlined above. In general, a more specific scope is more likely to lead to success, which should also be defined at the outset. Documenting the scope usually involves sign-off from oversight groups, and can reduce wasted effort or misunderstanding later in the project.</p>
 </section>
-<section id="modelling-approaches" class="level2" data-number="8.3">
+<section id="modelling-approaches" class="level2 page-columns page-full" data-number="8.3">
 <h2 data-number="8.3" class="anchored" data-anchor-id="modelling-approaches"><span class="header-section-number">8.3</span> Modelling approaches</h2>
-<p>One general principle of modelling design is to select models that are as simple as possible while capable of providing solutions to the defined problem.</p>
-<p>There are often multiple modelling approaches suitable for solving one problem, and each has advantages and disadvantages. If capacity and feasibility allow, it is often beneficial to utilise more than one technique - similar insights provided via different approaches add to the credibility of modelling.</p>
-<p>The choice of technique is influenced by your ability to be able to explain how it works to end users and operationalise the inputs to the model. Consider this prior to choosing which model is used.</p>
-<p>A non-exhaustive list of categories of quantitative models and the example healthcare problems that they are used for:</p>
+<p>A general principle of modelling design is to select models that are as simple as possible, but are capable of solving the defined problem. Consider the requirements for ‘explainability’ (the concept that a model and its output can be explained in a way that “makes sense” to a human) for your use case when choosing your model. For example a logistical regression model is easily communicated (see Transparency, Interpretability and Explanation).</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Multiple modelling approaches may be suitable for solving one problem, with each approach having advantages and disadvantages. If capacity and feasibility allow, it’s often beneficial to use more than one technique. Similar insights provided via different approaches only add to the credibility of modelling.</p>
+</div>
+</div>
+<p>Your choice of technique will be influenced by your ability to explain how it works to end users, and operationalise the inputs to the model. Consider this prior to choosing your model/s.</p>
+<p>Below is a non-exhaustive list of categories of quantitative models and the example healthcare problems that they are used for:</p>
 <table class="table">
 <colgroup>
 <col style="width: 28%">
@@ -278,7 +314,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td>Optimisation</td>
-<td>Minimising surgeons’ overtime while planning as effectively as possible to meet surgery demands</td>
+<td>Minimising surgeons’ overtime while planning as effectively as possible to meet surgery demands and optimise throughput</td>
 </tr>
 <tr class="odd">
 <td>System dynamics</td>
@@ -290,112 +326,162 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>For more models in healthcare, please refer to W. Hare, A. R. Rutherford, K. Vasarhelyi and The Complex Systems Modelling Group: Modelling in Healthcare, American Mathematical Society (2010).</p>
-</section>
-<section id="documentation-and-management" class="level2" data-number="8.4">
+<p>There are numerous additional examples (also see <span class="citation" data-cites="complex_systems_modelling_group_modelling_2010"><a href="#ref-complex_systems_modelling_group_modelling_2010" role="doc-biblioref">Complex Systems Modelling Group 2010</a></span>).</p>
+<div class="no-row-height column-margin column-container"></div></section>
+<section id="documentation-and-management" class="level2 page-columns page-full" data-number="8.4">
 <h2 data-number="8.4" class="anchored" data-anchor-id="documentation-and-management"><span class="header-section-number">8.4</span> Documentation and management</h2>
-<p>Documenting all the steps and experiments is highly recommended. Specific information about the software used in model development and the modelling environment itself should be comprehensively documented, including the language or software used, dependencies, and version numbers, to enable the model to be able to be reproduced. Frequently a package is updated and causes a change that affects the production, performance, or other aspects of a model.</p>
-<p>For machine learning model management, there are open-source tools such as <a href="https://mlflow.org/">MLflow</a> to efficiently manage the ML lifecycle, including experimentation, reproducibility, deployment, and a central model registry. Tools including <strong>pipenv/renv</strong> assist portability and reproducibility, and help generate this documentation.</p>
-<p>Providing an explicit statement of model assumptions to analysts or end users e.g.&nbsp;input parameter values chosen, uncertainty in those values, deterministic vs stochastic modelling, sensitivity analyses.</p>
-<p>Use of a version control system such as <strong>git</strong> is very important for coordinating collaboration, avoiding rework, auditing, and generally maintaining your own sanity.</p>
+<p>We highly recommend that you document all the steps of your project. Information about the software used in model development and the modelling environment itself should be comprehensively documented, including the language or software used, dependencies, and version numbers, to enable the model to be able to be reproduced. This is particularly important as packages are updated often, which can cause a change that affects the production, performance, or other aspects of a model.</p>
+<p>For machine learning model management, there are open-source tools such as <a href="https://mlflow.org/">MLflow</a> that can efficiently manage the machine learning lifecycle. This includes experimentation, reproducibility, deployment, and a central model registry. Tools including <code>Docker</code>, <code>pipenv</code> and <code>renv</code> assist portability and reproducibility, and help generate documentation.</p>
+<p>When communicating a model to your stakeholders, make sure you explicitly explain the assumptions on which your model has been developed, and the limitations of the model. Documentation should clearly outline the input parameters and ranges, and any implications from sensitivity analyses (see <a href="./evaluation.html#transparency-interpretability-and-explanation">Transparency, Interpretability and explanation</a>).</p>
+<p><strong>Transparent Reporting of a multivariable prediction model for Individual Prognosis or Diagnosis (TRIPOD)</strong> (<span class="citation" data-cites="moons_transparent_2015"><a href="#ref-moons_transparent_2015" role="doc-biblioref">Moons et al. 2015</a></span>) is a well established and practical template used for healthcare model reporting. For simpler reporting, consider <strong>Minimum information about clinical artificial intelligence modelling: the MI-CLAIM checklist</strong> (<span class="citation" data-cites="norgeot_minimum_2020"><a href="#ref-norgeot_minimum_2020" role="doc-biblioref">Norgeot et al. 2020</a></span>) as an alternative. The EQUATOR Network, an international initiative promoting high-quality transparent health research, also has useful resources (see <strong>reference</strong>).</p>
+<div class="no-row-height column-margin column-container"><div id="ref-moons_transparent_2015" class="csl-entry" role="doc-biblioentry">
+Moons, K G M, Altman, D G, Reitsma, J B, Ioannidis, J P A, Macaskill, P, Steyerberg, E W, Vickers, A J, Ransohoff, D F, and Collins, G S. 2015. <span>“<a href="https://doi.org/10.7326/M14-0698">Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (<span>TRIPOD</span>): Explanation and elaboration</a>”</span>. <em>Annals of Internal Medicine</em> 162.1, W1–73.
+</div><div id="ref-norgeot_minimum_2020" class="csl-entry" role="doc-biblioentry">
+Norgeot, B, Quer, G, Beaulieu-Jones, B K, Torkamani, A, Dias, R, Gianfrancesco, M, Arnaout, R, Kohane, I S, Saria, S, Topol, E, Obermeyer, Z, Yu, B, and Butte, A J. 2020. <span>“Minimum information about clinical artificial intelligence modeling: The <span>MI</span>-<span>CLAIM</span> checklist”</span>. <em>Nature Medicine</em> 26.9, 1320–1324. <a href="https://www.nature.com/articles/s41591-020-1041-y">https://www.nature.com/articles/s41591-020-1041-y</a>.
+</div><div id="ref-noauthor_mo_nodate" class="csl-entry" role="doc-biblioentry">
+Mō te pokapū - about the hub. <a href="https://algorithmhub.co.nz/about">https://algorithmhub.co.nz/about</a>.
+</div></div><p>For key information on governance requirements, refer to the governance process and Algorithm Information Request template for the New Zealand Algorithm Hub (<span class="citation" data-cites="noauthor_mo_nodate"><a href="#ref-noauthor_mo_nodate" role="doc-biblioref">Mō te pokapū - about the hub</a></span>).</p>
+<p>Documents and/or artefacts commonly related to producing and deploying a model can include:</p>
+<ul>
+<li>Design overview</li>
+<li>Assumptions document</li>
+<li>Data dictionary</li>
+<li>Example of consent forms</li>
+<li>Evidence of ethical approval or exemption</li>
+<li>Technical documentation</li>
+<li>Slide deck for communication</li>
+<li>Prospective evaluation.</li>
+</ul>
+<p>Using a version control system such as <code>git</code> is very important for coordinating activity, avoiding rework, auditing - and generally maintaining your own sanity.</p>
 </section>
 <section id="modelling-tools" class="level2" data-number="8.5">
 <h2 data-number="8.5" class="anchored" data-anchor-id="modelling-tools"><span class="header-section-number">8.5</span> Modelling tools</h2>
 <p>Commonly used tools for statistical analysis and modelling that require minimum programming:</p>
 <ul>
-<li><p>Statistical Package for the Social Sciences (SPSS). Suitable for descriptive statistics, parametric and non-parametric analyses, and visualisation of analysis results.</p></li>
-<li><p>Microsoft Excel. Easy to have some initial observation over tabular data, suitable to generate summary metrics of data, and create simple data visualisations. Excel has some notable drawbacks including:</p></li>
-<li><p>A limitation for showing up to 1,048,576 rows by 16,384 columns in a worksheet</p></li>
-<li><p>As an artefact, it is difficult to audit and rerun with different data</p></li>
-<li><p>The data and analytics layers are entangled, which can compromise data integrity.</p></li>
-<li><p>Cloud based modelling platforms such as BigML (<a href="https://bigml.com/">https://bigml.com/</a>). These platforms provide a web interface for users to easily run machine learning modelling experiments as well as interpretability and collaborative features. However, users may need to upload their data to the cloud, which may require additional data policy checking for the use case.</p></li>
+<li><p>Statistical Package for the Social Sciences (SPSS): Suitable for descriptive statistics, parametric and non-parametric analyses, and visualisation of analysis results.</p></li>
+<li><p>Microsoft Excel: Easy to view initial observation over tabular data, and suitable to generate summary metrics of data and create simple data visualisations. Excel has some notable drawbacks though. including:</p>
+<ul>
+<li>A column and row size limit</li>
+<li>Difficulty in auditing and rerunning with different data</li>
+<li>Entangled data and analytics layers, which can compromise data integrity.</li>
+</ul></li>
+<li><p>Cloud based modelling platforms such as <a href="https://bigml.com/">BigML</a>: These platforms provide a web interface for you to easily run machine learning modelling experiments, as well as interpretability and collaborative features. However, you may need to upload your data to the cloud, which may require additional data policy checking.</p></li>
 </ul>
 <p>Commonly used programming tools for statistical analysis and modelling:</p>
 <ul>
-<li><p>R. R is a fully open-source software environment for statistical computing and graphics. R has a GUI Rstudio, where R markdown can be a plug-in to facilitate R code and markdown based report/documentation generation and thus collaboration. The R community is active in developing and maintaining various analysing and modelling packages. Essential packages for data science includes:</p>
+<li><p>R: A fully open-source software environment for statistical computing and graphics. The <a href="https://posit.co/downloads/">RStudio</a> GUI is available, and the <a href="https://rmarkdown.rstudio.com/">R Markdown</a> plug-in can facilitate R code and Markdown-based report/documentation generation, and thus collaboration. The R community is active in developing and maintaining various analysing and modelling packages. Essential packages for data science include:</p>
 <ul>
-<li><p>For data manipulation: dplyr, tidyr, dbplyr</p></li>
-<li><p>For modelling: caret, e1071, mlr3</p></li>
-<li><p>For visualisation: ggplot2, plotly</p></li>
-<li><p>For report generation: knitr</p></li>
-<li><p>For creating interactive web interface: shiny</p></li>
+<li><p>For data manipulation: <code>dplyr</code>, <code>tidyr</code>, <code>dbplyr</code>, and other <a href="https://www.tidyverse.org/">Tidyverse</a> packages</p></li>
+<li><p>For modelling: <code>caret</code>, <code>e1071</code>, <code>mlr3</code></p></li>
+<li><p>For visualisation: <code>ggplot2</code>, <code>plotly</code></p></li>
+<li><p>For report generation: <code>knitr</code></p></li>
+<li><p>For creating interactive web interfaces: <code>shiny</code></p></li>
 </ul></li>
-<li><p>Python. Python is a high-level object-oriented programming language with good code readability. Python has a comprehensive ecosystem to support common statistical analysis, machine learning, deep learning and the implementation and deployment of these data science features. Jupyter notebook/lab is a widely used tool in the Python ecosystem for shareable data science work. Many dependencies in the Python ecosystem are open-source. Essential python dependencies for data science include:</p>
+<li><p>Python: A high-level, object-oriented programming language with good code readability. Python has a comprehensive ecosystem to support common statistical analysis, machine learning, deep learning and the implementation and deployment of these data science features. Jupyter notebook/lab is a widely used tool in the Python ecosystem for shareable data science work. Many dependencies in the Python ecosystem are open-source. Essential Python dependencies for data science include:</p>
 <ul>
-<li><p>For data manipulation: pandas, numpy</p></li>
-<li><p>For statistical analysis: scipy, statsmodels</p></li>
-<li><p>For modelling including machine learning: scikit-learn, statsmodels</p></li>
-<li><p>For deep learning: tensorflow, pytorch, keras</p></li>
-<li><p>For visualisation: matplotlib, seaborn, plotly, bokeh</p></li>
-<li><p>For creating interactive web interface: dash, streamlit</p></li>
+<li><p>For data manipulation: <code>pandas</code>, <code>numpy</code></p></li>
+<li><p>For statistical analysis: <code>scipy</code>, <code>statsmodels</code></p></li>
+<li><p>For modelling including machine learning: <code>scikit-learn</code>, <code>statsmodels</code></p></li>
+<li><p>For deep learning: <code>tensorflow</code>, <code>pytorch</code>, <code>keras</code></p></li>
+<li><p>For visualisation: <code>matplotlib</code>, <code>seaborn</code>, <code>plotly</code>, <code>bokeh</code></p></li>
+<li><p>For creating interactive web interfaces: <code>dash</code>, <code>streamlit</code></p></li>
 </ul></li>
-<li><p>SAS. SAS is a statistical software suite for data management, advanced analytics, multivariate analysis, predictive analytics and so on. SAS has its own GUI for non-technical users but programming via the SAS language can provide more flexibility and functionality in the analysis. It provides free SAS Ondemand for Academics (previous University Edition) for non commercial users such as students and educators.</p></li>
-<li><p>Matlab. Matlab is a programming language and environment optimised for numeric computing. Especially for matrix manipulation, Matlab has advantages compared with the aforementioned other tools. For machine learning and deep learning, Matlab provides the Statistics and Machine Learning Toolbox and the Deep Learning Toolbox, respectively.</p></li>
+<li><p>SAS: A statistical software suite for data management, advanced analytics, multivariate analysis, predictive analytics and so on. SAS has its own GUI which is suitable if you’re a non-technical user, but programming via the SAS language can provide more flexibility and functionality in the analysis. It provides free SAS Ondemand for Academics (previous University Edition) for non-commercial users such as students and educators.</p></li>
+<li><p>Matlab: A proprietary programming language and environment optimised for numeric computing. Matlab is powerful for linear algebra and is used for applications such as simulation and signal processing. For machine learning and deep learning, Matlab provides the Statistics and Machine Learning Toolbox and the Deep Learning Toolbox, respectively.</p></li>
 </ul>
-<p>Open source tools such as R and python provide transparency, collaboration and a low barrier to entry. Commercial tools tend to have a more sophisticated user experience, but a limited ecosystem, and provide some assurances (e.g.&nbsp;extension/library support) that aren’t available through commercial partners.</p>
+<p>Open source tools such as R and Python are a great place for you to start as they provide transparency, the ability to collaborate, and have a low barrier to entry in terms of cost. However, they may not work in practice in every use case, and we’re not clear on how stable these tools will remain following version changes over time. Commercial tools tend to have a higher cost than their open source counterparts, but offer more controlled and supported experiences.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Check the license terms for the tools you’re using. Models developed using some commercial tools may not be able to be used in a specific deployment environment.</p>
+</div>
+</div>
 </section>
 <section id="experiment-tracking-tools" class="level2" data-number="8.6">
 <h2 data-number="8.6" class="anchored" data-anchor-id="experiment-tracking-tools"><span class="header-section-number">8.6</span> Experiment tracking tools</h2>
-<p>The process of developing a model is iterative, potentially involving trial and error for experiment configuration tuning, training and evaluation of the model. When the complexity of a model grows, monitoring experiment configurations and model performance could become a hassle. Using automatic experiment tracking tools such as Tensorboard, weights &amp; biases are helpful to overcome those issues. In general, experiment tracking tools provide features such as visualisation, logging, integration with multiple ML frameworks and model profiling. Also, such tools provide integration facilities for CI/CD pipelines, ML lifecycle management tools which helps to streamline the model training and deployment pipeline while keeping traces in the experiment lifecycle.</p>
-<p>There are lists online which suggest experiment tracking tools for machine learning <a href="https://neptune.ai/blog/best-ml-experiment-tracking-tools">note an example list</a>.</p>
+<p>Model development is an iterative process and it takes time to find an optimal set of configurations for the problem you are trying to solve. Monitoring experiment configurations and model performance can be cumbersome, especially when the complexity of a model grows. There are many experiment tracking tools available to help you with machine learning model development, such as <a href="https://neptune.ai/blog/best-ml-experiment-tracking-tools">this list from Neptune.ai</a>.</p>
 </section>
 <section id="model-validation" class="level2 page-columns page-full" data-number="8.7">
 <h2 data-number="8.7" class="anchored" data-anchor-id="model-validation"><span class="header-section-number">8.7</span> Model validation</h2>
 <section id="data-partitioning" class="level3 page-columns page-full" data-number="8.7.1">
 <h3 data-number="8.7.1" class="anchored" data-anchor-id="data-partitioning"><span class="header-section-number">8.7.1</span> Data partitioning</h3>
 <p>Models are usually tuned to the dataset that they are trained with. Using independent datasets for validating the performance of a model is preferred. However, in the healthcare domain, data sharing can make this difficult.</p>
-<p>Where independent datasets are not available, the model needs to be validated using the development dataset. There are two main approaches for train-test data splitting and model validation.[^1]</p>
+<p>When independent datasets aren’t available, your model needs to be validated using the development dataset. There are two main approaches for train-test data splitting and model validation.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bootstrapping (multiple samples with replacement) can also be used for model development, with models evaluated with an “out of bag” sample. Bootstrap sampling is embedded in boosting and bagging algorithms.</p>
+</div>
+</div>
 <ol type="1">
 <li>Cross validation</li>
 </ol>
-<p>This method mixes and shuffles all the data points and splits them into k folds (usually 5-10) for iterative performance measuring. In each iteration, one fold is left out as the testing set and the others are used as the training set. By these iterations, k measures of the chosen performance metric(s) could be obtained to assess the model’s average performance and its variance, which is used as an estimate of the model’s performance on unseen data.</p>
+<p>This method mixes and shuffles all data points and splits them into <code>k</code> folds (usually 5-10) for iterative performance measuring. In each iteration, one fold is left out as the testing set and the others are used as the training set. By these iterations, <code>k</code> measures of the chosen performance metric(s) can be obtained to assess the model’s average performance and variance, which is used as an estimate of the model’s performance on unseen data.</p>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><a href="http://ethen8181.github.io/machine-learning/model_selection/img/kfolds.png"><img src="./img/kfolds.png" class="img-fluid figure-img" alt="Example of k-fold cross validation"></a></p>
 <p></p><figcaption class="figure-caption margin-caption">Example of K-Fold Cross Validation when k=5</figcaption><p></p>
 </figure>
 </div>
-<p>To use this method, it is important to make sure that there are no significant data changes along the time within the model development dataset, and no foreseeable data changes between the development set and the future data that the model would be applied on.</p>
-<p>In healthcare, it is also important to check whether the model will be used at an event level or patient level in advance.</p>
-<p>There could be multiple events for the same patient in a dataset and if no proper consideration is taken into account while splitting the testing data (or other preprocessing like deduplication), this could potentially lead to information leakage and inaccuracy.</p>
-<p>For example, in a longitudinal dataset of health encounters, the dataset could be split to group all of a patient’s encounters together (so these are not split across sets), or split by time (which could mean a patient’s encounters are split between different validation sets). Consider whether these types of splitting will make a meaningful difference to your validation exercises. Also be mindful of anything that involves a flow or transfer.</p>
-<ol type="1">
+<p>When using cross validation, it’s important you ensure there are no significant data changes across time within the model development dataset. For example, if a policy change was implemented at a date in the middle of your dataset time range - this may impact the data and affect model performance at some time post that date. You will also want to ensure that there are no foreseeable data changes between the development set and the future data that the model would be applied on. In healthcare, it’s also important to check whether the model will be used at an event level (e.g.&nbsp;a hospitalisation event or GP visit) or patient level in advance.</p>
+<p>:::{.callout-tip} There could be multiple events for the same patient in a dataset. If no proper consideration is taken into account while splitting the testing data (or other preprocessing like deduplication), this could potentially lead to information leakage and inaccuracy. :::</p>
+<p>For example, in a longitudinal dataset of health encounters, the dataset could be split to group all of a patient’s encounters together (so these are not split across sets), or split by time (which could mean a patient’s encounters are split between different validation sets). You should consider whether these types of splitting will make a meaningful difference to your validation exercises. Also be mindful of anything that involves a flow or transfer.</p>
+<ol start="2" type="1">
 <li>Time-wise validation</li>
 </ol>
-<p>Many healthcare model applications have in nature a time dimension, as data are collected by healthcare events that happen across time. There could be a trend in the data as people age, population structure changes, and the healthcare technologies/systems evolve. &gt; To better estimate the future performance of a model, a time-wise splitting and validating approach can be taken. This method sets data of a specified period along time as the testing set and uses the data before the testing set as training data. A visualisation of performance change over time will be obtained after a number of iterations, which provides an estimation of the trend of the model’s performance change in the near future - will it be relatively stable, gradually decreasing or increasing.</p>
-<p>Some models have complex hyperparameter space and require an additional split of data for early stop in training or additional hyperparameter optimisation. In classification models that rely on a cut-off threshold in application (e.g.&nbsp;a high risk patient identification model based on numeric risk scores), the cut-off threshold can also be seen as part of the model hyperparameters, and its determination should be considered as part of the model development. Hence the performance validation process should be using a partition of data that is not used in either model training, additional hyperparameter optimisation, or the threshold optimisation in particular.</p>
-<p>In all cases, care should be taken to ensure that the sampling unit is complete. For instance, we may be modelling a flow of events, in which case the sampling unit is likely to be a patient. If the modelled data consists of multiple records per patient, it will be important to ensure that complete patient records are sampled.</p>
+<p>Many healthcare model applications have a time dimension, as data is collected by healthcare events that happen across time. There may be a trend in the data as people age, population structure changes, and healthcare technologies and systems evolve.</p>
+<p>To better estimate the future performance of a model, a time-wise splitting and validating approach should be taken. This method sets data of a specified period along time as the testing set and uses the data before the testing set as training data. A visualisation of performance change over time will be obtained after a number of iterations, which provides an estimation of the trend of the model’s performance change in the near future - whether it will it be relatively stable, gradually decreasing or increasing.</p>
+<p>Some models have a complex <a href="https://towardsdatascience.com/navigating-the-hyperparameter-space-32f48be2c12d">hyperparameter space</a> and require an additional split of data for early stop-in training or additional hyperparameter optimisation. In classification models that rely on a cut-off threshold in application (for example, a high-risk patient identification model based on numeric risk scores), the cut-off threshold can also be seen as part of the model hyperparameters, and its determination should be considered as part of the model development. As a result, the performance validation process should be using a partition of data that is not used in either model training, additional hyperparameter optimisation, or the threshold optimisation in particular.</p>
+<p>In all cases, you should take care to ensure that the sampling unit is complete. For instance, you may be modelling a flow of events, in which case the sampling unit is likely to be a patient. If the modelled data consists of multiple records per patient, it’s important to ensure that complete patient records are sampled.</p>
 </section>
 <section id="performance-metrics" class="level3" data-number="8.7.2">
 <h3 data-number="8.7.2" class="anchored" data-anchor-id="performance-metrics"><span class="header-section-number">8.7.2</span> Performance metrics</h3>
-<p>The type of performance metric used will depend on the model being evaluated and the context of the project. For models that predict a value, such as a linear regression model, R-squared and root mean square error (RMSE) are common.</p>
-<p>In health, metrics calculated from a confusion matrix for models that output a class (e.g.&nbsp;a decision tree) or probability (e.g.&nbsp;logistic regression) are commonly used. To produce a confusion matrix for a model that outputs a probability, a probability threshold is applied (values above the threshold are positive and values below are negative). The probability threshold can be set to optimise a particular metric, can be set by other optimisation techniques, or otherwise set according to the use case. Seek clinical input on the appropriate thresholds as they can impact patient care.</p>
-<p>Common performance metrics used can include the following. Note that not all are appropriate for each model or data type or question being answered.</p>
+<p>To assess model performance, the type of performance metric you use (as outlined below) will depend on the model being evaluated and the context of the project. For models that predict a value, such as a linear regression model, R-squared and root mean square error (RMSE) are common.</p>
+<p>In health, metrics calculated from a <a href="https://en.wikipedia.org/wiki/Confusion_matrix">confusion matrix</a> for models that output a class (e.g.&nbsp;a decision tree) or probability (e.g.&nbsp;logistic regression) are commonly used. To produce a confusion matrix for a model that outputs a probability, a probability threshold is applied (where values above the threshold are positive and values below are negative). The probability threshold can be set to optimise a particular metric, can be set by other optimisation techniques, or otherwise set according to the use case. Seek clinical input on the appropriate thresholds as they can impact patient care.</p>
+<p>There are a number of common performance metrics that can be used (although it’s important to note that not all are appropriate for each model or data type or question being answered):</p>
 <ul>
-<li><p><strong>Precision</strong> quantifies the proportion of positive class predictions that actually belong to the positive class.</p></li>
-<li><p><strong>Recall</strong> quantifies the number of positive class predictions made out of all positive examples in the dataset.</p></li>
-<li><p><strong>Model accuracy</strong> is a machine learning classification model performance metric that is defined as the ratio of true positives and true negatives to all positive and negative observations.</p></li>
-<li><p><strong>F-Measure</strong> provides a single score that balances both the concerns of precision and recall in one number.</p></li>
-<li><p><strong>Positive and negative predictive values</strong> (PPV and NPV respectively) are the proportions of positive and negative results in statistics and diagnostic tests that are true positive and true negative results, respectively. The PPV and NPV describe the performance of a diagnostic test or other statistical measure.</p>
-<ul>
-<li>Positive predictive value (PPV) and negative predictive value (NPV) are best thought of as the clinical relevance of a test</li>
-</ul></li>
-<li><p><strong>Prevalence</strong> is the number of cases in a defined population at a single point in time and is expressed as a decimal or a percentage.</p></li>
-<li><p><strong>Sensitivity</strong> is the percentage of true positives (e.g.&nbsp;90% sensitivity = 90% of people who <u>have</u> the target disease will test positive).</p></li>
-<li><p><strong>Specificity</strong> is the percentage of true negatives (e.g.&nbsp;90% specificity = 90% of people who <u>do not have</u> the target disease will test negative).</p></li>
-<li><p><strong>AUROC</strong> is <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3673738/">a performance metric for “discrimination”</a>: it tells you about the model’s ability to discriminate between cases (positive examples) and non-cases (negative examples.) For a ranking use case AUC-ROC is a measure that indicates how good the model is at ranking cases based on a score (how likely any two cases are correctly ordered). 0.5 indicates that the model is no better than random at ranking and 1 indicates a perfect model.</p></li>
-<li><p><strong>AUC-PRC</strong> is a measure that indicates how good the model is at minimising the tradeoff between precision and recall. A high AUC-PRC represents the model can achieve high recall and high precision at the same time.</p></li>
+<li><p><strong>Precision</strong> - quantifies the proportion of positive class predictions that actually belong to the positive class</p></li>
+<li><p><strong>Recall</strong> - quantifies the number of positive class predictions made out of all positive examples in the dataset</p></li>
+<li><p><strong>Model</strong> accuracy - a machine learning classification model performance metric that’s defined as the ratio of true positives and true negatives to all positive and negative observations</p></li>
+<li><p><strong>F-Measure</strong> - provides a single score that balances both the concerns of precision and recall in one number</p></li>
+<li><p><strong>Positive and negative predictive values</strong> (PPV and NPV respectively) are the proportions of positive and negative results in statistics and diagnostic tests that are true positive and true negative results, respectively. The PPV and NPV describe the performance of a diagnostic test or other statistical measure. PPV and NPV are best described as the clinical relevance of a test.</p></li>
+<li><p><strong>Prevalence</strong> - the number of cases in a defined population at a single point in time and is expressed as a decimal or a percentage</p></li>
+<li><p><strong>Sensitivity</strong> - the percentage of true positives (for example, 90% sensitivity = 90% of people who have the target disease will test positive)</p></li>
+<li><p><strong>Specificity</strong> - the percentage of true negatives (for example, 90% specificity = 90% of people who do not have the target disease will test negative)</p></li>
+<li><p><strong>AUC-ROC</strong> - a performance metric for “discrimination”; it tells you about the model’s ability to discriminate between cases (positive examples) and non-cases (negative examples). For a ranking use case AUC-ROC is a measure that indicates how good the model is at ranking cases based on a score (how likely any two cases are correctly ordered). 0.5 indicates that the model is no better than random at ranking and 1 indicates a perfect model.</p></li>
+<li><p><strong>AUC-PRC</strong> - a measure that indicates how good the model is at minimising the trade-off between precision and recall. A high AUC-PRC shows that the model can achieve high recall and high precision at the same time.</p></li>
 </ul>
 </section>
 </section>
-<section id="further-resources" class="level2" data-number="8.8">
-<h2 data-number="8.8" class="anchored" data-anchor-id="further-resources"><span class="header-section-number">8.8</span> Further resources</h2>
-<p><a href="https://developers.google.com/machine-learning/guides/rules-of-ml#overview">Rules of Machine Learning: Best Practices for ML Engineering</a> (Google Machine Learning Guides)</p>
-<p>Erdemir, A., Mulugeta, L., Ku, J.P. <em>et al.</em> <a href="https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-020-02540-4">Credible practice of modeling and simulation in healthcare: ten rules from a multidisciplinary perspective.</a> <em>J Transl Med</em> 18, 369 (2020). <a href="https://doi.org/10.1186/s12967-020-02540-4">https://doi.org/10.1186/s12967-020-02540-4</a></p>
-<p>W. Hare, A. R. Rutherford, K. Vasarhelyi and The Complex Systems Modelling Group: Modelling in Healthcare, American Mathematical Society (2010)</p>
-<p><a href="https://eugeneyan.com/writing/practical-guide-to-maintaining-machine-learning/">A Practical Guide to Maintaining Machine Learning in Production</a></p>
+<section id="useful-resources" class="level2 page-columns page-full" data-number="8.8">
+<h2 data-number="8.8" class="anchored" data-anchor-id="useful-resources"><span class="header-section-number">8.8</span> Useful resources</h2>
+<ul>
+<li><p><a href="https://developers.google.com/machine-learning/guides/rules-of-ml#overview">Rules of Machine Learning: Best Practices for ML Engineering</a> (Google Machine Learning Guides)</p></li>
+<li><p>Ten rules for the credible practice of modelling nd simulation in healthcare (<span class="citation" data-cites="erdemir_credible_2020"><a href="#ref-erdemir_credible_2020" role="doc-biblioref">Erdemir et al. 2020</a></span>)</p></li>
+<li><p>Book on modelling in healthcare (<span class="citation" data-cites="complex_systems_modelling_group_modelling_2010"><a href="#ref-complex_systems_modelling_group_modelling_2010" role="doc-biblioref">Complex Systems Modelling Group 2010</a></span>)</p></li>
+<li><p><a href="https://eugeneyan.com/writing/practical-guide-to-maintaining-machine-learning/">A Practical Guide to Maintaining Machine Learning in Production</a></p></li>
+</ul>
 
 
+<div class="no-row-height column-margin column-container"><div id="ref-erdemir_credible_2020" class="csl-entry" role="doc-biblioentry">
+Erdemir, A, Mulugeta, L, Ku, J P, Drach, A, Horner, M, Morrison, T M, Peng, G C Y, Vadigepalli, R, Lytton, W W, and Myers, J G. 2020. <span>“Credible practice of modeling and simulation in healthcare: Ten rules from a multidisciplinary perspective”</span>. <em>Journal of Translational Medicine</em> 18.1, 369. <a href="https://doi.org/10.1186/s12967-020-02540-4">https://doi.org/10.1186/s12967-020-02540-4</a>.
+</div><div id="ref-complex_systems_modelling_group_modelling_2010" class="csl-entry" role="doc-biblioentry">
+Complex Systems Modelling Group. 2010. <em>Modelling in healthcare</em>. Providence, Rhode Island. <a href="http://www.ams.org/mbk/074">http://www.ams.org/mbk/074</a>.
+</div></div>
 </section>
 
 </main> <!-- /main -->
