@@ -2,99 +2,112 @@
 title: "Evaluation"
 ---
 
-After a model has been created and validated, it should be evaluated to determine whether it can address the question you set out to answer. In some cases this can take the form of a formal prospective data study, where an independent dataset is collected, and the performance of the model on this dataset is assessed. Models that affect patient standard of care will be subject to ethical processes which should be considered upfront - see section on Ethics.
+After a model has been created and validated, you should evaluate it to determine whether it can address the question you initially set out to answer. In some cases this can take the form of a formal prospective data study, where an independent dataset is collected, and the performance of the model on this dataset is assessed. Models that affect patient standard of care will be subject to ethical processes which should be considered upfront (see [Ethics](data-landscape.qmd#ethics--privacy)).
 
-Existing models, such as from other countries or jurisdictions, can also be evaluated against a local dataset, which is a good way to tell how useful someone else's model may be on your own data.
+Existing models, such as from other countries or jurisdictions, can also be evaluated against a local dataset, which is a good way to tell how useful someone else’s model may be on your own data.
 
-Lags in data availability can also affect evaluation - a model that goes live today may not be able to be effectively evaluated until several months later.
+Lags in data availability can affect evaluation: a model that goes live today may not be able to be effectively evaluated until several months later.
 
-Possible social and business impacts of model deployment should have been considered in the governance process. Once a model has been deployed, actual impacts can be assessed through data collection, which can also include interviews with interested parties.
+Possible social and business impacts of model deployment should be considered in the governance process. Once a model has been deployed, actual impacts can be assessed through data collection, which can also include interviews with interested parties.
 
 ## Model safety
 
-From a clinical perspective the main concern/clinical risk often concerns false negative/low-risk individuals with a positive outcome. Include clinical experts in the discussions on appropriate model thresholds.
+Making a model safe for use in a healthcare setting generally involves ensuring that its rates of [falsely classifying results as positive or negative](https://en.wikipedia.org/wiki/False_positives_and_false_negatives) are low.
 
-When models are implemented, people with high risk will often have additional things done for them to reduce the risk (less of a concern as we are actively doing something to reduce the risk). For the low-risk individuals, there are two possible explanations:
+:::{.callout-note}
+From a clinical perspective, the main area of concern is often false negative or low-risk individuals with a positive outcome. You should include clinical experts in discussions on appropriate model thresholds to address this.
+:::
+
+When models are implemented, often errors in classifying high-risk individuals can be identified because there is a follow-up step associated with that high risk which aims to reduce the risk. However, errors in classifying low-risk individuals often have two possible explanations:
 
 1. The outcome was unpredictable
 
-2. Additional data could be used for prediction
+2. Using additional data could improve the accuracy of the model's prediction
 
-It is usually difficult for a data scientist to know what additional data could have been used and it is helpful for the clinical lead to audit a number of false negative results to determine if the outcome was truly unpredictable or if additional data would have helped with the prediction.
+It is usually difficult for a data scientist to know what additional data could have been used. It’s helpful for your clinical lead to audit a number of false negative results to determine if the outcome is truly unpredictable or if additional data will help with the prediction.
 
 ## Bias in data
 
-Data is collected in a particular context, which leads to bias. This can come from different sources including historical bias, data imbalance, missingness, and human prejudice. There is no single best definition of bias or fairness that applies equally well for every data science application.
+Data is collected in a particular context, which leads to bias. This can come from different sources including historical bias, data imbalance, missingness, and human prejudice. There’s no single best definition of bias or fairness that applies equally well for every data science application.
 
-While training machine learning models using historically collected data, or drawing any conclusion from data, we should be typically mindful about the potential bias in the data regarding sensitive attributes such as age, ethnicity and gender. Bias-related harms can be reinforced by machine learning models/systems.
+While training machine learning models using historically collected data, or drawing any conclusion from data, you should be typically mindful about the potential bias in the data, regarding sensitive attributes such as age, ethnicity and gender. Bias-related harms can be reinforced by machine learning models and systems.
 
-Machine learning fairness itself is a broad topic. For a non-exhaustive summary of machine learning fairness from a technical perspective please refer to [ML fairness](https://woki.orionhealth.global/display/DATASCI/ML+Fairness). (Note @bellamy_ai_2018)
+The Manatū Hauora Ministry of Health's [Emerging Health Technology Introductory Guidance](https://www.health.govt.nz/system/files/documents/pages/introductory_guidance_-_algorithms_v0.4_-_web.pdf) (PDF) section on Bias is a good place to start learning.
 
-Due to the history focus of cohort studies, certain groups of the population, such as certain ethnic groups, females, might be under-represented and more vulnerable to bias in such studies while any conclusions were drawn or models were trained. In evaluation work, it is important to measure the goodness of fit, accuracy and other metrics of a model from multiple perspectives rather than the overall metrics only. Basic measurement aspects with respect to sensitive attributes (e.g. gender, ethnicity) to be considered:
+Machine learning fairness is a broad topic; relevant reading includes [a section in Google's crash course in machine learning](https://developers.google.com/machine-learning/crash-course/fairness/video-lecture), its reference on [A Marketer's Guide to Machine Learning Fairness](https://www.thinkwithgoogle.com/feature/ml-fairness-for-marketers/), and AI Fairness 360 ([@bellamy_ai_2018]).
 
-1. The difference of actual patient data metrics stratified by sensitive attributes - whether there is any inequity among the stratified groups, and what bias it may bring into the models
+Due to the historical focus of cohort studies, certain groups of the population - such as certain ethnic groups or females - may be underrepresented and more vulnerable to bias in studies where any conclusions were drawn or models were trained.
+
+In evaluation work, it’s important to measure the goodness of fit, accuracy and other metrics of a model from multiple perspectives rather than the overall metrics only. Consider the basic measurement aspects with respect to sensitive attributes (for example gender and ethnicity):
+
+1. The difference of actual patient data metrics stratified by sensitive attributes - whether there’s any inequity among the stratified groups, and what bias it may bring into the models
 
 2. The difference of predicted outcome metrics stratified by sensitive attributes - whether there is any inequity in model predictions among the stratified groups, and what downstream consequence this may cause
 
-3. The difference of model performance metrics among the stratified groups - whether the model is treating the groups equally, and what downstream consequence this may cause
+3. The difference of model performance metrics among the stratified groups - whether the model is treating the groups equally, and what downstream consequence this may cause.
 
-Reporting metrics with stratification by sensitive attributes whenever applicable can help maintain an equity lens more easily. Performance of the IBIS/Tyrer-Cuzick model of breast cancer risk by race and ethnicity in the Women\'s Health Initiative is an example [see @kurian_performance_2021].
+Reporting metrics with stratification by sensitive attributes whenever applicable can help to more easily maintain an equity lens. Performance of the IBIS/Tyrer-Cuzick model of breast cancer risk by race and ethnicity in the Women's Health Initiative is an example [see @kurian_performance_2021].
 
-There is a trade-off between data informativeness / model performance and fairness. Most bias mitigation methods cannot avoid playing with this balance. It is highly recommended to take into account the use case and follow-up impacts while deciding which bias mitigation method to be used and how to use it.
+There’s a trade-off between data informativeness, model performance and fairness. Most bias mitigation methods can’t avoid playing with this balance. We highly recommend taking into account the use case and follow-up impacts while deciding which bias mitigation method to be used, and how it’s used.
 
-Mitigating bias and improving fairness is mostly not a technical challenge but a much broader systematic challenge.
+Mitigating bias and improving fairness is mostly not a technical challenge but a much broader systematic challenge. We recommend including diverse voices and perspectives in data science work by, for example, having Māori researchers involved in your project.
 
-We recommend including diverse voices and perspectives in data science work, e.g., having a Māori researcher(s) in the project.
+:::{.callout-note}
+Even if no mitigation can be included, we recommend that the bias itself should be analysed and reported if possible, especially that it is important to identify who is most vulnerable to the bias-related harms.
+:::
 
-Even if no mitigation can be done, it is recommended that the bias itself should be analysed and reported if possible, especially that it is important to identify who is most vulnerable to the bias-related harms.
-
-Tools:
+### Useful tools and resources
 
 * [Aequitas](https://github.com/dssg/aequitas)
 
-* [Audit-AI](https://github.com/pymetrics/audit-ai)
-
 * [AI Fairness 360](https://aif360.mybluemix.net/) (IBM)
+
+* [Audit-AI](https://github.com/pymetrics/audit-ai)
 
 * [Fairlearn](https://www.microsoft.com/en-us/research/publication/fairlearn-a-toolkit-for-assessing-and-improving-fairness-in-ai/) (Microsoft)
 
-* [The LinkedIn Fairness Toolkit (LiFT)](https://github.com/linkedin/LiFT)
-
 * [Fairness Indicator](https://www.tensorflow.org/responsible_ai/fairness_indicators/guide) (Google)
 
-* [PROBAST](https://doi.org/10.7326/m18-1376)
+* [FATE: Fairness, Accountability, Transparency, and Ethics in AI](https://www.microsoft.com/en-us/research/theme/fate/) (Microsoft)
 
-Further resources:
+* [The LinkedIn Fairness Toolkit (LiFT)](https://github.com/linkedin/LiFT)
 
-* FATE: <https://www.microsoft.com/en-us/research/theme/fate/#!publications>
+* [ML-fairness-gym](https://github.com/google/ml-fairness-gym) (Google)
 
-* [https://www.thinkwithgoogle.com/feature/ml-fairness-for-marketers/](https://www.thinkwithgoogle.com/feature/ml-fairness-for-marketers/)
+* PROBAST (see [@wolff_probast_2019] and [@moons_probast_2019])
 
-* [ML fairness gym](https://github.com/google/ml-fairness-gym/blob/master/docs/FAQ.md#What-research-results-have-been-replicated-with-ML-fairness-gym)
+## Keep subject matter experts involved throughout
 
-* [Ministry of Health - Emerging Health Technology Advice & Guidance](https://www.health.govt.nz/our-work/digital-health/vision-health-technology/emerging-health-technology-advice-and-guidance)
+It’s very important to continually engage subject matter experts, such as clinicians, throughout your project. This can encompass involving clinicians in the project as an advisory level, and can be extended by involving clinicians in iterative development of models, such as providing labels.
 
-## Clinician in the loop
-
-expand
+:::{.callout-tip}
+It’s incredibly important to keep the perspectives of subject matter experts front of mind throughout your project. If these experts are not involved in the data science process, their acceptance of the outputs will be limited or absent. This may mean your model isn’t able to be used to its full potential - or in the worst case scenario, not used at all.
+:::
 
 ## Transparency, interpretability, and explanation
 
-In the context of health it is especially important to communicate findings in a way that builds trust in the model development process and outputs. If this is not done well, people may not adopt a model in practice that would otherwise have positive health impacts.
+In the context of health, it’s especially important to communicate findings in a way that builds trust in your model development process and outputs. If trust isn’t built in your model, it may not be adopted in practices.
 
-The requirement that models are transparent, interpretable and explainable may guide early modelling decisions such as which algorithm to use and how to treat inputs. Linear models tend to be more interpretable and explainable, so too are models that are built with inputs that have not been subject to significant transformations or weightings. The choice of a 'simpler' model may compromise model performance meaning better outcomes are sacrificed for the sake of explainability, however there is little point in deploying a deep learning model that has excellent performance, but is not trusted or used. This trade-off needs to be carefully considered.
+The requirement for models to be transparent, interpretable and explainable should guide your early modelling decisions, such as which algorithm to use and how to treat inputs.  Linear models tend to be more interpretable and explainable; so too are models that are built with inputs that haven’t been subject to significant transformations or weightings.
 
-Consider outcome measures that are tangible and meaningful to the end user, and that have some relationship to the project goal, such as hospitalisation, mortality, or rankings.
+The choice of a ‘simpler’ model may compromise model performance, meaning better outcomes are sacrificed for the sake of explainability. There is little point however in deploying a deep learning model that has excellent performance, but isn’t trusted or used.  You should carefully consider this trade-off.
 
-Indicate feature importance and how the model inputs are weighted in relation to model outputs and what that means in practice. For example, if a model includes modifiable inputs, a model user will want to know how changes to that input might affect an outcome. From an equity perspective, a model user will also want to know to what extent inputs such as ethnicity, age, gender or deprivation impact the outcome.
+You should also consider outcome measures that are tangible and meaningful to your end user, and that have some relationship to the project goal, such as hospitalisation, mortality, or rankings.
+
+Finally, you should indicate which inputs are most important to the model performance or model outputs (feature importance) and how the model inputs are weighted in relation to model outputs, and what that means in practice.  For example, if a model includes modifiable inputs, a model user will want to know how changes to that input might affect an outcome. From an equity perspective, a model user will also want to know to what extent inputs such as ethnicity, age, gender or deprivation impact the outcome.
 
 These considerations are also relevant to governance of models. GDPR's regulation specifically emphasises a model's transparency, accountability and governance (see [@kaminski_algorithmic_2021]).
 
 ### Transparency around the inputs
 
-Provide good data definitions and reasons for how data has been treated e.g "The model includes age but it has been grouped into 3 categories (18-39, 40-59 and 60+) to simplify the model and handle outliers without compromising performance", and, "The count of regular medications includes medications that have been prescribed in the two years prior to test positive date for this infection. Regular medications are medications that have been prescribed at least four times over that period. Prescription data rather than dispensing data is used as it has better coverage."
+It’s important to provide good data definitions and reasons for how data has been treated. For example:
 
-Provide the provenance of data e.g. "This data came from a national collection of data that went through a quality assurance process, it is current and relevant to the problem being answered in this way..."
+* “The model includes age but it has been grouped into 3 categories (18-39, 40-59 and 60+) to simplify the model and handle outliers without compromising performance”; or
+* “The count of regular medications includes medications that have been prescribed in the two years prior to the test positive date for this infection.  Regular medications are medications that have been prescribed at least four times over that period.  Prescription data rather than dispensing data is used as it has better coverage.”
+
+Providing the provenance of data is also important. For example:
+
+> “This data came from a national collection of data that went through a quality assurance process, it is current and relevant to the problem being answered in this way…”
 
 ### Interpretation of the output
 
