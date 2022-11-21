@@ -33,6 +33,7 @@ We would like to thank the people who have contributed to writing and reviewing 
 * Kelly Atkinson
 * Kevin Ross
 * Luke Boyle
+* Mirza Baig
 * Ning Hua
 * Pieta Brown
 * Quan Sun
