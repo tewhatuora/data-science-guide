@@ -93,7 +93,9 @@ This section is written from the perspective of a consulting practice, research 
 
 ### Data Governance
 
-For more information about Governance see the **Governance** section.
+Data governance is a specific sub-discipline ([@alhassan_data_2016, @tse_challenges_2018, @george_data_2020]).
+
+See the [Governance](collaboration.qmd#governance) section.
 
 ### Data Management
 
@@ -112,15 +114,10 @@ What starts out as a data trickle can quickly become a data flood. It is worthwh
 A data register or log can help you or your organisation track:
 
 - what data you have received
-
 - when you received it
-
 - where you are storing it
-
 - who can/should have access to it
-
 - when it should be destroyed
-
 - what processed data sets exist and where, particularly if they contain PHI
 
 The format can be tailored to suit your organisation (for example, using a spreadsheet).
@@ -132,3 +129,7 @@ Managing data for a small organisation or research team could be as simple as ha
 Consider version control for all aspects of the project, including data; depending on the tooling that you use, this may already be an included capability. [DVC](https://dvc.org/) is one tool designed specifically for data version control for machine learning. Your development environment or cloud storage solution may also include features of this type. Data files can be named with versions, however this method is not as robust as automated versioning that is managed by a tool.
 
 Data management tools are responsible for carrying a wide range of data or documents.
+
+#### Useful references
+
+* The Data Management Body of Knowledge (DM-BOK) (@earley_dama-dmbok_2017)

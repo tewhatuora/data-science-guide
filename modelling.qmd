@@ -202,3 +202,5 @@ There are a number of common performance metrics that can be used (although itâ€
 * Book on modelling in healthcare ([@complex_systems_modelling_group_modelling_2010])
 
 * [A Practical Guide to Maintaining Machine Learning in Production](https://eugeneyan.com/writing/practical-guide-to-maintaining-machine-learning/)
+
+* Model cards for model reporting ([@mitchell_model_2019])

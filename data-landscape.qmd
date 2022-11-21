@@ -32,7 +32,9 @@ To understand population trends and context, aggregated data sets and web tools 
 
 Useful resources:
 
-- Through a review of Aotearoa New Zealand health datasets, PDH has produced [an interactive and updatable list of data](https://data.precisiondrivenhealth.com) available in New Zealand. This includes data from [Figure.nz](https://figure.nz/) and many other sources.
+- Through a review of Aotearoa New Zealand health datasets, PDH has produced [an interactive and updatable list of data](https://data.precisiondrivenhealth.com) available in New Zealand. This includes data from [Figure.nz](https://figure.nz/) and many other sources. ([@precision_driven_health_aotearoa_2022])
+
+- A recent research project which undertook a local algorithm scan produced a whitepaper report on [The future of healthcare algorithms in Aotearoa New Zealand](https://precisiondrivenhealth.com/new-zealand-health-sector-algorithm-scan/) ([@noauthor_new_2021]).
 
 - [Where can I find health information?](https://www.health.govt.nz/nz-health-statistics/where-can-i-find-health-information) (Manatū Hauora): Data sources commonly used when analysing the health of New Zealand populations
 
@@ -187,3 +189,5 @@ Useful resources:
 - [Te Mana Raraunga](https://www.temanararaunga.maori.nz/) (Māori Data Sovereignty Network) has helpful resources and guidance.
 
 - The Health Research Council of NZ (HRC) also produces [Guidelines for Researchers on Health Research Involving Māori](https://www.hrc.govt.nz/resources/guidelines-researchers-health-research-involving-maori).
+
+- NZ government's [Principles for the safe and effective use of data and analytics](https://www.stats.govt.nz/assets/Uploads/Data-leadership-fact-sheets/Principles-safe-and-effective-data-and-analytics-May-2018.pdf) ([@office_of_the_privacy_commissioner_principles_2018])

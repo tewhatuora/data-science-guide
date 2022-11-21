@@ -137,10 +137,14 @@ There are many resources for governance groups and executive teams who are looki
 
 - [Lessons learned from developing a COVID-19 algorithm governance framework in Aotearoa New Zealand](https://www.tandfonline.com/doi/full/10.1080/03036758.2022.2121290): Practical considerations from a governance group
 
-- [Algorithm Charter](https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-charter/) (Data.govt.nz): A set of principles which have been signed off by most NZ government organisations
+- [Algorithm Charter](https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-charter/) (Data.govt.nz): A set of principles which have been signed off by most NZ government organisations ([@manatu_hauora_ministry_of_health_algorithm_nodate])
 
 - [Health and Disability Ethics Committees](https://ethics.health.govt.nz/): the health organisation responsible for reviewing and approving research using health data and/or health system users - also see [Ethics & privacy](data-landscape.qmd#ethics--privacy)
 
 - [Te Mana Rauranga](https://www.temanararaunga.maori.nz/): a network of experts who have collected principles for Māori data sovereignty - also see [Data sovereignty](data-landscape.qmd#data-sovereignty-sovereignty)
 
 - [Manatū Hauora Ministry of Health - Emerging Health Technology Advice & Guidance](https://www.health.govt.nz/our-work/digital-health/vision-health-technology/emerging-health-technology-advice-and-guidance)
+
+- The Law Foundation [report on government use of AI in NZ](https://data.govt.nz/assets/data-ethics/algorithm/NZLF-report.pdf) ([@colin_gavaghan_government_2019])
+
+- [Trustworthy AI in Aotearoa: AI Principles](https://data.govt.nz/assets/data-ethics/algorithm/Trustworthy-AI-in-Aotearoa-March-2020.pdf) report from AI Forum ([@ai_forum_trustworthy_2020])

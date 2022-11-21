@@ -104,3 +104,13 @@ It is usually necessary to pitch, propose, or otherwise justify a request for fu
 Legal advice should be sought, and issues related to legal, intellectual property and/or regulatory issues explicitly discussed and documented prior to you starting work. Consider who holds the data you want to use, who owns the models and what may be required for lifecycle management.
 
 Software may be considered a medical device if it is used in the diagnosis, treatment, prevention, cure, or mitigation of diseases or other conditions. Depending on how the intended use is defined, the software may be subject to country dependent regulatory requirements. Specialised regulatory advisors should be engaged early as the process takes time and documentation for approval may need to be generated during the development process.
+
+## Useful resources
+
+* Report on [Artificial Intelligence for Health in New Zealand: Hauora i te Atamai Iahiko](https://aiforum.org.nz/wp-content/uploads/2019/10/AI-For-Health-in-New-Zealand.pdf) ([@ai_forum_artificial_2019])
+
+* A UK [guide to good practice for digital and data-driven health technologies](https://www.gov.uk/government/publications/code-of-conduct-for-data-driven-health-and-care-technology/initial-code-of-conduct-for-data-driven-health-and-care-technology)
+
+* An [Assessment Report on Algorithms](https://www.data.govt.nz/docs/algorithm-assessment-report/) published by the New Zealand government ([@statistics_nz_algorithm_2018])
+
+* [Research and engagement considerations](https://www.digital.govt.nz/digital-government/programmes-and-projects/digital-identity-programme/research-and-engagement-digital-identity-programme/) described by the NZ Digital Identity Programme
