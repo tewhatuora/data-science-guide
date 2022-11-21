@@ -46,7 +46,7 @@
     "href": "basics.html#the-data-science-life-cycle-stages",
     "title": "2  Understanding the basics",
     "section": "2.2 The data science life cycle stages",
-    "text": "2.2 The data science life cycle stages\n\nBusiness understanding – What does the health system or business or world need?\nData acquisition and understanding – What data do we have/need? Is it ‘clean’?\nData preparation – How do we organise the data for analysis, including modelling?\nModelling – What modelling techniques should we apply?\nEvaluation – Which model best meets the health system or business or world’s objectives?\nDeployment – How do users and stakeholders access the results?\nMaintenance - How will a model be monitored and refreshed over time?\n\nThe Virtual Health Information Network also provides guides of this nature which relate to the Integrated Data Infrastructure."
+    "text": "2.2 The data science life cycle stages\n\nBusiness understanding – What does the health system or business or world need?\nData acquisition and understanding – What data do we have/need? Is it ‘clean’?\nData preparation – How do we organise the data for analysis, including modelling?\nModelling – What modelling techniques should we apply?\nEvaluation – Which model best meets the health system or business or world’s objectives?\nDeployment – How do users and stakeholders access the results?\nMaintenance - How will a model be monitored and refreshed over time?"
   },
   {
     "objectID": "basics.html#consider-the-business-case",
