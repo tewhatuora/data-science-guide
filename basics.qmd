@@ -6,8 +6,6 @@ title: "Understanding the basics"
 
 Existing data science guides often include the concept of a data science lifecycle. Examples include the CRoss Industry Standard Process for Data Mining ([CRISP-DM](https://www.datascience-pm.com/crisp-dm-2/)) and the Microsoft Team Data Science Process ([TDSP](https://docs.microsoft.com/en-us/azure/architecture/data-science-process/overview)).
 
-[![The CRISP-DM Data Science Lifecycle](/img/CRISP-DM.png){fig-alt="The CRISP-DM Data Science Lifecycle"}](https://www.datascience-pm.com/crisp-dm-2/)
-
 This guide aligns broadly with the life cycle stages below, but your project may follow a different path. We’ve also included additional considerations around structuring and resourcing a health data science project.
 
 ## The data science life cycle stages
