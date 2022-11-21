@@ -393,7 +393,7 @@ Tip
 </div>
 </div>
 </section>
-<section id="understanding-the-impact-of-an-algorithm" class="level3" data-number="9.4.5">
+<section id="understanding-the-impact-of-an-algorithm" class="level3 page-columns page-full" data-number="9.4.5">
 <h3 data-number="9.4.5" class="anchored" data-anchor-id="understanding-the-impact-of-an-algorithm"><span class="header-section-number">9.4.5</span> Understanding the impact of an algorithm</h3>
 <div class="callout-tip callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -411,10 +411,12 @@ Tip
 <p>How your algorithm can be integrated into a workflow needs to be understood and well documented. It’s worth further evaluating what the potential healthcare outcome could be, especially when there’s a limit to clinical capacity.</p>
 <p>Here’s an example: A model is developed to classify GP-referred patients into high priority and low priority using a certain priority score threshold, in order to deliver timely triaging. However, there are already many people waiting in the triage queue, people newly referred each day, and the number of referral requests clinicians can process has a limit and uncertainty. By looking at the classification metrics of this model, without knowing how and at which step of the process the model will be used, it’s hard to tell exactly whether the integration of the model will bring more benefit than cost in the waiting time for patients who are in urgent need.</p>
 <p>Defining proper impact metrics that take the use case and goal of your modelling into consideration, and carefully running through a further evaluation against workflow, will provide more informative insights than classic model performance metrics alone.</p>
-<p>Deterministic or stochastic simulation techniques can be used for this evaluation when a working scenario can be quantitatively described. An example of this is the New Zealand business case for a hospital avoidance programme using a readmission risk model, which presented its financial impact in healthcare (<a href="https://www.econstor.eu/handle/10419/242509">Vaithianathan et al.&nbsp;2012</a>).</p>
+<p>Deterministic or stochastic simulation techniques can be used for this evaluation when a working scenario can be quantitatively described. An example of this is the New Zealand business case for a hospital avoidance programme using a readmission risk model, which presented its financial impact in healthcare (<span class="citation" data-cites="vaithianathan_model_2012"><a href="#ref-vaithianathan_model_2012" role="doc-biblioref">Vaithianathan et al. 2012</a></span>).</p>
 
 
-
+<div class="no-row-height column-margin column-container"><div id="ref-vaithianathan_model_2012" class="csl-entry" role="doc-biblioentry">
+Vaithianathan, R, Jiang, N, and Ashton, T. 2012. <span>“A model for predicting readmission risk in new zealand”</span>. <a href="http://hdl.handle.net/10419/242509">http://hdl.handle.net/10419/242509</a>.
+</div></div>
 </section>
 </section>
 
