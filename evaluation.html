@@ -205,7 +205,6 @@ div.csl-indent {
   <li><a href="#transparency-of-algorithm-development" id="toc-transparency-of-algorithm-development" class="nav-link" data-scroll-target="#transparency-of-algorithm-development"><span class="toc-section-number">9.4.3</span>  Transparency of algorithm development</a></li>
   <li><a href="#understanding-the-performance-of-an-algorithm" id="toc-understanding-the-performance-of-an-algorithm" class="nav-link" data-scroll-target="#understanding-the-performance-of-an-algorithm"><span class="toc-section-number">9.4.4</span>  Understanding the performance of an algorithm</a></li>
   <li><a href="#understanding-the-impact-of-an-algorithm" id="toc-understanding-the-impact-of-an-algorithm" class="nav-link" data-scroll-target="#understanding-the-impact-of-an-algorithm"><span class="toc-section-number">9.4.5</span>  Understanding the impact of an algorithm</a></li>
-  <li><a href="#principles-to-follow" id="toc-principles-to-follow" class="nav-link" data-scroll-target="#principles-to-follow"><span class="toc-section-number">9.4.6</span>  Principles to follow</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/precisiondrivenhealth/guide/edit/main/evaluation.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
@@ -345,45 +344,74 @@ Kaminski, M E and Malgieri, G. 2021. <span>“Algorithmic impact assessments und
 </ul>
 <p>Providing the provenance of data is also important. For example:</p>
 <blockquote class="blockquote">
-<p>“This data came from a national collection of data that went through a quality assurance process, it is current and relevant to the problem being answered in this way…”</p>
+<p>“This data came from a national collection of data that went through a quality assurance process. It is current and relevant to the problem being answered in this way…”</p>
 </blockquote>
 </section>
 <section id="interpretation-of-the-output" class="level3" data-number="9.4.2">
 <h3 data-number="9.4.2" class="anchored" data-anchor-id="interpretation-of-the-output"><span class="header-section-number">9.4.2</span> Interpretation of the output</h3>
-<p>There are different types of output from different algorithms, e.g.&nbsp;risk scores, predictions, simulation results. In particular, users need to understand what the value means in the context of how it will be used. For example, a risk score of 0.8 might mean 80% probability of an outcome or it may mean something else depending on how the model is built and the use case. If the risk score has been developed for a ranking use case, the end user will need to understand that the output for a given person has meaning in relation to outputs for other people to determine who is at higher risk, rather than as a standalone value.</p>
+<p>There are different types of output from different algorithms, such as risk scores, predictions, and simulation results. In particular, users of your model need to understand what the value means in the context of how it will be used.</p>
+<p>For example, depending on how the model is built and the use case, a risk score of 0.8 might mean 80% probability of an outcome, or it may be a value that only makes sense while compared with other people’s scores in a cohort. If the risk score has been developed for a ranking use case, your end user needs to understand that the output for a given person has meaning in relation to outputs for other people to determine who is at higher risk, rather than as a standalone value.</p>
 </section>
 <section id="transparency-of-algorithm-development" class="level3 page-columns page-full" data-number="9.4.3">
 <h3 data-number="9.4.3" class="anchored" data-anchor-id="transparency-of-algorithm-development"><span class="header-section-number">9.4.3</span> Transparency of algorithm development</h3>
-<p>Auditing the behaviour of an algorithm at the population level. For example, does the relationship between the predicted values and certain covariants (e.g.&nbsp;increased predicted mortality risk vs.&nbsp;age) for the validation cohort match with empirical evidence or the clinician’s cognition? Interpretation techniques such as partial dependence plots can facilitate such inspection.</p>
-<p>Providing individual level prediction reasoning - provide explanations of the prediction for a specific individual. For example, why the algorithm predicted a 0.86 readmission risk score for a 75 years old Pasifika woman. The score can be attributed to her age, previous hospitalisation history, cancer diagnosis, ethnicity and a few other risk factors. Shapley values is one of the commonly adopted techniques to provide explanations at the individual level. <span class="citation" data-cites="christoph_molnar_interpretable_2022"><a href="#ref-christoph_molnar_interpretable_2022" role="doc-biblioref">Christoph Molnar 2022</a></span> provides more details about model interpretation techniques.</p>
+<p>You should audit the behaviour of an algorithm at the population level. Unexpected behaviours indicate defects or limitations of the model, and are roadblocks for gaining trust. For example, the relationship between the predicted values and certain covariants (e.g.&nbsp;increased predicted mortality risk vs.&nbsp;age) for the validation cohort should match with empirical evidence, or the clinician’s judgement. Interpretation techniques such as partial dependence plots can facilitate such investigation.</p>
+<p>You should also explain model prediction for specific individuals. For example, a person’s readmission risk score can be attributed to age, previous hospitalisation history, cancer diagnosis, ethnicity and other risk factors. Local surrogate models or Shapley values based methods are commonly adopted techniques to provide explanations at the individual level. Interpretable Machine Learning (<span class="citation" data-cites="christoph_molnar_interpretable_2022"><a href="#ref-christoph_molnar_interpretable_2022" role="doc-biblioref">Christoph Molnar 2022</a></span>) provides more details about model interpretation techniques.</p>
 <div class="no-row-height column-margin column-container"><div id="ref-christoph_molnar_interpretable_2022" class="csl-entry" role="doc-biblioentry">
 Christoph Molnar. 2022. <span>“Interpretable machine learning”</span>. <a href="https://christophm.github.io/interpretable-ml-book/index.html">https://christophm.github.io/interpretable-ml-book/index.html</a>.
-</div></div><p>Clinicians or other stakeholders need to be involved in the population and individual level algorithm auditing, and drive the iterations of the algorithm development with their feedback.</p>
-<p>Where possible, making the code base and dataset public adds credibility</p>
+</div></div><div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Clinicians or other stakeholders need to be involved in the population- and individual-level algorithm auditing, driving iterations of algorithm development with their feedback.</p>
+</div>
+</div>
+<p>Where possible, making the code base and dataset public adds credibility as others can understand the data, how the model was developed, allowing them to replicate findings themselves and to challenge development assumptions, or even suggest improvements.</p>
 </section>
 <section id="understanding-the-performance-of-an-algorithm" class="level3" data-number="9.4.4">
 <h3 data-number="9.4.4" class="anchored" data-anchor-id="understanding-the-performance-of-an-algorithm"><span class="header-section-number">9.4.4</span> Understanding the performance of an algorithm</h3>
-<p>Define performance metrics in the context of the problem. Plain language and accessible explanations not only help build trust in the model, they help the user understand how to use the model, encouraging adoption.</p>
-<p>Take, for example, a use case where a model is being used to predict a condition (with prevalence 2%) that requires an intervention. A positive predictive value of 0.95 means that of those people that presented with the condition, 95% were identified by the model. Putting this into context we could say that if 1000 people a day were assessed, we would expect that 20 of them would require the intervention. The model would identify 19 of those people, meaning weekly, 5 people with that condition would be missed if we were to rely solely on model outputs.</p>
+<p>Defining performance metrics for your algorithm in the context of the problem it’s trying to solve is important.</p>
+<p>Take, for example, a use case where a model is being used to predict a condition (with prevalence 2%) that requires an intervention. A positive predictive value of 0.95 means that of those people that presented with the condition, 95% were identified by the model. Putting this into context, we can say that if 1000 people a day were assessed, we would expect that 20 of them would require the intervention. The model would identify 19 of those people, meaning weekly, 5 people with that condition would be missed if we were to rely solely on model outputs.</p>
 <p>Information like this can help a clinician understand that while the model performs well, in practice they might like to supplement model outputs with other assessments.</p>
 <p>For models that output probabilities, such as logistic regression, such analyses can be useful in helping clinicians quantify and understand the trade-off between false positives and false negatives in order to decide which decision thresholds may be appropriate.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Plain language and accessible explanations not only help build trust in the model; they help the user understand how to use the model, which helps it to be adopted.</p>
+</div>
+</div>
 </section>
 <section id="understanding-the-impact-of-an-algorithm" class="level3" data-number="9.4.5">
 <h3 data-number="9.4.5" class="anchored" data-anchor-id="understanding-the-impact-of-an-algorithm"><span class="header-section-number">9.4.5</span> Understanding the impact of an algorithm</h3>
-<p>Evaluate model benefit and cost in the context of realistic scenarios. With classic model performance metrics such RMSE, accuracy, precision or recall, it is often not enough to illustrate the consequences of integrating the algorithm into a healthcare workflow. It needs to be understood and documented how the algorithm would be integrated in a workflow, and is worth further evaluating what could be the potential healthcare outcome, especially when there is a clinical capacity limitation. For example, a model is developed to classify GP referred patients into high priority and low priority using a certain priority score threshold, and is targeted to facilitate timely triaging. However, in the system there are many people already waiting in the triage queue, people newly referred each day, and the number of triages the clinicians can process has a limit and uncertainty. By just looking at the classification metrics of this model, without knowing at which step of the process this model will be used and how, it is hard to tell exactly whether the integration of the model will bring more benefit than cost in the waiting time for patients who are in urgent need.</p>
-<p>Defining proper impact metrics according to the use case and goal of modelling, and carefully running through a further evaluation given the workflow will provide more informative insights than just the classic model performance metrics. Deterministic or stochastic simulation techniques can be applied for such evaluation when a working scenario can be quantitatively described. As a straightforward example, the New Zealand business case for hospital avoidance programme using a readmission risk model presented its financial impact in healthcare (<a href="https://www.econstor.eu/handle/10419/242509">Vaithianathan et al.&nbsp;2012</a>).</p>
-</section>
-<section id="principles-to-follow" class="level3" data-number="9.4.6">
-<h3 data-number="9.4.6" class="anchored" data-anchor-id="principles-to-follow"><span class="header-section-number">9.4.6</span> Principles to follow</h3>
-<ul>
-<li><p>Closely engage with the stakeholders and data providers (covered in <a href="collaboration.html#end-user-engagement">End-user engagement</a>)</p></li>
-<li><p>Keep clinicians in the loop (<a href="#clinician-in-the-loop">Clinician in the loop</a> section heading added)</p></li>
-<li><p>Have good quality documentation to share the work with others. <a href="https://pubmed.ncbi.nlm.nih.gov/25560730/">Transparent Reporting of a multivariable prediction model for Individual Prognosis or Diagnosis (TRIPOD)</a> provides a well established and practical template for healthcare model reporting. For simpler reporting, consider <a href="https://www.nature.com/articles/s41591-020-1041-y">Minimum information about clinical artificial intelligence modeling: the MI-CLAIM checklist</a> as an alternative. For key information from governance perspective, refer to the governance process and Algorithm Information Request template for the New Zealand Algorithm Hub (<a href="https://algorithmhub.co.nz/about">https://algorithmhub.co.nz/about</a>).</p></li>
-<li><p>Version control the code base so that work is reproducible</p></li>
-<li><p>Data quality checking: availability including operational concerns, sanity checking, bias</p></li>
-<li><p>Equity concerns: who benefits from the algorithm; who may be vulnerable</p></li>
-<li><p>Consider your audience when presenting data</p></li>
-</ul>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You should evaluate your algorithm’s benefit and cost against realistic scenarios. Classic model performance metrics such RMSE, accuracy, precision or recall generally won’t go far enough to illustrate the consequences of integrating the algorithm into a healthcare workflow.</p>
+</div>
+</div>
+<p>How your algorithm can be integrated into a workflow needs to be understood and well documented. It’s worth further evaluating what the potential healthcare outcome could be, especially when there’s a limit to clinical capacity.</p>
+<p>Here’s an example: A model is developed to classify GP-referred patients into high priority and low priority using a certain priority score threshold, in order to deliver timely triaging. However, there are already many people waiting in the triage queue, people newly referred each day, and the number of referral requests clinicians can process has a limit and uncertainty. By looking at the classification metrics of this model, without knowing how and at which step of the process the model will be used, it’s hard to tell exactly whether the integration of the model will bring more benefit than cost in the waiting time for patients who are in urgent need.</p>
+<p>Defining proper impact metrics that take the use case and goal of your modelling into consideration, and carefully running through a further evaluation against workflow, will provide more informative insights than classic model performance metrics alone.</p>
+<p>Deterministic or stochastic simulation techniques can be used for this evaluation when a working scenario can be quantitatively described. An example of this is the New Zealand business case for a hospital avoidance programme using a readmission risk model, which presented its financial impact in healthcare (<a href="https://www.econstor.eu/handle/10419/242509">Vaithianathan et al.&nbsp;2012</a>).</p>
 
 
 
