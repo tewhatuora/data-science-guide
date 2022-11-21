@@ -18,8 +18,6 @@ This guide aligns broadly with the life cycle stages below, but your project may
 6. Deployment – How do users and stakeholders access the results?
 7. Maintenance - How will a model be monitored and refreshed over time?
 
-The Virtual Health Information Network also provides guides of this nature which relate to the Integrated Data Infrastructure.
-
 ## Consider the business case
 
 ### Research vs audit vs 'business as usual'
