@@ -153,4 +153,4 @@ Here’s an example: A model is developed to classify GP-referred patients into 
 
 Defining proper impact metrics that take the use case and goal of your modelling into consideration, and carefully running through a further evaluation against workflow, will provide more informative insights than classic model performance metrics alone. 
 
-Deterministic or stochastic simulation techniques can be used for this evaluation when a working scenario can be quantitatively described. An example of this is the New Zealand business case for a hospital avoidance programme using a readmission risk model, which presented its financial impact in healthcare ([Vaithianathan et al. 2012](https://www.econstor.eu/handle/10419/242509)).
+Deterministic or stochastic simulation techniques can be used for this evaluation when a working scenario can be quantitatively described. An example of this is the New Zealand business case for a hospital avoidance programme using a readmission risk model, which presented its financial impact in healthcare ([@vaithianathan_model_2012]).
