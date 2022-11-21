@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -63,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-sidebar floating nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -187,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/precisiondrivenhealth/guide/edit/main/data-access.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -269,7 +288,7 @@ Tip
 <p>If you will be receiving data regularly, it’s also better to minimise the number of transfers by having data sent in batches. Any data you receive should also be different from what you have already received. Have this conversation with the health data provider at the planning stage.</p>
 <p>Finally, please ensure you confirm successful receipt of the data.</p>
 </section>
-<section id="data-governance-and-data-management" class="level2" data-number="5.6">
+<section id="data-governance-and-data-management" class="level2 page-columns page-full" data-number="5.6">
 <h2 data-number="5.6" class="anchored" data-anchor-id="data-governance-and-data-management"><span class="header-section-number">5.6</span> Data governance and Data management</h2>
 <p>Data governance and data management are distinct concepts with some areas of overlap and linkage. Both areas concern how we access, store, log, secure, maintain, use, share and destroy data in an efficient and standardised way, guided by principles such as accountability, transparency, ethical use, privacy, consent and data availability, integrity and quality.</p>
 <table class="table">
@@ -307,11 +326,14 @@ Note
 <p>This section is written from the perspective of a consulting practice, research organisation or any organisation that uses data which it does not directly collect.</p>
 </div>
 </div>
-<section id="data-governance" class="level3" data-number="5.6.1">
+<section id="data-governance" class="level3 page-columns page-full" data-number="5.6.1">
 <h3 data-number="5.6.1" class="anchored" data-anchor-id="data-governance"><span class="header-section-number">5.6.1</span> Data Governance</h3>
-<p>For more information about Governance see the <strong>Governance</strong> section.</p>
+<p>Data governance is a specific sub-discipline (<span class="citation" data-cites="alhassan_data_2016">West et al. <a href="#ref-george_data_2020" role="doc-biblioref">2020</a></span>).</p>
+<div class="no-row-height column-margin column-container"><div id="ref-george_data_2020" class="csl-entry" role="doc-biblioentry">
+West, K, Hudson, M, and Kukutai, T. 2020. <span>“Data ethics and data governance from a māori world view”</span>. in <em>Advances in research ethics and integrity</em>. eds. L. George, J. Tauri, and L.T.A.o.T. MacDonald., 67–81. <a href="https://www.emerald.com/insight/content/doi/10.1108/S2398-601820200000006005/full/html">https://www.emerald.com/insight/content/doi/10.1108/S2398-601820200000006005/full/html</a>.
+</div></div><p>See the <a href="./collaboration.html#governance">Governance</a> section.</p>
 </section>
-<section id="data-management" class="level3" data-number="5.6.2">
+<section id="data-management" class="level3 page-columns page-full" data-number="5.6.2">
 <h3 data-number="5.6.2" class="anchored" data-anchor-id="data-management"><span class="header-section-number">5.6.2</span> Data Management</h3>
 <section id="storage-and-security" class="level4" data-number="5.6.2.1">
 <h4 data-number="5.6.2.1" class="anchored" data-anchor-id="storage-and-security"><span class="header-section-number">5.6.2.1</span> Storage and security</h4>
@@ -324,12 +346,12 @@ Note
 <p>What starts out as a data trickle can quickly become a data flood. It is worthwhile to maintain a register of data from the first file received.</p>
 <p>A data register or log can help you or your organisation track:</p>
 <ul>
-<li><p>what data you have received</p></li>
-<li><p>when you received it</p></li>
-<li><p>where you are storing it</p></li>
-<li><p>who can/should have access to it</p></li>
-<li><p>when it should be destroyed</p></li>
-<li><p>what processed data sets exist and where, particularly if they contain PHI</p></li>
+<li>what data you have received</li>
+<li>when you received it</li>
+<li>where you are storing it</li>
+<li>who can/should have access to it</li>
+<li>when it should be destroyed</li>
+<li>what processed data sets exist and where, particularly if they contain PHI</li>
 </ul>
 <p>The format can be tailored to suit your organisation (for example, using a spreadsheet).</p>
 </section>
@@ -338,8 +360,17 @@ Note
 <p>Managing data for a small organisation or research team could be as simple as having a secure storage solution and a spreadsheet to keep track of important metadata. Larger organisations will likely need formal data governance, data policies in place and data stewards to manage the use, storage and security of data. Tailor your approach based on the data being handled.</p>
 <p>Consider version control for all aspects of the project, including data; depending on the tooling that you use, this may already be an included capability. <a href="https://dvc.org/">DVC</a> is one tool designed specifically for data version control for machine learning. Your development environment or cloud storage solution may also include features of this type. Data files can be named with versions, however this method is not as robust as automated versioning that is managed by a tool.</p>
 <p>Data management tools are responsible for carrying a wide range of data or documents.</p>
+</section>
+<section id="useful-references" class="level4 page-columns page-full" data-number="5.6.2.4">
+<h4 data-number="5.6.2.4" class="anchored" data-anchor-id="useful-references"><span class="header-section-number">5.6.2.4</span> Useful references</h4>
+<ul>
+<li>The Data Management Body of Knowledge (DM-BOK) (<span class="citation" data-cites="earley_dama-dmbok_2017">Earley et al. <a href="#ref-earley_dama-dmbok_2017" role="doc-biblioref">2017</a></span>)</li>
+</ul>
 
 
+<div class="no-row-height column-margin column-container"><div id="ref-earley_dama-dmbok_2017" class="csl-entry" role="doc-biblioentry">
+Earley, S, Henderson, D, and Association, D M (eds.). 2017. <em><span>DAMA</span>-<span>DMBOK</span>: Data management body of knowledge</em>. 2nd edition Basking Ridge, New Jersey.
+</div></div>
 </section>
 </section>
 </section>

@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -63,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-sidebar floating nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -187,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/precisiondrivenhealth/guide/edit/main/collaboration.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -332,7 +351,7 @@ Tip
 </ul></li>
 </ul>
 </section>
-<section id="governance" class="level2" data-number="3.6">
+<section id="governance" class="level2 page-columns page-full" data-number="3.6">
 <h2 data-number="3.6" class="anchored" data-anchor-id="governance"><span class="header-section-number">3.6</span> Governance</h2>
 <p>Good governance is fundamentally concerned with the value and risk of a project, and must be established to ensure accountability and oversight. Developing policies and procedures can help you manage risk and clearly articulate principles of accountability, transparency, ethical use, privacy, and consent.</p>
 <p>You should define and tailor a governance approach based on the needs of your own organisation.</p>
@@ -360,13 +379,22 @@ Tip
 <li><p><a href="https://toi-aria.s3.amazonaws.com/documents/Summary-Guidelines.pdf">A Path to Social License: Guidelines for Trusted Data Use</a> (Data Futures Partnership): August 2017 summary with continuing relevance around what New Zealand people expect from guidelines for data use and sharing</p></li>
 <li><p><a href="https://dash.harvard.edu/handle/1/34390353">Layered model for AI governance</a>(Harvard University): A conceptual framework for thinking about governance for AI.</p></li>
 <li><p><a href="https://www.tandfonline.com/doi/full/10.1080/03036758.2022.2121290">Lessons learned from developing a COVID-19 algorithm governance framework in Aotearoa New Zealand</a>: Practical considerations from a governance group</p></li>
-<li><p><a href="https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-charter/">Algorithm Charter</a> (Data.govt.nz): A set of principles which have been signed off by most NZ government organisations</p></li>
+<li><p><a href="https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-charter/">Algorithm Charter</a> (Data.govt.nz): A set of principles which have been signed off by most NZ government organisations (<span class="citation" data-cites="manatu_hauora_ministry_of_health_algorithm_nodate"><a href="#ref-manatu_hauora_ministry_of_health_algorithm_nodate" role="doc-biblioref">Manatū Hauora Ministry of Health</a></span>)</p></li>
 <li><p><a href="https://ethics.health.govt.nz/">Health and Disability Ethics Committees</a>: the health organisation responsible for reviewing and approving research using health data and/or health system users - also see <a href="./data-landscape.html#ethics--privacy">Ethics &amp; privacy</a></p></li>
 <li><p><a href="https://www.temanararaunga.maori.nz/">Te Mana Rauranga</a>: a network of experts who have collected principles for Māori data sovereignty - also see <a href="./data-landscape.html#data-sovereignty-sovereignty">Data sovereignty</a></p></li>
 <li><p><a href="https://www.health.govt.nz/our-work/digital-health/vision-health-technology/emerging-health-technology-advice-and-guidance">Manatū Hauora Ministry of Health - Emerging Health Technology Advice &amp; Guidance</a></p></li>
+<li><p>The Law Foundation <a href="https://data.govt.nz/assets/data-ethics/algorithm/NZLF-report.pdf">report on government use of AI in NZ</a> (<span class="citation" data-cites="colin_gavaghan_government_2019"><a href="#ref-colin_gavaghan_government_2019" role="doc-biblioref">Colin Gavaghan et al. 2019</a></span>)</p></li>
+<li><p><a href="https://data.govt.nz/assets/data-ethics/algorithm/Trustworthy-AI-in-Aotearoa-March-2020.pdf">Trustworthy AI in Aotearoa: AI Principles</a> report from AI Forum (<span class="citation" data-cites="ai_forum_trustworthy_2020"><a href="#ref-ai_forum_trustworthy_2020" role="doc-biblioref">AI Forum 2020</a></span>)</p></li>
 </ul>
 
 
+<div class="no-row-height column-margin column-container"><div id="ref-manatu_hauora_ministry_of_health_algorithm_nodate" class="csl-entry" role="doc-biblioentry">
+Manatū Hauora Ministry of Health. <span>“The algorithm charter”</span>. <a href="https://www.health.govt.nz/our-work/digital-health/digital-health-sector-architecture-standards-and-governance/algorithm-charter">https://www.health.govt.nz/our-work/digital-health/digital-health-sector-architecture-standards-and-governance/algorithm-charter</a>.
+</div><div id="ref-colin_gavaghan_government_2019" class="csl-entry" role="doc-biblioentry">
+Colin Gavaghan, Alistair Knott, James MacLaurin, John Zerilli, and Joy Liddicoat. 2019. <span>“Government use of artificial intelligence in new zealand”</span>., Wellington. <a href="https://data.govt.nz/assets/data-ethics/algorithm/NZLF-report.pdf">https://data.govt.nz/assets/data-ethics/algorithm/NZLF-report.pdf</a>.
+</div><div id="ref-ai_forum_trustworthy_2020" class="csl-entry" role="doc-biblioentry">
+AI Forum. 2020. <span>“Trustworthy <span>AI</span> in aotearoa”</span>. <a href="https://aiforum.org.nz/wp-content/uploads/2020/03/Trustworthy-AI-in-Aotearoa-March-2020.pdf">https://aiforum.org.nz/wp-content/uploads/2020/03/Trustworthy-AI-in-Aotearoa-March-2020.pdf</a>.
+</div></div>
 </section>
 
 </main> <!-- /main -->
