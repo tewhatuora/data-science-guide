@@ -20,7 +20,7 @@ PDH seeks to increase data science capability in New Zealand’s health sector a
 
 ## Contributors and reviewers
 
-We would like to thank the people who have contributed to writing and reviewing this guide.
+We would like to thank the people who have contributed to conceptualising, writing, and reviewing this guide.
 
 * Alex Kazemi
 * CK Jin
