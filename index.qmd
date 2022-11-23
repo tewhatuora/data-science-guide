@@ -14,7 +14,7 @@ Please contribute your text and ideas to this guide to share your knowledge and 
 
 ## About Precision Driven Health
 
-[Precision Driven Health](https://precisiondrivenhealth.com) (PDH) is partnership between Aotearoa New Zealand’s health information technology (IT) sector, health providers and universities, aimed at improving health outcomes through data science.
+[Precision Driven Health](https://precisiondrivenhealth.com) (PDH) is a partnership between Aotearoa New Zealand’s health information technology (IT) sector, health providers and universities, aimed at improving health outcomes through data science.
  
 PDH seeks to increase data science capability in New Zealand’s health sector and encourage innovation in the use of health data.
 
