@@ -65,7 +65,7 @@ When a data provider transfers data to you, first check whether you should be in
 If a health data provider has provided you access to PHI or PII containing data in contravention of a data sharing agreement, continued access to or retention of that data is not defensible by reasoning that the mistake was theirs. **A guiding principle is that appropriate storage, transfer and use of data is the responsibility of all parties involved.**
 :::
 
-Creating synthetic data is another method for research (see **Use of Synthetic Data**).
+Creating synthetic data is another method for research (see [Use of Synthetic Data](data-preparation.qmd#use-of-synthetic-data)).
 
 ## Checking your data for the presence of identifiable information
 
