@@ -10,7 +10,17 @@ The guide is structured roughly along a data science [project life cycle](basics
 
 This guide, its website form, and its contents are free to use, licensed under the CC [BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) License.
 
-Please contribute your text and ideas to this guide to share your knowledge and questions with the wider health data science community. It is a living document and contributions from all viewpoints are most welcome. You can contribute directly by editing a page using the "Edit this page" link in the right sidebar, or by working with the page source directly. Pages are Markdown-formatted text files in a [public GitHub repository](https://precisiondrivenhealth.github.io/guide/) published using [Quarto](https://quarto.org/). Alternatively, you can send suggestions through email to info at precisiondrivenhealth.com.
+Pages are Markdown-formatted text files in a [public GitHub repository](https://precisiondrivenhealth.github.io/guide/) published using [Quarto](https://quarto.org/).
+
+## Contributing your mahi
+
+Please contribute your text and ideas to this guide to share your knowledge and questions with the wider health data science community. It is a living document and contributions from all viewpoints are most welcome. 
+
+* If you are an experienced user of Github, you can fork the guide repository, edit as desired, and create a pull request to have your edits reviewed and merged into the guide.
+
+* If you are new to Github, you can contribute directly by editing any page using the "Edit this page" link in the right sidebar. This will require you to make a new/sign in with an existing Github account.
+
+* You can also send suggestions through email to info at precisiondrivenhealth.com. The more specific you can be, the more quickly your suggestions can be enacted!
 
 ## About Precision Driven Health
 
@@ -20,7 +30,7 @@ PDH seeks to increase data science capability in New Zealand’s health sector a
 
 ## Contributors and reviewers
 
-We would like to thank the people who have contributed to conceptualising, writing, and reviewing this guide.
+We would like to thank the people who have contributed to conceptualising, writing, and/or reviewing this guide.
 
 * Alex Kazemi
 * CK Jin
