@@ -10,17 +10,17 @@ The guide is structured roughly along a data science [project life cycle](basics
 
 This guide, its website form, and its contents are free to use, licensed under the CC [BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) License.
 
-Pages are Markdown-formatted text files in a [public GitHub repository](https://precisiondrivenhealth.github.io/guide/) published using [Quarto](https://quarto.org/).
+Pages are Markdown-formatted text files in a [public GitHub repository](https://github.com/precisiondrivenhealth/guide) published using [Quarto](https://quarto.org/).
 
 ## Contributing your mahi
 
 Please contribute your text and ideas to this guide to share your knowledge and questions with the wider health data science community. It is a living document and contributions from all viewpoints are most welcome. 
 
-* If you are an experienced user of Github, you can fork the guide repository, edit as desired, and create a pull request to have your edits reviewed and merged into the guide.
+* You are welcome to send suggestions through email to info at precisiondrivenhealth.com. The more specific you can be, the more quickly your suggestions can be enacted.
 
-* If you are new to Github, you can contribute directly by editing any page using the "Edit this page" link in the right sidebar. This will require you to make a new/sign in with an existing Github account.
+* You can directly contribute clicking the "Edit this page" link in the right sidebar. You'll be prompted to fork the guide's [repository on GitHub](https://github.com/precisiondrivenhealth/guide), edit as desired, and can create a pull request to have your edits reviewed and merged into the guide.
 
-* You can also send suggestions through email to info at precisiondrivenhealth.com. The more specific you can be, the more quickly your suggestions can be enacted!
+* If you wish to contribute regularly, you can be added as a contributor to the repository.
 
 ## About Precision Driven Health
 
