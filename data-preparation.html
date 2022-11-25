@@ -234,10 +234,10 @@ div.csl-indent {
 <p>Data wrangling is the process of cleaning and unifying complex datasets for easy access and analysis. Good data wrangling practice is based on comprehensive knowledge of the data. We recommend the following:</p>
 <ul>
 <li><p>For a given data source, learn as much as you can about its collection, storage, how it’s updated and maintained, the definition and dependency of each data item, and the limitations. There are more upfront ethical considerations when dealing with health data including consent, ethics approval and understanding the equity and clinical context.</p></li>
-<li><p>For local data collection, consider how to store it (in files, in a database, locally or on cloud etc.) to make information retrieval easier, or/and data sharing easier (see <strong>Data Management</strong>).</p></li>
+<li><p>For local data collection, consider how to store it (in files, in a database, locally or on cloud etc.) to make information retrieval easier, or/and data sharing easier (see <a href="./data-access.html#data-management">Data Management</a>).</p></li>
 <li><p>Consider the size of the data - should it be processed all at once, batch processed or stream processed? Stream processing is the processing of records as a stream of data, for example record by record. Your computing location (on your computer, on a local server, or on a cloud provider) may affect your decision here.</p></li>
-<li><p>Consider if the data needs de-identification (see <strong>Data identifiability</strong>).</p></li>
-<li><p>Maintain an equity lens for any type of data science work, including building and evaluating models (see <strong>Bias in data</strong>).</p></li>
+<li><p>Consider if the data needs de-identification (see <a href="./data-identifiability.html">Data identifiability</a>).</p></li>
+<li><p>Maintain an equity lens for any type of data science work, including building and evaluating models (see <a href="./evaluation.html#bias-in-data">Bias in data</a>).</p></li>
 <li><p>Involve clinical leads when data wrangling. Within healthcare, the risk associated with some data (for example, laboratory data or vitals) is often distributed at the extreme ends. It’s difficult for data scientists to know if the risk is distributed linearly without the clinical context.</p></li>
 </ul>
 <section id="data-labelling" class="level3" data-number="7.1.1">
@@ -320,7 +320,7 @@ div.csl-indent {
 <p>Try adding ‘proxy’ variables or altering data collection processes to avoid missing data as much as possible.</p>
 <p>Most data is unlikely to be MCAR. Often, data is more likely to be missing for particular reasons (defined as ‘missing not at random’ (MNAR)). Consider if there’s a reason for the missingness, as this can itself be informative. For example, data may be missing from smaller subgroups within the dataset. This is particularly important when considering stratification for ethnicity.</p>
 <p>It’s important to consider the potential bias introduced into a model by removing missing data, or the impact on equity if data is removed. Before continuing with imputation or removal, check for patterns in the data of individuals who have partial missing data to assess the equity and bias implications of removing or imputing it. Look for evidence of non-random missingness by comparing the complete and missing data groups through stratification for important demographic variables such as age and ethnicity.</p>
-<p>Imputation can be a useful technique for overcoming missing data problems, but can be computationally intensive. Through a PDH research project, <strong>a guide on multiple imputation was published</strong> with information about the application of imputation techniques. Your strategy for handling missing values will have implications for how you handle future unseen data too.</p>
+<p>Imputation can be a useful technique for overcoming missing data problems, but can be computationally intensive. Through a PDH research project, <a href="https://precisiondrivenhealth.com/wp-content/uploads/2022/11/MI-example-guide.pdf">a guide on multiple imputation was published</a> with information about the application of imputation techniques. Your strategy for handling missing values will have implications for how you handle future unseen data too.</p>
 </section>
 <section id="use-of-synthetic-data" class="level2 page-columns page-full" data-number="7.4">
 <h2 data-number="7.4" class="anchored" data-anchor-id="use-of-synthetic-data"><span class="header-section-number">7.4</span> Use of synthetic data</h2>
