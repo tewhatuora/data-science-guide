@@ -8,13 +8,13 @@ Data wrangling is the process of cleaning and unifying complex datasets for easy
 
 * For a given data source, learn as much as you can about its collection, storage, how it’s updated and maintained, the definition and dependency of each data item, and the limitations. There are more upfront ethical considerations when dealing with health data including consent, ethics approval and understanding the equity and clinical context.
 
-* For local data collection, consider how to store it (in files, in a database, locally or on cloud etc.) to make information retrieval easier, or/and data sharing easier (see **Data Management**).
+* For local data collection, consider how to store it (in files, in a database, locally or on cloud etc.) to make information retrieval easier, or/and data sharing easier (see [Data Management](data-access.qmd#data-management)).
 
 * Consider the size of the data - should it be processed all at once, batch processed or stream processed? Stream processing is the processing of records as a stream of data, for example record by record.  Your computing location (on your computer, on a local server, or on a cloud provider) may affect your decision here.
 
-* Consider if the data needs de-identification (see **Data identifiability**).
+* Consider if the data needs de-identification (see [Data identifiability](data-identifiability.qmd)).
 
-* Maintain an equity lens for any type of data science work, including building and evaluating models (see **Bias in data**).
+* Maintain an equity lens for any type of data science work, including building and evaluating models (see [Bias in data](evaluation.qmd#bias-in-data)).
 
 * Involve clinical leads when data wrangling. Within healthcare, the risk associated with some data (for example, laboratory data or vitals) is often distributed at the extreme ends. It’s difficult for data scientists to know if the risk is distributed linearly without the clinical context.
 
@@ -128,7 +128,7 @@ Most data is unlikely to be MCAR. Often, data is more likely to be missing for p
 
 It’s important to consider the potential bias introduced into a model by removing missing data, or the impact on equity if data is removed. Before continuing with imputation or removal, check for patterns in the data of individuals who have partial missing data to assess the equity and bias implications of removing or imputing it. Look for evidence of non-random missingness by comparing the complete and missing data groups through stratification for important demographic variables such as age and ethnicity.
 
-Imputation can be a useful technique for overcoming missing data problems, but can be computationally intensive. Through a PDH research project, **a guide on multiple imputation was published** with information about the application of imputation techniques. Your strategy for handling missing values will have implications for how you handle future unseen data too.
+Imputation can be a useful technique for overcoming missing data problems, but can be computationally intensive. Through a PDH research project, [a guide on multiple imputation was published](https://precisiondrivenhealth.com/wp-content/uploads/2022/11/MI-example-guide.pdf) with information about the application of imputation techniques. Your strategy for handling missing values will have implications for how you handle future unseen data too.
 
 ## Use of synthetic data
 
