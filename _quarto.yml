@@ -5,6 +5,7 @@ project:
 book:
   title: "Health Data Science in Aotearoa New Zealand: A Practical Guide"
 #  author: "Precision Driven Health"
+  google-analytics: G-1SFLY01V14
   sharing: [twitter, linkedin]
   repo-url: https://github.com/precisiondrivenhealth/guide
   repo-actions: edit
