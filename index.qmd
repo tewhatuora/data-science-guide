@@ -16,7 +16,7 @@ Pages are Markdown-formatted text files in a [public GitHub repository](https://
 
 Please contribute your text and ideas to this guide to share your knowledge and questions with the wider health data science community. It is a living document and contributions from all viewpoints are most welcome. 
 
-* You are welcome to send suggestions through email to info at precisiondrivenhealth.com. The more specific you can be, the more quickly your suggestions can be enacted.
+* You are welcome to send suggestions through email to info at precisiondrivenhealth.com. The more specific you can be, the more quickly your suggestions can be incorporated.
 
 * You can directly contribute clicking the "Edit this page" link in the right sidebar. You'll be prompted to fork the guide's [repository on GitHub](https://github.com/precisiondrivenhealth/guide), edit as desired, and can create a pull request to have your edits reviewed and merged into the guide.
 
