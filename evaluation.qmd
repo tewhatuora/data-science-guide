@@ -86,7 +86,7 @@ It’s incredibly important to keep the perspectives of subject matter experts f
 
 ## Transparency, interpretability, and explanation
 
-In the context of health, it’s especially important to communicate findings in a way that builds trust in your model development process and outputs. If trust isn’t built in your model, it may not be adopted in practices.
+In the context of health, it’s especially important to communicate findings in a way that builds trust in your model development process and outputs. If trust isn’t built in your model, it may not be adopted in practices. However, while robust and transparent explainability may seem like a good goal for an AI model to become useful, there may be some disadvantages to this approach ([@babic_beware_2021]).
 
 The requirement for models to be transparent, interpretable and explainable should guide your early modelling decisions, such as which algorithm to use and how to treat inputs.  Linear models tend to be more interpretable and explainable; so too are models that are built with inputs that haven’t been subject to significant transformations or weightings.
 
