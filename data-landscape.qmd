@@ -186,4 +186,4 @@ Useful resources:
 
 - The Health Research Council of NZ (HRC) also produces [Guidelines for Researchers on Health Research Involving Māori](https://www.hrc.govt.nz/resources/guidelines-researchers-health-research-involving-maori).
 
-- NZ government's [Principles for the safe and effective use of data and analytics](https://www.stats.govt.nz/assets/Uploads/Data-leadership-fact-sheets/Principles-safe-and-effective-data-and-analytics-May-2018.pdf) ([@office_of_the_privacy_commissioner_principles_2018])
+- NZ government's [Principles for the safe and effective use of data and analytics](https://www.stats.govt.nz/assets/Uploads/Data-leadership-fact-sheets/Principles-safe-and-effective-data-and-analytics-May-2018.pdf) ([@government_chief_data_steward_principles_2018])

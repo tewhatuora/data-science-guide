@@ -93,7 +93,7 @@ This section is written from the perspective of a consulting practice, research 
 
 ### Data Governance
 
-Data governance is a specific sub-discipline ([@alhassan_data_2016, @tse_challenges_2018, @george_data_2020]).
+Data governance is a specific sub-discipline ([@alhassan_data_2016, @tse_challenges_2018, @west_data_2020]).
 
 See the [Governance](collaboration.qmd#governance) section.
 
