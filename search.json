@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Health Data Science in Aotearoa New Zealand: A Practical Guide",
     "section": "",
-    "text": "This is an online resource intended to help people run successful health data science projects in Aotearoa New Zealand. It has been written and collated based on the experience of data science researchers and other contributors. It is aimed at practitioners and those that oversee their work. The guide is intended to provide practical advice and clarifications and link to publicly available resources and references. In describing data science techniques, the guide assumes a basic technical understanding, addressing the context and principles of how these are applied to lead to a successful outcome.\nWe hope this will be a helpful resource for people and organisations who are starting out in data science, as well as experienced professionals who can share their lessons learned with the wider community in a helpful format."
+    "text": "Welcome\nThis is an online resource intended to help people run successful health data science projects in Aotearoa New Zealand. It has been written and collated based on the experience of data science researchers and other contributors. It is aimed at practitioners and those that oversee their work. The guide is intended to provide practical advice and clarifications and link to publicly available resources and references. In describing data science techniques, the guide assumes a basic technical understanding, addressing the context and principles of how these are applied to lead to a successful outcome.\nWe hope this will be a helpful resource for people and organisations who are starting out in data science, as well as experienced professionals who can share their lessons learned with the wider community in a helpful format."
   },
   {
     "objectID": "index.html#about-this-guide",
@@ -32,7 +32,7 @@
     "href": "index.html#contributors-and-reviewers",
     "title": "Health Data Science in Aotearoa New Zealand: A Practical Guide",
     "section": "Contributors and reviewers",
-    "text": "Contributors and reviewers\nWe would like to thank the people who have contributed to conceptualising, writing, and/or reviewing this guide.\n\nAlex Kazemi\nCK Jin\nDuncan Croft\nEdmond Zhang\nFleur Armstrong\nIvan Rivera\nJamal Zolhavarieh\nJuliet Rumball-Smith\nKelly Atkinson\nKevin Ross\nLuke Boyle\nMirza Baig\nNing Hua\nPieta Brown\nQuan Sun\nRachel Owens\nTom Gutteridge\nVipula Dissanayake"
+    "text": "Contributors and reviewers\nThanks to the following people who have substantially contributed to conceptualising, writing, and/or reviewing this guide.\n\nAlex Kazemi\nCK Jin\nDuncan Croft\nEdmond Zhang\nFleur Armstrong\nIvan Rivera\nJamal Zolhavarieh\nJuliet Rumball-Smith\nKelly Atkinson\nKevin Ross\nLuke Boyle\nMirza Baig\nNing Hua\nPieta Brown\nQuan Sun\nRachel Owens\nTom Gutteridge\nVipula Dissanayake"
   },
   {
     "objectID": "starting.html",

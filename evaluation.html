@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.3.340">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +39,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -105,14 +105,39 @@ gtag('config', 'G-1SFLY01V14', { 'anonymize_ip': true});
     <span class="navbar-title">Health Data Science in Aotearoa New Zealand: A Practical Guide</span>
     </a>
   </div>
+        <div class="quarto-navbar-tools ms-auto">
+    <a href="https://github.com/precisiondrivenhealth/guide" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools ms-auto-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools ms-auto-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
           <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evaluation</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./evaluation.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evaluation</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -120,100 +145,112 @@ gtag('config', 'G-1SFLY01V14', { 'anonymize_ip': true});
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./img/noun-mandatory-1951351.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
-    <a href="https://precisiondrivenhealth.com" title="Precision Driven Health" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/precisiondrivenhealth/guide" title="GitHub repository" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://precisiondrivenhealth.com" title="Precision Driven Health" class="quarto-navigation-tool px-1" aria-label="Precision Driven Health"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/precisiondrivenhealth/guide" title="GitHub repository" class="quarto-navigation-tool px-1" aria-label="GitHub repository"><i class="bi bi-github"></i></a>
 </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./starting.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How do I start?</span></a>
+  <a href="./starting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How do I start?</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding the basics</span></a>
+  <a href="./basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Understanding the basics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./collaboration.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">People, capability &amp; collaboration</span></a>
+  <a href="./collaboration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">People, capability &amp; collaboration</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data-landscape.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The unique health data landscape</span></a>
+  <a href="./data-landscape.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The unique health data landscape</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data-access.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Accessing and managing data</span></a>
+  <a href="./data-access.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Accessing and managing data</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data-identifiability.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data identifiability</span></a>
+  <a href="./data-identifiability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data identifiability</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data-preparation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data preparation</span></a>
+  <a href="./data-preparation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Data preparation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modelling</span></a>
+  <a href="./modelling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modelling</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./evaluation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evaluation</span></a>
+  <a href="./evaluation.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evaluation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./deployment-lifecycle.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Deployment &amp; lifecycle maintenance</span></a>
+  <a href="./deployment-lifecycle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Deployment &amp; lifecycle maintenance</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#model-safety" id="toc-model-safety" class="nav-link active" data-scroll-target="#model-safety"><span class="toc-section-number">9.1</span>  Model safety</a></li>
-  <li><a href="#bias-in-data" id="toc-bias-in-data" class="nav-link" data-scroll-target="#bias-in-data"><span class="toc-section-number">9.2</span>  Bias in data</a>
+  <li><a href="#model-safety" id="toc-model-safety" class="nav-link active" data-scroll-target="#model-safety"><span class="header-section-number">9.1</span> Model safety</a></li>
+  <li><a href="#bias-in-data" id="toc-bias-in-data" class="nav-link" data-scroll-target="#bias-in-data"><span class="header-section-number">9.2</span> Bias in data</a>
   <ul class="collapse">
-  <li><a href="#useful-tools-and-resources" id="toc-useful-tools-and-resources" class="nav-link" data-scroll-target="#useful-tools-and-resources"><span class="toc-section-number">9.2.1</span>  Useful tools and resources</a></li>
+  <li><a href="#useful-tools-and-resources" id="toc-useful-tools-and-resources" class="nav-link" data-scroll-target="#useful-tools-and-resources"><span class="header-section-number">9.2.1</span> Useful tools and resources</a></li>
   </ul></li>
-  <li><a href="#keep-subject-matter-experts-involved-throughout" id="toc-keep-subject-matter-experts-involved-throughout" class="nav-link" data-scroll-target="#keep-subject-matter-experts-involved-throughout"><span class="toc-section-number">9.3</span>  Keep subject matter experts involved throughout</a></li>
-  <li><a href="#transparency-interpretability-and-explanation" id="toc-transparency-interpretability-and-explanation" class="nav-link" data-scroll-target="#transparency-interpretability-and-explanation"><span class="toc-section-number">9.4</span>  Transparency, interpretability, and explanation</a>
+  <li><a href="#keep-subject-matter-experts-involved-throughout" id="toc-keep-subject-matter-experts-involved-throughout" class="nav-link" data-scroll-target="#keep-subject-matter-experts-involved-throughout"><span class="header-section-number">9.3</span> Keep subject matter experts involved throughout</a></li>
+  <li><a href="#transparency-interpretability-and-explanation" id="toc-transparency-interpretability-and-explanation" class="nav-link" data-scroll-target="#transparency-interpretability-and-explanation"><span class="header-section-number">9.4</span> Transparency, interpretability, and explanation</a>
   <ul class="collapse">
-  <li><a href="#transparency-around-the-inputs" id="toc-transparency-around-the-inputs" class="nav-link" data-scroll-target="#transparency-around-the-inputs"><span class="toc-section-number">9.4.1</span>  Transparency around the inputs</a></li>
-  <li><a href="#interpretation-of-the-output" id="toc-interpretation-of-the-output" class="nav-link" data-scroll-target="#interpretation-of-the-output"><span class="toc-section-number">9.4.2</span>  Interpretation of the output</a></li>
-  <li><a href="#transparency-of-algorithm-development" id="toc-transparency-of-algorithm-development" class="nav-link" data-scroll-target="#transparency-of-algorithm-development"><span class="toc-section-number">9.4.3</span>  Transparency of algorithm development</a></li>
-  <li><a href="#understanding-the-performance-of-an-algorithm" id="toc-understanding-the-performance-of-an-algorithm" class="nav-link" data-scroll-target="#understanding-the-performance-of-an-algorithm"><span class="toc-section-number">9.4.4</span>  Understanding the performance of an algorithm</a></li>
-  <li><a href="#understanding-the-impact-of-an-algorithm" id="toc-understanding-the-impact-of-an-algorithm" class="nav-link" data-scroll-target="#understanding-the-impact-of-an-algorithm"><span class="toc-section-number">9.4.5</span>  Understanding the impact of an algorithm</a></li>
+  <li><a href="#transparency-around-the-inputs" id="toc-transparency-around-the-inputs" class="nav-link" data-scroll-target="#transparency-around-the-inputs"><span class="header-section-number">9.4.1</span> Transparency around the inputs</a></li>
+  <li><a href="#interpretation-of-the-output" id="toc-interpretation-of-the-output" class="nav-link" data-scroll-target="#interpretation-of-the-output"><span class="header-section-number">9.4.2</span> Interpretation of the output</a></li>
+  <li><a href="#transparency-of-algorithm-development" id="toc-transparency-of-algorithm-development" class="nav-link" data-scroll-target="#transparency-of-algorithm-development"><span class="header-section-number">9.4.3</span> Transparency of algorithm development</a></li>
+  <li><a href="#understanding-the-performance-of-an-algorithm" id="toc-understanding-the-performance-of-an-algorithm" class="nav-link" data-scroll-target="#understanding-the-performance-of-an-algorithm"><span class="header-section-number">9.4.4</span> Understanding the performance of an algorithm</a></li>
+  <li><a href="#understanding-the-impact-of-an-algorithm" id="toc-understanding-the-impact-of-an-algorithm" class="nav-link" data-scroll-target="#understanding-the-impact-of-an-algorithm"><span class="header-section-number">9.4.5</span> Understanding the impact of an algorithm</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/precisiondrivenhealth/guide/edit/main/evaluation.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
@@ -223,7 +260,7 @@ gtag('config', 'G-1SFLY01V14', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evaluation</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Evaluation</span></h1>
 </div>
 
 
@@ -245,12 +282,12 @@ gtag('config', 'G-1SFLY01V14', { 'anonymize_ip': true});
 <section id="model-safety" class="level2" data-number="9.1">
 <h2 data-number="9.1" class="anchored" data-anchor-id="model-safety"><span class="header-section-number">9.1</span> Model safety</h2>
 <p>Making a model safe for use in a healthcare setting generally involves ensuring that its rates of <a href="https://en.wikipedia.org/wiki/False_positives_and_false_negatives">falsely classifying results as positive or negative</a> are low.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -271,7 +308,7 @@ Note
 <p>While training machine learning models using historically collected data, or drawing any conclusion from data, you should be typically mindful about the potential bias in the data, regarding sensitive attributes such as age, ethnicity and gender. Bias-related harms can be reinforced by machine learning models and systems.</p>
 <p>The Manatū Hauora Ministry of Health’s <a href="https://www.health.govt.nz/system/files/documents/pages/introductory_guidance_-_algorithms_v0.4_-_web.pdf">Emerging Health Technology Introductory Guidance</a> (PDF) section on Bias is a good place to start learning.</p>
 <p>Machine learning fairness is a broad topic; relevant reading includes <a href="https://developers.google.com/machine-learning/crash-course/fairness/video-lecture">a section in Google’s crash course in machine learning</a>, its reference on <a href="https://www.thinkwithgoogle.com/feature/ml-fairness-for-marketers/">A Marketer’s Guide to Machine Learning Fairness</a>, and AI Fairness 360 (<span class="citation" data-cites="bellamy_ai_2018"><a href="#ref-bellamy_ai_2018" role="doc-biblioref">Bellamy et al. 2018</a></span>).</p>
-<div class="no-row-height column-margin column-container"><div id="ref-bellamy_ai_2018" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-bellamy_ai_2018" class="csl-entry" role="listitem">
 Bellamy, R K E, Dey, K, Hind, M, Hoffman, S C, Houde, S, Kannan, K, Lohia, P, Martino, J, Mehta, S, Mojsilovic, A, Nagar, S, Ramamurthy, K N, Richards, J, Saha, D, Sattigeri, P, Singh, M, Varshney, K R, and Zhang, Y. 2018. <span>“<span>AI</span> fairness 360: An extensible toolkit for detecting, understanding, and mitigating unwanted algorithmic bias”</span>. <a href="http://arxiv.org/abs/1810.01943">http://arxiv.org/abs/1810.01943</a>.
 </div></div><p>Due to the historical focus of cohort studies, certain groups of the population - such as certain ethnic groups or females - may be underrepresented and more vulnerable to bias in studies where any conclusions were drawn or models were trained.</p>
 <p>In evaluation work, it’s important to measure the goodness of fit, accuracy and other metrics of a model from multiple perspectives rather than the overall metrics only. Consider the basic measurement aspects with respect to sensitive attributes (for example gender and ethnicity):</p>
@@ -281,16 +318,16 @@ Bellamy, R K E, Dey, K, Hind, M, Hoffman, S C, Houde, S, Kannan, K, Lohia, P, Ma
 <li><p>The difference of model performance metrics among the stratified groups - whether the model is treating the groups equally, and what downstream consequence this may cause.</p></li>
 </ol>
 <p>Reporting metrics with stratification by sensitive attributes whenever applicable can help to more easily maintain an equity lens. Performance of the IBIS/Tyrer-Cuzick model of breast cancer risk by race and ethnicity in the Women’s Health Initiative is an example <span class="citation" data-cites="kurian_performance_2021">see <a href="#ref-kurian_performance_2021" role="doc-biblioref">Kurian et al. 2021</a></span>.</p>
-<div class="no-row-height column-margin column-container"><div id="ref-kurian_performance_2021" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-kurian_performance_2021" class="csl-entry" role="listitem">
 Kurian, A W, Hughes, E, Simmons, T, Bernhisel, R, Probst, B, Meek, S, Caswell‐Jin, J L, John, E M, Lanchbury, J S, Slavin, T P, Wagner, S, Gutin, A, Rohan, T E, Shadyab, A H, Manson, J E, Lane, D, Chlebowski, R T, and Stefanick, M L. 2021. <span>“Performance of the <span>IBIS</span>/tyrer‐cuzick model of breast cancer risk by race and ethnicity in the women’s health initiative”</span>. <em>Cancer</em> 127.20, 3742–3750. <a href="https://onlinelibrary.wiley.com/doi/10.1002/cncr.33767">https://onlinelibrary.wiley.com/doi/10.1002/cncr.33767</a>.
 </div></div><p>There’s a trade-off between data informativeness, model performance and fairness. Most bias mitigation methods can’t avoid playing with this balance. We highly recommend taking into account the use case and follow-up impacts while deciding which bias mitigation method to be used, and how it’s used.</p>
 <p>Mitigating bias and improving fairness is mostly not a technical challenge but a much broader systematic challenge. We recommend including diverse voices and perspectives in data science work by, for example, having Māori researchers involved in your project.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -311,21 +348,21 @@ Note
 <li><p><a href="https://github.com/google/ml-fairness-gym">ML-fairness-gym</a> (Google)</p></li>
 <li><p>PROBAST (see <span class="citation" data-cites="wolff_probast_2019"><a href="#ref-wolff_probast_2019" role="doc-biblioref">Wolff et al. 2019</a></span> and <span class="citation" data-cites="moons_probast_2019"><a href="#ref-moons_probast_2019" role="doc-biblioref">Moons et al. 2019</a></span>)</p></li>
 </ul>
-<div class="no-row-height column-margin column-container"><div id="ref-wolff_probast_2019" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-wolff_probast_2019" class="csl-entry" role="listitem">
 Wolff, R F, Moons, K G M, Riley, R D, Whiting, P F, Westwood, M, Collins, G S, Reitsma, J B, Kleijnen, J, and Mallett, S. 2019. <span>“<span>PROBAST</span>: A tool to assess the risk of bias and applicability of prediction model studies”</span>. <em>Annals of Internal Medicine</em> 170.1, 51–58. <a href="https://www.acpjournals.org/doi/10.7326/M18-1376">https://www.acpjournals.org/doi/10.7326/M18-1376</a>.
-</div><div id="ref-moons_probast_2019" class="csl-entry" role="doc-biblioentry">
+</div><div id="ref-moons_probast_2019" class="csl-entry" role="listitem">
 Moons, K G M, Wolff, R F, Riley, R D, Whiting, P F, Westwood, M, Collins, G S, Reitsma, J B, Kleijnen, J, and Mallett, S. 2019. <span>“<span>PROBAST</span>: A tool to assess risk of bias and applicability of prediction model studies: Explanation and elaboration”</span>. <em>Annals of Internal Medicine</em> 170.1, W1. <a href="http://annals.org/article.aspx?doi=10.7326/M18-1377">http://annals.org/article.aspx?doi=10.7326/M18-1377</a>.
 </div></div></section>
 </section>
 <section id="keep-subject-matter-experts-involved-throughout" class="level2" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="keep-subject-matter-experts-involved-throughout"><span class="header-section-number">9.3</span> Keep subject matter experts involved throughout</h2>
 <p>It’s very important to continually engage subject matter experts, such as clinicians, throughout your project. This can encompass involving clinicians in the project as an advisory level, and can be extended by involving clinicians in iterative development of models, such as providing labels.</p>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Tip
 </div>
 </div>
@@ -337,14 +374,14 @@ Tip
 <section id="transparency-interpretability-and-explanation" class="level2 page-columns page-full" data-number="9.4">
 <h2 data-number="9.4" class="anchored" data-anchor-id="transparency-interpretability-and-explanation"><span class="header-section-number">9.4</span> Transparency, interpretability, and explanation</h2>
 <p>In the context of health, it’s especially important to communicate findings in a way that builds trust in your model development process and outputs. If trust isn’t built in your model, it may not be adopted in practices. However, while robust and transparent explainability may seem like a good goal for an AI model to become useful, there may be some disadvantages to this approach (<span class="citation" data-cites="babic_beware_2021"><a href="#ref-babic_beware_2021" role="doc-biblioref">Babic et al. 2021</a></span>).</p>
-<div class="no-row-height column-margin column-container"><div id="ref-babic_beware_2021" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-babic_beware_2021" class="csl-entry" role="listitem">
 Babic, B, Gerke, S, Evgeniou, T, and Cohen, I G. 2021. <span>“Beware explanations from <span>AI</span> in health care”</span>. <em>Science</em> 373.6552, 284–286. <a href="https://www.science.org/doi/abs/10.1126/science.abg1834">https://www.science.org/doi/abs/10.1126/science.abg1834</a>.
 </div></div><p>The requirement for models to be transparent, interpretable and explainable should guide your early modelling decisions, such as which algorithm to use and how to treat inputs. Linear models tend to be more interpretable and explainable; so too are models that are built with inputs that haven’t been subject to significant transformations or weightings.</p>
 <p>The choice of a ‘simpler’ model may compromise model performance, meaning better outcomes are sacrificed for the sake of explainability. There is little point however in deploying a deep learning model that has excellent performance, but isn’t trusted or used. You should carefully consider this trade-off.</p>
 <p>You should also consider outcome measures that are tangible and meaningful to your end user, and that have some relationship to the project goal, such as hospitalisation, mortality, or rankings.</p>
 <p>Finally, you should indicate which inputs are most important to the model performance or model outputs (feature importance) and how the model inputs are weighted in relation to model outputs, and what that means in practice. For example, if a model includes modifiable inputs, a model user will want to know how changes to that input might affect an outcome. From an equity perspective, a model user will also want to know to what extent inputs such as ethnicity, age, gender or deprivation impact the outcome.</p>
 <p>These considerations are also relevant to governance of models. GDPR’s regulation specifically emphasises a model’s transparency, accountability and governance (see <span class="citation" data-cites="kaminski_algorithmic_2021"><a href="#ref-kaminski_algorithmic_2021" role="doc-biblioref">Kaminski and Malgieri 2021</a></span>).</p>
-<div class="no-row-height column-margin column-container"><div id="ref-kaminski_algorithmic_2021" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-kaminski_algorithmic_2021" class="csl-entry" role="listitem">
 Kaminski, M E and Malgieri, G. 2021. <span>“Algorithmic impact assessments under the <span>GDPR</span>: Producing multi-layered explanations”</span>. <em>International Data Privacy Law</em> 11.2, 125–144. <a href="https://academic.oup.com/idpl/article/11/2/125/6024963">https://academic.oup.com/idpl/article/11/2/125/6024963</a>.
 </div></div><section id="transparency-around-the-inputs" class="level3" data-number="9.4.1">
 <h3 data-number="9.4.1" class="anchored" data-anchor-id="transparency-around-the-inputs"><span class="header-section-number">9.4.1</span> Transparency around the inputs</h3>
@@ -367,14 +404,14 @@ Kaminski, M E and Malgieri, G. 2021. <span>“Algorithmic impact assessments und
 <h3 data-number="9.4.3" class="anchored" data-anchor-id="transparency-of-algorithm-development"><span class="header-section-number">9.4.3</span> Transparency of algorithm development</h3>
 <p>You should audit the behaviour of an algorithm at the population level. Unexpected behaviours indicate defects or limitations of the model, and are roadblocks for gaining trust. For example, the relationship between the predicted values and certain covariants (e.g.&nbsp;increased predicted mortality risk vs.&nbsp;age) for the validation cohort should match with empirical evidence, or the clinician’s judgement. Interpretation techniques such as partial dependence plots can facilitate such investigation.</p>
 <p>You should also explain model prediction for specific individuals. For example, a person’s readmission risk score can be attributed to age, previous hospitalisation history, cancer diagnosis, ethnicity and other risk factors. Local surrogate models or Shapley values based methods are commonly adopted techniques to provide explanations at the individual level. Interpretable Machine Learning (<span class="citation" data-cites="christoph_molnar_interpretable_2022"><a href="#ref-christoph_molnar_interpretable_2022" role="doc-biblioref">Christoph Molnar 2022</a></span>) provides more details about model interpretation techniques.</p>
-<div class="no-row-height column-margin column-container"><div id="ref-christoph_molnar_interpretable_2022" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-christoph_molnar_interpretable_2022" class="csl-entry" role="listitem">
 Christoph Molnar. 2022. <span>“Interpretable machine learning”</span>. <a href="https://christophm.github.io/interpretable-ml-book/index.html">https://christophm.github.io/interpretable-ml-book/index.html</a>.
-</div></div><div class="callout-tip callout callout-style-default callout-captioned">
+</div></div><div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Tip
 </div>
 </div>
@@ -390,12 +427,12 @@ Tip
 <p>Take, for example, a use case where a model is being used to predict a condition (with prevalence 2%) that requires an intervention. A positive predictive value of 0.95 means that of those people that presented with the condition, 95% were identified by the model. Putting this into context, we can say that if 1000 people a day were assessed, we would expect that 20 of them would require the intervention. The model would identify 19 of those people, meaning weekly, 5 people with that condition would be missed if we were to rely solely on model outputs.</p>
 <p>Information like this can help a clinician understand that while the model performs well, in practice they might like to supplement model outputs with other assessments.</p>
 <p>For models that output probabilities, such as logistic regression, such analyses can be useful in helping clinicians quantify and understand the trade-off between false positives and false negatives in order to decide which decision thresholds may be appropriate.</p>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Tip
 </div>
 </div>
@@ -406,12 +443,12 @@ Tip
 </section>
 <section id="understanding-the-impact-of-an-algorithm" class="level3 page-columns page-full" data-number="9.4.5">
 <h3 data-number="9.4.5" class="anchored" data-anchor-id="understanding-the-impact-of-an-algorithm"><span class="header-section-number">9.4.5</span> Understanding the impact of an algorithm</h3>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Tip
 </div>
 </div>
@@ -425,7 +462,7 @@ Tip
 <p>Deterministic or stochastic simulation techniques can be used for this evaluation when a working scenario can be quantitatively described. An example of this is the New Zealand business case for a hospital avoidance programme using a readmission risk model, which presented its financial impact in healthcare (<span class="citation" data-cites="vaithianathan_model_2012"><a href="#ref-vaithianathan_model_2012" role="doc-biblioref">Vaithianathan et al. 2012</a></span>).</p>
 
 
-<div class="no-row-height column-margin column-container"><div id="ref-vaithianathan_model_2012" class="csl-entry" role="doc-biblioentry">
+<div class="no-row-height column-margin column-container"><div id="ref-vaithianathan_model_2012" class="csl-entry" role="listitem">
 Vaithianathan, R, Jiang, N, and Ashton, T. 2012. <span>“A model for predicting readmission risk in new zealand”</span>. <a href="http://hdl.handle.net/10419/242509">http://hdl.handle.net/10419/242509</a>.
 </div></div>
 </section>
@@ -459,9 +496,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -526,6 +577,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -569,7 +706,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
