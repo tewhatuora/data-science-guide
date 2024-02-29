@@ -22,7 +22,7 @@ Please contribute your text and ideas to this guide to share your knowledge and 
 
 * If you wish to contribute regularly, you can be added as a contributor to the repository.
 
-## About Precision Driven Health
+## Development and ownership of this guide
 
 This guide was originally created through the [Precision Driven Health](https://precisiondrivenhealth.com) (PDH) partnership between Aotearoa New Zealand’s health information technology (IT) sector, health providers and universities, aimed at improving health outcomes through data science. PDH sought to increase data science capability in New Zealand’s health sector and encourage innovation in the use of health data. The PDH partnership ceased operations in 2023. 
 
