@@ -32,7 +32,7 @@ To understand population trends and context, aggregated data sets and web tools 
 
 Useful resources:
 
-- Through a review of Aotearoa New Zealand health datasets, PDH has produced [an interactive and updatable list of data](https://data.precisiondrivenhealth.com) available in New Zealand. This includes data from [Figure.nz](https://figure.nz/) and many other sources. ([@precision_driven_health_aotearoa_2022])
+- Through a review of Aotearoa New Zealand health datasets, PDH produced [an interactive and updatable list of data](https://tewhatuora.github.io/data-sources-review) available in New Zealand. This includes data from [Figure.nz](https://figure.nz/) and many other sources. ([@precision_driven_health_aotearoa_2022])
 
 - A recent research project which undertook a local algorithm scan produced a whitepaper report on [The future of healthcare algorithms in Aotearoa New Zealand](https://precisiondrivenhealth.com/new-zealand-health-sector-algorithm-scan/) ([@noauthor_new_2021]).
 
