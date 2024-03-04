@@ -4,17 +4,14 @@ project:
 
 book:
   title: "Health Data Science in Aotearoa New Zealand: A Practical Guide"
-#  author: "Precision Driven Health"
-  google-analytics: G-1SFLY01V14
   sharing: [twitter, linkedin]
-  repo-url: https://github.com/precisiondrivenhealth/guide
+  repo-url: https://github.com/tewhatuora/data-science-guide
   repo-actions: edit
   cover-image: /img/cover.jpg
-#  date: 18 November 2022
   date-format: "MMMM YYYY"
   navbar:
     search: true
-    logo: /img/logo-pdh.png
+#    logo: /img/logo-pdh.png
     background: "#005556"
     pinned: true
   sidebar:
@@ -23,11 +20,8 @@ book:
     style: floating
     border: true
     tools:
-      - icon: globe
-        href: https://precisiondrivenhealth.com
-        text: "Precision Driven Health"
       - icon: github
-        href: https://github.com/precisiondrivenhealth/guide
+        href: https://github.com/tewhatuora/data-science-guide
         text: GitHub repository
   chapters:
     - index.qmd
